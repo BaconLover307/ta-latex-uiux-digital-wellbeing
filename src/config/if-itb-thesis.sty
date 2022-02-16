@@ -31,7 +31,7 @@
 \usepackage{sectsty}
 \usepackage{chngcntr}
 \usepackage{etoolbox}
-\usepackage{hyperref}       % Package untuk link di daftar isi. Ubah jadi \usepackage[hidelinks]{hyperref} apabila ingin menghilangkan kotak merah disekitar link
+\usepackage[hidelinks]{hyperref}       % Package untuk link di daftar isi. Ubah jadi \usepackage[hidelinks]{hyperref} apabila ingin menghilangkan kotak merah disekitar link
 \usepackage{titlesec}       % Package Format judul
 \usepackage{titletoc}       % Package Format judul di toc
 \usepackage{tocbibind}      % Package untuk masukkan toc, lot, lof ke Daftar Isi
@@ -39,6 +39,9 @@
 \usepackage{parskip}
 \usepackage{afterpage}
 \usepackage{relsize}
+\usepackage{enumitem}
+\usepackage[center]{caption}
+\usepackage[none]{hyphenat}  % Package untuk matiin hypenation 
 
 \graphicspath{{resources/}}   % letak direktori penyimpanan gambar
 
@@ -70,7 +73,7 @@
     {\bfseries}
     {Lampiran \thecontentslabel.\quad}
     {}
-    {\hfill\contentspage}
+    {\dotfill\contentspage}
 
   \titleformat{\chapter}[block]
     {\bfseries}
@@ -80,7 +83,7 @@
 
 % Hilangkan titik pada toc
 \makeatletter
-\renewcommand{\@dotsep}{10000} 
+\renewcommand{\@dotsep}{1} 
 \makeatother
 
 % Setel title pada chapter-chapter di toc, lof, lot
@@ -89,19 +92,19 @@
   {\bfseries}
   {\MakeUppercase{Bab} \thecontentslabel\quad\uppercase}
   {}
-  {\hfill\contentspage}
+  {\dotfill\contentspage}
 \titlecontents{figure}
   [0pt]
   {}
   {Gambar \thecontentslabel.\quad}
   {}
-  {\hfill\contentspage}
+  {\dotfill\contentspage}
 \titlecontents{table}
   [0pt]
   {}
   {Tabel \thecontentslabel.\quad}
   {}
-  {\hfill\contentspage}
+  {\dotfill\contentspage}
 
 % Masukin Daftar Pustaka ke toc
 \let\originalprintbibliography\printbibliography
@@ -130,8 +133,11 @@
 \makeatother
 
 % Counter untuk figure dan table.
-\counterwithin{figure}{section}
-\counterwithin{table}{section}
+\counterwithin{figure}{chapter}
+\counterwithin{table}{chapter}
 
 % Define blank page
 \newcommand*{\blankpage}{\afterpage{\null\newpage}}
+
+% Define list with less spacing
+\setlist{noitemsep}

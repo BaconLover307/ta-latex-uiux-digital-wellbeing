@@ -1,5 +1,63 @@
-\chapter{Rencana Penyelesaian Masalah}
+\chapter{Analisis Masalah dan Rancangan Solusi}
 
-Tujuan utama penulisan bab ini adalah untuk menguraikan rencana penyelesaian masalah tugas akhir yang akan dieksekusi secara utuh pada saat pelaksanaan Tugas Akhir II. Bab ini merupakan bab penutup Laporan Tugas Akhir I yang dapat dipandang sebagai bab yang akan menjembatani perpindahan ke proses pelaksanaan Tugas Akhir II. Pengembangan lebih lanjut dari bab ini dapat menjadi bagian dari bab Deskripsi Solusi pada Laporan Tugas Akhir.
+% Pada bab Analisis Masalah dan Rancangan Solusi akan diuraikan tentang identifikasi permasalahan yang menjadi dasar dari tugas akhir ini, serta analisis dan rancangan solusi yang ingin diajukan untuk menyelesaikan permasalahan tersebut. Secara garis besar, proses perancangan prototipe aplikasi akan menggunakan pendekatan \textit{user-centered design} (UCD).
 
-\blindtext
+% Pada bab ini akan dilakukan analisis permasalahan yang menjadi dasar dari tugas akhir ini, analisis solusi yang ingin diajukan, serta rencana pengerjaan selanjutnya untuk Tugas Akhir II. Secara garis besar, proses perancangan prototipe aplikasi akan menggunakan pendekatan \textit{user-centered design} (UCD).
+
+\section{Analisis Masalah}
+\label{sec:analisis_masalah}
+
+Sebagaimana yang telah dibahas pada subbab \ref{sec:latarbelakang}, aplikasi Digital Wellbeing yang terdapat pada smartphone berbasis Android memiliki beberapa masalah pada desain interaksinya. Pada dasarnya, inti masalah dari desain interaksi aplikasi Digital Wellbeing adalah kurang efektif dalam menghambat pengguna mengakses aplikasi-aplikasi yang menurunkan tingkat produktivitas pengguna, serta kurang efektif dalam mempromosikan kebiasaan-kebiasaan yang lebih baik dalam penggunaan gawai dalam kehidupan sehari-hari. Daftar permasalahan desain interaksi yang terdapat pada aplikasi Digital Wellbeing dicantumkan pada Tabel \ref{tab:daftar_permasalahan}. Rincian mengenai permasalahan dapat dilihat pada Lampiran \ref{chpt:rincian_analisis_permasalahan}.
+
+\begin{table}[ht]
+  \centering
+  \fontsize{10}{12}
+  \caption{Daftar Permasalahan}
+  \label{tab:daftar_permasalahan}
+  \vspace{0.2cm}
+  \begin{tabular}{|p{0.12\textwidth}|p{0.85\textwidth}|}
+  \hline
+  Kode  & Permasalahan                                                                                                                    \\ \hline
+  M-001 & Fitur "Take a break" dari Focus Mode dapat disalahgunakan untuk mengambil istirahat terus menerus                               \\ \hline
+  M-002 & Fitur "Turn off for now" dari Focus Mode dapat disalahgunakan untuk mematikan Focus Mode sebelum tenggat waktu yang ditentukan  \\ \hline
+  M-003 & Kurangnya elemen yang memotivasi pengguna dalam memperbaiki pola penggunaan aplikasi                                            \\ \hline
+  \end{tabular}
+\end{table}
+
+
+\section{Analisis Solusi}
+\label{sec:analisis_solusi}
+
+Dari permasalahan yang telah diuraikan pada subbab \ref{sec:analisis_masalah}, terdapat beberapa solusi yang dapat diimplementasikan ke dalam aplikasi pencegah distraksi untuk mencapai tujuan dari aplikasi Digital Wellbeing dengan lebih baik yaitu menghambat akses pengguna terhadap aplikasi distraksi secara efektif dan memotivasi pengguna untuk mengubah pola penggunaan aplikasi secara general. Setiap solusi akan dijelaskan tentang permasalahan apa yang akan diselesaikan. Solusi yang ditawarkan untuk menyelesaikan masalah yang telah dianalisis dicantumkan pada Tabel \ref{tab:daftar_solusi}. Rincian mengenai solusi tersebut dapat dilihat pada Lampiran \ref{chpt:rincian_analisis_solusi}.
+
+
+\begin{table}[h]
+  \centering
+  \fontsize{10}{12}
+  \caption{Daftar Solusi}
+  \label{tab:daftar_solusi}
+  \vspace{0.2cm}
+  \begin{tabular}{|p{0.15\textwidth}|p{0.18\textwidth}|p{0.6\textwidth}|}
+  \hline
+  Kode Solusi & Kode Masalah & Solusi \\ \hline
+  S-002 & M-001 & Memberikan langkah tambahan setiap kali pengguna mengakses fungsionalitas "Take a break" \\ \hline
+  S-001 & M-002 & Memindahkan fungsionalitas dari tombol "Turn off for now" ke pengaturan aplikasi \\ \hline
+  S-003 & M-003 & Memberikan sugesti atas langkah yang dapat diambil untuk meningkatkan kualitas pola penggunaan aplikasi \\ \hline
+  \end{tabular}
+\end{table}
+
+
+
+% \blindtext
+
+\section{Rencana Pengerjaan Solusi}
+
+% Ketiga solusi yang telah diuraikan pada subbab \ref{sec:analisis_solusi} akan diimplementasikan dalam prototipe aplikasi, beserta fitur-fitur lain pada Digital Wellbeing yang akan mendukung solusi tersebut. Prototipe aplikasi ini akan diimpementasikan pada \textit{platform} Android. Secara garis besar, proses perancangan prototipe aplikasi akan menggunakan pendekatan \textit{user-centered design} (UCD).
+
+Seperti yang telah disebutkan pada subbab \ref{sec:metodologi}, metodologi yang digunakan dalam pengerjaan Tugas Akhir ini akan menggunakan pendekatan UCD. Dengan maksud mengikuti prosesnya, maka langkah selanjutnya yang akan dilakukan adalah mengumpulkan data. Pengumpulan data akan dilakukan dengan menyebarkan form secara online serta melakukan wawancara dengan responden yang bersedia untuk bekerja sama lebih lanjut. Proses ini akan dilaksanakan pada periode pengerjaan Tugas Akhir 2. Pengumpulan data ini bertujuan untuk melakukan validasi terhadap permasalahan yang sudah dianalisis, dan juga tidak menutup kemungkinan untuk menemukan permasalahan desain interaksi lain dari masukan pengguna.
+
+Setelah melakukan pengumpulan data, akan dilakukan analisis terhadap masukan yang didapat untuk mejadi kebutuhan perangkat lunak. Hasil analisis juga akan memvalidasi analisis masalah dan solusi yang didapat dari observasi penulis pada subbab \ref{sec:analisis_masalah} dan \ref{sec:analisis_solusi}.
+
+Kebutuhan perangkat lunak yang telah disusun akan diimplementasi dalam bentuk prototipe \textit{low-fidelity} terlebih dahulu. Setelah dilakukan evaluasi, maka implementasi akan dilanjutkan dalam bentuk prototipe \textit{high-fidelity}. Setelah menjalani evaluasi, maka perancangan prototipe aplikasi akan dikerjakan. Prototipe aplikasi diharapkan akan menghasilkan data dengan kualitas yang lebih tinggi pada saat evaluasi dibandingkan saat menggunakan prototipe \textit{low-fidelity} atau \textit{high-fidelity}. Hasil evaluasi juga akan menentukan apakah aplikasi akan menjalani proses iterasi atau diimplementasi lebih lanjut.
+
+% \blindtext
