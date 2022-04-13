@@ -1,52 +1,109 @@
-\chapter{Analisis Dan Rancangan Prototipe Aplikasi Pencegah Distraksi}
+\chapter{Identifikasi Masalah dan Rancangan Solusi}
 
-Bab 3 Analisis dan Rancangan Aplikasi Pencegah Distraksi berisi tentang identifikasi permasalahan, hingga penjelasan solusi prototipe aplikasi yang menjadi dasar dari tugas akhir ini. Setelah melakukan studi literatur pada Bab II, maka tahap selanjutnya dilakukan sesuai dengan metodologi yang telah ditetapkan yaitu pendekatan \textit{user-centered design} (UCD) menurut ISO 9241-210.
+Bab Identifikasi Masalah dan Rancangan Solusi berisi tentang penjelasan analisis permasalahan yang menjadi dasar dari tugas akhir ini. Secara garis besar, proses perancangan solusi akan mengikuti metodologi yang sudah ditetapkan yaitu pendekatan \textit{User-Centered Design} (UCD) menurut ISO 9241-210. Proses yang akan dibahas pada bab ini meliputi perancangan proses desain, identifikasi konteks penggunaan, analisis kebutuhan perangkat lunak, dan perancangan prototipe perangkat lunak. Gambaran alur UCD yang digunakan pada tugas akhir dapat dilihat pada Gambar \ref{fig:diagram_alur_kerja}.
 
-\section{Analisis Permasalahan}
-\label{sec:analisis_masalah}
-
-Penggunaan \textit{smartphone} sudah menjadi bagian dari kehidupan sehari-hari manusia, tapi penggunaan dengan kadar yang tidak memunculkan pengaruh buruk pada kesehatan mental penggunanya. Menurut \textcite{10.1371/journal.pone.0083558}, adiksi terhadap \textit{smartphone} belum terdaftar sebagai \textit{behavourial addiction} dalama DSM-5 (Diagnostic and Statistical Manual of Mental Disorders), namun korban adiksi \textit{smartphone} telah menunjukkan tingkat adiksi yang sama dengan korban adiksi narkotika dan alkohol. Korban adiksi \textit{smartphone} mengalami permasalahan pada kesehatan mental dan interaksi sosialnya yang dapat terlihat dari kualitas interaksi sesama manusia secara langsung. \parencite{Roffarello2019} \textit{Smartphone} juga berperan sebagai sumber distraksi yang mengalihkan perhatian korban adiksi dari kegiatan yang penting. Distraksi tersebut dapat berupa notifikasi yang muncul pada \textit{smartphone}, atau keinginan pengguna untuk menggunakan \textit{smartphone}. Pengguna dengan adiksi \textit{smartphone} dilaporkan mengalami penurunan produktivitas dan stress.
-
-% Produktivitas yang rendah dapat memengaruhi perkembangan bisnis dan kesehatan mental
-
-Dalam upaya mengatasi adiksi \textit{smartphone}, Google meluncurkan sebuah langkah Digital Wellbeing dalam konferensi Google I/O pada tahun 2018. Digital Wellbeing adalah sebuah filosofi desain yang akan diterapkan pada produk-produk Google dengan tujuan untuk membangun hubungan yang lebih baik antara pengguna dengan teknologi yang digunakan. Konsep dari Digital Wellbeing mengajak pengguna produk Google untuk mengambil kendali teknologi agar dapat memberikan manfaat dan potensial semaksimal mungkin serta membantu untuk mencapai tujuan yang diinginkan, melainkan menjadi pengganggu, distraksi, atau rintangan. \parencite{google2019dwcourse} Pada konferensi tersebut, Google juga meluncurkan aplikasi dengan nama yang sama sebagai wujud nyata dari langkah Digital Wellbeing, dan sejak versi Android 10 aplikasi ini sudah terintegrasi pada sistem operasi buatan Google, Android.
-
-Keputusan Google untuk mengintegrasikan aplikasi ke dalam sistem operasi Android memunculkan banyak opini. Berdasarkan review aplikasi pada Google Play Store, banyak reviewer melaporkan ketidakpuasan atas keputusan Google untuk menghilangkan kemampuan untuk meng-\textit{uninstall} aplikasi, mengakibatkan turunnya performa \textit{smartphone} pengguna, serta mengambil tempat penyimpanan \textit{smartphone} yang seharusnya dapat dimanfaatkan untuk hal lain, sehingga pengguna dapat menganggap aplikasi Digital Wellbeing sebagai sebuah bloatware. Bloatware adalah sebuah software yang tidak diinginkan yang dapat memperlambat kinerja suatu perangkat dan biasanya sudah dipasang pada perangkat dari pabrik, baik oleh perusahaan manufaktur perangkat atau penyedia layanan yang bekerja sama dengan perusahaan tersebut. \parencite{nordvpn2021bloatware} Namun Google tetap memberikan pengaturan pada aplikasi untuk tidak melakukan pemantauan, dan sebagai pengaturan bawaan fitur-fitur dari Digital Wellbeing selain pemantauan aktivitas tidak diaktifkan.
-
-Aplikasi Digital Wellbeing milik Google tidak luput dari berbagai permasalahan dari sisi desain interaksi. Padahal masalah yang sering ditemukan dari aplikasi bawaan \textit{smartphone} yang membuatnya bisa disebut sebagai bloatware adalah terbatasnya fungsionalitas dari aplikasi tersebut. \parencite{forbes2018bloatware} Alasan ini beserta kekurangan yang ditemukan dari aplikasi berdasarkan hasil analisis akan digunakan sebagai pendukung solusi dari tugas akhir ini. Setelah melakukan analisis terhadap data ulasan aplikasi Digital Wellbeing yang diperoleh melalui Google Play Store, berikut adalah daftar masalah yang ingin diselesaikan dalam pengerjaan tugas akhir.
-
-% Tetapi,  hal   Selain itu da membuat aplikasi Digital Wellbeing tersembunyi dari \textit{app library}, serta    
-% \textit{smartphone}-nya. Salah satu fungsionalitas dari aplikasi adalah melakukan pemantauan terhadap penggunaan aplikasi dan \textit{smartphone}. 
-
-% membatasi akses pengguna terhadap aplikasi, serta memberikan pengingat atas jumlah penggunaan yang tinggi. 
-
-% Sejak sistem operasi Android versi Android 10, Google telah mengintegrasikan aplikasi Digital Wellbeing sebagai bagian dari langkah Google dalam menerapkan konsep Digital Wellbeing. \parencite{google2021dwsupport} Keputusan Google untuk mengintegrasi aplikasi ini berarti pengguna \textit{smartphone} Android tidak secara sadar menginstallnya. Sebagai aplikasi yang sudah terintegrasi, memunculkan kemungkinan aplikasi tersebut dapat memperlambat performa dari \textit{smartphone} atau mengambil tempat penyimpanan \textit{smartphone} yang seharusnya dapat dimanfaatkan untuk hal lain. Namun, fitur    
-
-% Sebagaimana yang telah dibahas pada subbab \ref{sec:latarbelakang}, aplikasi Digital Wellbeing yang terdapat pada smartphone berbasis Android memiliki beberapa masalah pada desain interaksinya. Pada dasarnya, inti masalah dari desain interaksi aplikasi Digital Wellbeing adalah kurang efektif dalam menghambat pengguna mengakses aplikasi-aplikasi yang menurunkan tingkat produktivitas pengguna, serta kurang efektif dalam mempromosikan kebiasaan-kebiasaan yang lebih baik dalam penggunaan gawai dalam kehidupan sehari-hari. Daftar permasalahan desain interaksi yang terdapat pada aplikasi Digital Wellbeing dicantumkan pada Tabel \ref{tab:daftar_permasalahan}. Rincian mengenai permasalahan dapat dilihat pada Lampiran \ref{chpt:rincian_analisis_permasalahan}.
-
-\begin{table}[ht]
+\begin{figure}[h]
   \centering
-  \fontsize{10}{12}
-  \caption{Daftar Permasalahan}
-  \label{tab:daftar_permasalahan}
-  \vspace{0.2cm}
-  \begin{tabular}{|p{0.12\textwidth}|p{0.81\textwidth}|}
-  \hline
-  ID    & Masalah Aplikasi Digital Wellbeing \\ \hline
-  M-01    & Fitur-fitur pada aplikasi Digital Wellbeing kurang dapat membatasi akses pengguna dengan cukup ketat \\ \hline
-  M-02    & Fitur-fitur pada aplikasi Digital Wellbeing kurang memberikan fleksibilitas dalam menunda pembatasan akses pengguna \\ \hline
-  M-03    & Aplikasi Digital Wellbeing kurang memberikan fleksibilitas bagi pengguna dalam mengatur jadwal aktivasi fitur \\ \hline
-  M-04    & Aplikasi Digital Wellbeing tidak dapat mengelompokkan aplikasi berdasarkan kategori yang ditentukan oleh pengguna \\ \hline
-  M-05    & Aplikasi Digital Wellbeing kurang memberikan laporan yang komprehensif tentang aktivitas pengguna \textit{smartphone} \\ \hline
-  % M-06    & Aplikasi Digital Wellbeing saat ini hanya memiliki 1 buah \textit{widget} yang dapat menampilkan total \textit{screentime} pengguna \textit{smartphone} dan 3 aplikasi dengan penggunaan tertinggi di hari tersebut\\ \hline
-  \end{tabular}
-\end{table}
+  \includegraphics[width=0.8\textwidth]{chapter-1-method.png}
+  \caption{Alur Kerja Penelitian}
+  \label{fig:diagram_alur_kerja}
+\end{figure}
+
+\section{Perancangan Proses Desain}
+\label{sec:perancangan_proses_desain}
+
+Pada tahap perancangan proses desain dilakukan persiapan sumber daya yang diperlukan selama proses desain, serta penentuan ruang lingkup permasalahan.
+
+Adapun ruang lingkup permasalahan yang ditentukan selama pengerjaan tugas akhir sebagai berikut
+
+\begin{enumerate}
+  \item Target Pengguna
+  \subitem Target pengguna selama penelitian adalah pengguna \textit{smartphone} berbasis Android di Indonesia dengan rentang umur 18-34 tahun. Rentang usia tersebut adalah usia mayoritas pengguna media sosial di Indonesia. \parencite{mediasosial2020} 
+  
+  \item Fungsionalitas Aplikasi
+  \subitem Lingkup fungsionalitas aplikasi adalah bagaimana desain interaksi yang baru dapat memperbaiki masalah yang ditemukan pada aplikasi Digital Wellbeing saat ini. Fungsionalitas dar aplikasi menyesuaikan dengan analisis hasil yang didapatkan dari riset dan wawancara. 
+   
+  \item Lingkup Pengembangan Aplikasi
+  \subitem Desain interaksi aplikasi pencegah distraksi yang dibuat memiliki bentuk \textit{mobile interface} dengan mewujudkan sebuah prototipe aplikasi dalam \textit{platform Android}. Aplikasi Digital Wellbeing milik Google ditetapkan menjadi garis dasar pengembangan prototipe aplikasi tersebut.
+
+\end{enumerate}
+
+% \subsection{Sumber Daya Proses Desain}
+
+\section{Identifikasi Konteks Penggunaan}
+\label{sec:identifikasi_konteks_penggunaan}
+
+Pada tahap ini dilakukan proses analisis pengguna melalui data yang didapatkan dari ulasan pengguna aplikasi Digital Wellbeing dari situs Google Play Store, serta riset dengan metode wawancara.
+% Hasil analisis pengguna digunakan untuk menyusun kebutuhan fungsional 
+
+\subsection{Riset dan Analisis Pengguna}
+
+Tahap ini bertujuan untuk menganalis target pengguna, sehingga didapatkan data perilaku, masalah, tujuan, dan kebutuhan pengguna aplikasi Digital Wellbeing. Riset dilakukan dengan mengumpulkan data ulasan pengguna aplikasi Digital Wellbeing dari situs Google Play Store \textcite{dwplaystorereviews}. Metode pengumpulan data ini dipilih dengan alasan mengacu pada ISO 9241-210, bahwa informasi yang sudah tersedia dari suatu produk dapat dimanfaatkan untuk melakukan modifikasi atau peningkatan kualitas produk \parencite{iso9241-210:2010}, dalam hal ini informasi berbentuk ulasan pengguna.
+
+Berdasarkan situs Google Play Store per 13 April 2022, terdapat 609.005 ulasan untuk aplikasi Digital Wellbeing. Untuk menentukan jumlah \textit{sample size}, ditentukan \textit{confidence level} sebesar 95\%. Dikumpulkan data sebanyak 1000 ulasan dari target pengguna yang telah disebutkan pada bab \ref{sec:identifikasi_konteks_penggunaan},  kemudian dikategorikan secara manual, lalu didapatkan 291 ulasan yang dapat digunakan untuk menyusun masalah pengguna, sehingga \textit{sample} data memiliki \textit{margin of error} sebesar 5.75\%.
+
+Metode pengkategorian ulasan menjadi daftar masalah pengguna dilakukan secara manual yang menghasilkan 12 kategori masalah. Rincian tentang kategori tersebut dapat dilihat pada tabel \ref{tab:daftar_kategori}.
+
+\begin{longtable}[c]{|p{0.07\textwidth}|p{0.75\textwidth}|p{0.09\textwidth}|}
+  \caption{Daftar Kategori Ulasan Masalah}
+  \label{tab:daftar_kategori} \\
+  \hline ID & Kategori Masalah & Jumlah Ulasan \\ \hline \endfirsthead
+  \hline ID & Kategori Masalah & Jumlah Ulasan \\ \hline \endhead
+
+  \hline \endfoot
+
+  K-01    & Kurangnya widget untuk menampilkan data di Home Screen & 63 \\ \hline
+  K-02    & Perlu dikembangkannya fitur laporan penggunaan aplikasi & 47 \\ \hline
+  K-03    & Perlu dikembangkannya fitur Focus Mode & 47 \\ \hline
+  K-04    & Kurangnya fitur pengaturan tingkat ketetatan & 29 \\ \hline
+  K-05    & Kurangnya fitur penjadwalan terhadap akses aplikasi & 19 \\ \hline
+  K-06    & Kurangnya fitur penunda batas waktu penggunaan aplikasi & 18 \\ \hline
+  K-07    & Perlu dibedakannya pengaturan untuk akhir pekan & 17 \\ \hline
+  K-08    & Kurangnya penjelasan untuk deskripsi fitur & 12 \\ \hline
+  K-09    & Perlu dikembangkannya fitur Bedtime Mode & 12 \\ \hline
+  K-10    & Kurangnya fitur kategorisasi aplikasi & 11 \\ \hline
+  K-11    & Kurangnya fitur pengaturan jam akhir sebuah hari & 7 \\ \hline
+  K-12    & Kurangnya fitur \textit{whitelisting} untuk pembatasan akses aplikasi & 6 \\ \hline
+\end{longtable}
+
+\FloatBarrier
+
+Adapun ulasan yang tidak tergolong dalam kategori dinilai tidak relevan dalam penyusunan masalah pengguna, dengan penjelasan sebagai berikut
+
+\begin{enumerate}
+  \item Ulasan yang menilai positif aplikasi tanpa menyebutkan adanya masalah yang ditemukan dari aplikasi
+  \item Ulasan yang menilai negatif aplikasi tanpa menyebutkan masalah yang ditemukan dari aplikasi
+  \item Ulasan yang menyebutkan adanya bug dari aplikasi, seperti tidak berfungsinya sebuah fitur di perangkat tertentu
+  \item Ulasan yang menyebutkan masalah yang tidak termasuk ke dalam batasan tugas akhir
+  \item Ulasan yang tidak dapat dimengerti, seperti huruf-huruf yang tersusun secara acak 
+\end{enumerate}
+
+Data yang terkumpul berjumlah 1000 ulasan yang berasal dari \textit{region} Indonesia, sesuai dengan target pengguna yang telah disebutkan pada bab \ref{sec:perancangan_proses_desain}. Data tersebut kemudian dikategorikan berdasarkan masalah yang dilaporkan 
+dengan bantuan library Python. Keterangan proses dan hasil pengumpulan data dapat dilihat pada Lampiran \ref{chpt:web_scraping}. 
+
+% \begin{table}[t]
+%   \centering
+%   \fontsize{10}{12}
+%   \caption{Daftar Permasalahan}
+%   \label{tab:daftar_permasalahan}
+%   \vspace{0.2cm}
+%   \begin{tabular}{|p{0.12\textwidth}|p{0.81\textwidth}|}
+%   \hline
+%   ID    & Masalah Aplikasi Digital Wellbeing \\ \hline
+%   M-01    & Fitur-fitur pada aplikasi Digital Wellbeing kurang dapat membatasi akses pengguna dengan cukup ketat \\ \hline
+%   M-02    & Fitur-fitur pada aplikasi Digital Wellbeing kurang memberikan fleksibilitas dalam menunda pembatasan akses pengguna \\ \hline
+%   M-03    & Aplikasi Digital Wellbeing kurang memberikan fleksibilitas bagi pengguna dalam mengatur jadwal aktivasi fitur \\ \hline
+%   M-04    & Aplikasi Digital Wellbeing tidak dapat mengelompokkan aplikasi berdasarkan kategori yang ditentukan oleh pengguna \\ \hline
+%   M-05    & Aplikasi Digital Wellbeing kurang memberikan laporan yang komprehensif tentang aktivitas pengguna \textit{smartphone} \\ \hline
+%   M-06    & Aplikasi Digital Wellbeing saat ini hanya memiliki 1 buah \textit{widget} yang dapat menampilkan total \textit{screentime} pengguna \textit{smartphone} dan 3 aplikasi dengan penggunaan tertinggi di hari tersebut\\ \hline
+%   \end{tabular}
+% \end{table}
 
 Sebagai batasan masalah, perlu disebutkan bahwa tidak adanya kemampuan untuk menghapus aplikasi Digital Wellbeing dari perangkat tidak akan dijadikan rumusan masalah, hal ini memiliki alasan yaitu menghapus aplikasi dari perangkat bukanlah solusi yang sejajar dengan masalah yang ingin diselesaikan dari konsep Digital Wellbeing. Selain itu, masalah yang berhubungan dengan performa aplikasi atau dampaknya pada perangkat tidak akan dijadikan rumusan masalah, namun saat pembangunan solusi hal ini akan diperhatikan agar tidak mengganggu tahap pengujian.
 
 
-\section{Analisis Solusi}
-\label{sec:analisis_solusi}
+% \section{Analisis Solusi}
+% \label{sec:analisis_solusi}
 
 % Dari permasalahan yang telah diuraikan pada subbab \ref{sec:analisis_masalah}, terdapat beberapa solusi yang dapat diimplementasikan ke dalam aplikasi pencegah distraksi untuk mencapai tujuan dari aplikasi Digital Wellbeing dengan lebih baik yaitu menghambat akses pengguna terhadap aplikasi distraksi secara efektif dan memotivasi pengguna untuk mengubah pola penggunaan aplikasi secara general. Setiap solusi akan dijelaskan tentang permasalahan apa yang akan diselesaikan. Solusi yang ditawarkan untuk menyelesaikan masalah yang telah dianalisis dicantumkan pada Tabel \ref{tab:daftar_solusi}. Rincian mengenai solusi tersebut dapat dilihat pada Lampiran \ref{chpt:rincian_analisis_solusi}.
 
@@ -59,6 +116,9 @@ Berdasarkan hasil analisis permasalahan yang dilakukan, maka solusi yang akan di
   % \fontsize{10}{12}
   \caption{Daftar Solusi}
   \label{tab:daftar_solusi} \\
+  
+  \hline
+  ID  & Kebutuhan Fungsional & Kebutuhan Interaksi & Kode Masalah \\ \hline \endfirsthead
 
   \hline
   ID  & Kebutuhan Fungsional & Kebutuhan Interaksi & Kode Masalah \\ \hline \endhead
@@ -172,38 +232,38 @@ Berdasarkan hasil analisis permasalahan yang dilakukan, maka solusi yang akan di
   & Pengguna dapat membuat lebih dari 1 jadwal per minggu untuk fitur Focus Mode
   & \multirow{4}{0.1\textwidth}{M-03} \\ \cline{1-1} \cline{3-3}
 
-  
-
-
 \end{longtable}
 
+\FloatBarrier
 % \onehalfspacing
 
 Rancangan solusi yang dibuat akan divalidasi kepada pengguna aplikasi Digital Wellbeing dan sejenisnya sehingga dapat dibuat menjadi rancangan solusi yang sesuai dengan kebutuhan pengguna. Validasi akan dilakukan bersamaan dengan pengumpulan informasi pengguna, dan pengumpulan masalah lain dengan metode penyebaran kuesioner. Pertanyaan di dalam kuesioner didesain untuk mendapatkan informasi mengenai kebiasaan pengguna, masalah yang dialami pengguna saat ini, hingga kebutuhan pengguna.
 
+\subsection{Riset dan Analisis Wawancara Pengguna}
+
 
 % \blindtext
 
-\section{Rancangan Solusi}
+\section{Analisis Kebutuhan Perangkat Lunak}
 
-Proses perancangan solusi mengacu kepada metode \textit{User-Centered Design} sesuai dengan standar ISO 9241-210, di mana pada tahap perancangan desain interaksi untuk memenuhi kebutuhan pengguna akan disertai dengan prototipe aplikasi. Gambar \ref{fig:diagram_alur_kerja} menjelaskan tentang alur kerja penelitian yang dilakukan.
+% Proses perancangan solusi mengacu kepada metode \textit{User-Centered Design} sesuai dengan standar ISO 9241-210, di mana pada tahap perancangan desain interaksi untuk memenuhi kebutuhan pengguna akan disertai dengan prototipe aplikasi. Gambar \ref{fig:diagram_alur_kerja} menjelaskan tentang alur kerja penelitian yang dilakukan.
 
-\begin{figure}[h]
-  \centering
-  \includegraphics[width=0.8\textwidth]{chapter-3-alur-penelitian.png}
-  \caption{Alur Kerja Penelitian}
-  \label{fig:diagram_alur_kerja}
-\end{figure}
+% \begin{figure}[h]
+%   \centering
+%   \includegraphics[width=0.8\textwidth]{chapter-3-alur-penelitian.png}
+%   \caption{Alur Kerja Penelitian}
+%   \label{fig:diagram_alur_kerja}
+% \end{figure}
 
-\subsection{Perancangan Proses Desain}
-Ruang lingkup yang ditentukan pada penelitian ini adalah sebagai berikut
+% \subsection{Perancangan Proses Desain}
+% Ruang lingkup yang ditentukan pada penelitian ini adalah sebagai berikut
 
-\begin{enumerate}
-  \item Lingkup Pengguna
-  \subitem Target pengguna dari penelitian ini adalah masyarakat Indonesia yang pernah menggunakan atau memiliki ketertarikan terhadap aplikasi pencegah distraksi. Rentang usia dari target pengguna tidak dibatasi, namun difokuskan kepada golongan \textit{millenials} dengan rentang usia 18-30 tahun.
-  \item Lingkup Pengembangan
-  \subitem Desain interaksi aplikasi pencegah distraksi yang dibuat memiliki bentuk \textit{mobile interface} dengan mewujudkan sebuah prototipe aplikasi dalam \textit{platform Android}. Aplikasi Digital Wellbeing milik Google ditetapkan menjadi garis dasar pengembangan prototipe aplikasi tersebut.
-\end{enumerate}
+% \begin{enumerate}
+%   \item Lingkup Pengguna
+%   \subitem Target pengguna dari penelitian ini adalah masyarakat Indonesia yang pernah menggunakan atau memiliki ketertarikan terhadap aplikasi pencegah distraksi. Rentang usia dari target pengguna tidak dibatasi, namun difokuskan kepada golongan \textit{millenials} dengan rentang usia 18-30 tahun.
+%   \item Lingkup Pengembangan
+%   \subitem Desain interaksi aplikasi pencegah distraksi yang dibuat memiliki bentuk \textit{mobile interface} dengan mewujudkan sebuah prototipe aplikasi dalam \textit{platform Android}. Aplikasi Digital Wellbeing milik Google ditetapkan menjadi garis dasar pengembangan prototipe aplikasi tersebut.
+% \end{enumerate}
 
 
 % \subsection{Identifikasi Konteks Penggunaan}
