@@ -1,5 +1,8 @@
 \chapter{Identifikasi Masalah dan Rancangan Solusi}
 
+\newcommand{\ccnormspacing}{\baselineskip=12pt}
+\newcommand{\ccnormspacingcenter}{\centering\arraybackslash\ccnormspacing}
+
 Bab Identifikasi Masalah dan Rancangan Solusi berisi tentang penjelasan analisis permasalahan yang menjadi dasar dari tugas akhir ini. Secara garis besar, proses perancangan solusi akan mengikuti metodologi yang sudah ditetapkan yaitu pendekatan \textit{User-Centered Design} (UCD) menurut ISO 9241-210. Proses yang akan dibahas pada bab ini meliputi perancangan proses desain, identifikasi konteks penggunaan, analisis kebutuhan perangkat lunak, dan perancangan prototipe perangkat lunak. Gambaran alur UCD yang digunakan pada tugas akhir dapat dilihat pada Gambar \ref{fig:diagram_alur_kerja}.
 
 \begin{figure}[h]
@@ -14,14 +17,16 @@ Bab Identifikasi Masalah dan Rancangan Solusi berisi tentang penjelasan analisis
 
 Pada tahap perancangan proses desain dilakukan persiapan sumber daya yang diperlukan selama proses desain, serta penentuan ruang lingkup permasalahan.
 
-Adapun ruang lingkup permasalahan yang ditentukan selama pengerjaan tugas akhir sebagai berikut
+% Sumber daya proses design
+
+Ruang lingkup permasalahan yang ditentukan selama pengerjaan tugas akhir sebagai berikut
 
 \begin{enumerate}
   \item Target Pengguna
   \subitem Target pengguna selama penelitian adalah pengguna \textit{smartphone} berbasis Android di Indonesia dengan rentang umur 18-34 tahun. Rentang usia tersebut adalah usia mayoritas pengguna media sosial di Indonesia. \parencite{mediasosial2020} 
   
   \item Fungsionalitas Aplikasi
-  \subitem Lingkup fungsionalitas aplikasi adalah bagaimana desain interaksi yang baru dapat memperbaiki masalah yang ditemukan pada aplikasi Digital Wellbeing saat ini. Fungsionalitas dar aplikasi menyesuaikan dengan analisis hasil yang didapatkan dari riset dan wawancara. 
+  \subitem Lingkup fungsionalitas aplikasi adalah bagaimana desain interaksi yang baru dapat memperbaiki masalah yang ditemukan pada aplikasi Digital Wellbeing saat ini. Fungsionalitas dari aplikasi menyesuaikan dengan analisis hasil yang didapatkan dari riset dan wawancara. 
    
   \item Lingkup Pengembangan Aplikasi
   \subitem Desain interaksi aplikasi pencegah distraksi yang dibuat memiliki bentuk \textit{mobile interface} dengan mewujudkan sebuah prototipe aplikasi dalam \textit{platform Android}. Aplikasi Digital Wellbeing milik Google ditetapkan menjadi garis dasar pengembangan prototipe aplikasi tersebut.
@@ -39,18 +44,18 @@ Pada tahap ini dilakukan proses analisis pengguna melalui data yang didapatkan d
 
 Tahap ini bertujuan untuk menganalis target pengguna, sehingga didapatkan data perilaku, masalah, tujuan, dan kebutuhan pengguna aplikasi Digital Wellbeing. Riset dilakukan dengan mengumpulkan data ulasan pengguna aplikasi Digital Wellbeing dari situs Google Play Store \textcite{dwplaystorereviews}. Metode pengumpulan data ini dipilih dengan alasan mengacu pada ISO 9241-210, bahwa informasi yang sudah tersedia dari suatu produk dapat dimanfaatkan untuk melakukan modifikasi atau peningkatan kualitas produk \parencite{iso9241-210:2010}, dalam hal ini informasi berbentuk ulasan pengguna.
 
-Hasil terhadap analisis ulasan pengguna kemudian diverifikasi dengan wawasan yang didapat dari wawancara. Karena pada data ulasan pengguna dari Google Play Store tidak terdapat informasi mengenai umur dan perilaku pengguna, wawancara dengan pengguna yang termasuk ke dalam lingkup permasalahan perlu dilakukan juga untuk mendapatkan wawasan mengenai perilaku pengguna. Perilaku pengguna berguna untuk menyusun persona pengguna.
+Hasil terhadap analisis ulasan pengguna kemudian divalidasi dengan wawasan yang didapat dari wawancara. Karena pada data ulasan pengguna dari Google Play Store tidak terdapat informasi mengenai umur dan perilaku pengguna, wawancara dengan pengguna yang termasuk ke dalam lingkup permasalahan perlu dilakukan juga untuk mendapatkan wawasan mengenai perilaku pengguna. Perilaku pengguna berguna untuk menyusun persona pengguna.
 
 \subsubsection{Ulasan Pengguna}
 \label{subsubsec:ulasan_pengguna}
 
 Berdasarkan situs Google Play Store per 13 April 2022, terdapat 609.005 ulasan untuk aplikasi Digital Wellbeing. Untuk menentukan jumlah \textit{sample size}, ditentukan \textit{confidence level} sebesar 95\%. Dikumpulkan data sebanyak 1000 ulasan dari target pengguna yang telah disebutkan pada bab \ref{sec:identifikasi_konteks_penggunaan},  kemudian dikategorikan secara manual, lalu didapatkan 288 ulasan yang dapat digunakan untuk menyusun masalah pengguna, sehingga \textit{sample} data memiliki \textit{margin of error} sebesar 5.78\%.
 
-Metode pengkategorian ulasan dilakukan secara manual yang menghasilkan 11 kategori. Rincian tentang kategori tersebut dapat dilihat pada tabel \ref{tab:daftar_kategori}.
+Pengkategorian ulasan dilakukan secara manual sehingga menghasilkan 11 kategori. Rincian tentang kategori tersebut dapat dilihat pada tabel \ref{tab:daftar_kategori}.
 
 \RaggedLeft
 \begin{small}
-\begin{longtable}[c]{|W{c}{0.08\textwidth}|>{\baselineskip=12pt}m{0.72\textwidth}|>{\centering\arraybackslash\baselineskip=12pt}m{0.1\textwidth}|}
+\begin{longtable}[c]{|W{c}{0.08\textwidth}|>{\ccnormspacing}m{0.72\textwidth}|>{\ccnormspacingcenter}m{0.1\textwidth}|}
   \caption{Daftar Kategori Ulasan}
   \label{tab:daftar_kategori} \\
   \hline \rowcolor[HTML]{A3E5F5} \textbf{ID} & \centering\textbf{Kategori Ulasan} & \textbf{Jumlah Ulasan} \\ \hline \endfirsthead
@@ -60,11 +65,11 @@ Metode pengkategorian ulasan dilakukan secara manual yang menghasilkan 11 katego
   
   KU-01    & Kurangnya widget untuk menampilkan data di Home Screen & 63 \\ \hline
   KU-02    & Perlu dikembangkannya fitur laporan penggunaan aplikasi untuk menampilkan data & 47 \\ \hline
-  KU-03    & Perlu dikembangkannya fitur Focus Mode untuk membatasi jeda dan menambah keketatan & 47 \\ \hline
+  KU-03    & Perlu dikembangkannya fitur Focus Mode dengan menambah keketatan & 47 \\ \hline
   KU-04    & Perlu dikembangkannya kemampuan penjadwalan untuk fitur App Timer dan Focus Mode & 36 \\ \hline
   KU-05    & Kurangnya fitur pengaturan tingkat keketatan untuk fitur-fitur & 29 \\ \hline
   KU-06    & Kurangnya kemampuan penundaan untuk fitur App Timer & 18 \\ \hline
-  KU-07    & Perlu dikembangkannya fitur Bedtime Mode untuk membatasi penundaan aktivasi fitur dan membatasi akses terhadap aplikasi & 12 \\ \hline
+  KU-07    & Perlu dikembangkannya fitur Bedtime Mode dengan menambah keketatan & 12 \\ \hline
   KU-08    & Kurangnya penjelasan atau susunan kata yang dapat memotivasi pengguna untuk memakai fitur-fitur aplikasi & 12 \\ \hline
   KU-09    & Kurangnya fitur pengelompokkan aplikasi & 11 \\ \hline
   KU-10    & Kurangnya fitur pengaturan jam untuk akhir sebuah hari & 7 \\ \hline
@@ -87,13 +92,13 @@ Adapun sejumlah ulasan yang tidak tergolong dalam kategori dinilai tidak relevan
 \end{enumerate}
 
 \subsubsection{Perilaku Pengguna}
-Setelah melakukan analisis ulasan pengguna untuk aplikasi Digital Wellbeing, dilakukan wawancara untuk mendapatkan perilaku pengguna, memverifikasi masalah pengguna dari analisis ulasan, serta menemukan masalah lain yang tidak ditemukan dari ulasan. Wawancara dilakukan secara \textit{online} karena kondisi pandemi COVID-19 yang masih berlangsung di Indonesia. Target berjumlah 5 orang dengan kriteria berusia 18-34 tahun sebagaimana telah dijelaskan pada subbab \ref{sec:perancangan_proses_desain}. Jumlah tersebut dipilih karena menurut \textcite{nielsenusabilityproblems}, penelitian dengan 5 orang responden sudah cukup untuk menemukan rata-rata 85\% masalah dari desain sebuah produk, dan menambah responden lebih banyak akan mendapatkan wawasan tambahan yang semakin sedikit.
+Setelah melakukan analisis ulasan pengguna untuk aplikasi Digital Wellbeing, dilakukan wawancara untuk mendapatkan perilaku pengguna, memvalidasi masalah pengguna dari analisis ulasan, serta menemukan masalah lain yang tidak ditemukan dari ulasan. Target berjumlah 5 orang dengan kriteria sebagaimana telah dijelaskan pada subbab \ref{sec:perancangan_proses_desain}. Jumlah tersebut dipilih karena menurut \textcite{nielsenusabilityproblems}, penelitian dengan 5 orang responden sudah cukup untuk menemukan rata-rata 85\% masalah dari desain sebuah produk, dan menambah responden lebih banyak akan mendapatkan wawasan tambahan yang semakin sedikit.
 
-Rancangan pertanyaan dapat dilihat pada Lampiran \ref{chpt:daftar_pertanyaan_wawancara}. Data perilaku serta hasil verifikasi ulasan pengguna yang didapat digunakan dalam analisis masalah, tujuan, dan kebutuhan pengguna. Detail pemetaan pengamatan dengan pertanyaan wawancara dapat dilihat pada Tabel \ref{tab:pemetaan_pengamatan_wawancara}
+ Data perilaku responden digunakan untuk menyusun persona pengguna, serta membantu menganalisis kebutuhan pengguna terkait aplikasi Digital Wellbeing. Sedangkan hasil validasi ulasan pengguna digunakan untuk  menggali inti masalah yang dikeluhkan. Kedua pengamatan tersebut akan dibahas lebih lanjut dalam analisis masalah, kebutuhan, dan tujuan pengguna. Rancangan pertanyaan dapat dilihat pada Lampiran \ref{chpt:daftar_pertanyaan_wawancara}. Detail pemetaan pengamatan dengan pertanyaan wawancara dapat dilihat pada Tabel \ref{tab:pemetaan_pengamatan_wawancara}
 
 \RaggedLeft
-% \begin{longtable}[l]{|m{0.08\textwidth}|>{\baselineskip=12pt}m{0.72\textwidth}|>{\centering\arraybackslash\baselineskip=12pt}m{0.1\textwidth}|}
-\begin{longtable}[c]{|>{\baselineskip=15pt}m{0.68\textwidth}|p{0.22\textwidth}|}
+\begin{small}
+\begin{longtable}[c]{|>{\ccnormspacing}m{0.72\textwidth}|p{0.2\textwidth}|}
   \caption{Pemetaan Pengamatan dengan Pertanyaan Wawancara}
   \label{tab:pemetaan_pengamatan_wawancara} \\
   \hline \rowcolor[HTML]{A3E5F5} \multicolumn{1}{|c|}{\textbf{Pengamatan}} & \multicolumn{1}{|c|}{\textbf{No. Pertanyaan}} \\ \hline \endfirsthead
@@ -104,31 +109,37 @@ Rancangan pertanyaan dapat dilihat pada Lampiran \ref{chpt:daftar_pertanyaan_waw
   \rowcolor[HTML]{DCF3FC} \multicolumn{2}{|l|}{\textbf{A. Perilaku Responden}} \\ \hline
   Identitas responden & 1, 2, 3 \\ \hline
   Perilaku penggunaan \textit{smartphone} responden & 4, 5, 6, 7, 8 \\ \hline
-  Perilaku Responden Terkait Aplikasi Pencegah Distraksi & 9, 10, 11, 12 \\ \hline
-  Perilaku Responden Terkait Aplikasi \textit{Digital Wellbeing} & 13, 14, 15 \\ \hline
-  \rowcolor[HTML]{DCF3FC} \multicolumn{2}{|l|}{\textbf{B. Verifikasi Ulasan Aplikasi Digital Wellbeing}} \\ \hline
-  Verifikasi masalah kurangnya fitur widget pada Homescreen & 16, 17, 18 \\ \hline
-  Verifikasi masalah pada fitur laporan data penggunaan aplikasi pada \textit{smartphone} & 19 \\ \hline
-  Verifikasi masalah pada fitur Focus Mode & 20, 21 \\ \hline
-  Verifikasi masalah untuk kemampuan penjadwalan pada fitur-fitur & 22, 23, 24 \\ \hline
-  Verifikasi masalah kurangnya fitur pengaturan tingkat keketatan & 25, 26, 27 \\ \hline
-  Verifikasi masalah kurangnya fitur penundaan pada App Timer & 28, 29, 30 \\ \hline
-  Verifikasi masalah pada fitur Bedtime Mode & 31, 32, 33 \\ \hline
-  Verifikasi masalah kurangnya penjelasan dan susunan kata & 34, 35 \\ \hline
-  Verifikasi masalah kurangnya fitur pengelompokkan aplikasi & 36 \\ \hline
-  Verifikasi masalah kurangnya fitur pengaturan jam akhir hari & 37 \\ \hline
-  Verifikasi masalah kurangnya kemampuan \textit{whitelisting} & 38 \\ \hline
+  Perilaku responden terkait aplikasi pencegah distraksi & 9, 10, 11, 12 \\ \hline
+  Perilaku responden terkait aplikasi \textit{Digital Wellbeing} & 13, 14, 15 \\ \hline
+  \rowcolor[HTML]{DCF3FC} \multicolumn{2}{|l|}{\textbf{B. Validasi Ulasan Aplikasi Digital Wellbeing}} \\ \hline
+  Validasi masalah kurangnya fitur widget pada Homescreen & 16, 17, 18 \\ \hline
+  Validasi masalah pada fitur laporan data penggunaan aplikasi pada \textit{smartphone} & 19 \\ \hline
+  Validasi masalah pada fitur Focus Mode & 20, 21 \\ \hline
+  Validasi masalah untuk kemampuan penjadwalan pada fitur-fitur & 22, 23, 24 \\ \hline
+  Validasi masalah kurangnya fitur pengaturan tingkat keketatan & 25, 26, 27 \\ \hline
+  Validasi masalah kurangnya fitur penundaan pada App Timer & 28, 29, 30 \\ \hline
+  Validasi masalah pada fitur Bedtime Mode & 31, 32, 33 \\ \hline
+  Validasi masalah kurangnya penjelasan dan susunan kata & 34, 35 \\ \hline
+  Validasi masalah kurangnya fitur pengelompokkan aplikasi & 36 \\ \hline
+  Validasi masalah kurangnya fitur pengaturan jam akhir hari & 37 \\ \hline
+  Validasi masalah kurangnya kemampuan \textit{whitelisting} & 38 \\ \hline
 \end{longtable}
+\end{small}
 \justifying
 
 \FloatBarrier
 
-Jumlah responden yang didapat adalah 10 (sepuluh) orang. Data hasil wawancara dapat dilihat pada Lampiran \ref{chpt:hasil_wawancara}. Dari 10 responden, ditemukan \{jelasin penemuan\} 
+Jumlah responden yang diwawancarai adalah 10 (sepuluh) orang. Data hasil wawancara dapat dilihat pada Lampiran \ref{chpt:hasil_wawancara}. Dari 10 responden, 90\% mengakui tujuan utama dari penggunaan smartphone adalah berkomunikasi melalui aplikasi \textit{messenger}, dengan tujuan sekunder yaitu berinteraksi dengan media sosial atau sebagai sarana hiburan. Ditemukan bahwa 4 dari 10 orang menggunakan \textit{smartphone} sebagai alat utama yang membantu dalam pekerjaan, dengan tujuan untuk berkomunikasi dengan rekan atau klien, menggunakannya sebagai \textit{workstation}, atau mencari ide dan inspirasi.
 
-... Keseluruhan data perilaku pengguna dirangkum pada Tabel \ref{tab:perilaku_pengguna}
+Dari wawancara, ditemukan bahwa seluruh responden mengakui distraksi terkait dengan \textit{smartphone} lebih banyak berasal dari luar \textit{smartphone} itu sendiri, yaitu dari keinginan diri sendiri menggunakan \textit{smartphone} untuk memenuhi tujuan sekunder mereka. Walaupun hanya 30\% responden yang mengeluhkan notifikasi dari \textit{smartphone} dianggap mendistraksi mereka dari kegiatan utama, 70\% mengakui perlu untuk mencegah distraksi dari notifikasi dengan cara menggunakan aplikasi pencegah distraksi atau mengubah pengaturan notifikasi aplikasinya secara langsung.
+
+Ditemukan juga bahwa rata-rata durasi penggunaan \textit{smartphone} harian keseluruhan responden adalah 6.2 jam per hari, di mana 70\% responden dapat menggunakan \textit{smartphone} selama lebih dari 6 jam sehari. Kedua angka tersebut melebihi rata-rata durasi penggunaan \textit{smartphone} di Indonesia pada tahun 2021 yaitu 5.4 jam per hari \parencite{dataai2022smartphoneindonesia}.  Keseluruhan dari responden menilai skala rata-rata 4 (empat) dari 5 (lima) terhadap durasi penggunaan \textit{smartphone} harian mereka. Di antara seluruh responden, 70\% mengakui butuh bantuan dari sebuah aplikasi pencegah distraksi untuk menurunkan durasi penggunaan tersebut.
+
+Selain untuk mengurangi durasi penggunaan, responden juga memerlukan bantuan sebuah aplikasi untuk melakukan hal lain yang berhubungan dengan perbaikan kebiasaan digital mereka. Ditemukan 50\% responden memerlukan bantuan aplikasi untuk memantau penggunaan \textit{smartphone}, baik secara keseluruhan atau per aplikasi, dalam merencanakan perbaikan digital mereka. Lalu, 80\% dari responden merasa perlu diingatkan tentang tugas / kegiatan yang harus diselesaikan saat mereka menggunakan \textit{smartphone}. Keberadaan sebuah pengingat dapat menyadarkan pengguna terhadap alasan mereka menggunakan aplikasi pencegah distraksi. Selain itu, 50\% dari responden juga menggunakan aplikasi untuk membantu dalam memperbaiki jadwal tidurnya. Mereka mengakui bahwa saat menggunakan \textit{smartphone} sebelum tidur, seringkali mereka tidak menyadari waktu sehingga melewati jadwal tidur mereka. Keseluruhan data perilaku pengguna dirangkum pada Tabel \ref{tab:perilaku_pengguna}
 
 \RaggedLeft
-\begin{longtable}[c]{|W{c}{0.08\textwidth}|>{\baselineskip=12pt}m{0.82\textwidth}|}
+\begin{small}
+\begin{longtable}[c]{|W{c}{0.08\textwidth}|>{\ccnormspacing}m{0.82\textwidth}|}
   \caption{Daftar Perilaku Pengguna}
   \label{tab:perilaku_pengguna} \\
   \hline \rowcolor[HTML]{A3E5F5} \textbf{ID} & \multicolumn{1}{|c|}{\textbf{Perilaku Pengguna}} \\ \hline \endfirsthead
@@ -136,12 +147,16 @@ Jumlah responden yang didapat adalah 10 (sepuluh) orang. Data hasil wawancara da
   
   \hline \endfoot
   
-  P-01  &  Perilaku 1 \\ \hline
-  P-02  &  Perilaku 2 \\ \hline
-  P-03  &  Perilaku 3 \\ \hline
-  P-04  &  Perilaku 4 \\ \hline
-  P-05  &  Perilaku 5 \\ \hline
+  P-01  &  Menggunakan \textit{smartphone} dengan tujuan primer untuk berkomunikasi melalui aplikasi \textit{messenger}, dan tujuan sekunder untuk berinteraksi lewat media sosial / sebagai sarana hiburan  \\ \hline
+  P-02  &  Menilai skala rata-rata 4 (empat) dari 5 (lima) terhadap durasi penggunaaan \textit{smartphone} harian \\ \hline
+  P-03  &  Merasa distraksi utama terkait \textit{smartphone} berasal dari diri sendiri \\ \hline
+  P-04  &  Melakukan pengaturan terhadap notifikasi aplikasi yang dinilai sebagai distraksi \\ \hline
+  P-05  &  Berusaha untuk mengurangi durasi penggunaan \textit{smartphone} harian \\ \hline
+  P-06  &  Memantau kebiasaan penggunaan \textit{smartphone} \\ \hline
+  P-07  &  Memerlukan bantuan untuk mengingatkan diri terhadap tugas / aktivitas yang harus dilakukan \\ \hline
+  P-08  &  Memerlukan bantuan untuk mengingatkan diri terhadap jadwal tidur \\ \hline
 \end{longtable}
+\end{small}
 \justifying
 
 \FloatBarrier
@@ -149,29 +164,33 @@ Jumlah responden yang didapat adalah 10 (sepuluh) orang. Data hasil wawancara da
 \subsubsection{Masalah Pengguna}
 \label{subsubsec:masalah_pengguna}
 
-Ditemukan bahwa kategori ulasan yang didapat dari analisis ulasan pengguna cukup bervariasi dengan jumlah yang tersebar. Selain itu, perilaku pengguna yang dianalisis dari wawancara menemukan bahwa \{jelasin hasil analisis pengguna\}. Keseluruhan kategori ulasan dan perilaku pengguna  kemudian dianalisis dan dirangkum menjadi daftar masalah pengguna yang dapat dilihat pada Tabel \ref{tab:daftar_masalah}.
+Ditemukan bahwa kategori ulasan yang didapat dari analisis ulasan pengguna cukup bervariasi dengan jumlah yang tersebar. Namun, ulasan pengguna tidak cukup dalam menggambarkan inti dari masalah yang mereka alami. Tahap validasi dari wawancara membantu menemukan inti masalah yang dikeluhkan serta gambaran utama dari keseluruhan masalah tersebut, yaitu aplikasi Digital Wellbeing kurang memberikan gambaran tentang bagaimana kebiasaan digital yang baik, dan alat-alat yang disediakan kurang dapat membantu penggunanya dalam memperbaiki kebiasaan digital mereka secara efisien.
+
+Untuk menyelesaikannya, masalah tersebut perlu dipecahkan menjadi masalah-masalah pengguna yang dapat dirincikan. Hal tersebut dilakukan untuk mempermudah penentuan kebutuhan dan tujuan pengguna serta penyusunan solusi. Keseluruhan masalah pengguna dirangkum pada Tabel \ref{tab:daftar_masalah}.
 
 \FloatBarrier
 
 \RaggedLeft
-\begin{longtable}[c]{|W{c}{0.12\textwidth}|>{\baselineskip=12pt}m{0.65\textwidth}|>{\centering\arraybackslash\baselineskip=12pt}m{0.15\textwidth}|}
+\begin{small}
+\begin{longtable}[c]{|W{c}{0.08\textwidth}|>{\ccnormspacing}m{0.6\textwidth}|>{\ccnormspacingcenter}m{0.2\textwidth}|}
   \caption{Daftar Masalah Pengguna}
   \label{tab:daftar_masalah} \\
   \hline \rowcolor[HTML]{A3E5F5}
-  \textbf{ID} & \centering\textbf{Masalah Pengguna} & \textbf{Kategori} \\ \hline \endfirsthead
+  \textbf{ID} & \centering\textbf{Masalah Pengguna} & \textbf{Keterkaitan} \\ \hline \endfirsthead
   \hline \rowcolor[HTML]{A3E5F5}
-  \textbf{ID} & \centering\textbf{Masalah Pengguna} & \textbf{Kategori} \\ \hline \endhead
+  \textbf{ID} & \centering\textbf{Masalah Pengguna} & \textbf{Keterkaitan} \\ \hline \endhead
 
   \hline \endfoot
 
-  MP-01  & Aplikasi Digital Wellbeing kurang memiliki aksesibilitas pada Homescreen terhadap fitur-fitur utama dan data penggunaan aplikasi melalui widget & KU-01 \\ \hline
-  MP-02  & Aplikasi Digital Wellbeing kurang memberikan laporan yang komprehensif tentang aktivitas penggunaan aplikasi-aplikasi pada \textit{smartphone} & KU-02 \\ \hline
-  MP-03  & Fitur-fitur pada aplikasi Digital Wellbeing kurang dapat membatasi akses pengguna terhadap aplikasi-aplikasi di \textit{smartphone} dengan cukup ketat & KU-03, KU-04, KU-08 \\ \hline
-  MP-04  & Fitur-fitur pada aplikasi Digital Wellbeing kurang memberikan fleksibilitas dalam menunda pembatasan akses pengguna terhadap aplikasi-aplikasi di \textit{smartphone} & KU-03, KU-04, KU-06 \\ \hline
-  MP-05  & Aplikasi Digital Wellbeing kurang memberikan fleksibilitas bagi pengguna dalam mengatur jadwal aktivasi fitur-fitur & KU-05, KU-07, KU-10 \\ \hline
-  MP-06  & Aplikasi Digital Wellbeing tidak dapat mengelompokkan aplikasi-aplikasi pada \textit{smartphone} berdasarkan kategori yang ditentukan oleh pengguna & KU-9 \\ \hline
-  MP-07  & Aplikasi Digital Wellbeing tidak memiliki pilihan untuk melakukan \textit{whitelisting} terhadap akses aplikasi-aplikasi pada \textit{smartphone} & KU-11 \\ \hline
+  MP-01  & Pengguna kesulitan dalam melakukan pengaturan fitur-fitur aplikasi Digital Wellbeing secara efisien & KU-01, KU-04, KU-05, KU-09, KU-10, KU-11 \\ \hline
+  MP-02  & Pengguna kesulitan dalam menganalisis kebiasaan digital diri lewat aplikasi Digital Wellbeing & KU-02, P-06 \\ \hline
+  MP-03  & Pengguna merasa fitur-fitur aplikasi Digital Wellbeing kurang ketat dalam membantu memperbaiki kebiasaan digital & KU-03, KU-04, KU-05, KU-06, KU-07, P-03, P-04, P-08\\ \hline
+  MP-04  & Pengguna merasa fitur-fitur aplikasi Digital Wellbeing kurang fleksibel & KU-04, KU-06, KU-09, KU-10 \\ \hline
+  MP-05  & Pengguna merasa interaksi dengan aplikasi Digital Wellbeing kurang pribadi & KU-08, P-03, P-07 \\ \hline
+  MP-06  & Pengguna kurang dapat memahami penggunaan fitur-fitur yang disediakan oleh aplikasi Digital Wellbeing & KU-08 \\ \hline
+  MP-07  & Pengguna kesulitan dalam mengakses informasi pada fitur-fitur aplikasi Digital Wellbeing & KU-01 \\ \hline
 \end{longtable}
+\end{small}
 \justifying
 
 \FloatBarrier
@@ -180,190 +199,101 @@ Ditemukan bahwa kategori ulasan yang didapat dari analisis ulasan pengguna cukup
 \subsubsection{Kebutuhan Pengguna}
 \label{subsubsec:kebutuhan_pengguna}
 
-% Dari permasalahan yang telah diuraikan pada subbab \ref{sec:analisis_masalah}, terdapat beberapa solusi yang dapat diimplementasikan ke dalam aplikasi pencegah distraksi untuk mencapai tujuan dari aplikasi Digital Wellbeing dengan lebih baik yaitu menghambat akses pengguna terhadap aplikasi distraksi secara efektif dan memotivasi pengguna untuk mengubah pola penggunaan aplikasi secara general. Setiap solusi akan dijelaskan tentang permasalahan apa yang akan diselesaikan. Solusi yang ditawarkan untuk menyelesaikan masalah yang telah dianalisis dicantumkan pada Tabel \ref{tab:daftar_solusi}. Rincian mengenai solusi tersebut dapat dilihat pada Lampiran \ref{chpt:rincian_analisis_solusi}.
+Setelah masalah pengguna diidentifikasi, maka dapat dilakukan analisis mengenai kebutuhan pengguna. Kebutuhan ini adalah hal apa saja yang diperlukan pengguna untuk mencapai tujuannya dalam memakai aplikasi Digital Wellbeing. Analisis kebutuhan pengguna melibatkan masalah pengguna serta perilaku pengguna yang telah dibahas sebelumnya. Kebutuhan pengguna dirangkum di dalam Tabel \ref{tab:daftar_kebutuhan}.
 
-Berdasarkan hasil analisis permasalahan yang dilakukan, maka solusi yang akan dibuat adalah sebuah prototipe aplikasi pencegah distraksi dengan tampilan mendekati aplikasi Digital Wellbeing yang dapat menyelesaikan rumusan masalah yang telah disebutkan pada Tabel \ref{tab:daftar_masalah}. Pada Tabel \ref{tab:daftar_kebutuhan} terdapat pemetaan rumusan masalah kepada rancangan solusi dalam bentuk kebutuhan fungsional dan kebutuhan interaksi yang akan dimiliki oleh prototipe aplikasi
 
-% \singlespacing
+\FloatBarrier
+
 \RaggedLeft
-% >{\setlength{\baselineskip}{0.75\baselineskip}}p{0.17\linewidth}
 \begin{small}
-\begin{longtable}[c]{|W{c}{0.07\textwidth}|>{\baselineskip=12pt}p{0.3\textwidth}|>{\baselineskip=12pt}p{0.39\textwidth}|>{\centering\arraybackslash\baselineskip=12pt}m{0.11\textwidth}|}
-  % \centering
-  % \fontsize{10}{12}
+\begin{longtable}[c]{|W{c}{0.07\textwidth}|>{\ccnormspacing}m{0.67\textwidth}|>{\ccnormspacingcenter}m{0.17\textwidth}|}
   \caption{Daftar Kebutuhan Pengguna}
   \label{tab:daftar_kebutuhan} \\
-  
-  \hline \rowcolor[HTML]{A3E5F5} 
-  \textbf{ID}  & \centering\textbf{Kebutuhan Fungsional} & \centering\textbf{Kebutuhan Interaksi} & \textbf{Kode Masalah} \\ \hline \endfirsthead
-
-  \hline \rowcolor[HTML]{A3E5F5} 
-  \textbf{ID}  & \centering\textbf{Kebutuhan Fungsional} & \centering\textbf{Kebutuhan Interaksi} & \textbf{Kode Masalah} \\ \hline \endhead
+  \hline \rowcolor[HTML]{A3E5F5}
+  \textbf{ID} & \centering\textbf{Kebutuhan Pengguna} & \textbf{Keterkaitan} \\ \hline \endfirsthead
+  \hline \rowcolor[HTML]{A3E5F5}
+  \textbf{ID} & \centering\textbf{Kebutuhan Pengguna} & \textbf{Keterkaitan} \\ \hline \endhead
 
   \hline \endfoot
 
-  S-01
-  & Prototipe aplikasi memiliki widget-widget untuk mengakses fitur-fitur utama dan data penggunaan aplikasi dari Homescreen
-  & Pengguna dapat menggunakan sebuah widget untuk melihat batas waktu aplikasi pada App Timer yang telah diatur pengguna
-  & MP-01 \\ \cline{1-1} \cline{3-3}
-  
-  S-02 &
-  & Pengguna dapat menggunakan sebuah widget untuk mengakses halaman fitur App Timer pada prototipe aplikasi
-  & \\ \cline{1-1} \cline{3-3}
-  
-  S-03 &
-  & Pengguna dapat menggunakan sebuah widget untuk melihat sisa waktu Focus Mode untuk jadwal yang sedang berlangsung
-  & \\ \cline{1-1} \cline{3-3}
-  
-  S-04 &
-  & Pengguna dapat menggunakan sebuah widget untuk mengakses halaman fitur Focus Mode pada prototipe aplikasi
-  & \\ \cline{1-1} \cline{3-3}
-  
-  S-05 &
-  & Pengguna dapat menggunakan sebuah widget untuk melihat jadwal untuk Bedtime Mode yang telah diatur
-  & \\ \cline{1-1} \cline{3-3}
-  
-  S-06 &
-  & Pengguna dapat menggunakan sebuah widget untuk mengakses halaman fitur Bedtime Mode pada prototipe aplikasi
-  & \\ \hline
-  % $ ===========================
-  S-07
-  & Prototipe aplikasi dapat memberikan laporan yang komprehensif tentang aktivitas penggunaan aplikasi-aplikasi pada \textit{smartphone}
-  & Pengguna dapat melihat data waktu Focus Mode saat digunakan
-  & MP-02 \\ \cline{1-1} \cline{3-3}
-  
-  S-08 &  
-  & Pengguna dapat melihat laporan data rata-rata \textit{screen time} harian per minggu 
-  & \\ \cline{1-1} \cline{3-3}
-  
-  S-09 &  
-  & Pengguna dapat melihat laporan data rata-rata penggunaan aplikasi harian per minggu 
-  & \\ \cline{1-1} \cline{3-3}
-  
-  S-10 &  
-  & Pengguna dapat melihat laporan aktivitas lebih dari 1 bulan yang lalu
-  & \\ \cline{1-1} \cline{3-3}
-  
-  S-11 &  
-  & Pengguna dapat melihat laporan aktivitas dengan periode waktu mingguan 
-  & \\ \hline
-  % $ ===========================
-  S-12
-  & Prototipe aplikasi dapat membatasi akses pengguna terhadap aplikasi-aplikasi pada \textit{smartphone} dengan cukup ketat
-  & Pengguna dapat memanfaatkan fitur Take a break pada Focus Mode hanya selama waktu yang ditentukan per harinya
-  & MP-03 \\ \cline{1-1} \cline{3-3}
-  
-  S-13 &  
-  & Pengguna dapat dilarang untuk menggunakan fitur Take a Break saat Focus Mode sedang berjalan lewat Notification Bar
-  & \\ \cline{1-1} \cline{3-3}
-  
-  S-14 &  
-  & Pengguna dapat mematikan fitur Focus Mode yang sedang digunakan hanya melalui halaman fitur Focus Mode
-  & \\ \cline{1-1} \cline{3-3}
-  
-  S-15 &  
-  & Pengguna dapat membuka kunci dengan urutan huruf teracak untuk melakukan pengaturan Focus Mode
-  & \\ \cline{1-1} \cline{3-3}
-  
-  S-16 &  
-  & Pengguna dapat membuka kunci dengan kata sandi untuk melakukan pengaturan Focus Mode
-  & \\ \cline{1-1} \cline{3-3}
-  
-  S-17 &  
-  & Pengguna dapat dilarang untuk melakukan pengaturan Focus Mode jika fiturnya sedang berjalan
-  & \\ \cline{1-1} \cline{3-3}
-  
-  S-18 &
-  & Pengguna dapat membuka kunci dengan urutan huruf teracak untuk melakukan pengaturan App Timer
-  & \\ \cline{1-1} \cline{3-3}
-  
-  S-19 &
-  & Pengguna dapat membuka kunci dengan kata sandi untuk melakukan pengaturan App Timer
-  & \\ \cline{1-1} \cline{3-3}
-  
-  S-20 &  
-  & Pengguna dapat dilarang untuk melakukan pengaturan App Timer jika batas waktu aplikasi sudah habis untuk hari tersebut
-  & \\ \cline{1-1} \cline{3-3}
-  
-  S-21 &
-  & Pengguna dapat membuka kunci dengan urutan huruf teracak untuk melakukan pengaturan Bedtime Mode
-  & \\ \cline{1-1} \cline{3-3}
-  
-  S-22 &
-  & Pengguna dapat membuka kunci dengan kata sandi untuk melakukan pengaturan Bedtime Mode
-  & \\ \cline{1-1} \cline{3-3}
-  
-  S-23 &  
-  & Pengguna dapat dilarang untuk melakukan pengaturan Bedtime Mode jika fiturnya sedang berjalan
-  & \\ \cline{1-1} \cline{3-3}
-  
-  S-24 &  
-  & Pengguna dapat membatasi aplikasi yang dapat diakses saat menggunakan fitur Bedtime Mode
-  & \\ \cline{1-1} \cline{3-3}
-  
-  S-25 & 
-  & Pengguna dapat menunda Bedtime Mode hanya sebanyak waktu yang ditentukan per harinya  
-  & \\ \cline{1-1} \cline{3-3}
-  
-  S-26 &  
-  & Pengguna dapat memilih tingkat keketatan yang diterapkan untuk fitur-fitur Focus Mode, App Timer, dan Bedtime Mode
-  & \\ \hline
-  % $ ===========================
-  S-27
-  & Prototipe aplikasi dapat memberikan fleksibilitas dalam menunda pembatasan akses pengguna terhadap aplikasi-aplikasi pada \textit{smartphone}
-  & Pengguna dapat menunda App Timer yang sudah melewati batas waktu untuk beberapa saat tanpa menghapusnya
-  & MP-04 \\ \cline{1-1} \cline{3-3}
-  
-  S-28 &
-  & Pengguna dapat diingatkan terhadap batas waktu App Timer beberapa saat lebih lama
-  & \\ \cline{1-1} \cline{3-3}
-  
-  S-29 &
-  & Pengguna dapat melihat durasi penggunaan aplikasi yang terdaftar dalam App Timer pada \textit{notification bar} saat menggunakan aplikasinya
-  & \\ \cline{1-1} \cline{3-3}
-  
-  S-30 &  
-  & Pengguna dapat mengambil waktu tambahan yang terbatas untuk menggunakan aplikasi yang terdaftar dalam App Timer
-  & \\ \hline
-  % $ ===========================
-  S-31
-  & Prototipe aplikasi memberikan fleksibilitas bagi pengguna dalam mengatur jadwal aktivasi fitur
-  & Pengguna dapat membuat lebih dari 1 jadwal per minggu untuk fitur Focus Mode
-  & MP-05 \\ \cline{1-1} \cline{3-3}
-  
-  S-32 &  
-  & Pengguna dapat membuat lebih dari 1 jadwal per minggu untuk fitur App Timer   
-  & \\ \cline{1-1} \cline{3-3}
-  
-  S-33 &  
-  & Pengguna dapat mengatur waktu akhir hari untuk App Timer dan pelacakan data penggunaan harian  
-  & \\ \cline{1-1} \cline{3-3}
-  
-  S-34 &  
-  & Pengguna dapat membuat jadwal batas penggunaan aplikasi secara mingguan untuk fitur App Timer   
-  & \\ \hline
-  
-  
-  % $ ===========================
-  S-35
-  & Prototipe aplikasi dapat mengelompokkan aplikasi-aplikasi pada \textit{smartphone} berdasarkan kategori yang ditentukan oleh pengguna
-  & Pengguna dapat mengelompokkan aplikasi berdasarkan kategori yang ditentukan pengguna
-  & MP-06 \\ \hline
-  
-  % $ ===========================
-  S-36
-  & Prototipe aplikasi memiliki pilihan untuk melakukan \textit{whitelisting} terhadap akses aplikasi-aplikasi pada \textit{smartphone} 
-  & Pengguna dapat memilih membuat jadwal untuk membuka akses (\textit{whitelisting}) atau membatasi akses (\textit{blacklisting}) terhadap aplikasi untuk fitur Focus Mode   
-  & MP-07 \\ \hline
-  
-  % $ ===========================
-
+  K-01  & Pengalaman pengaturan fitur yang lebih efisien dengan kemampuan seperti pencarian dan pengelompokan aplikasi & MP-01 \\ \hline
+  K-02  & Widget untuk mengakses data serta melakukan pengaturan terhadap fitur-fitur lewat Homescreen & MP-01, MP-07 \\ \hline
+  K-03  & Fitur rekomendasi untuk memberikan informasi tentang kebiasaan digital yang baik dan aksi yang dapat dilakukan & MP-02, P-05, P-06 \\ \hline
+  K-04  & Laporan penggunaan \textit{smartphone} dengan rentang waktu lebih banyak dan ringkasan informasi seperti rata-rata penggunaan & MP-02, P-06 \\ \hline
+  K-05  & Pengaturan tingkat keketatan untuk kemampuan tertentu dari fitur-fitur & MP-03, P-04 \\ \hline
+  K-06  & Kemampuan penguncian pengaturan untuk mencegah pengubahan oleh pengguna & MP-03, P-04, P-05 \\ \hline
+  K-07  & Fitur penjadwalan dengan kemampuan menambah lebih dari satu jadwal aktivasi fitur & MP-04, P-08 \\ \hline
+  K-08  & Kemampuan penundaan pada restriksi yang diterapkan oleh fitur-fitur & MP-04 \\ \hline
+  K-09  & Kemampuan pengaturan pesan untuk melakukan personalisasi pesan-pesan pengingat dari fitur-fitur & MP-05, P-07 \\ \hline
+  K-10  & Tampilan aplikasi yang lebih menarik dengan deskripsi fitur yang lebih jelas & MP-06 \\ \hline
 \end{longtable}
 \end{small}
 \justifying
 
 \FloatBarrier
-% \onehalfspacing
+
+\subsubsection{Tujuan dan Kegiatan Pengguna}
+\label{subsubsec:tujuan_kegiatan_pengguna}
+
+Dengan ditentukannya kebutuhan pengguna, maka dapat dianalisis tujuan yang ingin dicapai oleh pengguna. Dalam mencapai tujuan-tujuan tersebut, maka perlu ditentukan kegiatan yang harus dilakukan oleh pengguna. Analisis tujuan dan kegiatan pengguna dilakukan dengan mengkaitkan kebutuhan pengguna dan perilaku pengguna. Hasil analisis dirangkum pada Tabel \ref{tab:daftar_tujuan_kegiatan}.
+
+\newlength{\cccolgoal}
+\setlength{\cccolgoal}{0.3\textwidth}
+
+\newlength{\cccolneed}
+\setlength{\cccolneed}{0.13\textwidth}
+
+\newcommand{\ccgoal}[2]{\multirow{#1}{\cccolgoal}{\linespread{1}\selectfont #2}}
+\newcommand{\ccneed}[2]{\multirow{#1}{\cccolneed}{\centering\linespread{1}\selectfont #2}}
+\newcommand{\ccline}{\hhline{|-|~|-|~|}}
+
+\newpage
+
+\FloatBarrier
+
+\RaggedLeft
+\begin{small}
+\begin{longtable}[c]{|W{c}{0.07\textwidth}|>{\ccnormspacing}m{\cccolgoal}|>{\ccnormspacing}m{0.38\textwidth}|>{\ccnormspacingcenter}m{\cccolneed}|}
+  \caption{Daftar Tujuan dan Kegiatan Pengguna}
+  \label{tab:daftar_tujuan_kegiatan} \\
+  \hline \rowcolor[HTML]{A3E5F5}
+  \textbf{ID} & \centering\textbf{Tujuan Pengguna} & \centering\textbf{Kegiatan Pengguna} & \textbf{Kebutuhan} \\ \hline \endfirsthead
+  \hline \rowcolor[HTML]{A3E5F5}
+  \textbf{ID} & \centering\textbf{Tujuan Pengguna} & \centering\textbf{Kegiatan Pengguna} & \textbf{Kebutuhan} \\ \hline \endhead
+
+  \hline \endfoot
+
+  UT-01 & & Mengunci pengaturan pada waktu tertentu & \\ \ccline
+  UT-02 & & Membatasi istirahat yang dapat diambil pada fitur Focus Mode & \\ \ccline
+  UT-03 & \ccgoal{-5}{Membatasi diri dari melonggarkan pengaturan} & Memilih tingkat keketatan dari fitur-fitur & \ccneed{-5}{P-03, K-05, K-06}\\ \hline
+  
+  UT-04 & & Membuat jadwal aktivasi fitur pemblokiran akses aplikasi & \\ \ccline
+  UT-05 & \ccgoal{-3}{Mencegah distraksi dari smartphone di waktu tertentu} & Memilih aplikasi yang diblokir aksesnya & \ccneed{-3}{P-04, K-01, K-07}\\ \hline
+  
+  UT-06 & & Memasang batas waktu penggunaan harian aplikasi & \\ \ccline
+  UT-07 & & Melihat sisa waktu penggunaan aplikasi lewat widget & \\ \ccline
+  UT-08 & \ccgoal{-5}{Membatasi waktu penggunaan smartphone harian} & Melihat total waktu penggunaan smartphone lewat widget & \ccneed{-5}{P-05, K-02, K-01}\\ \hline
+  
+  UT-09 & & Mengakses laporan penggunaan smartphone & \\ \ccline
+  UT-10 & & Memilih rentang waktu laporan penggunaan smartphone & \\ \ccline
+  UT-11 & \ccgoal{-5}{Menganalisis kebiasaan penggunaan smartphone} & Melihat rekomendasi kebiasaan penggunaan smartphone yang baik & \ccneed{-5}{P-06, K-03, K-04}\\ \hline
+  
+  UT-12 & & Memasang pesan pengingat harian & \\ \ccline
+  UT-13 & \ccgoal{-3}{Mengingatkan diri terhadap aktivitas utama yang seharusnya dilakukan} & Mengatur frekuensi notifikasi fitur pengingat  & \ccneed{-3}{P-07, K-09}\\ \hline
+  
+  UT-14 & & Mengatur jadwal aktivasi fitur Bedtime Mode & \\ \ccline
+  UT-15 & \ccgoal{-3}{Membantu mengatur kebiasaan tidur yang sehat} & Membatasi aplikasi yang dapat diakses di jadwal tidur & \ccneed{-3}{P-08, K-05}\\ \hline
+  
+  UT-16 & & Mengambil waktu istirahat dari Focus Mode & \\ \ccline
+  UT-17 & & Menunda aktivasi Bedtime Mode & \\ \ccline
+  UT-18 & \ccgoal{-4}{Mengambil istirahat sejenak dari restriksi aplikasi} & Memperpanjang waktu penggunaan aplikasi yang diblokir oleh App Timer & \ccneed{-4}{K-08}\\ \hline
+
+\end{longtable}
+\end{small}
+
+\justifying
+
+\FloatBarrier
 
 
 \subsection{Persona}
