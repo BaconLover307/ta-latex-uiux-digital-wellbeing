@@ -33,11 +33,15 @@ Ruang lingkup permasalahan yang ditentukan selama pengerjaan tugas akhir sebagai
 
 \end{enumerate}
 
+% * =======================================================================
+% *   ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||
+% * =======================================================================
+
+
 \section{Identifikasi Konteks Penggunaan}
 \label{sec:identifikasi_konteks_penggunaan}
 
-Pada tahap ini dilakukan proses analisis pengguna melalui data yang didapatkan dari ulasan pengguna aplikasi Digital Wellbeing dari situs Google Play Store, serta riset dengan metode wawancara.
-% Hasil analisis pengguna digunakan untuk menyusun kebutuhan fungsional 
+Pada tahap ini dilakukan proses analisis pengguna melalui data yang didapatkan dari ulasan pengguna aplikasi Digital Wellbeing dari situs Google Play Store, serta riset dengan metode wawancara. Kemudian akan dilakukan penyusunan persona pengguna dan pengidentifikasian fungsionalitas aplikasi yang akan membantu menentukan kebutuhan dan tujuan pengguna.
 
 \subsection{Riset dan Analisis Pengguna}
 \label{subsec:riset_analisis}
@@ -77,7 +81,6 @@ Pengkategorian ulasan dilakukan secara manual sehingga menghasilkan 11 kategori.
 \end{longtable}
 \end{small}
 \justifying
-
 \FloatBarrier
 
 Adapun sejumlah ulasan yang tidak tergolong dalam kategori dinilai tidak relevan dalam penyusunan masalah pengguna, dengan penjelasan sebagai berikut
@@ -126,7 +129,6 @@ Setelah melakukan analisis ulasan pengguna untuk aplikasi Digital Wellbeing, dil
 \end{longtable}
 \end{small}
 \justifying
-
 \FloatBarrier
 
 Jumlah responden yang diwawancarai adalah 10 (sepuluh) orang. Data hasil wawancara dapat dilihat pada Lampiran \ref{chpt:hasil_wawancara}. Dari 10 responden, 90\% mengakui tujuan utama dari penggunaan smartphone adalah berkomunikasi melalui aplikasi \textit{messenger}, dengan tujuan sekunder yaitu berinteraksi dengan media sosial atau sebagai sarana hiburan. Ditemukan bahwa 4 dari 10 orang menggunakan \textit{smartphone} sebagai alat utama yang membantu dalam pekerjaan, dengan tujuan untuk berkomunikasi dengan rekan atau klien, menggunakannya sebagai \textit{workstation}, atau mencari ide dan inspirasi.
@@ -135,40 +137,59 @@ Dari wawancara, ditemukan bahwa seluruh responden mengakui distraksi terkait den
 
 Ditemukan juga bahwa rata-rata durasi penggunaan \textit{smartphone} harian keseluruhan responden adalah 6.2 jam per hari, di mana 70\% responden dapat menggunakan \textit{smartphone} selama lebih dari 6 jam sehari. Kedua angka tersebut melebihi rata-rata durasi penggunaan \textit{smartphone} di Indonesia pada tahun 2021 yaitu 5.4 jam per hari \parencite{dataai2022smartphoneindonesia}.  Keseluruhan dari responden menilai skala rata-rata 4 (empat) dari 5 (lima) terhadap durasi penggunaan \textit{smartphone} harian mereka. Di antara seluruh responden, 70\% mengakui butuh bantuan dari sebuah aplikasi pencegah distraksi untuk menurunkan durasi penggunaan tersebut.
 
-Selain untuk mengurangi durasi penggunaan, responden juga memerlukan bantuan sebuah aplikasi untuk melakukan hal lain yang berhubungan dengan perbaikan kebiasaan digital mereka. Ditemukan 50\% responden memerlukan bantuan aplikasi untuk memantau penggunaan \textit{smartphone}, baik secara keseluruhan atau per aplikasi, dalam merencanakan perbaikan digital mereka. Lalu, 80\% dari responden merasa perlu diingatkan tentang tugas / kegiatan yang harus diselesaikan saat mereka menggunakan \textit{smartphone}. Keberadaan sebuah pengingat dapat menyadarkan pengguna terhadap alasan mereka menggunakan aplikasi pencegah distraksi. Selain itu, 50\% dari responden juga menggunakan aplikasi untuk membantu dalam memperbaiki jadwal tidurnya. Mereka mengakui bahwa saat menggunakan \textit{smartphone} sebelum tidur, seringkali mereka tidak menyadari waktu sehingga melewati jadwal tidur mereka. Keseluruhan data perilaku pengguna dirangkum pada Tabel \ref{tab:perilaku_pengguna}
+Selain untuk mengurangi durasi penggunaan, responden juga memerlukan bantuan sebuah aplikasi untuk melakukan hal lain yang berhubungan dengan perbaikan kebiasaan digital mereka. Ditemukan 50\% responden memerlukan bantuan aplikasi untuk memantau penggunaan \textit{smartphone}, baik secara keseluruhan atau per aplikasi, dalam merencanakan perbaikan digital mereka. Lalu, 80\% dari responden merasa perlu diingatkan tentang tugas / kegiatan yang harus diselesaikan saat mereka menggunakan \textit{smartphone}. Keberadaan sebuah pengingat dapat menyadarkan pengguna terhadap alasan mereka menggunakan aplikasi pencegah distraksi. Selain itu, 50\% dari responden juga menggunakan aplikasi untuk membantu dalam memperbaiki jadwal tidurnya. Mereka mengakui bahwa saat menggunakan \textit{smartphone} sebelum tidur, seringkali mereka tidak menyadari waktu sehingga melewati jadwal tidur mereka.
+
+Wawasan tentang perilaku pengguna yang didapat dapat disusun dalam bentuk variabel-variabel perilaku yang berguna dalam pembentukan persona. \textcite{cooper2014face} menyarankan bahwa dalam menyusun variabel dapat ditemukan perbedaan yang cukup jelas jika fokus kepada tipe-tipe variabel berikut
+\begin{enumerate}
+  \item Aktivitas, yaitu apa yang dilakukan pengguna dan seberapa sering 
+  \item Sikap, yaitu pendapat pengguna tentang domain produk dan teknologi
+  \item Kemampuan, yaitu bakat pengguna dan kemampuan untuk belajar
+  \item Motivasi, yaitu alasan keterlibatan pengguna pada domain produk 
+  \item Keterampilan, yaitu kemampuan pengguna terkait domain produk dan teknologi
+\end{enumerate}
+
+Keseluruhan variabel perilaku pengguna dirangkum pada Tabel \ref{tab:perilaku_pengguna}
 
 \RaggedLeft
 \begin{small}
-\begin{longtable}[c]{|W{c}{0.08\textwidth}|>{\ccnormspacing}m{0.82\textwidth}|}
-  \caption{Daftar Perilaku Pengguna}
+\begin{longtable}[c]{|W{c}{0.06\textwidth}|>{\ccnormspacing}m{0.66\textwidth}|>{\ccnormspacingcenter}m{0.175\textwidth}|}
+  \caption{Daftar Variabel Perilaku Pengguna}
   \label{tab:perilaku_pengguna} \\
-  \hline \rowcolor[HTML]{A3E5F5} \textbf{ID} & \multicolumn{1}{|c|}{\textbf{Perilaku Pengguna}} \\ \hline \endfirsthead
-  \hline \rowcolor[HTML]{A3E5F5} \textbf{ID} & \multicolumn{1}{|c|}{\textbf{Perilaku Pengguna}} \\ \hline \endhead
+  \hline \rowcolor[HTML]{A3E5F5} \textbf{ID} & \multicolumn{1}{|c|}{\textbf{Variabel Perilaku Pengguna}} & \multicolumn{1}{|c|}{\textbf{Tipe Perilaku}} \\ \hline \endfirsthead
+  \hline \rowcolor[HTML]{A3E5F5} \textbf{ID} & \multicolumn{1}{|c|}{\textbf{Variabel Perilaku Pengguna}} & \multicolumn{1}{|c|}{\textbf{Tipe Perilaku}} \\ \hline \endhead
   
   \hline \endfoot
   
-  P-01  &  Menggunakan \textit{smartphone} dengan tujuan primer untuk berkomunikasi melalui aplikasi \textit{messenger}, dan tujuan sekunder untuk berinteraksi lewat media sosial / sebagai sarana hiburan  \\ \hline
-  P-02  &  Menilai skala rata-rata 4 (empat) dari 5 (lima) terhadap durasi penggunaaan \textit{smartphone} harian \\ \hline
-  P-03  &  Merasa distraksi utama terkait \textit{smartphone} berasal dari diri sendiri \\ \hline
-  P-04  &  Melakukan pengaturan terhadap notifikasi aplikasi yang dinilai sebagai distraksi \\ \hline
-  P-05  &  Berusaha untuk mengurangi durasi penggunaan \textit{smartphone} harian \\ \hline
-  P-06  &  Memantau kebiasaan penggunaan \textit{smartphone} \\ \hline
-  P-07  &  Memerlukan bantuan untuk mengingatkan diri terhadap tugas / aktivitas yang harus dilakukan \\ \hline
-  P-08  &  Memerlukan bantuan untuk mengingatkan diri terhadap jadwal tidur \\ \hline
+  P-01  &  Menggunakan \textit{smartphone} dengan tujuan primer untuk berkomunikasi melalui aplikasi \textit{messenger}  & Aktivitas \\ \hline
+  P-02  &  Menggunakan \textit{smartphone} dengan tujuan primer untuk membantu dalam pekerjaan & Aktivitas \\ \hline
+  P-03  &  Menggunakan \textit{smartphone} dengan tujuan sekunder untuk berinteraksi lewat media sosial & Aktivitas \\ \hline
+  P-04  &  Menggunakan \textit{smartphone} dengan tujuan sekunder sebagai sarana hiburan & Aktivitas \\ \hline
+  P-05  &  Menilai skala rata-rata 4 (empat) dari 5 (lima) terhadap durasi penggunaaan \textit{smartphone} harian & Aktivitas \\ \hline
+  P-06  &  Merasa sering terdistraksi oleh keinginan diri sendiri untuk menggunakan \textit{smartphone}  & Sikap \\ \hline
+  P-07  &  Merasa sering terdistraksi oleh notifikasi dari \textit{smartphone} & Sikap \\ \hline
+  P-08  &  Merasa \textit{smartphone} sebaiknya membatasi pengguna seminimal mungkin & Sikap \\ \hline
+  P-09  &  Merasa perlu ada sebuah penghargaan jika berhasil mengikuti jadwal pembatasan \textit{smartphone} & Sikap \\ \hline
+  P-10  &  Mampu membatasi diri dari menggunakan \textit{smartphone} tanpa bantuan & Kemampuan \\ \hline
+  P-11  &  Ingin memblokir notifikasi aplikasi yang dinilai sebagai distraksi & Motivasi \\ \hline
+  P-12  &  Ingin mengurangi durasi penggunaan \textit{smartphone} harian & Motivasi \\ \hline
+  P-13  &  Ingin memantau kebiasaan penggunaan \textit{smartphone} & Motivasi \\ \hline
+  P-14  &  Ingin dibantu mengingatkan diri terhadap tugas / aktivitas yang harus dilakukan & Motivasi \\ \hline
+  P-15  &  Ingin mengingatkan diri terhadap jadwal tidur & Motivasi \\ \hline
+  P-16  &  Ingin diingatkan ketika terlalu lama menggunakan aplikasi & Motivasi \\ \hline
+  P-17  &  Ingin memblokir akses ke aplikasi yang dinilai mendistraksi tanpa menghapusnya & Motivasi \\ \hline
+  P-18  &  Mampu mengatur jadwal kegiatan dengan baik sehingga tidak mudah terdistraksi & Keterampilan \\ \hline
+  P-19  &  Terbiasa dalam mengoperasikan aplikasi pencegah distraksi pada \textit{smartphone}  & Keterampilan \\ \hline
 \end{longtable}
 \end{small}
 \justifying
-
 \FloatBarrier
 
 \subsubsection{Masalah Pengguna}
 \label{subsubsec:masalah_pengguna}
 
-Ditemukan bahwa kategori ulasan yang didapat dari analisis ulasan pengguna cukup bervariasi dengan jumlah yang tersebar. Namun, ulasan pengguna tidak cukup dalam menggambarkan inti dari masalah yang mereka alami. Tahap validasi dari wawancara membantu menemukan inti masalah yang dikeluhkan serta gambaran utama dari keseluruhan masalah tersebut, yaitu aplikasi Digital Wellbeing kurang memberikan gambaran tentang bagaimana kebiasaan digital yang baik, dan alat-alat yang disediakan kurang dapat membantu penggunanya dalam memperbaiki kebiasaan digital mereka secara efisien.
+Ditemukan bahwa kategori ulasan yang didapat dari analisis ulasan pengguna cukup bervariasi dengan jumlah yang tersebar. Namun, ulasan pengguna tidak cukup dalam menggambarkan inti dari masalah yang mereka alami. Tahap verifikasi dari wawancara membantu menemukan inti masalah yang dikeluhkan serta gambaran utama dari keseluruhan masalah tersebut. Pengguna mengeluhkan bahwa mereka kurang dapat mendapat gambaran tentang kebiasaan digital yang baik dari aplikasi Digital Wellbeing. Selain itu, pengguna juga kesulitan dalam menggunakan aplikasi Digital Wellbeing secara efisien untuk mencapai tujuan-tujuannya.
 
 Untuk menyelesaikannya, masalah tersebut perlu dipecahkan menjadi masalah-masalah pengguna yang dapat dirincikan. Hal tersebut dilakukan untuk mempermudah penentuan kebutuhan dan tujuan pengguna serta penyusunan solusi. Keseluruhan masalah pengguna dirangkum pada Tabel \ref{tab:daftar_masalah}.
-
-\FloatBarrier
 
 \RaggedLeft
 \begin{small}
@@ -183,26 +204,177 @@ Untuk menyelesaikannya, masalah tersebut perlu dipecahkan menjadi masalah-masala
   \hline \endfoot
 
   MP-01  & Pengguna kesulitan dalam melakukan pengaturan fitur-fitur aplikasi Digital Wellbeing secara efisien & KU-01, KU-04, KU-05, KU-09, KU-10, KU-11 \\ \hline
-  MP-02  & Pengguna kesulitan dalam menganalisis kebiasaan digital diri lewat aplikasi Digital Wellbeing & KU-02, P-06 \\ \hline
-  MP-03  & Pengguna merasa fitur-fitur aplikasi Digital Wellbeing kurang ketat dalam membantu memperbaiki kebiasaan digital & KU-03, KU-04, KU-05, KU-06, KU-07, P-03, P-04, P-08\\ \hline
+  MP-02  & Pengguna kesulitan dalam menganalisis kebiasaan digital diri lewat aplikasi Digital Wellbeing & KU-02 \\ \hline
+  MP-03  & Pengguna merasa fitur-fitur aplikasi Digital Wellbeing kurang ketat dalam membantu memperbaiki kebiasaan digital & KU-03, KU-04, KU-05, KU-06, KU-07 \\ \hline
   MP-04  & Pengguna merasa fitur-fitur aplikasi Digital Wellbeing kurang fleksibel & KU-04, KU-06, KU-09, KU-10 \\ \hline
-  MP-05  & Pengguna merasa interaksi dengan aplikasi Digital Wellbeing kurang pribadi & KU-08, P-03, P-07 \\ \hline
+  MP-05  & Pengguna merasa interaksi dengan aplikasi Digital Wellbeing kurang pribadi & KU-08 \\ \hline
   MP-06  & Pengguna kurang dapat memahami penggunaan fitur-fitur yang disediakan oleh aplikasi Digital Wellbeing & KU-08 \\ \hline
   MP-07  & Pengguna kesulitan dalam mengakses informasi pada fitur-fitur aplikasi Digital Wellbeing & KU-01 \\ \hline
 \end{longtable}
 \end{small}
 \justifying
-
 \FloatBarrier
 
+% $ =====================================================
+% $   +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +
+% $ =====================================================
+
+
+\subsection{Persona}
+\label{subsec:persona_pengguna}
+Setelah dilakukan analisis mengenai perilaku dan masalah pengguna, dilakukan segmentasi pengguna menjadi beberapa kelompok persona. Persona merepresentasikan kelompok-kelompok pengguna dengan karakteristik dan perilaku yang berbeda. Persona berperan menjadi arah pengembangan interaksi aplikasi dan mengurangi kemungkinan mendesain aplikasi untuk semua orang sehingga menghasilkan desain yang tidak disenangi oleh siapapun. \parencite{cooper2014face}
+
+\subsubsection{Pengelompokkan Awal Pengguna}
+Tahap awal dalam menyusun persona adalah mengelompokkan pengguna-pengguna berdasarkan perannya. Dari 10 orang partisipan riset wawancara, dikelompokkan menjadi 3 peran berdasarkan kemampuannya dalam membatasi diri dari smartphone tanpa membutuhkan bantuan. Kemampuan ini dianalisis dari data-data yang didapat melalui wawancara, semakin tinggi tingkat kemampuannya berarti pengguna tersebut dapat membatasi dirinya dengan bantuan sesedikit mungkin.
+
+Terdapat pengguna dengan kemampuan tingkat rendah beranggotakan 20\% partisipan, pengguna berkemampuan tingkat sedang sebanyak 30\%, dan pengguna dengan tingkat tinggi sebanyak 50\%. Maka dari itu, pembagian untuk kelompok pengguna adalah sebagai berikut
+\begin{enumerate}
+  \item Kelompok 1: Pengguna yang sangat memerlukan bantuan untuk membatasi diri dari \textit{smartphone} 
+  \item Kelompok 2: Pengguna yang memerlukan bantuan ringan untuk membatasi diri dari \textit{smartphone}
+  \item Kelompok 3: Pengguna yang tidak memerlukan bantuan untuk membatasi diri dari \textit{smartphone}
+\end{enumerate}
+
+\subsubsection{Pemetaan Kelompok Pengguna dengan Variabel Perilaku}
+Setelah dilakukan pengelompokkan pengguna, variabel-variabel perilaku yang telah diidentifikasi pada tahap riset dan analisis pengguna perlu dipetakan ke setiap kelompok pengguna. Hal ini bertujuan untuk mengidentifikasi perilaku dari setiap kelompok untuk kemudian disusun personanya.
+
+Variabel perilaku yang dipetakan ke masing-masing kelompok pengguna akan memiliki jenis nilai yang berbeda. Variabel perilaku seperti P-01 dan P-02 menunjukkan apa saja nilai perilaku yang dipenuhi kelompok pengguna tersebut. Variabel perilaku seperti P-10 dan P-19 menunjukkan rentang atau tingkat perilaku dari kelompok pengguna tersebut. Sedangkan variabel perilaku seperti P-08 dan P-09 menunjukkan apakah pengguna memiliki perilaku tersebut. Hasil dari proses pemetaan dapat dilihat pada Tabel \ref{tab:pemetaan_perilaku}.
+
+\RaggedLeft
+\begin{small}
+\begin{longtable}[c]{|>{\ccnormspacing}m{0.10\textwidth}|>{\ccnormspacing}m{0.31\textwidth}|>{\ccnormspacingcenter}m{0.145\textwidth}|>{\ccnormspacingcenter}m{0.145\textwidth}|>{\ccnormspacingcenter}m{0.145\textwidth}|}
+  \caption{Daftar Pemetaan Kelompok Pengguna dengan Variabel Perilaku}
+  \label{tab:pemetaan_perilaku} \\
+  \hline \rowcolor[HTML]{A3E5F5}
+  \centering\textbf{Variabel Perilaku} & \centering\textbf{Deskripsi Perilaku} & \textbf{Kelompok 1} & \textbf{Kelompok 2} & \textbf{Kelompok 3} \\ \hline \endfirsthead
+  \hline \rowcolor[HTML]{A3E5F5}
+  \centering\textbf{Variabel Perilaku} & \centering\textbf{Deskripsi Perilaku} & \textbf{Kelompok 1} & \textbf{Kelompok 2} & \textbf{Kelompok 3} \\ \hline \endhead
+
+  \hline \endfoot
+
+  \centering P-10  & Mampu membatasi diri dari menggunakan \textit{smartphone} tanpa bantuan & Rendah & Sedang & Tinggi \\ \hline
+  \centering P-01 P-02  & Tujuan primer menggunakan \textit{smartphone} & Komunikasi & Pekerjaan, Komunikasi & Komunikasi, Pekerjaan \\ \hline
+  \centering P-03 P-04 & Tujuan sekunder menggunakan \textit{smartphone} & Hiburan, Media sosial & Hiburan, Media sosial & Hiburan, Media sosial \\ \hline
+  \centering P-05 & Penilaian durasi penggunaan \textit{smartphone} harian berdasarkan skala 1-5 & 5 & 4 & 3 \\ \hline
+  \centering P-06 P-07 & Sumber distraksi terkait \textit{smartphone} & Keinginan diri sendiri, \textit{smartphone}, pihak lain & Keinginan diri sendiri, \textit{smartphone}, pihak lain & Keinginan diri sendiri \\ \hline
+  \centering P-18 & Keterampilan dalam menyusun jadwal kegiatan & Rendah & Tinggi & Sedang \\ \hline
+  \centering P-19 & Kebiasaan dalam menggunakan aplikasi pencegah distraksi & Tinggi & Sedang & Sedang \\ \hline
+  \centering P-08 & Merasa \textit{smartphone} sebaiknya membatasi pengguna seminimal mungkin &   & \textbf{V} & \textbf{V} \\ \hline
+  \centering P-09 & Merasa perlu ada sebuah penghargaan jika berhasil mengikuti jadwal pembatasan \textit{smartphone} & \textbf{V} &   &   \\ \hline
+  \centering P-11 & Ingin memblokir notifikasi aplikasi yang dinilai sebagai distraksi & \textbf{V} & \textbf{V} & \textbf{V} \\ \hline
+  \centering P-12 & Ingin mengurangi durasi penggunaan smartphone harian & \textbf{V} & \textbf{V} & \textbf{V} \\ \hline
+  \centering P-13 & Ingin memantau kebiasaan penggunaan smartphone & \textbf{V} & \textbf{V} & \textbf{V} \\ \hline
+  \centering P-14 & Ingin dibantu mengingatkan diri terhadap tugas / aktivitas yang harus dilakukan & \textbf{V} & \textbf{V} &   \\ \hline
+  \centering P-15 & Ingin mengingatkan diri terhadap jadwal tidur & \textbf{V} & \textbf{V} &   \\ \hline
+  \centering P-16 & Ingin diingatkan ketika terlalu lama menggunakan aplikasi & \textbf{V} &   &   \\ \hline
+  \centering P-17 & Ingin memblokir akses ke aplikasi yang dinilai mendistraksi tanpa menghapusnya & \textbf{V} &   &   \\ \hline
+
+\end{longtable}
+\end{small}
+\justifying
+\FloatBarrier
+
+\subsubsection{Pemetaan Kelompok Pengguna dengan Masalah Pengguna}
+Selain variabel perilaku, masalah pengguna pun perlu dipetakan dengan kelompok pengguna yang telah dibuat. Hal ini dilakukan untuk mengenali masalah yang dirasakan oleh kelompok pengguna spesifik, dan juga membantu dalam menyusun persona.
+
+Ditemukan bahwa ketiga kelompok pengguna mengalami sebagian besar dari masalah pengguna yang ada. Masalah pengguna MP-03 di mana aplikasi Digital Wellbeing dinilai kurang ketat tidak dirasakan oleh kelompok pengguna 3 karena tingginya kemampuan dalam membatasi diri dari smartphone tanpa membutuhkan bantuan. Di sisi lain, masalah MP-04 tentang fleksibilitas aplikasi tidak dirasakan oleh kelompok pengguna 1 karena perilakunya yang menunjukkan kebutuhan atas keketatan tinggi dari aplikasi dalam membatasi penggunaan smartphone. Selain itu, akibat keterampilan kelompok pengguna 1 dalam menggunakan aplikasi pencegah distraksi, mereka tidak mengalami masalah MP-06 karena mereka sudah cukup mengerti fitur-fitur yang digunakan. Hasil dari proses pemetaan dapat dilihat pada Tabel \ref{tab:pemetaan_masalah}.
+
+\RaggedLeft
+\begin{small}
+\begin{longtable}[c]{|>{\ccnormspacing}m{0.08\textwidth}|>{\ccnormspacing}m{0.31\textwidth}|>{\ccnormspacingcenter}m{0.145\textwidth}|>{\ccnormspacingcenter}m{0.145\textwidth}|>{\ccnormspacingcenter}m{0.145\textwidth}|}
+  \caption{Daftar Pemetaan Kelompok Pengguna dengan Masalah Pengguna}
+  \label{tab:pemetaan_masalah} \\
+  \hline \rowcolor[HTML]{A3E5F5}
+  \centering\textbf{ID} & \centering\textbf{Deskripsi Masalah} & \textbf{Kelompok 1} & \textbf{Kelompok 2} & \textbf{Kelompok 3} \\ \hline \endfirsthead
+  \hline \rowcolor[HTML]{A3E5F5}
+  \centering\textbf{ID} & \centering\textbf{Deskripsi Masalah} & \textbf{Kelompok 1} & \textbf{Kelompok 2} & \textbf{Kelompok 3} \\ \hline \endhead
+
+  \hline \endfoot
+
+  \centering MP-01 & Pengguna kesulitan dalam melakukan pengaturan fitur-fitur aplikasi Digital Wellbeing secara efisien & \textbf{V} & \textbf{V} & \textbf{V} \\ \hline
+  \centering MP-02 & Pengguna kesulitan dalam menganalisis kebiasaan digital diri lewat aplikasi Digital Wellbeing & \textbf{V} & \textbf{V} & \textbf{V} \\ \hline
+  \centering MP-03 & Pengguna merasa fitur-fitur aplikasi Digital Wellbeing kurang ketat dalam membantu memperbaiki kebiasaan digital & \textbf{V} & \textbf{V} &  \\ \hline
+  \centering MP-04 & Pengguna merasa fungsionalitas fitur-fitur aplikasi Digital Wellbeing kurang fleksibel &  & \textbf{V} & \textbf{V} \\ \hline
+  \centering MP-05 & Pengguna merasa interaksi dengan aplikasi Digital Wellbeing kurang pribadi & \textbf{V} & \textbf{V} & \textbf{V} \\ \hline
+  \centering MP-06 & Pengguna kurang dapat memahami penggunaan fitur-fitur yang disediakan oleh aplikasi Digital Wellbeing &  & \textbf{V} & \textbf{V} \\ \hline
+  \centering MP-07 & Pengguna kesulitan dalam mengakses informasi pada fitur-fitur aplikasi Digital Wellbeing & \textbf{V} & \textbf{V} & \textbf{V} \\ \hline
+
+\end{longtable}
+\end{small}
+\justifying
+\FloatBarrier
+
+\subsubsection{Penyusunan Karakteristik Persona}
+Setelah dilakukan pemetaan kelompok pengguna terhadap variabel perilaku dan masalah, kelompok pengguna tersebut dapat disusun menjadi persona yang utuh dengan diberikan identitas dan karakter dalam bentuk sebuah narasi. Di dalam narasi tersebut, garis besar hasil pemetaan juga perlu disebutkan ulang. Hal-hal tersebut dapat membuat persona terasa hidup sehingga mempermudah proses penentuan kebutuhan dan tujuan pengguna, serta pembuatan solusi desain.
+
+\newpage
+Berikut adalah hasil penyusunan karakteristik persona untuk ketiga kelompok pengguna
+
+\begin{enumerate}
+  \item Persona 1: Nico
+  \subitem Nico adalah seorang mahasiswa berumur 21 tahun yang sedang menjalani semester akhir di universitasnya. Nico mengerjakan tugas akhir pada laptopnya, namun ia merasa mudah terdistraksi oleh \textit{smartphone}nya, baik dari keinginannya untuk memeriksa media sosial atau permainan, maupun notifikasi yang sering muncul. Oleh karena itu, Nico menggunakan aplikasi Digital Wellbeing untuk memblokir akses ke aplikasi yang ia rasa mendistraksi serta mematikan notifikasinya. Namun terkadang Nico membuka blokirnya terlalu sering sehingga dia merasa adanya fitur dari Digital Wellbeing tidak berpengaruh dalam membantunya mencegah distraksi dari \textit{smartphone}-nya. Nico merasa butuh bantuan yang cukup besar dalam mengendalikan dirinya terkait \textit{smartphone} karena ia sering menyadari bahwa dirinya terlalu sering menggunakan \textit{smartphone}, melupakan tugasnya, dan jadwal tidurnya pun terganggu.
+
+  \item Persona 2: Maya
+  \subitem Maya adalah seorang pegawai swasta berumur 28 tahun. Dalam kesehariannya, Maya menggunakan \textit{smartphone} untuk berkomunikasi dengan rekan kerjanya, membantu dalam pekerjaannya, dan sebagai hiburan di jam istirahat. Maya sering terdistraksi di jam kerjanya oleh notifikasi atau keinginannya untuk memeriksa \textit{smartphone}, sehingga menggunakan aplikasi Digital Wellbeing untuk memblokirnya. Maya menemukan fitur-fitur menarik lain yang ia rasa dapat membantu mencegah distraksi, dan menganalisa serta memperbaiki kebiasaan penggunaan \textit{smartphone}nya. Namun Maya merasa bahwa beberapa fitur dari Digital Wellbeing kurang fleksibel untuk menyesuaikan dengan jadwal kerjanya yang bervariasi, seperti kurangnya kemampuan membuat jadwal lebih dari satu. Maya juga merasa pengalaman yang dirasakan kurang cukup personal untuk cukup memotivasinya karena pesan pengingat yang ia dapatkan terlalu membosankan.
+
+  \item Persona 3: Nathan
+  \subitem Nathan adalah seorang lulusan baru dan pekerja yang berumur 23 tahun. Dia terbiasa dalam mengatur jadwal pekerjaannya, dan sesekali menyelipkan jadwal untuk beristirahat. Ia melakukan sebagian besar pekerjaannya menggunakan \textit{smartphone}, seperti berkomunikasi, mengatur jadwal, dan menulis catatan. Nathan sesekali merasa bahwa dirinya memeriksa media sosial di \textit{smartphone} di waktu yang tidak tepat di saat jadwal kerjanya. Maka Nathan menggunakan fitur Focus Mode dari Digital Wellbeing untuk mengingatkan dirinya jika akan bermain \textit{smartphone} di jam kerjanya dan memblokir notifikasi dari aplikasi-aplikasi yang dianggap mendistraksi. Namun, Nathan tidak menggunakan fitur lain dari Digital Wellbeing karena ia merasa tidak perlu bantuan cukup banyak, tampilan dari aplikasi tidak cukup menarik, dan fitur-fitur yang ada tidak memiliki deskripsi yang jelas atau pengaturan yang cukup mudah.
+
+\end{enumerate}
+
+\subsubsection{Pemilihan Tipe Persona}
+Dari persona-persona yang telah disusun, perlu dipilih sebuah persona primer. Persona primer akan dijadikan target utama atau panduan dalam membuat desain solusi. Persona primer yang dipilih harus dipertimbangkan agar tidak mengecewakan persona-persona lainnya. Dalam hal ini, persona 2, Maya, akan dijadikan sebagai persona primer. Namun dipilih juga persona 1, Nico, sebagai persona sekunder agar desain solusi yang dibuat tetap mampu memenuhi kebutuhannya.
+
+Keputusan ini diambil melihat pertimbangan bahwa salah satu masalah terbesar dari aplikasi Digital Wellbeing adalah sulitnya pengguna dalam menggunakan aplikasi secara efisien untuk mencapai tujuan-tujuannya. Masalah tersebut tercerminkan dari masalah-masalah yang dikeluhkan oleh persona Maya dan persona lainnya. Dalam hal itu, solusi yang didesain untuk persona Maya diharapkan dapat menyelesaikan masalah-masalah yang dialami persona lain. Di sisi lain, kebutuhan persona Nico atas bantuan untuk membatasinya dari smartphone perlu dipertimbangkan dalam solusi desain, tanpa mengganggu desain yang ditujukan untuk persona primer.
+
+% $ =====================================================
+% $   +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +
+% $ =====================================================
+
+
+\subsection{Analisis Fungsionalitas Aplikasi}
+\label{subsec:analisis_fungsionalitas}
+
+% TODO lengkapin fungsionalitas aplikasi pencegah distraksi yang umum
+
+Dalam mengidentifikasi konteks penggunaan produk, penting untuk mengerti lingkungan sistem dari produk tersebut. Fungsionalitas dari aplikasi Digital Wellbeing dapat langsung dari aplikasinya. Keseluruhan fungsionalitasnya dapat telah dijabarkan dalam Tabel \ref{tab:daftar_fungsionalitas_app_dw}.
+% > Dalam mengidentifikasi konteks penggunaan produk, penting untuk mengerti lingkungan sistem dari produk tersebut. Untuk aplikasi Digital Wellbeing, perlu diidentifikasi fungsionalitas dari aplikasi pencegah distraksi pada umumnya untuk membantu mengidentifikasi kebutuhan pengguna. Dalam Tabel \ref{tab:daftar_fungsionalitas_app_dw} terdapat fungsionalitas dari aplikasi Digital Wellbeing yang sudah diterapkan.
+% Sementara dalam Tabel \ref{daftar_fungsionalitas_app_umum} terdapat fungsionalitas yang belum diterapkan dalam aplikasi Digital Wellbeing yang ditemukan dalam aplikasi pencegah distraksi lain yang telah dipelajari sebagai bagian dari studi literatur Bab \ref{studi_kasus_aplikasi}.
+
+\RaggedLeft
+\begin{small}
+\begin{longtable}[c]{|W{c}{0.08\textwidth}|>{\ccnormspacing}m{0.82\textwidth}|}
+  \caption{Daftar Fungsionalitas Aplikasi Digital Wellbeing}
+  \label{tab:daftar_fungsionalitas_app_dw} \\
+  \hline \rowcolor[HTML]{A3E5F5} \textbf{ID} & \multicolumn{1}{|c|}{\textbf{Fungsionalitas}} \\ \hline \endfirsthead
+  \hline \rowcolor[HTML]{A3E5F5} \textbf{ID} & \multicolumn{1}{|c|}{\textbf{Fungsionalitas}} \\ \hline \endhead
+  
+  \hline \endfoot
+  
+  FD-01  &  Aplikasi dapat melacak penggunaan harian dari \textit{smartphone} atau suatu aplikasi, dari sisi durasi penggunaan, jumlah pembukaan, dan notifikasi yang diterima \\ \hline
+  FD-02  &  Aplikasi dapat menampilkan laporan penggunaan \textit{smartphone} atau suatu aplikasi dalam bentuk grafik dan daftar \\ \hline
+  FD-03  &  Pengguna dapat menyetel batas waktu per hari akses suatu aplikasi \\ \hline
+  FD-04  &  Aplikasi dapat memberikan notifikasi terkait batas waktu akses suatu aplikasi \\ \hline
+  FD-05  &  Aplikasi dapat memblokir akses terhadap suatu aplikasi \\ \hline
+  FD-06  &  Aplikasi dapat memblokir notifikasi yang dikirim suatu aplikasi \\ \hline
+  FD-07  &  Pengguna dapat mengatur jadwal aktivasi pemblokiran akses untuk aplikasi yang dipilih \\ \hline
+  FD-08  &  Pengguna dapat menunda pemblokiran akses sebuah aplikasi secara sementara \\ \hline
+  FD-09  &  Pengguna dapat mengatur jadwal aktivasi mode waktu tidur \textit{smartphone} \\ \hline
+  FD-10  &  Pengguna dapat menunda sementara aktivasi mode tidur \\ \hline
+  FD-11  &  Pengguna dapat membuka pengaturan notifikasi aplikasi \\ \hline
+\end{longtable}
+\end{small}
+\justifying
+\FloatBarrier
+
+\subsection{Analisis Kebutuhan dan Tujuan Pengguna}
+\label{subsec:analisis_kebutuhan_tujuan}
+
+Bagian dari identifikasi konteks penggunaan ini akan menganalisis tentang kebutuhan serta tujuan dari pengguna mengenai aplikasi Digital Wellbeing dan aplikasi pencegah distraksi secara umum, dibantu dengan data dari perilaku dan persona pengguna, masalah pengguna, dan fungsionalitas aplikasi. Keduanya akan berguna dalam merancang perbaikan desain interaksi yang diperlukan dari aplikasi Digital Wellbeing, terutama untuk menyusun \textit{usability goals} dan \textit{user experience goals}.
 
 \subsubsection{Kebutuhan Pengguna}
 \label{subsubsec:kebutuhan_pengguna}
 
-Setelah masalah pengguna diidentifikasi, maka dapat dilakukan analisis mengenai kebutuhan pengguna. Kebutuhan ini adalah hal apa saja yang diperlukan pengguna untuk mencapai tujuannya dalam memakai aplikasi Digital Wellbeing. Analisis kebutuhan pengguna melibatkan masalah pengguna serta perilaku pengguna yang telah dibahas sebelumnya. Kebutuhan pengguna dirangkum di dalam Tabel \ref{tab:daftar_kebutuhan}.
-
-
-\FloatBarrier
+Kebutuhan pengguna adalah hal apa saja yang diperlukan pengguna untuk mencapai tujuannya dalam memakai aplikasi Digital Wellbeing. Analisis kebutuhan pengguna melibatkan masalah pengguna serta perilaku pengguna yang telah dibahas sebelumnya. Penjelasan kebutuhan pengguna dirangkum di dalam Tabel \ref{tab:daftar_kebutuhan}.
 
 \RaggedLeft
 \begin{small}
@@ -229,7 +401,6 @@ Setelah masalah pengguna diidentifikasi, maka dapat dilakukan analisis mengenai 
 \end{longtable}
 \end{small}
 \justifying
-
 \FloatBarrier
 
 \subsubsection{Tujuan dan Kegiatan Pengguna}
@@ -247,9 +418,6 @@ Dengan ditentukannya kebutuhan pengguna, maka dapat dianalisis tujuan yang ingin
 \newcommand{\ccneed}[2]{\multirow{#1}{\cccolneed}{\centering\linespread{1}\selectfont #2}}
 \newcommand{\ccline}{\hhline{|-|~|-|~|}}
 
-\newpage
-
-\FloatBarrier
 
 \RaggedLeft
 \begin{small}
@@ -290,18 +458,14 @@ Dengan ditentukannya kebutuhan pengguna, maka dapat dianalisis tujuan yang ingin
 
 \end{longtable}
 \end{small}
-
 \justifying
-
 \FloatBarrier
 
+% * =======================================================================
+% *   ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||
+% * =======================================================================
 
-\subsection{Persona}
-Setelah melakukan analisis mengenai ulasan pengguna tentang aplikasi Digital Wellbeing dan wawancara langsung dengan pengguna, dilakukan segmentasi pengguna menjadi beberapa kelompok persona. Persona merepresentasikan kelompok-kelompok pengguna dengan karakteristik dan perilaku yang berbeda. Persona berperan menjadi arah pengembangan interaksi aplikasi dan mengurangi kemungkinan mendesain aplikasi untuk semua orang sehingga menghasilkan desain yang tidak disenangi oleh siapapun. \parencite{cooper2014face}
 
-
-
-% \blindtext
 
 \section{Analisis Kebutuhan Perangkat Lunak}
 
