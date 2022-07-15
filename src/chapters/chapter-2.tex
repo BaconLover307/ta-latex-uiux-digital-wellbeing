@@ -132,7 +132,7 @@ Customize Notifications adalah fitur yang memungkinkan penggunanya untuk mengatu
 
 % Menurut \textcite{kolko2011thoughts}, Desain Interaksi adalah pembuatan dialog antara seorang pengguna dengan sebuah produk, layanan, atau sistem. Dialog ini bersifat fisik dan emosional serta akan tampak dalam bentuk, kegunaan, dan teknologi seiring dirasakannya.
 
-Menurut \textcite{sharp2019interaction}, desain interaksi adalah proses mendesain suatu produk yang interaktif untuk menciptakan sebuah pengalaman yang meningkatkan kualitas dari cara kerja, komunikasi, dan interaksi dari pengguna produk. Untuk memberi konteks tentang apa yang didesain, beberapa aspek yang seringkali ditegaskan adalah user interface (UI), rekayasa perangkat lunak, \textit{user-centered design}, desain produk, dan desain sistem interaktif. Desain interaksi juga dapat dilihat sebagai basis yang fundamental dalam beberapa displin, bidang, dan pendekatan yang berhubungan dengan proses penelitian dan desain sistem berbasis komputer. Maka dari itu, seringkali beberapa aspek dari pendekatan-pendekatan yang memakai pedoman desain interaksi seringkali bertumpang tindih. Sharp mengilustrasikannya pada Gambar \ref{fig:desain_interaksi}.
+Menurut \textcite{PreeceRogersSharp15}, desain interaksi adalah proses mendesain suatu produk yang interaktif untuk menciptakan sebuah pengalaman yang meningkatkan kualitas dari cara kerja, komunikasi, dan interaksi dari pengguna produk. Untuk memberi konteks tentang apa yang didesain, beberapa aspek yang seringkali ditegaskan adalah user interface (UI), rekayasa perangkat lunak, \textit{user-centered design}, desain produk, dan desain sistem interaktif. Desain interaksi juga dapat dilihat sebagai basis yang fundamental dalam beberapa displin, bidang, dan pendekatan yang berhubungan dengan proses penelitian dan desain sistem berbasis komputer. Maka dari itu, seringkali beberapa aspek dari pendekatan-pendekatan yang memakai pedoman desain interaksi seringkali bertumpang tindih. Sharp mengilustrasikannya pada Gambar \ref{fig:desain_interaksi}.
 
 
 \begin{figure}[h]
@@ -208,8 +208,8 @@ Terlihat pada diagram alur kerja pada Gambar \ref{fig:diagram_iso2}, terdapat be
 
 
 
-\section{\textit{Usability Goals} dan \textit{User Experience Goals}}
-Untuk mendesain produk yang tepat bagi pengguna, seorang desainer perlu mengerti kebutuhan pengguna dengan menentukan tujuan yang jelas dari pengembangan produk interaktif tersebut. \textcite{sharp2019interaction} menyebutkan bahwa untuk mencapainya, tujuan dapat diklasifikasikan sesuai dengan \textit{usability goals} dan \textit{user experience goals}.
+\subsection{\textit{Usability Goals} dan \textit{User Experience Goals}}
+Untuk mendesain produk yang tepat bagi pengguna, seorang desainer perlu mengerti kebutuhan pengguna dengan menentukan tujuan yang jelas dari pengembangan produk interaktif tersebut. \textcite{PreeceRogersSharp15} menyebutkan bahwa untuk mencapainya, tujuan dapat diklasifikasikan sesuai dengan \textit{usability goals} dan \textit{user experience goals}.
 
 % http://bpm.umg.ac.id/aset/images/download/M4-Standar-Rujuka-BA(1-8-2017).pdf
 
@@ -225,8 +225,30 @@ Untuk mendesain produk yang tepat bagi pengguna, seorang desainer perlu mengerti
 \end{enumerate}
 
 
-\textit{User experience goals} lebih bersifat subjektif dibandingkan \textit{usability goals} karena mencakup berbagai jenis emosi dan pengalaman yang dirasakan oleh pengguna saat berinteraksi dengan produk. \textit{User experience goals} juga berhubungan erat dengan estetika dari produk. \textit{User experience goals} terdiri dari 2 jenis, yaitu tujuan yang diharapkan dan tujuan yang tidak diharapkan. \parencite{sharp2019interaction} Pembagiannya dapat dilihat pada Tabel \ref{tab:ux_goals}.
+\textit{User experience goals} lebih bersifat subjektif dibandingkan \textit{usability goals} karena mencakup berbagai jenis emosi dan pengalaman yang dirasakan oleh pengguna saat berinteraksi dengan produk. \textit{User experience goals} juga berhubungan erat dengan estetika dari produk. \textit{User experience goals} terdiri dari 2 jenis, yaitu tujuan yang diharapkan dan tujuan yang tidak diharapkan. \parencite{PreeceRogersSharp15} Pembagiannya dapat dilihat pada Tabel \ref{tab:ux_goals}.
 
+\subsection{Tipe Interaksi}
+\label{subsec:tipe_interaksi}
+
+Dalam menyusun konsep desain, penentuan cara pengguna berinteraksi dengan produk / aplikasi akan didasarkan pada tipe interaksi dari desainnya. Menurut \textcite{PreeceRogersSharp15}, ada 5 tipe utama, yaitu \textit{instructing}, \textit{conversing}, \textit{manipulating}, \textit{exploring}, dan \textit{responding}. Menentukan tipe interaksi dari desain dapat membantu untuk menyusun model konseptual sebelum menentukan tipe antarmuka dari desainnya. Suatu sistem tidak terkekang dalam memiliki satu jenis tipe interaksi, pengguna dapat merasakan pengalaman yang berbeda di bagian-bagian sistem dengan tipe interaksinya masing-masing. Berikut adalah penjelasan tentang tipe-tipe interaksi.
+
+\begin{enumerate}
+  \item \textit{Instructing}
+  \subitem Pada desain yang menerapkan tipe interaksi \textit{instructing} pengguna akan melakukan aktivitasnya dengan cara memberikan instruksi kepada sistem. Pengguna dapat memberikan instruksi dengan mengetikan perintah, memilih opsi dari menu, mengatakan perintahnya ke mikrofon, memberikan gestur, atau sesederhana menekan satu atau kombinasi tombol. Keuntungan dalam memilih tipe interaksi ini adalah kecepatan dan efisiensi interaksi, cocok untuk aksi yang perlu dilakukan berulang kali. Contoh kasus yang menggunakan tipe interaksi \textit{instructing} adalah sebuah \textit{vending machine}, di mana konsumen memilih makanan yang ingin dibeli baik dengan mengetikkan nomor label makanan.
+
+  \item \textit{Conversing}
+  \subitem Tipe interaksi \textit{conversing} berdasar pada konsep di mana pengguna akan melakukan percakapan dengan sistem. Sistem didesain untuk membalas pengguna sebagaimana manusia biasa akan menjawab, berbeda dengan tipe interaksi \textit{instructing} di mana sistem hanya menuruti perintah yang diberikan. Pengguna mampu mendapatkan saran, jawaban lebih pribadi, atau berdiskusi dengan sistem. Pada umumnya, sistem akan memanfaatkan teknologi voice-recognition, AI, atau teknologi berbasis natural-language lainnya dalam menerima input, dan menggunakan pembangkitan suara atau cukup kalimat tertulis untuk memberikan balasan. Tipe interaksi ini dapat ditemukan pada sistem penasehat, fasilitas bantuan, serta chatbot.
+  
+  \item \textit{Manipulating}
+  \subitem Tipe interaksi \textit{manipulating} melibatkan tindakan memanipulasi sebuah objek layaknya di dunia nyata, seperti menggerakan (dragging), membuka, dan menutup. Pengguna juga dapat melakukan aksi yang mungkin tidak dapat dilakukan di dunia nyata, seperti stretching, shrinking, memperbesar, dan memperkecil objek. Tujuan yang ingin dicapai adalah untuk memberikan penguna perasaan senyata mungkin bahwa mereka sedang beinteraksi langsung dengan objek digital. Prinsip dari tipe interaksi ini adalah objek yang ada di layar tetap tampak selama pengguna memanipulasinya, dan memberikan feedback yang langsung ketika dimanipulasi untuk mempertahankan perasaan nyatanya. Walaupun tipe interaksi ini dapat membuat pengguna mudah berinteraksi dengan objek, terdapat beberapa aksi yang sebaiknya menggunakan tipe interaksi lain seperti \textit{instructing}. Contohnya adalah ketika memperbaiki typo yang berulang di suatu dokumen, melainkan mengubahnya dengan mencari dan menggantinya satu per satu, lebih baik untuk memberikan instruksi kepada sistem untuk mencari typo tersebut di seluruh dokumen dan langsung mengganti semuanya.
+  
+  \item \textit{Exploring}
+  \subitem Sistem yang menggunakan tipe interaksi \textit{exploring} melibatkan penggunanya untuk bergerak di sebuah lingkungan baik virtual maupun fisik. Lingkungan sistem dapat mendeteksi ketika pengguna melakukan aksi tertentu dan memicu suatu peristiwa yang dapat dirasakan dan diinteraksi oleh pengguna. Lingkungan sistem tidak selalu harus berbentuk dunia virtual 3D, tetapi kebanyakan sistem yang mengadopsi tipe interaksi \textit{exploring} memiliki, seperti eksibisi virtual yang diakses menggunakan perangkat VR atau sebuah game.
+  
+  \item \textit{Responding}
+  \subitem Sistem dengan tipe interaksi \textit{responding} akan menginisiasi interaksinya dengan memberikan, menunjukkan, atau mendeskripsikan sesuatu kepada pengguna, dan menunggu sebuah tanggapan. Interaksi yang diberikan sistem bergantung pada konteks yang sedang dialami pengguna atau dideteksi sistem.  Contohnya sebuah aplikasi dapat memberikan rekomendasi restoran yang berada di dekat pengguna ketika melewati suatu jalan, atau sebuah \textit{smartwatch} memberi notifikasi penggunanya sudah berhasil berjalan sebanyak 10.000 langkah. Tantangan desain yang menggunakan tipe interaksi ini adalah mengetahui kapan pengguna merasa informasi yang diberikan akan merasa berguna, dan menghindari interaksi yang dirasa dapat mengganggu pengguna.
+
+\end{enumerate}
 
 \RaggedLeft
 \begin{footnotesize}
@@ -319,7 +341,7 @@ Dari analisis fitur umum dan ulasan, Roffarello dan De Russis membuat sebuah apl
 Secara keseluruhan pada penelitian aplikasi Socialize, pengguna menyukai ide dari sebuah aplikasi Digital Wellbeing untuk membantu meningkatkan kualitas dari kebiasaan digitalnya. Namun solusi yang diberikan terkadang tidak cukup untuk menyelesaikan masalah yang ada. Masih perlu dibutuhkan tekad dari penggunanya untuk memanfaatkan fitur-fitur yang ada. Adapun beberapa masukan dari pengguna seperti kurang ketatnya pembatasan yang diberikan, dan diperlukannya interaksi sosial untuk membantu pengguna dalam mendapat bayangan dari kebiasaan digital yang baik. Penemuan yang cukup besar juga mengungkapkan bahwa aplikasi-aplikasi berkonsep Digital Wellbeing hanya membantu penggunanya dalam melakukan pemantauan mandiri dan menghentikan kebiasaan lama, tanpa membantu penggunanya mengembangkan kebiasaan baru yang lebih baik. Fitur yang dapat membantu hal tersebut, seperti pemberian kutipan motivasi dan penghargaan serta adanya interaksi sosial antarpengguna, cukup jarang ditemukan dari aplikasi-aplikasi Digital Wellbeing yang ada.
 
 % \section{Usability Testing}
-% Usability Testing adalah sebuah proses pengujian produk yang sedang dikembangkan untuk mengetahui apakah produk tersebut dapat digunakan dengan benar oleh pengguna yang terpilih, serta untuk menguji kepuasan pengguna dalam menggunakan produk. Dengan melakukan usability testing di sebuah lingkungan yang terkendali, desainer atau peneliti dapat mengendalikan pengaruh lingkungan yang dapat mempengaruhi performa pengguna. \parencite{sharp2019interaction}
+% Usability Testing adalah sebuah proses pengujian produk yang sedang dikembangkan untuk mengetahui apakah produk tersebut dapat digunakan dengan benar oleh pengguna yang terpilih, serta untuk menguji kepuasan pengguna dalam menggunakan produk. Dengan melakukan usability testing di sebuah lingkungan yang terkendali, desainer atau peneliti dapat mengendalikan pengaruh lingkungan yang dapat mempengaruhi performa pengguna. \parencite{PreeceRogersSharp15}
 
 % Menurut \textcite{moran2019usabilitytest}, \textit{usability testing}, yang seringkali disebut juga \textit{user testing}, adalah suatu metodologi riset yang digunakan untuk mengidentifikasi masalah dalam sebuah desain produk atau layanan, menemukan celah atau ruang untuk perbaikan, serta mempelajari perilaku dan preferensi dari pengguna target produk. Dalam proses \textit{usability testing}, terdapat 3 elemen utama:
 % \begin{enumerate}
