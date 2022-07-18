@@ -326,6 +326,7 @@ Dalam mengidentifikasi konteks penggunaan produk, penting untuk mengerti lingkun
   FD-12  &  Pengguna dapat mengatur jadwal aktivasi mode waktu tidur \textit{smartphone} \\ \hline
   FD-13  &  Pengguna dapat menunda sementara aktivasi mode waktu tidur \textit{smartphone} \\ \hline
   FD-14  &  Pengguna dapat membuka pengaturan notifikasi aplikasi \\ \hline
+  FD-15  &  Aplikasi dapat mengubah warna layar menjadi hitam-putih \\ \hline
 \end{longtable}
 \end{small}
 \justifying
@@ -409,54 +410,60 @@ Kebutuhan pengguna adalah hal apa saja yang diperlukan pengguna untuk mencapai t
 
 Dengan ditentukannya kebutuhan pengguna, maka dapat dianalisis tujuan yang ingin dicapai oleh pengguna. Dalam mencapai tujuan-tujuan tersebut, maka perlu ditentukan kegiatan yang harus dilakukan oleh pengguna, atau disebut sebagai \textit{user task}. Analisis tujuan dan kegiatan pengguna dilakukan dengan mengkaitkan kebutuhan pengguna dan perilaku pengguna. Hasil analisis dirangkum pada Tabel \ref{tab:daftar_tujuan_kegiatan}.
 
+\newlength{\cccolid}
+\setlength{\cccolid}{0.09\textwidth}
+
 \newlength{\cccolgoal}
-\setlength{\cccolgoal}{0.285\textwidth}
+\setlength{\cccolgoal}{0.2\textwidth}
 
 \newlength{\cccolneed}
 \setlength{\cccolneed}{0.14\textwidth}
 
+\newcommand{\ccid}[2]{\multirow{#1}{\cccolid}{\centering\linespread{1}\selectfont #2}}
 \newcommand{\ccgoal}[2]{\multirow{#1}{\cccolgoal}{\linespread{1}\selectfont #2}}
 \newcommand{\ccneed}[2]{\multirow{#1}{\cccolneed}{\centering\linespread{1}\selectfont #2}}
-\newcommand{\ccline}{\hhline{|-|~|-|~|}}
+\newcommand{\ccline}{\hhline{|~|~|-|-|~|}}
 
 
 \RaggedLeft
 \begin{small}
-\begin{longtable}[c]{|W{c}{0.07\textwidth}|>{\ccbnormspacing}m{\cccolgoal}|>{\ccbnormspacing}m{0.4\textwidth}|>{\ccbnormspacingcenter}m{\cccolneed}|}
+\begin{longtable}[c]{|>{\ccbnormspacing}m{\cccolid}|>{\ccbnormspacing}m{\cccolgoal}|>{\ccbnormspacing}m{0.11\textwidth}|>{\ccbnormspacing}m{0.3\textwidth}|>{\ccbnormspacingcenter}m{\cccolneed}|}
   \caption{Daftar Tujuan dan Kegiatan Pengguna}
   \label{tab:daftar_tujuan_kegiatan} \\
   \hline \rowcolor[HTML]{A3E5F5}
-  \textbf{ID} & \centering\textbf{Tujuan Pengguna} & \centering\textbf{Kegiatan Pengguna} & \textbf{Keterkaitan} \\ \hline \endfirsthead
+  \centering\textbf{ID Tujuan} & \centering\textbf{Tujuan Pengguna} & \centering\textbf{ID Kegiatan} & \centering\textbf{Kegiatan Pengguna} & \textbf{Keterkaitan} \\ \hline \endfirsthead
   \hline \rowcolor[HTML]{A3E5F5}
-  \textbf{ID} & \centering\textbf{Tujuan Pengguna} & \centering\textbf{Kegiatan Pengguna} & \textbf{Keterkaitan} \\ \hline \endhead
+  \centering\textbf{ID Tujuan} & \centering\textbf{Tujuan Pengguna} & \centering\textbf{ID Kegiatan} & \centering\textbf{Kegiatan Pengguna} & \textbf{Keterkaitan} \\ \hline \endhead
 
   \hline \endfoot
 
-  UT-01 & & Mengunci pengaturan pada waktu tertentu & \\ \ccline
-  UT-02 & & Membatasi istirahat yang dapat diambil pada fitur Focus Mode & \\ \ccline
-  UT-03 & \ccgoal{-5}{Membatasi diri dari melonggarkan pengaturan} & Memilih tingkat keketatan dari fitur-fitur & \ccneed{-5}{PP-06, KP-05, KP-06}\\ \hline
+   & & \centering{UT-01} & Mengunci pengaturan pada waktu tertentu & \\ \ccline
+   & & \centering{UT-02} & Membatasi istirahat yang dapat diambil pada fitur Focus Mode & \\ \ccline
+  \ccid{-5}{UG-01} & \ccgoal{-5}{Membatasi diri dari melonggarkan pengaturan} & \centering{UT-03} & Memilih tingkat keketatan dari fitur-fitur & \ccneed{-5}{PP-06, KP-05, KP-06}\\ \hline
   
-  UT-04 & & Membuat jadwal aktivasi fitur pemblokiran akses aplikasi & \\ \ccline
-  UT-05 & & Menyetel pengaturan notifikasi & \\ \ccline
-  UT-06 & \ccgoal{-4}{Mencegah distraksi dari \textit{smartphone} di waktu tertentu} & Memilih aplikasi yang diblokir aksesnya & \ccneed{-4}{PP-07, PP-11, PP-17, KP-01, KP-07}\\ \hline
+   & & \centering{UT-04} & Membuat jadwal aktivasi fitur pemblokiran akses aplikasi & \\ \ccline
+   & & \centering{UT-05} & Menyetel pengaturan notifikasi & \\ \ccline
+   \ccid{-4.9}{UG-02} & \ccgoal{-4.9}{Mencegah distraksi dari \textit{smartphone} di waktu tertentu} & \centering{UT-06} & Memilih aplikasi yang diblokir aksesnya & \ccneed{-4.9}{PP-07, PP-11, PP-17, KP-01, KP-07}\\ \hline
   
-  UT-07 & & Memasang batas waktu penggunaan harian aplikasi & \\ \ccline
-  UT-08 & & Melihat sisa waktu penggunaan aplikasi lewat widget & \\ \ccline
-  UT-09 & \ccgoal{-5}{Membatasi waktu penggunaan \textit{smartphone} harian} & Melihat total waktu penggunaan \textit{smartphone} lewat widget & \ccneed{-5}{PP-12, PP-16, PP-18, KP-01, KP-02}\\ \hline
+   & & \centering{UT-07} & Memasang batas waktu penggunaan harian aplikasi & \\ \ccline
+   & & \centering{UT-08} & Melihat sisa waktu penggunaan aplikasi lewat widget & \\ \ccline
+   \ccid{-5.4}{UG-03}& \ccgoal{-5.4}{Membatasi waktu penggunaan \textit{smartphone} harian} & \centering{UT-09} & Melihat total waktu penggunaan \textit{smartphone} lewat widget & \ccneed{-5.4}{PP-12, PP-16, PP-18, KP-01, KP-02}\\ \hline
   
-  UT-10 & & Mengakses laporan penggunaan \textit{smartphone} & \\ \ccline
-  UT-11 & & Memilih rentang waktu laporan penggunaan \textit{smartphone} & \\ \ccline
-  UT-12 & \ccgoal{-5}{Menganalisis kebiasaan penggunaan \textit{smartphone}} & Melihat rekomendasi kebiasaan penggunaan \textit{smartphone} yang baik & \ccneed{-5}{PP-13, KP-03, KP-04}\\ \hline
+   & & \centering{UT-10} & Mengakses laporan penggunaan \textit{smartphone} & \\ \ccline
+   & & \centering{UT-11} & Memilih rentang waktu laporan penggunaan \textit{smartphone} & \\ \ccline
+   \ccid{-5}{UG-04}& \ccgoal{-5}{Menganalisis kebiasaan penggunaan \textit{smartphone}} & \centering{UT-12} & Melihat rekomendasi kebiasaan penggunaan \textit{smartphone} yang baik & \ccneed{-5}{PP-13, KP-03, KP-04}\\ \hline
   
-  UT-13 & & Memasang pesan pengingat aktivitas atau target harian & \\ \ccline
-  UT-14 & \ccgoal{-3}{Mengingatkan diri terhadap aktivitas utama yang seharusnya dilakukan} & Mengatur frekuensi notifikasi fitur pengingat  & \ccneed{-3}{PP-14, KP-09}\\ \hline
+   & & \centering{UT-13} & Memasang pesan pengingat aktivitas atau target harian & \\ \ccline
+   \ccid{-3.4}{UG-05}& \ccgoal{-3.4}{Mengingatkan diri terhadap aktivitas utama yang seharusnya dilakukan} & \centering{UT-14} & Mengatur frekuensi notifikasi fitur pengingat  & \ccneed{-3.4}{PP-14, KP-09}\\ \hline
   
-  UT-15 & & Mengatur jadwal aktivasi fitur Bedtime Mode & \\ \ccline
-  UT-16 & \ccgoal{-3}{Membantu mengatur kebiasaan tidur yang sehat} & Membatasi aplikasi yang dapat diakses di jadwal tidur & \ccneed{-3}{PP-15, KP-05}\\ \hline
+  \newpage
+
+   & & \centering{UT-15} & Mengatur jadwal aktivasi fitur Bedtime Mode & \\ \ccline
+   \ccid{-2.8}{UG-06}& \ccgoal{-2.8}{Membantu mengatur kebiasaan tidur yang sehat} & \centering{UT-16} & Membatasi aplikasi yang dapat diakses di jadwal tidur & \ccneed{-2.8}{PP-15, KP-05}\\ \hline
   
-  UT-17 & & Mengambil waktu istirahat dari Focus Mode & \\ \ccline
-  UT-18 & & Menunda aktivasi Bedtime Mode & \\ \ccline
-  UT-19 & \ccgoal{-4}{Mengambil istirahat sejenak dari restriksi aplikasi} & Memperpanjang waktu penggunaan aplikasi yang diblokir oleh App Timer & \ccneed{-4}{KP-08}\\ \hline
+   & & \centering{UT-17} & Mengambil waktu istirahat dari Focus Mode & \\ \ccline
+   & & \centering{UT-18} & Menunda aktivasi Bedtime Mode & \\ \ccline
+   \ccid{-4.4}{UG-07}& \ccgoal{-4.4}{Mengambil istirahat sejenak dari restriksi aplikasi} & \centering{UT-19} & Memperpanjang waktu penggunaan aplikasi yang diblokir oleh App Timer & \ccneed{-4.4}{KP-08}\\ \hline
 
 \end{longtable}
 \end{small}
