@@ -4,17 +4,25 @@
 
 \section{Penentuan Kebutuhan Pengguna}
 
-Setelah mengidentifikasi konteks penggunaan dari aplikasi Digital Wellbeing, dilakukan analisis terhadap kebutuhan pengguna. Kebutuhan-kebutuhan ini 
+Setelah mengidentifikasi konteks penggunaan dari aplikasi Digital Wellbeing, maka taha selanjutnya adalah menentukan kebutuhan pengguna. Pada tahap ini akan dilakukan analisis terhadap skenario pengguna, analisis tipe interaksi dari desain, analisis fitur-fitur yang dibutuhkan, analisis prinsip desain, serta analisis usability dan user experience goals yang dibutuhkan pengguna. Kebutuhan-kebutuhan ini digunakan untuk membangun prototipe aplikasi solusi.
 
 \subsection{Skenario Pengguna}
 Sebelum menentukan solusi desain yang perlu memenuhi kebutuhan pengguna, skenario pengguna disusun berdasarkan persona yang dipilih, yaitu persona Maya. Skenario pengguna mengembangkan persona lebih lanjut dengan memberikan gambaran tentang bagaimana persona tersebut menggunakan aplikasi untuk mencapai tujuan-tujuannya. Penulisan skenario dalam bentuk narasi adalah alat bantu desain yang efektif untuk mengkomunikasikan ide dari desain tersebut, dalam membantu penggunanya. \parencite{cooper2014face} Berikut adalah skenario-skenario pengguna dari persona Maya yang mendeskripsikan contoh kasus penggunaan solusi desain untuk aplikasi Digital Wellbeing
 \begin{enumerate}
   \item Maya sedang bekerja menggunakan laptopnya, saat ia sedang merasa sedikit bosan dan tiba-tiba mendapat perasaan untuk memeriksa media sosial lewat smartphonenya. Tanpa sadar, Maya sudah bermain media sosial selama setengah jam ketika rekannya bertanya tentang pekerjaannya. Bagaimana aplikasi Digital Wellbeing dapat membantu Maya dalam fokus dalam aktivitasnya di jam kerja?
-  \item Maya ingin menganalisis penggunaan smartphone dengan melihat seberapa sering ia menggunakan aplikasi favoritnya. Lalu Maya menemukan bahwa ia menggunakan Instagram dan Twitter terlalu sering setiap harinya. Maya ingin memasang batas waktu penggunaan agar pelan-pelan bisa dikurangi. Bagaimana aplikasi Digital Wellbeing dapat memberikan sugesti  tentang penggunaan smartphone yang wajar dan batas apa saja yang Maya bisa pasang untuk membantu memperbaiki kebiasaannya?
+  \item Maya ingin menganalisis penggunaan \textit{smartphone} dengan melihat seberapa sering ia menggunakan aplikasi favoritnya. Lalu Maya menemukan bahwa ia menggunakan Instagram dan Twitter terlalu sering setiap harinya. Maya ingin memasang batas waktu penggunaan agar pelan-pelan bisa dikurangi. Bagaimana aplikasi Digital Wellbeing dapat memberikan sugesti  tentang penggunaan \textit{smartphone} yang wajar dan batas apa saja yang Maya bisa pasang untuk membantu memperbaiki kebiasaannya?
   \item Maya sedang memulai minggu kerjanya di hari senin, dan ia ingat untuk mengatur jadwal pembatasan akses dan notifikasi dari aplikasi. Bagaimana cara Maya bisa mengatur jadwalnya agar bisa sesuai dengan jam kerjanya yang bervariasi?
   \item Mendekati akhir hari kerjanya, Maya menyelesaikan tugasnya lebih cepat dari biasanya dan ingin bermain di smartphonenya. Namun ia telah memasang restriksi sebelumnya yang akan diangkat setelah jam kerjanya selesai. Bagaimana aplikasi Digital Wellbeing dapat memberikan leluasa kepada Maya tanpa menghapus pengaturan yang telah dipasang?
-  \item Maya ingin beristirahat untuk mengakhiri harinya. Namun Maya lupa waktu ketika sedang bermain dengan smartphonenya sehingga ia melewati jam tidurnya selama satu jam. Maya ingin memasang pengingat pada smartphone untuk menepati jam tidurnya agar setiap pagi ia bisa bangun denga tepat waktu dengan segar. Bagaimana aplikasi Digital Wellbeing dapat membantu mencapai tujuannya?
+  \item Maya ingin beristirahat untuk mengakhiri harinya. Namun Maya lupa waktu ketika sedang bermain dengan smartphonenya sehingga ia melewati jam tidurnya selama satu jam. Maya ingin memasang pengingat pada \textit{smartphone} untuk menepati jam tidurnya agar setiap pagi ia bisa bangun denga tepat waktu dengan segar. Bagaimana aplikasi Digital Wellbeing dapat membantu mencapai tujuannya?
 \end{enumerate}
+
+\subsection{Analisis Tipe Interaksi}
+
+Sebelum menentukan elemen-elemen dari desain, perlu ditentukan tipe interaksi yang akan menjadi konsep dari prototipe aplikasi solusi. Tipe interaksi yang dibahas akan mengacu pada studi literatur bagian \ref{subsec:tipe_interaksi}. Menurut observasi pada aplikasi Digital Wellbeing awal, dapat ditentukan bahwa tipe interaksi yang diterapkan adalah \textit{instructing} dengan melihat bagaimana aplikasi membantu penggunanya menyetel pengaturan-pengaturan. Sesuai dengan kebutuhan pengguna yang dianalisis, terutama kebutuhan KP-01 tentang efisiensi dalam pengaturan aplikasi, tipe interaksi ini akan dipertahankan melihat kekuatan tipe interaksi dalam menyediakan kecepatan dan efisiensi dalam berinteraksi.
+
+Dari menganalisis kebutuhan pengguna, ditemukan bahwa diperlukan tipe interaksi tambahan. Menurut kebutuhan KP-03, pengguna membutuhkan sebuah fitur rekomendasi untuk memberikan informasi tentang kebiasaan digital yang baik. Selain itu, kebutuhan KP-09 menyebutkan bahwa pengguna membutuhkan interaksi yang terasa lebih personal dengan aplikasi. Hal-hal tersebut menunjukkan bahwa solusi desain memerlukan tipe interaksi \textit{responding}, di mana sistem akan menginisiasi interaksi kepada pengguna dan menunggu balasan. Tipe interaksi ini akan difokuskan pada sistem rekomendasi kebiasaan digital yang sehat untuk pengguna, serta pada pesan-pesan pengingat sesuai dengan fitur yang memanfaatkannya. Walaupun interaksi ini diinisiasi oleh sistem, pengguna tetap dapat mengaturnya sesuai dengan kebutuhan, dan penerapannya akan dianalisis lebih lanjut pada tahap evaluasi.
+
+Tipe interaksi lain tidak akan dipertimbangkan ke dalam solusi desain. Tipe interaksi \textit{conversing} dinilai akan membuat pengguna kurang efisien dalam melakukan pengaturan. Sedangkan tipe interaksi \textit{manipulating} dan \textit{exploring} dinilai tidak relevan melihat tidak adanya kebutuhan pengguna terhadap objek-objek yang lebih nyata atau lingkungan sistem yang dapat dieksplorasi.
 
 \subsection{Analisis Fitur}
 
@@ -34,29 +42,29 @@ Dari menganalisis kebutuhan dan tujuan pengguna, maka dapat ditentukan fitur-fit
 %   \textbf{ID} & \textbf{Fitur} & \centering\textbf{Penjelasan} & \textbf{Tipe Fitur} & \textbf{Keterkaitan Kebutuhan \& Tujuan} & \textbf{Keterkaitan Fungsionalitas} \\ \hline \endhead
 %   \hline \endfoot
 
-%   F-01 & \textit{Usage tracker} & Melacak penggunaan smartphone dan aplikasi-aplikasi dari sisi lama penggunaan, jumlah pembukaan, dan notifikasi yang diterima & Sudah ada & KP-04, UG-04 & FD-01, FD-02 \\ \hline
-%   F-02 & \textit{Pie chart} & Menampilkan laporan data penggunaan smartphone dan aplikasi-aplikasi untuk hari yang sedang berlangsung & Sudah ada & KP-04, UG-04 & FD-03 \\ \hline
-%   F-03 & \textit{Bar chart} & Menampilkan ringkasan laporan data penggunaan smartphone dan aplikasi-aplikasi & Modifikasi & KP-04, UG-04 & FD-03 \\ \hline
+%   F-01 & \textit{Usage tracker} & Melacak penggunaan \textit{smartphone} dan aplikasi-aplikasi dari sisi lama penggunaan, jumlah pembukaan, dan notifikasi yang diterima & Sudah ada & KP-04, UG-04 & FD-01, FD-02 \\ \hline
+%   F-02 & \textit{Pie chart} & Menampilkan laporan data penggunaan \textit{smartphone} dan aplikasi-aplikasi untuk hari yang sedang berlangsung & Sudah ada & KP-04, UG-04 & FD-03 \\ \hline
+%   F-03 & \textit{Bar chart} & Menampilkan ringkasan laporan data penggunaan \textit{smartphone} dan aplikasi-aplikasi & Modifikasi & KP-04, UG-04 & FD-03 \\ \hline
 %   F-04 & \textit{Date range selector} & Memilih rentang tanggal untuk tampilan laporan penggunaan & Baru & KP-04, UG-04 & FU-03 \\ \hline
-%   F-05 & \textit{Usage Summary} & Menampilkan ringkasan singkat tentang laporan penggunaan smartphone dan aplikasi & Baru & KP-04, UG-04 & FU-03 \\ \hline
+%   F-05 & \textit{Usage Summary} & Menampilkan ringkasan singkat tentang laporan penggunaan \textit{smartphone} dan aplikasi & Baru & KP-04, UG-04 & FU-03 \\ \hline
 %   F-06 & Rekomendasi perbaikan perilaku & Memberikan rekomendasi berdasarkan perilaku dari pengguna tentang aksi yang dapat dilakukan untuk memperbaiki kebiasaan digital pengguna & Baru & KP-03, UG-04 & - \\ \hline
-%   F-06 & \textit{Dashboard Widget} & Menampilkan laporan penggunaan smartphone dan aplikasi untuk hari yang sedang berlangsung & Modifikasi & KP-02, UG-04 & FD-03, FD-04 \\ \hline
+%   F-07 & \textit{Dashboard Widget} & Menampilkan laporan penggunaan \textit{smartphone} dan aplikasi untuk hari yang sedang berlangsung & Modifikasi & KP-02, UG-04 & FD-03, FD-04 \\ \hline
 %   F-08 & \textit{App Timer} & Membatasi waktu penggunaan aplikasi harian & Sudah ada & UG-03 & FD-05 \\ \hline
 %   F-09 & \textit{App Timer Widget}  & Menampilkan daftar sisa waktu penggunaan aplikasi yang dipasang App Timer & Baru & KP-02, UG-03 & FU-06 \\ \hline
-%   F-10 & Daftar aplikasi & Menampilkan seluruh aplikasi yang terdapat di smartphone untuk diberikan aksi lanjutan sesuai konteks fitur & Sudah ada & KP-01 & FD-04 \\ \hline
+%   F-10 & Daftar aplikasi & Menampilkan seluruh aplikasi yang terdapat di \textit{smartphone} untuk diberikan aksi lanjutan sesuai konteks fitur & Sudah ada & KP-01 & FD-04 \\ \hline
 %   F-11 & \textit{Search bar} & Mencari aplikasi yang terdapat pada daftar & Baru & KP-01 & - \\ \hline
 %   F-12 & \textit{App Grouping} & Mengelompokkan aplikasi-aplikasi berdasarkan kategori yang ditentukan pengguna & Baru & KP-01 & - \\ \hline
 %   F-13 & \textit{Focus Mode} & Memblokir akses aplikasi dan informasi yang diberikan oleh aplikasi  pilihan untuk waktu yang ditentukan atau sehari penuh & Modifikasi & UG-02, UG-03 & FD-08, FD-09 \\ \hline
 %   F-14 & \textit{Take a break} & Menunda pemblokiran dari fitur-fitur untuk waktu yang ditentukan & Modifikasi & KP-08, UG-07 & FD-11 \\ \hline
 %   F-15 & \textit{Turn off for now} & Mematikan pemblokiran dari fitur-fitur untuk sehari penuh & Modifikasi & KP-08, UG-07 & FD-11 \\ \hline
 %   F-16 & \textit{Focus Mode Widget} & Menampilkan jadwal aktivasi Focus Mode dan fungsionalitas aktivasi dari fitur Focus Mode & Baru & KP-02, UG-02 & FU-06 \\ \hline
-%   F-17 & \textit{Bedtime Mode} & Mengubah smartphone ke dalam perilaku mode tidur pada jadwal yang ditentukan & Modifikasi & UG-06 & FD-12 \\ \hline
-%   F-18 & \textit{Greyscale screen} & Mengubah warna layar smartphone menjadi hitam-putih & Sudah ada & UG-02 & FD-15 \\ \hline
-%   F-19 & \textit{Do Not Disturb} & Mengalihkan pengguna ke layar pengaturan Do Not Disturb bawaan smartphone & Sudah ada & UG-02 & - \\ \hline
-%   F-20 & Pengaturan notifikasi & Mengalihkan pengguna ke layar pengaturan notifikasi aplikasi bawaan smartphone & Sudah ada & UG-02 & - \\ \hline
+%   F-17 & \textit{Bedtime Mode} & Mengubah \textit{smartphone} ke dalam perilaku mode tidur pada jadwal yang ditentukan & Modifikasi & UG-06 & FD-12 \\ \hline
+%   F-18 & \textit{Greyscale screen} & Mengubah warna layar \textit{smartphone} menjadi hitam-putih & Sudah ada & UG-02 & FD-15 \\ \hline
+%   F-19 & \textit{Do Not Disturb} & Mengalihkan pengguna ke layar pengaturan Do Not Disturb bawaan \textit{smartphone} & Sudah ada & UG-02 & - \\ \hline
+%   F-20 & Pengaturan notifikasi & Mengalihkan pengguna ke layar pengaturan notifikasi aplikasi bawaan \textit{smartphone} & Sudah ada & UG-02 & - \\ \hline
 %   F-21 & Daftar Jadwal Aktivasi & Memberikan pengguna kemampuan untuk mengatur 0 atau lebih jadwal aktivasi fitur & Modifikasi & KP-07 & FD-10 \\ \hline
 %   F-22 & \textit{Goal Reminder} & Menambah pesan pengingat opsional yang akan ditambahkan pada pesan yang diberikan oleh fitur tertentu & Baru & KP-09, UG-05 & FU-13 \\ \hline
-%   F-23 & \textit{Daily Summary Notification} & Memberikan notifikasi berisi ringkasan penggunaan smartphone harian dan pembanding dengan data hari kemarin & Baru & KP-03, KP-11, UG-04 & FU-07 \\ \hline
+%   F-23 & \textit{Daily Summary Notification} & Memberikan notifikasi berisi ringkasan penggunaan \textit{smartphone} harian dan pembanding dengan data hari kemarin & Baru & KP-03, KP-11, UG-04 & FU-07 \\ \hline
 %   F-24 & \textit{Strictness level} & Memilih tingkat keketatan dengan mengatur kemampuan fitur-fitur tertentu & Baru & KP-05, UG-01 & - \\ \hline
 %   F-25 & \textit{Settings lock} & Mengunci pengaturan fitur-fitur tertentu dari pengubahan untuk waktu yang ditentukan & Baru & KP-06, UG-01 & - \\ \hline
 
@@ -79,29 +87,29 @@ Dari menganalisis kebutuhan dan tujuan pengguna, maka dapat ditentukan fitur-fit
 %   \textbf{ID} & \textbf{Fitur} & \centering\textbf{Penjelasan} & \textbf{Tipe Fitur} & \textbf{Keterkaitan Kebutuhan \& Tujuan} & \textbf{Keterkaitan Fungsionalitas} \\ \hline \endhead
 %   \hline \endfoot
 
-%   F-01 & \textit{Usage tracker} & Melacak penggunaan smartphone dan aplikasi-aplikasi dari sisi lama penggunaan, jumlah pembukaan, dan notifikasi yang diterima & Sudah ada & KP-04, UG-04 & FD-01, FD-02 \\ \hline
-%   F-02 & \textit{Pie chart} & Menampilkan laporan data penggunaan smartphone dan aplikasi-aplikasi untuk hari yang sedang berlangsung & Sudah ada & KP-04, UG-04 & FD-03 \\ \hline
-%   F-03 & \textit{Bar chart} & Menampilkan ringkasan laporan data penggunaan smartphone dan aplikasi-aplikasi & Modifikasi & KP-04, UG-04 & FD-03 \\ \hline
+%   F-01 & \textit{Usage tracker} & Melacak penggunaan \textit{smartphone} dan aplikasi-aplikasi dari sisi lama penggunaan, jumlah pembukaan, dan notifikasi yang diterima & Sudah ada & KP-04, UG-04 & FD-01, FD-02 \\ \hline
+%   F-02 & \textit{Pie chart} & Menampilkan laporan data penggunaan \textit{smartphone} dan aplikasi-aplikasi untuk hari yang sedang berlangsung & Sudah ada & KP-04, UG-04 & FD-03 \\ \hline
+%   F-03 & \textit{Bar chart} & Menampilkan ringkasan laporan data penggunaan \textit{smartphone} dan aplikasi-aplikasi & Modifikasi & KP-04, UG-04 & FD-03 \\ \hline
 %   F-04 & \textit{Date range selector} & Memilih rentang tanggal untuk tampilan laporan penggunaan & Baru & KP-04, UG-04 & FU-03 \\ \hline
-%   F-05 & \textit{Usage Summary} & Menampilkan ringkasan singkat tentang laporan penggunaan smartphone dan aplikasi & Baru & KP-04, UG-04 & FU-03 \\ \hline
+%   F-05 & \textit{Usage Summary} & Menampilkan ringkasan singkat tentang laporan penggunaan \textit{smartphone} dan aplikasi & Baru & KP-04, UG-04 & FU-03 \\ \hline
 %   F-06 & Rekomendasi perbaikan perilaku & Memberikan rekomendasi berdasarkan perilaku dari pengguna tentang aksi yang dapat dilakukan untuk memperbaiki kebiasaan digital pengguna & Baru & KP-03, UG-04 & - \\ \hline
-%   F-06 & \textit{Dashboard Widget} & Menampilkan laporan penggunaan smartphone dan aplikasi untuk hari yang sedang berlangsung & Modifikasi & KP-02, UG-04 & FD-03, FD-04 \\ \hline
+%   F-07 & \textit{Dashboard Widget} & Menampilkan laporan penggunaan \textit{smartphone} dan aplikasi untuk hari yang sedang berlangsung & Modifikasi & KP-02, UG-04 & FD-03, FD-04 \\ \hline
 %   F-08 & \textit{App Timer} & Membatasi waktu penggunaan aplikasi harian & Sudah ada & UG-03 & FD-05 \\ \hline
 %   F-09 & \textit{App Timer Widget}  & Menampilkan daftar sisa waktu penggunaan aplikasi yang dipasang App Timer & Baru & KP-02, UG-03 & FU-06 \\ \hline
-%   F-10 & Daftar aplikasi & Menampilkan seluruh aplikasi yang terdapat di smartphone untuk diberikan aksi lanjutan sesuai konteks fitur & Sudah ada & KP-01 & FD-04 \\ \hline
+%   F-10 & Daftar aplikasi & Menampilkan seluruh aplikasi yang terdapat di \textit{smartphone} untuk diberikan aksi lanjutan sesuai konteks fitur & Sudah ada & KP-01 & FD-04 \\ \hline
 %   F-11 & \textit{Search bar} & Mencari aplikasi yang terdapat pada daftar & Baru & KP-01 & - \\ \hline
 %   F-12 & \textit{App Grouping} & Mengelompokkan aplikasi-aplikasi berdasarkan kategori yang ditentukan pengguna & Baru & KP-01 & - \\ \hline
 %   F-13 & \textit{Focus Mode} & Memblokir akses aplikasi dan informasi yang diberikan oleh aplikasi  pilihan untuk waktu yang ditentukan atau sehari penuh & Modifikasi & UG-02, UG-03 & FD-08, FD-09 \\ \hline
 %   F-14 & \textit{Take a break} & Menunda pemblokiran dari fitur-fitur untuk waktu yang ditentukan & Modifikasi & KP-08, UG-07 & FD-11 \\ \hline
 %   F-15 & \textit{Turn off for now} & Mematikan pemblokiran dari fitur-fitur untuk sehari penuh & Modifikasi & KP-08, UG-07 & FD-11 \\ \hline
 %   F-16 & \textit{Focus Mode Widget} & Menampilkan jadwal aktivasi Focus Mode dan fungsionalitas aktivasi dari fitur Focus Mode & Baru & KP-02, UG-02 & FU-06 \\ \hline
-%   F-17 & \textit{Bedtime Mode} & Mengubah smartphone ke dalam perilaku mode tidur pada jadwal yang ditentukan & Modifikasi & UG-06 & FD-12 \\ \hline
-%   F-18 & \textit{Greyscale screen} & Mengubah warna layar smartphone menjadi hitam-putih & Sudah ada & UG-02 & FD-15 \\ \hline
-%   F-19 & \textit{Do Not Disturb} & Mengalihkan pengguna ke layar pengaturan Do Not Disturb bawaan smartphone & Sudah ada & UG-02 & - \\ \hline
-%   F-20 & Pengaturan notifikasi & Mengalihkan pengguna ke layar pengaturan notifikasi aplikasi bawaan smartphone & Sudah ada & UG-02 & - \\ \hline
+%   F-17 & \textit{Bedtime Mode} & Mengubah \textit{smartphone} ke dalam perilaku mode tidur pada jadwal yang ditentukan & Modifikasi & UG-06 & FD-12 \\ \hline
+%   F-18 & \textit{Greyscale screen} & Mengubah warna layar \textit{smartphone} menjadi hitam-putih & Sudah ada & UG-02 & FD-15 \\ \hline
+%   F-19 & \textit{Do Not Disturb} & Mengalihkan pengguna ke layar pengaturan Do Not Disturb bawaan \textit{smartphone} & Sudah ada & UG-02 & - \\ \hline
+%   F-20 & Pengaturan notifikasi & Mengalihkan pengguna ke layar pengaturan notifikasi aplikasi bawaan \textit{smartphone} & Sudah ada & UG-02 & - \\ \hline
 %   F-21 & Daftar Jadwal Aktivasi & Memberikan pengguna kemampuan untuk mengatur 0 atau lebih jadwal aktivasi fitur & Modifikasi & KP-07 & FD-10 \\ \hline
 %   F-22 & \textit{Goal Reminder} & Menambah pesan pengingat opsional yang akan ditambahkan pada pesan yang diberikan oleh fitur tertentu & Baru & KP-09, UG-05 & FU-13 \\ \hline
-%   F-23 & \textit{Daily Summary Notification} & Memberikan notifikasi berisi ringkasan penggunaan smartphone harian dan pembanding dengan data hari kemarin & Baru & KP-03, KP-11, UG-04 & FU-07 \\ \hline
+%   F-23 & \textit{Daily Summary Notification} & Memberikan notifikasi berisi ringkasan penggunaan \textit{smartphone} harian dan pembanding dengan data hari kemarin & Baru & KP-03, KP-11, UG-04 & FU-07 \\ \hline
 %   F-24 & \textit{Strictness level} & Memilih tingkat keketatan dengan mengatur kemampuan fitur-fitur tertentu & Baru & KP-05, UG-01 & - \\ \hline
 %   F-25 & \textit{Settings lock} & Mengunci pengaturan fitur-fitur tertentu dari pengubahan untuk waktu yang ditentukan & Baru & KP-06, UG-01 & - \\ \hline
 
@@ -123,29 +131,29 @@ Dari menganalisis kebutuhan dan tujuan pengguna, maka dapat ditentukan fitur-fit
   \textbf{ID} & \textbf{Fitur} & \centering\textbf{Penjelasan} & \textbf{Tipe Fitur} & \textbf{Keterkaitan} \\ \hline \endhead
   \hline \endfoot
 
-  F-01 & \textit{Usage tracker} & Melacak penggunaan smartphone dan aplikasi-aplikasi dari sisi lama penggunaan, jumlah pembukaan, dan notifikasi yang diterima & Sudah ada & KP-04, UG-04 \\ \hline
-  F-02 & \textit{Pie chart} & Menampilkan laporan data penggunaan smartphone dan aplikasi-aplikasi untuk hari yang sedang berlangsung & Sudah ada & KP-04, UG-04 \\ \hline
-  F-03 & \textit{Bar chart} & Menampilkan ringkasan laporan data penggunaan smartphone dan aplikasi-aplikasi & Modifikasi & KP-04, UG-04 \\ \hline
+  F-01 & \textit{Usage tracker} & Melacak penggunaan \textit{smartphone} dan aplikasi-aplikasi dari sisi lama penggunaan, jumlah pembukaan, dan notifikasi yang diterima & Sudah ada & KP-04, UG-04 \\ \hline
+  F-02 & \textit{Pie chart} & Menampilkan laporan data penggunaan \textit{smartphone} dan aplikasi-aplikasi untuk hari yang sedang berlangsung & Sudah ada & KP-04, UG-04 \\ \hline
+  F-03 & \textit{Bar chart} & Menampilkan ringkasan laporan data penggunaan \textit{smartphone} dan aplikasi-aplikasi & Modifikasi & KP-04, UG-04 \\ \hline
   F-04 & \textit{Date range selector} & Memilih rentang tanggal untuk tampilan laporan penggunaan & Baru & KP-04, UG-04 \\ \hline
-  F-05 & \textit{Usage Summary} & Menampilkan ringkasan singkat tentang laporan penggunaan smartphone dan aplikasi & Baru & KP-04, UG-04 \\ \hline
+  F-05 & \textit{Usage Summary} & Menampilkan ringkasan singkat tentang laporan penggunaan \textit{smartphone} dan aplikasi & Baru & KP-04, UG-04 \\ \hline
   F-06 & Rekomendasi perbaikan perilaku & Memberikan rekomendasi berdasarkan perilaku dari pengguna tentang aksi yang dapat dilakukan untuk memperbaiki kebiasaan digital pengguna & Baru & KP-03, UG-04 \\ \hline
-  F-06 & \textit{Dashboard Widget} & Menampilkan laporan penggunaan smartphone dan aplikasi untuk hari yang sedang berlangsung & Modifikasi & KP-02, UG-04 \\ \hline
+  F-07 & \textit{Dashboard Widget} & Menampilkan laporan penggunaan \textit{smartphone} dan aplikasi untuk hari yang sedang berlangsung & Modifikasi & KP-02, UG-04 \\ \hline
   F-08 & \textit{App Timer} & Membatasi waktu penggunaan aplikasi harian & Sudah ada & UG-03 \\ \hline
-  F-09 & \textit{App Timer Widget}  & Menampilkan daftar sisa waktu penggunaan aplikasi yang dipasang App Timer & Baru & KP-02, UG-03 \\ \hline
-  F-10 & Daftar aplikasi & Menampilkan seluruh aplikasi yang terdapat di smartphone untuk diberikan aksi lanjutan sesuai konteks fitur & Sudah ada & KP-01 \\ \hline
+  F-09 & \textit{App Timer Widget}  & Menampilkan daftar sisa waktu penggunaan aplikasi yang dipasang \textit{App Timer} & Baru & KP-02, UG-03 \\ \hline
+  F-10 & Daftar aplikasi & Menampilkan seluruh aplikasi yang terdapat di \textit{smartphone} untuk diberikan aksi lanjutan sesuai konteks fitur & Sudah ada & KP-01 \\ \hline
   F-11 & \textit{Search bar} & Mencari aplikasi yang terdapat pada daftar & Baru & KP-01 \\ \hline
   F-12 & \textit{App Grouping} & Mengelompokkan aplikasi-aplikasi berdasarkan kategori yang ditentukan pengguna & Baru & KP-01 \\ \hline
-  F-13 & \textit{Focus Mode} & Memblokir akses aplikasi dan informasi yang diberikan oleh aplikasi  pilihan untuk waktu yang ditentukan atau sehari penuh & Modifikasi & UG-02, UG-03  \\ \hline
+  F-13 & \textit{Focus Mode} & Memblokir akses aplikasi dan informasi yang diberikan oleh aplikasi pilihan untuk waktu yang ditentukan atau sehari penuh & Modifikasi & UG-02, UG-03  \\ \hline
   F-14 & \textit{Take a break} & Menunda pemblokiran dari fitur-fitur untuk waktu yang ditentukan & Modifikasi & KP-08, UG-07 \\ \hline
   F-15 & \textit{Turn off for now} & Mematikan pemblokiran dari fitur-fitur untuk sehari penuh & Modifikasi & KP-08, UG-07 \\ \hline
-  F-16 & \textit{Focus Mode Widget} & Menampilkan jadwal aktivasi Focus Mode dan fungsionalitas aktivasi dari fitur Focus Mode & Baru & KP-02, UG-02 \\ \hline
-  F-17 & \textit{Bedtime Mode} & Mengubah smartphone ke dalam perilaku mode tidur pada jadwal yang ditentukan & Modifikasi & UG-06 \\ \hline
-  F-18 & \textit{Greyscale screen} & Mengubah warna layar smartphone menjadi hitam-putih & Sudah ada & UG-02 \\ \hline
-  F-19 & \textit{Do Not Disturb} & Mengalihkan pengguna ke layar pengaturan Do Not Disturb bawaan smartphone & Sudah ada & UG-02 \\ \hline
-  F-20 & Pengaturan notifikasi & Mengalihkan pengguna ke layar pengaturan notifikasi aplikasi bawaan smartphone & Sudah ada & UG-02 \\ \hline
+  F-16 & \textit{Focus Mode Widget} & Menampilkan jadwal aktivasi \textit{Focus Mode} dan fungsionalitas aktivasi dari fitur \textit{Focus Mode} & Baru & KP-02, UG-02 \\ \hline
+  F-17 & \textit{Bedtime Mode} & Mengubah \textit{smartphone} ke dalam perilaku mode tidur pada jadwal yang ditentukan & Modifikasi & UG-06 \\ \hline
+  F-18 & \textit{Greyscale screen} & Mengubah warna layar \textit{smartphone} menjadi hitam-putih & Sudah ada & UG-02 \\ \hline
+  F-19 & \textit{Do Not Disturb} & Mengalihkan pengguna ke layar pengaturan \textit{Do Not Disturb} bawaan \textit{smartphone} & Sudah ada & UG-02 \\ \hline
+  F-20 & Pengaturan notifikasi & Mengalihkan pengguna ke layar pengaturan notifikasi aplikasi bawaan \textit{smartphone} & Sudah ada & UG-02 \\ \hline
   F-21 & Daftar Jadwal Aktivasi & Memberikan pengguna kemampuan untuk mengatur 0 atau lebih jadwal aktivasi fitur & Modifikasi & KP-07 \\ \hline
   F-22 & \textit{Goal Reminder} & Menambah pesan pengingat opsional yang akan ditambahkan pada pesan yang diberikan oleh fitur tertentu & Baru & KP-09, UG-05 \\ \hline
-  F-23 & \textit{Daily Summary Notification} & Memberikan notifikasi berisi ringkasan penggunaan smartphone harian dan pembanding dengan data hari kemarin & Baru & KP-03, KP-11, UG-04 \\ \hline
+  F-23 & \textit{Daily Summary Notification} & Memberikan notifikasi berisi ringkasan penggunaan \textit{smartphone} harian dan pembanding dengan data hari kemarin & Baru & KP-03, KP-11, UG-04 \\ \hline
   F-24 & \textit{Strictness level} & Memilih tingkat keketatan dengan mengatur kemampuan fitur-fitur tertentu & Baru & KP-05, UG-01 \\ \hline
   F-25 & \textit{Settings lock} & Mengunci pengaturan fitur-fitur tertentu dari pengubahan untuk waktu yang ditentukan & Baru & KP-06, UG-01 \\ \hline
 
