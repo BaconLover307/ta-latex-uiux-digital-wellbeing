@@ -163,17 +163,100 @@ Dari menganalisis kebutuhan dan tujuan pengguna, maka dapat ditentukan fitur-fit
 \FloatBarrier
 
 \subsection{Analisis Prinsip Desain}
+Sebelum fitur-fitur diimplementasi ke dalam prototipe aplikasi, perlu ditentukan dahulu prinsip desain yang akan diprioritaskan oleh setiap fitur. Prinsip desain yang digunakan merujuk pada studi literatur bagian \ref{subsec:prinsip_desain_dw} tentang prinsip desain khusus untuk domain Digital Wellbeing, serta di bagian \ref{subsec:prinsip_interaksi} tentang prinsip desain interaksi pada umumnya menurut \textcite{PreeceRogersSharp15}. Pemaparan tentang penggunaan prinsip desain dapat dilihat pada Tabel \ref{tab:prinsip_desain}. Prinsip-prinsip desain yang disebutkan akan dipetakan pada fitur-fitur pada tahap perancangan prototipe perangkat lunak.
+
+\RaggedLeft
+\begin{small}
+\begin{longtable}[c]{|W{c}{0.07\textwidth}|>{\cccnormspacingcenter}m{0.18\textwidth}|>{\cccnormspacing}m{0.65\textwidth}|}
+  \caption{Daftar Penggunaan Prinsip Desain}
+  \label{tab:prinsip_desain} \\
+  \hline \rowcolor[HTML]{A3E5F5}
+  \multicolumn{1}{|c|}{\textbf{ID}} & \multicolumn{1}{|c|}{\textbf{Prinsip Desain}} & \multicolumn{1}{|c|}{\textbf{Penggunaan}} \\ \hline \endfirsthead
+  \hline \rowcolor[HTML]{A3E5F5}
+  \multicolumn{1}{|c|}{\textbf{ID}} & \multicolumn{1}{|c|}{\textbf{Prinsip Desain}} & \multicolumn{1}{|c|}{\textbf{Penggunaan}} \\ \hline \endhead
+
+  \hline \endfoot
+  
+  \rowcolor[HTML]{DCF3FC} \multicolumn{3}{|l|}{\textbf{Prinsip Desain Digital Wellbeing}} \\ \hline
+  DP-01 & \textit{Empowerment} & Membuat pengaturan default pada fitur dengan batas waktu dengan cara menyesuaikan pada kebiasaan pengguna \\ \hline
+  DP-02 & \textit{Awareness} & Meletakan data penggunaan smartphone pengguna sebagai tampilan utama teratas dari aplikasi \\ \hline
+  DP-03 & \textit{Control} & Memberikan pengguna fleksibilitas dalam mengatur kemampuan pemblokiran dari fitur-fitur beserta deskripsi jelas \\ \hline
+  DP-04 & \textit{Adaptability} & Memberikan pesan pengingat yang berbeda untuk notifikasi restriksi sesuai konteks pengguna, yaitu berdasarkan kategori aplikasi yang ditentukan pengguna \\ \hline
+  \rowcolor[HTML]{DCF3FC} \multicolumn{3}{|l|}{\textbf{Prinsip Desain Interaksi}} \\ \hline
+  DP-05 & \textit{Visibility} & Membuat pembagian lokasi antarfitur yang jelas \\ \hline
+  DP-06 & \textit{Feedback} & Memberikan umpan balik yang sesuai saat pengguna melakukan aksi \\ \hline
+  DP-07 & \textit{Constraints} & Menonaktifkan tombol dari fitur yang diblokir oleh penguncian pengaturan \\ \hline
+  DP-08 & \textit{Consistency} & Konsistensi antara tampilan fitur pada halaman aplikasi dan widget \\ \hline
+  DP-09 & \textit{Affordance} & Desain yang jelas untuk elemen-elemen yang dapat diinteraksi \\ \hline
+
+\end{longtable}
+\end{small}
+\justifying
+\FloatBarrier
+
+\subsection{Analisis \textit{Usability Goals} dan \textit{User Experience Goal}}
+
+Selain prinsip desain, perlu ditentukan juga \textit{usability goals} dan \textit{user experience goals} yang dibutuhkan pengguna. \textit{Usability goals} bertujuan untuk mengoptimalisasi interaksi pengguna dengan prototipe aplikasi yang dibuat. Berikut adalah penjelasan tentang \textit{usability goals} yang diperlukan berdasarkan analisis terhadap kebutuhan dan tujuan pengguna.
+
+\begin{enumerate}
+  \item \textit{Efficiency}
+  \subitem Kebutuhan pengguna terhadap pengaturan fitur yang lebih efisien (KP-01) serta widget untuk membantu mempermudah pengaturan (KP-02) cukup menunjukkan bahwa \textit{usability goal} ini tepat untuk mengarahkan desain solusi. \textit{Usability goal} ini juga dipilih karena pengguna merasa kurangnya fitur-fitur dari aplikasi Digital Wellbeing (MP-04) yang dapat membantu pengguna mencapai tujuannya tanpa melakukan \textit{workaround} terhadap limitasi.
+
+  \item \textit{Learnability}
+  \subitem Adanya kebutuhan pengguna terhadap tampilan yang lebih menarik (KP-10) menunjukkan bahwa fitur-fitur pada aplikasi Digital Wellbeing pada awalnya cukup sulit untuk dimengerti kegunaannya. Dengan memberikan tampilan yang menarik dengan deskripsi yang jelas, diharapkan pengguna dapat mengerti fungsinya langsung ketika melihat fiturnya.
+  
+  \item \textit{Safety}
+  \subitem Adanya kebutuhan pengguna akan pengaturan tingkat keketatan (KP-05) dapat memunculkan kemungkinan langkah salah dari pengguna. Fitur-fitur yang dapat dihilangkan oleh tingkat keketatan seperti kemampuan untuk menghapus App Timer berpotensi untuk mengunci pengguna dari aplikasi yang ingin digunakan. Maka dari itu, fitur-fitur perlu memberikan keamanan bagi pengguna meski tetap diimplementasi untuk memenuhi kebutuhannya.
+
+\end{enumerate}
+
+Di sisi lain, user experience goals berguna untuk mengarahkan desain agar mampu memberikan pengguna pengalaman yang diinginkan. Berikut adalah penjelasan tentang user experience goals yang ditargetkan berdasarkan analisis pengguna
+
+\begin{enumerate}
+  \item \textit{Helpful}
+  \subitem \textit{User experience goal} ini dipilih dengan mempertimbangkan tujuan pengguna untuk memperbaiki kebiasaan digitalnya. Dengan adanya sistem rekomendasi, diharapkan desain solusi juga dapat membantu pengguna dalam menganalisis kebiasaan penggunaan \textit{smartphone} (UG-04). Selain itu, \textit{user experience goal} ini berhubungan erat dengan \textit{usability goal} efficiency, dengan maksud pengguna diharapkan akan merasa terbantu untuk dalam mencapai tujuannya dengan desain interaksi yang efisien.
+
+  \item \textit{Motivating}
+  \subitem Kebutuhan pengguna akan kemampuan personalisasi pesan pengingat (KP-09) menunjukkan bahwa pengguna perlu diberikan motivasi oleh diri sendiri, dengan bantuan aplikasi. Selain itu, fitur \textit{Dashboard} yang sudah ada pada aplikasi Digital Wellbeing juga didesain dengan mengacu pada prinsip desain \textit{Awareness}, yang ditujukan untuk memotivasi pengguna untuk menganalisis kebiasaan digitalnya.
+
+  \item \textit{Rewarding}
+  \subitem Kebutuhan pengguna akan sebuah fitur penghargaan dari aplikasi (KP-11) cukup jelas menunjukkan \textit{user experience goal} yang dibutuhkan dari aplikasi. User experience ini diharapkan untuk dicapai dengan fitur ringkasan penggunaan harian pengguna yang memberi pesan penghargaan jika berhasil mencapai target yang ditentukan pengguna (KP-09) atau mengurangi waktu penggunaan \textit{smartphone} (UG-03).
+  
+\end{enumerate}
+
+Untuk membantu dalam pemetaan terhadap fitur-fitur pada tahap perencangan prototipe perangkat lunak, maka \textit{usability goals} dan \textit{user experience goals} yang telah ditentukan akan diberi ID seperti yang dapat ditemukan pada Tabel \ref{tab:daftar_goals}. Pada tabel juga dapat dilihat keterkaitan yang lebih jelas dengan kebutuhan dan tujuan pengguna.
+
+\RaggedLeft
+\begin{small}
+\begin{longtable}[c]{|W{c}{0.07\textwidth}|>{\cccnormspacingcenter}m{0.2\textwidth}|>{\cccnormspacingcenter}m{0.3\textwidth}|}
+  \caption{Daftar \textit{Usability} \& \textit{User Experience Goals}}
+  \label{tab:daftar_goals} \\
+  \hline \rowcolor[HTML]{A3E5F5}
+  \multicolumn{1}{|c|}{\textbf{ID}} & \multicolumn{1}{|c|}{\textbf{\textit{Goals}}} & \multicolumn{1}{|c|}{\textbf{Keterkaitan}} \\ \hline \endfirsthead
+  \hline \rowcolor[HTML]{A3E5F5}
+  \multicolumn{1}{|c|}{\textbf{ID}} & \multicolumn{1}{|c|}{\textbf{\textit{Goals}}} & \multicolumn{1}{|c|}{\textbf{Keterkaitan}} \\ \hline \endhead
+
+  \hline \endfoot
+  
+  \rowcolor[HTML]{DCF3FC} \multicolumn{3}{|l|}{\textbf{\textit{Usability Goals}}} \\ \hline
+  G-01 & \textit{Efficiency} & MP-04, KP-01, KP-02 \\ \hline
+  G-03 & \textit{Learnability} & KP-10 \\ \hline
+  G-02 & \textit{Safety} & KP-05, UG-01 \\ \hline
+  \rowcolor[HTML]{DCF3FC} \multicolumn{3}{|l|}{\textbf{\textit{User Experience Goals}}} \\ \hline
+  G-04 & \textit{Helpful} & UG-04, UG-06 \\ \hline
+  G-05 & \textit{Motivating} & KP-09, UG-05 \\ \hline
+  G-06 & \textit{Rewarding} & KP-11, UG-03 \\ \hline
+
+\end{longtable}
+\end{small}
+\justifying
+\FloatBarrier
 
 
-\subsection{Analisis \textit{Usability} dan \textit{User Experience Goal}}
+% \subsubsection{Pemetaan Prinsip Desain}
 
 
-
-
-\subsubsection{Pemetaan Prinsip Desain}
-
-
-\subsubsection{Pemetaan \textit{Usability} dan \textit{User Experience Goals}}
+% \subsubsection{Pemetaan \textit{Usability} dan \textit{User Experience Goals}}
 
 
 
