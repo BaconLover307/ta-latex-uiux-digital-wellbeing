@@ -4,7 +4,7 @@
 
 \section{Penentuan Kebutuhan Perangkat Lunak}
 
-Setelah mengidentifikasi konteks penggunaan dari aplikasi Digital Wellbeing, maka tahap selanjutnya adalah menentukan kebutuhan dari perangkat lunak. Pada tahap ini akan dilakukan analisis tipe interaksi dari desain, analisis fitur-fitur yang dibutuhkan, analisis prinsip desain, serta analisis usability dan user experience goals yang dibutuhkan pengguna. Kebutuhan-kebutuhan ini digunakan untuk membangun prototipe aplikasi solusi.
+Setelah mengidentifikasi konteks penggunaan dari aplikasi Digital Wellbeing, maka tahap selanjutnya adalah menentukan kebutuhan dari perangkat lunak. Pada tahap ini akan dilakukan analisis tipe interaksi dari desain, analisis fitur-fitur yang dibutuhkan, analisis prinsip desain, serta analisis \textit{usability goals} dan \textit{user experience goals} yang dibutuhkan pengguna. Kebutuhan-kebutuhan ini digunakan untuk membangun prototipe aplikasi solusi.
 
 \subsection{Analisis Tipe Interaksi}
 
@@ -15,6 +15,7 @@ Dari menganalisis kebutuhan pengguna, ditemukan bahwa diperlukan tipe interaksi 
 Tipe interaksi lain tidak akan dipertimbangkan ke dalam solusi desain. Tipe interaksi \textit{conversing} dinilai akan membuat pengguna kurang efisien dalam melakukan pengaturan. Sedangkan tipe interaksi \textit{manipulating} dan \textit{exploring} dinilai tidak relevan melihat tidak adanya kebutuhan pengguna terhadap objek-objek yang lebih nyata atau lingkungan sistem yang dapat dieksplorasi.
 
 \subsection{Analisis Fitur}
+\label{subsec:analisis_fitur}
 
 Dari menganalisis kebutuhan dan tujuan pengguna, maka dapat ditentukan fitur-fitur yang diperlukan dari aplikasi solusi desain. Sebagian besar fitur dari aplikasi awal Digital Wellbeing akan dipertahankan dalam perancangan solusi, namun akan dilakukan modifikasi sesuai dengan kebutuhan pengguna. Pada Tabel \ref{tab:daftar_fitur} dapat ditemukan fitur-fitur yang akan diimplementasi. Status Fitur menunjukkan fitur yang sudah diimplementasi sebelumnya, fitur yang akan dimodifikasi, atau fitur yang baru diimplementasi.
 % $ Kalau perlu fungsionalitas 
@@ -51,9 +52,9 @@ Dari menganalisis kebutuhan dan tujuan pengguna, maka dapat ditentukan fitur-fit
 %   F-17 & \textit{Bedtime Mode} & Mengubah \textit{smartphone} ke dalam perilaku mode tidur pada jadwal yang ditentukan & Modifikasi & UG-06 & FD-12 \\ \hline
 %   F-18 & \textit{Greyscale screen} & Mengubah warna layar \textit{smartphone} menjadi hitam-putih & Sudah ada & UG-02 & FD-15 \\ \hline
 %   F-19 & \textit{Do Not Disturb} & Mengalihkan pengguna ke layar pengaturan Do Not Disturb bawaan \textit{smartphone} & Sudah ada & UG-02 & - \\ \hline
-%   F-20 & Pengaturan notifikasi & Mengalihkan pengguna ke layar pengaturan notifikasi aplikasi bawaan \textit{smartphone} & Sudah ada & UG-02 & - \\ \hline
+%   F-20 & Pengaturan notifikasi & Mengatur notifikasi terkait fitur atau aplikasi & Modifikasi & UG-02 & - \\ \hline
 %   F-21 & Daftar Jadwal Aktivasi & Memberikan pengguna kemampuan untuk mengatur 0 atau lebih jadwal aktivasi fitur & Modifikasi & UN-07 & FD-10 \\ \hline
-%   F-22 & \textit{Goal Reminder} & Menambah pesan pengingat opsional yang akan ditambahkan pada pesan yang diberikan oleh fitur tertentu & Baru & UN-09, UG-05 & FU-13 \\ \hline
+%   F-22 & \textit{Goal Reminder} & Menentukan target harian dalam bentuk pesan yang dapat ditentukan pengguna untuk menjadi pengingat & Baru & UN-09, UG-05 & FU-13 \\ \hline
 %   F-23 & \textit{Daily Summary Notification} & Memberikan notifikasi berisi ringkasan penggunaan \textit{smartphone} harian dan pembanding dengan data hari kemarin & Baru & UN-03, UN-11, UG-04 & FU-07 \\ \hline
 %   F-24 & \textit{Strictness level} & Memilih tingkat keketatan dengan mengatur kemampuan fitur-fitur tertentu & Baru & UN-05, UG-01 & - \\ \hline
 %   F-25 & \textit{Settings lock} & Mengunci pengaturan fitur-fitur tertentu dari pengubahan untuk waktu yang ditentukan & Baru & UN-06, UG-01 & - \\ \hline
@@ -96,9 +97,9 @@ Dari menganalisis kebutuhan dan tujuan pengguna, maka dapat ditentukan fitur-fit
 %   F-17 & \textit{Bedtime Mode} & Mengubah \textit{smartphone} ke dalam perilaku mode tidur pada jadwal yang ditentukan & Modifikasi & UG-06 & FD-12 \\ \hline
 %   F-18 & \textit{Greyscale screen} & Mengubah warna layar \textit{smartphone} menjadi hitam-putih & Sudah ada & UG-02 & FD-15 \\ \hline
 %   F-19 & \textit{Do Not Disturb} & Mengalihkan pengguna ke layar pengaturan Do Not Disturb bawaan \textit{smartphone} & Sudah ada & UG-02 & - \\ \hline
-%   F-20 & Pengaturan notifikasi & Mengalihkan pengguna ke layar pengaturan notifikasi aplikasi bawaan \textit{smartphone} & Sudah ada & UG-02 & - \\ \hline
+%   F-20 & Pengaturan notifikasi & Mengatur notifikasi terkait fitur atau aplikasi & Modifikasi & UG-02 & - \\ \hline
 %   F-21 & Daftar Jadwal Aktivasi & Memberikan pengguna kemampuan untuk mengatur 0 atau lebih jadwal aktivasi fitur & Modifikasi & UN-07 & FD-10 \\ \hline
-%   F-22 & \textit{Goal Reminder} & Menambah pesan pengingat opsional yang akan ditambahkan pada pesan yang diberikan oleh fitur tertentu & Baru & UN-09, UG-05 & FU-13 \\ \hline
+%   F-22 & \textit{Goal Reminder} & Menentukan target harian dalam bentuk pesan yang dapat ditentukan pengguna untuk menjadi pengingat & Baru & UN-09, UG-05 & FU-13 \\ \hline
 %   F-23 & \textit{Daily Summary Notification} & Memberikan notifikasi berisi ringkasan penggunaan \textit{smartphone} harian dan pembanding dengan data hari kemarin & Baru & UN-03, UN-11, UG-04 & FU-07 \\ \hline
 %   F-24 & \textit{Strictness level} & Memilih tingkat keketatan dengan mengatur kemampuan fitur-fitur tertentu & Baru & UN-05, UG-01 & - \\ \hline
 %   F-25 & \textit{Settings lock} & Mengunci pengaturan fitur-fitur tertentu dari pengubahan untuk waktu yang ditentukan & Baru & UN-06, UG-01 & - \\ \hline
@@ -140,9 +141,9 @@ Dari menganalisis kebutuhan dan tujuan pengguna, maka dapat ditentukan fitur-fit
   F-17 & \textit{Bedtime Mode} & Mengubah \textit{smartphone} ke dalam perilaku mode tidur pada jadwal yang ditentukan & Modifikasi & UG-06 \\ \hline
   F-18 & \textit{Greyscale screen} & Mengubah warna layar \textit{smartphone} menjadi hitam-putih & Sudah ada & UG-02 \\ \hline
   F-19 & \textit{Do Not Disturb} & Mengalihkan pengguna ke layar pengaturan \textit{Do Not Disturb} bawaan \textit{smartphone} & Sudah ada & UG-02 \\ \hline
-  F-20 & Pengaturan notifikasi & Mengalihkan pengguna ke layar pengaturan notifikasi aplikasi bawaan \textit{smartphone} & Sudah ada & UG-02 \\ \hline
+  F-20 & Pengaturan notifikasi & Mengatur notifikasi terkait fitur atau aplikasi & Modifikasi & UG-02 \\ \hline
   F-21 & Daftar Jadwal Aktivasi & Memberikan pengguna kemampuan untuk mengatur 0 atau lebih jadwal aktivasi fitur & Modifikasi & UN-07 \\ \hline
-  F-22 & \textit{Goal Reminder} & Menambah pesan pengingat opsional yang akan ditambahkan pada pesan yang diberikan oleh fitur tertentu & Baru & UN-09, UG-05 \\ \hline
+  F-22 & \textit{Goal Reminder} & Menentukan target harian dalam bentuk pesan yang dapat ditentukan pengguna untuk menjadi pengingat & Baru & UN-09, UG-05 \\ \hline
   F-23 & \textit{Daily Summary Notification} & Memberikan notifikasi berisi ringkasan penggunaan \textit{smartphone} harian dan pembanding dengan data hari kemarin & Baru & UN-03, UN-11, UG-04 \\ \hline
   F-24 & \textit{Strictness level} & Memilih tingkat keketatan dengan mengatur kemampuan fitur-fitur tertentu & Baru & UN-05, UG-01 \\ \hline
   F-25 & \textit{Settings lock} & Mengunci pengaturan fitur-fitur tertentu dari pengubahan untuk waktu yang ditentukan & Baru & UN-06, UG-01 \\ \hline
@@ -168,7 +169,7 @@ Sebelum fitur-fitur diimplementasi ke dalam prototipe aplikasi, perlu ditentukan
   \hline \endfoot
   
   \rowcolor[HTML]{DCF3FC} \multicolumn{3}{|l|}{\textbf{Prinsip Desain Digital Wellbeing}} \\ \hline
-  DP-01 & \textit{Empowerment} & Membuat pengaturan default pada fitur dengan batas waktu dengan cara menyesuaikan pada kebiasaan pengguna \\ \hline
+  DP-01 & \textit{Empowerment} & Membuat pengaturan \textit{default} pada fitur dengan batas waktu dengan cara menyesuaikan pada kebiasaan pengguna \\ \hline
   DP-02 & \textit{Awareness} & Meletakan data penggunaan smartphone pengguna sebagai tampilan utama teratas dari aplikasi \\ \hline
   DP-03 & \textit{Control} & Memberikan pengguna fleksibilitas dalam mengatur kemampuan pemblokiran dari fitur-fitur beserta deskripsi jelas \\ \hline
   DP-04 & \textit{Adaptability} & Memberikan pesan pengingat yang berbeda untuk notifikasi restriksi sesuai konteks pengguna, yaitu berdasarkan kategori aplikasi yang ditentukan pengguna \\ \hline
@@ -200,7 +201,7 @@ Selain prinsip desain, perlu ditentukan juga \textit{usability goals} dan \texti
 
 \end{enumerate}
 
-Di sisi lain, user experience goals berguna untuk mengarahkan desain agar mampu memberikan pengguna pengalaman yang diinginkan. Berikut adalah penjelasan tentang user experience goals yang ditargetkan berdasarkan analisis pengguna
+Di sisi lain, \textit{user experience goals} berguna untuk mengarahkan desain agar mampu memberikan pengguna pengalaman yang diinginkan. Berikut adalah penjelasan tentang \textit{user experience goals} yang ditargetkan berdasarkan analisis pengguna
 
 \begin{enumerate}
   \item \textit{Helpful}
