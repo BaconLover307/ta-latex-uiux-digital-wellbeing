@@ -384,6 +384,8 @@ Bagian dari identifikasi konteks penggunaan ini akan menganalisis tentang kebutu
 
 Kebutuhan pengguna adalah hal apa saja yang diperlukan pengguna untuk mencapai tujuannya dalam memakai aplikasi Digital Wellbeing. Analisis kebutuhan pengguna melibatkan masalah pengguna serta perilaku pengguna yang telah dibahas sebelumnya. Penjelasan kebutuhan pengguna dirangkum di dalam Tabel \ref{tab:daftar_kebutuhan}.
 
+\newpage
+
 \RaggedLeft
 \begin{small}
 \begin{longtable}[c]{|W{c}{0.07\textwidth}|>{\ccnormspacing}m{0.65\textwidth}|>{\ccnormspacingcenter}m{0.19\textwidth}|}
@@ -453,21 +455,22 @@ Dengan ditentukannya kebutuhan pengguna, maka dapat dianalisis tujuan yang ingin
    \ccid{-5.4}{UG-02}& \ccgoal{-5.4}{Membatasi waktu penggunaan \textit{smartphone} harian} & \centering{UT-06} & Melihat total waktu penggunaan \textit{smartphone} lewat widget & \ccneed{-5.4}{PP-12, PP-16, PP-18, UN-01, UN-02}\\ \hline
   
    & & \centering{UT-07} & Mengakses laporan penggunaan \textit{smartphone} & \\ \ccline
-   & & \centering{UT-08} & Memilih rentang waktu laporan penggunaan \textit{smartphone} & \\ \ccline
-   \ccid{-5}{UG-03}& \ccgoal{-5}{Menganalisis kebiasaan penggunaan \textit{smartphone}} & \centering{UT-09} & Melihat rekomendasi kebiasaan penggunaan \textit{smartphone} yang baik & \ccneed{-5}{PP-13, UN-03, UN-04}\\ \hline
+   & & \centering{UT-08} & Mengelompokkan aplikasi ke dalam sebuah kategori & \\ \ccline
+   & & \centering{UT-09} & Memilih rentang waktu laporan penggunaan \textit{smartphone} & \\ \ccline
+   \ccid{-7}{UG-03}& \ccgoal{-7}{Menganalisis kebiasaan penggunaan \textit{smartphone}} & \centering{UT-10} & Melihat rekomendasi kebiasaan penggunaan \textit{smartphone} yang baik & \ccneed{-7}{PP-13, UN-01, UN-03, UN-04}\\ \hline
   
-   & & \centering{UT-10} & Memasang pesan pengingat aktivitas atau target harian & \\ \ccline
-   \ccid{-3.4}{UG-04}& \ccgoal{-3.4}{Mengingatkan diri terhadap aktivitas utama yang seharusnya dilakukan} & \centering{UT-11} & Mengatur frekuensi notifikasi dari fitur-fitur yang mengirimkan notifikasi  & \ccneed{-3.4}{PP-14, UN-07}\\ \hline
+   & & \centering{UT-11} & Memasang pesan pengingat aktivitas atau target harian & \\ \ccline
+   \ccid{-3.4}{UG-04}& \ccgoal{-3.4}{Mengingatkan diri terhadap aktivitas utama yang seharusnya dilakukan} & \centering{UT-12} & Mengatur frekuensi notifikasi dari fitur-fitur yang mengirimkan notifikasi  & \ccneed{-3.4}{PP-14, UN-07}\\ \hline
   
 
-   & & \centering{UT-12} & Mengatur jadwal aktivasi fitur Bedtime Mode & \\ \ccline
-   \ccid{-2.8}{UG-05}& \ccgoal{-2.8}{Membantu mengatur kebiasaan tidur yang sehat} & \centering{UT-13} & Membatasi aplikasi yang dapat diakses di jadwal tidur & \ccneed{-2.8}{PP-15}\\ \hline
+   & & \centering{UT-13} & Mengatur jadwal aktivasi fitur Bedtime Mode & \\ \ccline
+   \ccid{-2.8}{UG-05}& \ccgoal{-2.8}{Membantu mengatur kebiasaan tidur yang sehat} & \centering{UT-14} & Membatasi aplikasi yang dapat diakses di jadwal tidur & \ccneed{-2.8}{PP-15}\\ \hline
   
   \newpage
 
-   & & \centering{UT-14} & Mengambil waktu istirahat dari Focus Mode & \\ \ccline
-   & & \centering{UT-15} & Menunda aktivasi Bedtime Mode & \\ \ccline
-   \ccid{-4.4}{UG-06}& \ccgoal{-4.4}{Mengambil istirahat sejenak dari restriksi aplikasi} & \centering{UT-16} & Memperpanjang waktu penggunaan aplikasi yang diblokir oleh App Timer & \ccneed{-4.4}{UN-06}\\ \hline
+   & & \centering{UT-15} & Mengambil waktu istirahat dari Focus Mode & \\ \ccline
+   & & \centering{UT-16} & Menunda aktivasi Bedtime Mode & \\ \ccline
+   \ccid{-4.4}{UG-06}& \ccgoal{-4.4}{Mengambil istirahat sejenak dari restriksi aplikasi} & \centering{UT-17} & Memperpanjang waktu penggunaan aplikasi yang diblokir oleh App Timer & \ccneed{-4.4}{UN-06}\\ \hline
 
 \end{longtable}
 \end{small}
@@ -476,7 +479,9 @@ Dengan ditentukannya kebutuhan pengguna, maka dapat dianalisis tujuan yang ingin
 
 \subsubsection{Skenario Pengguna}
 \label{subsubsec:skenario_pengguna}
-Berdasarkan persona yang dipilih serta analisis terhadap tujuan dan kegiatan pengguna, dapat dibuat skenario pengguna untuk persona Maya. Skenario pengguna mengembangkan persona lebih lanjut dengan memberikan gambaran tentang bagaimana persona tersebut menggunakan aplikasi untuk mencapai tujuan-tujuannya. Penulisan skenario dalam bentuk narasi adalah alat bantu desain yang efektif untuk mengkomunikasikan ide dari desain tersebut. \parencite{cooper2014face} Skenario pengguna juga akan berguna dalam menentukan \textit{user flow} dari prototipe aplikasi. Skenario-skenario pengguna dari persona Maya yang mendeskripsikan contoh kasus penggunaan solusi desain untuk aplikasi Digital Wellbeing terdapat pada Tabel \ref{tab:daftar_skenario}.
+Berdasarkan persona yang dipilih serta analisis terhadap tujuan dan kegiatan pengguna, dapat dibuat skenario pengguna untuk persona Maya. Skenario pengguna mengembangkan persona lebih lanjut dengan memberikan gambaran tentang bagaimana persona tersebut menggunakan aplikasi untuk mencapai tujuan-tujuannya. Penulisan skenario dalam bentuk narasi adalah alat bantu desain yang efektif untuk mengkomunikasikan ide dari desain tersebut. \parencite{cooper2014face} Skenario pengguna juga akan berguna dalam menentukan skenario pengujian dari prototipe aplikasi. Skenario-skenario pengguna dari persona Maya yang mendeskripsikan contoh kasus penggunaan solusi desain untuk aplikasi Digital Wellbeing terdapat pada Tabel \ref{tab:daftar_skenario}.
+
+% Berdasarkan persona yang dipilih serta analisis terhadap tujuan dan kegiatan pengguna, dapat dibuat skenario pengguna untuk persona Maya. Skenario pengguna mengembangkan persona lebih lanjut dengan memberikan gambaran tentang bagaimana persona tersebut menggunakan aplikasi untuk mencapai tujuan-tujuannya. Penulisan skenario dalam bentuk narasi adalah alat bantu desain yang efektif untuk mengkomunikasikan ide dari desain tersebut. \parencite{cooper2014face} Skenario pengguna juga akan berguna dalam menentukan %$ \textit{user flow}  dari prototipe aplikasi. Skenario-skenario pengguna dari persona Maya yang mendeskripsikan contoh kasus penggunaan solusi desain untuk aplikasi Digital Wellbeing terdapat pada Tabel \ref{tab:daftar_skenario}.
 
 \RaggedLeft
 \begin{small}
@@ -490,11 +495,17 @@ Berdasarkan persona yang dipilih serta analisis terhadap tujuan dan kegiatan pen
 
   \hline \endfoot
   
-  SP-01  & Maya sedang bekerja menggunakan laptopnya, saat ia sedang merasa sedikit bosan dan tiba-tiba mendapat perasaan untuk memeriksa media sosial lewat \textit{smartphone}-nya. Tanpa sadar, Maya sudah bermain media sosial selama setengah jam ketika rekannya bertanya tentang pekerjaannya. Bagaimana aplikasi Digital Wellbeing dapat membantu Maya dalam fokus dalam aktivitasnya di jam kerja? & UT-05, UT-10, UT-11 \\ \hline
-  SP-02  & Maya ingin menganalisis penggunaan \textit{smartphone} dengan melihat seberapa sering ia menggunakan aplikasi favoritnya. Lalu Maya menemukan bahwa ia menggunakan Instagram dan Twitter terlalu sering setiap harinya. Maya ingin memasang batas waktu penggunaan agar pelan-pelan bisa dikurangi. Bagaimana aplikasi Digital Wellbeing dapat memberikan sugesti  tentang penggunaan \textit{smartphone} yang wajar dan batas apa saja yang Maya bisa pasang untuk membantu memperbaiki kebiasaannya? & UT-04,  UT-05, UT-06, UT-07, UT-08, UT-09 \\ \hline
-  SP-03  & Maya sedang memulai minggu kerjanya di hari Senin, dan ia ingat untuk mengatur jadwal sesi fokusnya. Bagaimana cara Maya bisa mengatur jadwalnya agar bisa sesuai dengan jam kerjanya yang bervariasi? & UT-01, UT-02, UT-03 \\ \hline
-  SP-04  & Mendekati akhir hari kerjanya, Maya menyelesaikan tugasnya lebih cepat dari biasanya dan ingin bermain di \textit{smartphone}-nya. Namun ia telah memasang restriksi sebelumnya yang akan diangkat setelah jam kerjanya selesai. Bagaimana aplikasi Digital Wellbeing dapat memberikan leluasa kepada Maya tanpa menghapus pengaturan yang telah dipasang? & UT-14, UT-16 \\ \hline
-  SP-05  & Maya ingin beristirahat untuk mengakhiri harinya. Namun Maya lupa waktu ketika sedang bermain dengan \textit{smartphone}-nya sehingga ia melewati jam tidurnya selama satu jam. Maya ingin memasang pengingat pada \textit{smartphone} untuk menepati jam tidurnya agar setiap pagi ia bisa bangun dengan tepat waktu dengan segar. Bagaimana aplikasi Digital Wellbeing dapat membantu mencapai tujuannya? & UT-12, UT-13, UT-15 \\ \hline
+  SP-01 & Maya sedang bekerja menggunakan laptopnya, saat ia sedang merasa sedikit bosan dan tiba-tiba mendapat perasaan untuk memeriksa media sosial lewat \textit{smartphone}-nya. Tanpa sadar, Maya sudah bermain media sosial selama setengah jam ketika rekannya bertanya tentang pekerjaannya. Bagaimana Maya dapat memanfaatkan aplikasi Digital Wellbeing untuk mengingatkan pekerjaannya saat menggunakan \textit{smartphone} di jam kerja? & UT-05, UT-11, UT-12 \\ \hline
+  
+  SP-02 & Maya ingin melihat seberapa sering ia menggunakan aplikasi-aplikasi favoritnya, dan menilai apakah kebiasaan digitalnya masih baik atau perlu diperbaiki. Bagaimana Maya dapat memanfaatkan aplikasi Digital Wellbeing untuk menganalisis pengunaaan \textit{smartphone}-nya dengan lengkap serta mendapatkan sugesti tentang penggunaan \textit{smartphone} yang wajar? & UT-07, UT-08, UT-09, UT-10 \\ \hline
+  
+  SP-03 & Setelah menganalisis kebiasaannya, Maya menemukan bahwa ia menggunakan aplikasi media sosial seperti Instagram, Twitter, dan game Minesweeper terlalu sering setiap harinya. Maya ingin membatasi waktu penggunaan media sosial dan aplikasi-aplikasi yang dinilai mendistraksinya dari kegiatan sehari-hari. Bagaimana Maya dapat memanfaatkan aplikasi Digial Wellbeing untuk mengurangi waktu penggunaan aplikasi-aplikasi? & UT-03, UT-04, UT-08 \\ \hline
+
+  SP-04  & Maya sedang memulai hari kerjanya, dan ia ingat untuk mengatur jadwal sesi fokusnya. Bagaimana cara Maya bisa mengatur jadwalnya agar bisa sesuai dengan jam kerjanya yang bervariasi? & UT-01, UT-02, UT-03 \\ \hline
+  
+  SP-05  & Mendekati akhir hari kerjanya, Maya menyelesaikan tugasnya lebih cepat dari biasanya dan ingin bermain dengan \textit{smartphone}-nya. Namun ia telah memasang restriksi sebelumnya yang akan diangkat setelah jam kerjanya selesai. Bagaimana Maya dapat mengatur aplikasi Digital Wellbeing agar dapat memberikan leluasa tanpa menghapus pengaturan yang telah dipasang? & UT-15, UT-17 \\ \hline
+  
+  SP-06  & Maya ingin beristirahat untuk mengakhiri harinya. Namun Maya sering lupa waktu ketika sedang bermain dengan \textit{smartphone}-nya sehingga tak jarang ia melewati jam tidurnya selama satu jam. Maya ingin memasang pengingat pada \textit{smartphone}-nya untuk menepati jam tidurnya agar setiap pagi ia bisa bangun dengan tepat waktu. Bagaimana Maya dapat memanfaatkan aplikasi Digital Wellbeing untuk mencapai tujuannya? & UT-13, UT-14, UT-16 \\ \hline
 \end{longtable}
 \end{small}
 \justifying

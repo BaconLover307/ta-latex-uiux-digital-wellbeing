@@ -14,97 +14,6 @@ Tipe interaksi lain tidak akan dipertimbangkan ke dalam solusi desain. Tipe inte
 \label{subsec:analisis_fitur}
 
 Dari menganalisis kebutuhan dan tujuan pengguna, maka dapat ditentukan fitur-fitur yang diperlukan dari aplikasi solusi desain. Sebagian besar fitur dari aplikasi awal Digital Wellbeing akan dipertahankan dalam perancangan solusi, namun akan dilakukan modifikasi sesuai dengan kebutuhan pengguna. Pada Tabel \ref{tab:daftar_fitur} dapat ditemukan fitur-fitur yang akan diimplementasi. Status Fitur menunjukkan fitur yang sudah diimplementasi sebelumnya, fitur yang akan dimodifikasi, atau fitur yang baru diimplementasi.
-% $ Kalau perlu fungsionalitas 
-% Keterkaitan Fungsionalitas mendahulukan fungsionalitas dari aplikasi Digital Wellbeing melihat terdapat beberapa fungsionalitas umum yang telah terdapat di aplikasi.
-
-% $ Kalau perlu fungsionalitas
-% \RaggedLeft
-% \begin{small}
-% \begin{longtable}[c]{|W{c}{0.06\textwidth}|>{\ccnormspacingcenter}m{0.15\textwidth}|>{\ccnormspacing}m{0.3\textwidth}|>{\ccnormspacingcenter}m{0.12\textwidth}|>{\ccnormspacingcenter}m{0.16\textwidth}|>{\ccnormspacingcenter}m{0.18\textwidth}|}
-%   \caption{Daftar Fitur Prototipe Aplikasi}
-%   \label{tab:daftar_fitur} \\
-%   \hline \rowcolor[HTML]{A3E5F5}
-%   \textbf{ID} & \textbf{Fitur} & \centering\textbf{Penjelasan} & \textbf{Tipe Fitur} & \textbf{Keterkaitan Kebutuhan \& Tujuan} & \textbf{Keterkaitan Fungsionalitas} \\ \hline \endfirsthead
-%   \hline \rowcolor[HTML]{A3E5F5}
-%   \textbf{ID} & \textbf{Fitur} & \centering\textbf{Penjelasan} & \textbf{Tipe Fitur} & \textbf{Keterkaitan Kebutuhan \& Tujuan} & \textbf{Keterkaitan Fungsionalitas} \\ \hline \endhead
-%   \hline \endfoot
-
-%   F-01 & \textit{Usage tracker} & Melacak penggunaan \textit{smartphone} dan aplikasi-aplikasi dari sisi lama penggunaan, jumlah pembukaan, dan notifikasi yang diterima & Sudah ada & UN-04, UG-03 & FD-01, FD-02 \\ \hline
-%   F-02 & \textit{Pie chart} & Menampilkan laporan data penggunaan \textit{smartphone} dan aplikasi-aplikasi untuk hari yang sedang berlangsung & Sudah ada & UN-04, UG-03 & FD-03 \\ \hline
-%   F-03 & \textit{Bar chart} & Menampilkan ringkasan laporan data penggunaan \textit{smartphone} dan aplikasi-aplikasi & Modifikasi & UN-04, UG-03 & FD-03 \\ \hline
-%   F-04 & \textit{Date range selector} & Memilih rentang tanggal untuk tampilan laporan penggunaan & Baru & UN-04, UG-03 & FU-03 \\ \hline
-%   F-05 & \textit{Usage Summary} & Menampilkan ringkasan singkat tentang laporan penggunaan \textit{smartphone} dan aplikasi & Baru & UN-04, UG-03 & FU-03 \\ \hline
-%   F-06 & Rekomendasi perbaikan perilaku & Memberikan rekomendasi berdasarkan perilaku dari pengguna tentang aksi yang dapat dilakukan untuk memperbaiki kebiasaan digital pengguna & Baru & UN-03, UG-03 & - \\ \hline
-%   F-07 & \textit{Dashboard Widget} & Menampilkan laporan penggunaan \textit{smartphone} dan aplikasi untuk hari yang sedang berlangsung & Modifikasi & UN-02, UG-03 & FD-03, FD-04 \\ \hline
-%   F-08 & \textit{App Timer} & Membatasi waktu penggunaan aplikasi harian & Sudah ada & UG-02 & FD-05 \\ \hline
-%   F-09 & \textit{App Timer Widget}  & Menampilkan daftar sisa waktu penggunaan aplikasi yang dipasang App Timer & Baru & UN-02, UG-02 & FU-06 \\ \hline
-%   F-10 & Daftar aplikasi & Menampilkan seluruh aplikasi yang terdapat di \textit{smartphone} untuk diberikan aksi lanjutan sesuai konteks fitur & Sudah ada & UN-01 & FD-04 \\ \hline
-%   F-11 & \textit{Search bar} & Mencari aplikasi yang terdapat pada daftar & Baru & UN-01 & - \\ \hline
-%   F-12 & \textit{App Grouping} & Mengelompokkan aplikasi-aplikasi berdasarkan kategori yang ditentukan pengguna & Baru & UN-01 & - \\ \hline
-%   F-13 & \textit{Focus Mode} & Memblokir akses aplikasi dan informasi yang diberikan oleh aplikasi  pilihan untuk waktu yang ditentukan atau sehari penuh & Modifikasi & UG-01, UG-02 & FD-08, FD-09 \\ \hline
-%   F-14 & \textit{Take a break} & Menunda pemblokiran dari fitur-fitur untuk waktu yang ditentukan & Modifikasi & UN-06, UG-06 & FD-11 \\ \hline
-%   F-15 & \textit{Turn off for now} & Mematikan pemblokiran dari fitur-fitur untuk sehari penuh & Modifikasi & UN-06, UG-06 & FD-11 \\ \hline
-%   F-16 & \textit{Focus Mode Widget} & Menampilkan jadwal aktivasi Focus Mode dan fungsionalitas aktivasi dari fitur Focus Mode & Baru & UN-02, UG-01 & FU-06 \\ \hline
-%   F-17 & \textit{Bedtime Mode} & Mengubah \textit{smartphone} ke dalam perilaku mode tidur pada jadwal yang ditentukan & Modifikasi & UG-05 & FD-12 \\ \hline
-%   F-18 & \textit{Greyscale screen} & Mengubah warna layar \textit{smartphone} menjadi hitam-putih & Sudah ada & UG-01 & FD-15 \\ \hline
-%   F-19 & \textit{Do Not Disturb} & Mengalihkan pengguna ke layar pengaturan Do Not Disturb bawaan \textit{smartphone} & Sudah ada & UG-01 & - \\ \hline
-%   F-20 & Pengaturan notifikasi & Mengatur notifikasi terkait fitur atau aplikasi & Modifikasi & UG-01 & - \\ \hline
-%   F-21 & Daftar Jadwal Aktivasi & Memberikan pengguna kemampuan untuk mengatur 0 atau lebih jadwal aktivasi fitur & Modifikasi & UN-05 & FD-10 \\ \hline
-%   F-22 & \textit{Goal Reminder} & Menentukan target harian dalam bentuk pesan yang dapat ditentukan pengguna untuk menjadi pengingat & Baru & UN-07, UG-04 & FU-13 \\ \hline
-%   F-23 & \textit{Daily Summary Notification} & Memberikan notifikasi berisi ringkasan penggunaan \textit{smartphone} harian dan pembanding dengan data hari kemarin & Baru & UN-03, UN-09, UG-03 & FU-07 \\ \hline
-%   F-24 & \textit{Deskripsi Fitur} & Menjelaskan kegunaan dan tujuan dari sebuah fitur atau halaman fitur & Sudah ada & UN-03, UN-09, UG-03 & FD-16 \\ \hline
-
-% \end{longtable}
-% \end{small}
-% \justifying
-% \FloatBarrier
-
-% $ Kalau perlu fungsionalitas dan landscape
-% \newpage
-% \begin{landscape}
-%   \RaggedLeft
-%   \begin{small}
-% \begin{longtable}[c]{|W{c}{0.06\textwidth}|>{\ccnormspacingcenter}m{0.15\textwidth}|>{\ccnormspacing}m{0.9\textwidth}|>{\ccnormspacingcenter}m{0.12\textwidth}|>{\ccnormspacingcenter}m{0.18\textwidth}|>{\ccnormspacingcenter}m{0.18\textwidth}|}
-%   \caption{Daftar Fitur Prototipe Aplikasi}
-%   \label{tab:daftar_fitur} \\
-%   \hline \rowcolor[HTML]{A3E5F5}
-%   \textbf{ID} & \textbf{Fitur} & \centering\textbf{Penjelasan} & \textbf{Tipe Fitur} & \textbf{Keterkaitan Kebutuhan \& Tujuan} & \textbf{Keterkaitan Fungsionalitas} \\ \hline \endfirsthead
-%   \hline \rowcolor[HTML]{A3E5F5}
-%   \textbf{ID} & \textbf{Fitur} & \centering\textbf{Penjelasan} & \textbf{Tipe Fitur} & \textbf{Keterkaitan Kebutuhan \& Tujuan} & \textbf{Keterkaitan Fungsionalitas} \\ \hline \endhead
-%   \hline \endfoot
-
-%   F-01 & \textit{Usage tracker} & Melacak penggunaan \textit{smartphone} dan aplikasi-aplikasi dari sisi lama penggunaan, jumlah pembukaan, dan notifikasi yang diterima & Sudah ada & UN-04, UG-03 & FD-01, FD-02 \\ \hline
-%   F-02 & \textit{Pie chart} & Menampilkan laporan data penggunaan \textit{smartphone} dan aplikasi-aplikasi untuk hari yang sedang berlangsung & Sudah ada & UN-04, UG-03 & FD-03 \\ \hline
-%   F-03 & \textit{Bar chart} & Menampilkan ringkasan laporan data penggunaan \textit{smartphone} dan aplikasi-aplikasi & Modifikasi & UN-04, UG-03 & FD-03 \\ \hline
-%   F-04 & \textit{Date range selector} & Memilih rentang tanggal untuk tampilan laporan penggunaan & Baru & UN-04, UG-03 & FU-03 \\ \hline
-%   F-05 & \textit{Usage Summary} & Menampilkan ringkasan singkat tentang laporan penggunaan \textit{smartphone} dan aplikasi & Baru & UN-04, UG-03 & FU-03 \\ \hline
-%   F-06 & Rekomendasi perbaikan perilaku & Memberikan rekomendasi berdasarkan perilaku dari pengguna tentang aksi yang dapat dilakukan untuk memperbaiki kebiasaan digital pengguna & Baru & UN-03, UG-03 & - \\ \hline
-%   F-07 & \textit{Dashboard Widget} & Menampilkan laporan penggunaan \textit{smartphone} dan aplikasi untuk hari yang sedang berlangsung & Modifikasi & UN-02, UG-03 & FD-03, FD-04 \\ \hline
-%   F-08 & \textit{App Timer} & Membatasi waktu penggunaan aplikasi harian & Sudah ada & UG-02 & FD-05 \\ \hline
-%   F-09 & \textit{App Timer Widget}  & Menampilkan daftar sisa waktu penggunaan aplikasi yang dipasang App Timer & Baru & UN-02, UG-02 & FU-06 \\ \hline
-%   F-10 & Daftar aplikasi & Menampilkan seluruh aplikasi yang terdapat di \textit{smartphone} untuk diberikan aksi lanjutan sesuai konteks fitur & Sudah ada & UN-01 & FD-04 \\ \hline
-%   F-11 & \textit{Search bar} & Mencari aplikasi yang terdapat pada daftar & Baru & UN-01 & - \\ \hline
-%   F-12 & \textit{App Grouping} & Mengelompokkan aplikasi-aplikasi berdasarkan kategori yang ditentukan pengguna & Baru & UN-01 & - \\ \hline
-%   F-13 & \textit{Focus Mode} & Memblokir akses aplikasi dan informasi yang diberikan oleh aplikasi  pilihan untuk waktu yang ditentukan atau sehari penuh & Modifikasi & UG-01, UG-02 & FD-08, FD-09 \\ \hline
-%   F-14 & \textit{Take a break} & Menunda pemblokiran dari fitur-fitur untuk waktu yang ditentukan & Modifikasi & UN-06, UG-06 & FD-11 \\ \hline
-%   F-15 & \textit{Turn off for now} & Mematikan pemblokiran dari fitur-fitur untuk sehari penuh & Modifikasi & UN-06, UG-06 & FD-11 \\ \hline
-%   F-16 & \textit{Focus Mode Widget} & Menampilkan jadwal aktivasi Focus Mode dan fungsionalitas aktivasi dari fitur Focus Mode & Baru & UN-02, UG-01 & FU-06 \\ \hline
-%   F-17 & \textit{Bedtime Mode} & Mengubah \textit{smartphone} ke dalam perilaku mode tidur pada jadwal yang ditentukan & Modifikasi & UG-05 & FD-12 \\ \hline
-%   F-18 & \textit{Greyscale screen} & Mengubah warna layar \textit{smartphone} menjadi hitam-putih & Sudah ada & UG-01 & FD-15 \\ \hline
-%   F-19 & \textit{Do Not Disturb} & Mengalihkan pengguna ke layar pengaturan Do Not Disturb bawaan \textit{smartphone} & Sudah ada & UG-01 & - \\ \hline
-%   F-20 & Pengaturan notifikasi & Mengatur notifikasi terkait fitur atau aplikasi & Modifikasi & UG-01 & - \\ \hline
-%   F-21 & Daftar Jadwal Aktivasi & Memberikan pengguna kemampuan untuk mengatur 0 atau lebih jadwal aktivasi fitur & Modifikasi & UN-05 & FD-10 \\ \hline
-%   F-22 & \textit{Goal Reminder} & Menentukan target harian dalam bentuk pesan yang dapat ditentukan pengguna untuk menjadi pengingat & Baru & UN-07, UG-04 & FU-13 \\ \hline
-%   F-23 & \textit{Daily Summary Notification} & Memberikan notifikasi berisi ringkasan penggunaan \textit{smartphone} harian dan pembanding dengan data hari kemarin & Baru & UN-03, UN-09, UG-03 & FU-07 \\ \hline
-%   F-24 & \textit{Deskripsi Fitur} & Menjelaskan kegunaan dan tujuan dari sebuah fitur atau halaman fitur & Sudah ada & UN-03, UN-09, UG-03 & FD-16 \\ \hline
-
-
-% \end{longtable}
-% \end{small}
-% \justifying
-% \FloatBarrier
-
-% \end{landscape}
 
 \RaggedLeft
 \begin{small}
@@ -123,24 +32,21 @@ Dari menganalisis kebutuhan dan tujuan pengguna, maka dapat ditentukan fitur-fit
   F-04 & \textit{Date range selector} & Memilih rentang tanggal untuk tampilan laporan penggunaan & Baru & UN-04, UG-03 \\ \hline
   F-05 & \textit{Usage Summary} & Menampilkan ringkasan singkat tentang laporan penggunaan \textit{smartphone} dan aplikasi & Baru & UN-04, UG-03 \\ \hline
   F-06 & Rekomendasi perbaikan perilaku & Memberikan rekomendasi berdasarkan perilaku dari pengguna tentang aksi yang dapat dilakukan untuk memperbaiki kebiasaan digital pengguna & Baru & UN-03, UG-03 \\ \hline
-  F-07 & \textit{Dashboard Widget} & Menampilkan laporan penggunaan \textit{smartphone} dan aplikasi untuk hari yang sedang berlangsung & Modifikasi & UN-02, UG-03 \\ \hline
-  F-08 & \textit{App Timer} & Membatasi waktu penggunaan aplikasi harian & Sudah ada & UG-02 \\ \hline
-  F-09 & \textit{App Timer Widget}  & Menampilkan daftar sisa waktu penggunaan aplikasi yang dipasang \textit{App Timer} & Baru & UN-02, UG-02 \\ \hline
-  F-10 & Daftar aplikasi & Menampilkan seluruh aplikasi yang terdapat di \textit{smartphone} untuk diberikan aksi lanjutan sesuai konteks fitur & Sudah ada & UN-01 \\ \hline
-  F-11 & \textit{Search bar} & Mencari aplikasi yang terdapat pada daftar & Baru & UN-01 \\ \hline
-  F-12 & \textit{App Grouping} & Mengelompokkan aplikasi-aplikasi berdasarkan kategori yang ditentukan pengguna & Baru & UN-01 \\ \hline
-  F-13 & \textit{Focus Mode} & Memblokir akses aplikasi dan informasi yang diberikan oleh aplikasi pilihan untuk waktu yang ditentukan atau sehari penuh & Modifikasi & UG-01, UG-02  \\ \hline
-  F-14 & \textit{Take a break} & Menunda pemblokiran dari fitur-fitur untuk waktu yang ditentukan & Modifikasi & UN-06, UG-06 \\ \hline
-  F-15 & \textit{Turn off for now} & Mematikan pemblokiran dari fitur-fitur untuk sehari penuh & Modifikasi & UN-06, UG-06 \\ \hline
-  F-16 & \textit{Focus Mode Widget} & Menampilkan jadwal aktivasi \textit{Focus Mode} dan fungsionalitas aktivasi dari fitur \textit{Focus Mode} & Baru & UN-02, UG-01 \\ \hline
-  F-17 & \textit{Bedtime Mode} & Mengubah \textit{smartphone} ke dalam perilaku mode tidur pada jadwal yang ditentukan & Modifikasi & UG-05 \\ \hline
-  F-18 & \textit{Greyscale screen} & Mengubah warna layar \textit{smartphone} menjadi hitam-putih & Sudah ada & UG-01 \\ \hline
-  F-19 & \textit{Do Not Disturb} & Mengalihkan pengguna ke layar pengaturan \textit{Do Not Disturb} bawaan \textit{smartphone} & Sudah ada & UG-01 \\ \hline
-  F-20 & Pengaturan notifikasi & Mengatur notifikasi terkait fitur atau aplikasi & Modifikasi & UG-01 \\ \hline
-  F-21 & Daftar Jadwal Aktivasi & Memberikan pengguna kemampuan untuk mengatur 0 atau lebih jadwal aktivasi fitur & Modifikasi & UN-05 \\ \hline
-  F-22 & \textit{Goal Reminder} & Menentukan target harian dalam bentuk pesan yang dapat ditentukan pengguna untuk menjadi pengingat & Baru & UN-07, UG-04 \\ \hline
-  F-23 & \textit{Daily Summary Notification} & Memberikan notifikasi berisi ringkasan penggunaan \textit{smartphone} harian dan pembanding dengan data hari kemarin & Baru & UN-03, UN-09, UG-03 \\ \hline
-  F-24 & \textit{Deskripsi Fitur} & Menjelaskan kegunaan dan tujuan dari sebuah fitur atau halaman fitur & Sudah ada & UN-03, UN-09, UG-03 \\ \hline
+  F-07 & \textit{App Timer} & Membatasi waktu penggunaan aplikasi harian & Sudah ada & UG-02 \\ \hline
+  F-08 & Daftar aplikasi & Menampilkan seluruh aplikasi yang terdapat di \textit{smartphone} untuk diberikan aksi lanjutan sesuai konteks fitur & Sudah ada & UN-01 \\ \hline
+  F-09 & \textit{Search bar} & Mencari aplikasi yang terdapat pada daftar & Baru & UN-01 \\ \hline
+  F-10 & \textit{App group} & Mengelompokkan aplikasi-aplikasi berdasarkan kategori yang ditentukan pengguna & Baru & UN-01 \\ \hline
+  F-11 & \textit{Focus Mode} & Memblokir akses aplikasi dan informasi yang diberikan oleh aplikasi pilihan untuk waktu yang ditentukan atau sehari penuh & Modifikasi & UG-01, UG-02  \\ \hline
+  F-12 & \textit{Take a break} & Menunda pemblokiran dari fitur-fitur untuk waktu yang ditentukan & Modifikasi & UN-06, UG-06 \\ \hline
+  F-13 & \textit{Turn off for now} & Mematikan pemblokiran dari fitur-fitur untuk sehari penuh & Modifikasi & UN-06, UG-06 \\ \hline
+  F-14 & \textit{Bedtime Mode} & Mengubah \textit{smartphone} ke dalam perilaku mode tidur pada jadwal yang ditentukan & Modifikasi & UG-05 \\ \hline
+  F-15 & \textit{Greyscale screen} & Mengubah warna layar \textit{smartphone} menjadi hitam-putih & Sudah ada & UG-01 \\ \hline
+  F-16 & \textit{Do Not Disturb} & Mengalihkan pengguna ke layar pengaturan \textit{Do Not Disturb} bawaan \textit{smartphone} & Sudah ada & UG-01 \\ \hline
+  F-17 & Pengaturan notifikasi & Mengatur notifikasi terkait fitur atau aplikasi & Modifikasi & UG-01 \\ \hline
+  F-18 & Daftar Jadwal Aktivasi & Memberikan pengguna kemampuan untuk mengatur 0 atau lebih jadwal aktivasi fitur & Modifikasi & UN-05 \\ \hline
+  F-19 & \textit{Goal Reminder} & Menentukan target harian dalam bentuk pesan yang dapat ditentukan pengguna untuk menjadi pengingat & Baru & UN-07, UG-04 \\ \hline
+  F-20 & \textit{Daily Summary Notification} & Memberikan notifikasi berisi ringkasan penggunaan \textit{smartphone} harian dan pembanding dengan data hari kemarin & Baru & UN-03, UN-09, UG-03 \\ \hline
+  F-21 & \textit{Deskripsi Fitur} & Menjelaskan kegunaan dan tujuan dari sebuah fitur atau halaman fitur & Sudah ada & UN-03, UN-09, UG-03 \\ \hline
 
 \end{longtable}
 \end{small}
@@ -230,55 +136,94 @@ Untuk membantu dalam pemetaan terhadap fitur-fitur pada tahap perencangan protot
 \justifying
 \FloatBarrier
 
+% $ Kalau perlu fungsionalitas 
+% Keterkaitan Fungsionalitas mendahulukan fungsionalitas dari aplikasi Digital Wellbeing melihat terdapat beberapa fungsionalitas umum yang telah terdapat di aplikasi.
 
-% \subsubsection{Pemetaan Prinsip Desain}
+% $ Kalau perlu fungsionalitas
+% \RaggedLeft
+% \begin{small}
+% \begin{longtable}[c]{|W{c}{0.06\textwidth}|>{\ccnormspacingcenter}m{0.15\textwidth}|>{\ccnormspacing}m{0.3\textwidth}|>{\ccnormspacingcenter}m{0.12\textwidth}|>{\ccnormspacingcenter}m{0.16\textwidth}|>{\ccnormspacingcenter}m{0.18\textwidth}|}
+%   \caption{Daftar Fitur Prototipe Aplikasi}
+%   \label{tab:daftar_fitur} \\
+%   \hline \rowcolor[HTML]{A3E5F5}
+%   \textbf{ID} & \textbf{Fitur} & \centering\textbf{Penjelasan} & \textbf{Tipe Fitur} & \textbf{Keterkaitan Kebutuhan \& Tujuan} & \textbf{Keterkaitan Fungsionalitas} \\ \hline \endfirsthead
+%   \hline \rowcolor[HTML]{A3E5F5}
+%   \textbf{ID} & \textbf{Fitur} & \centering\textbf{Penjelasan} & \textbf{Tipe Fitur} & \textbf{Keterkaitan Kebutuhan \& Tujuan} & \textbf{Keterkaitan Fungsionalitas} \\ \hline \endhead
+%   \hline \endfoot
+
+%   F-01 & \textit{Usage tracker} & Melacak penggunaan \textit{smartphone} dan aplikasi-aplikasi dari sisi lama penggunaan, jumlah pembukaan, dan notifikasi yang diterima & Sudah ada & UN-04, UG-03 & FD-01, FD-02 \\ \hline
+%   F-02 & \textit{Pie chart} & Menampilkan laporan data penggunaan \textit{smartphone} dan aplikasi-aplikasi untuk hari yang sedang berlangsung & Sudah ada & UN-04, UG-03 & FD-03 \\ \hline
+%   F-03 & \textit{Bar chart} & Menampilkan ringkasan laporan data penggunaan \textit{smartphone} dan aplikasi-aplikasi & Modifikasi & UN-04, UG-03 & FD-03 \\ \hline
+%   F-04 & \textit{Date range selector} & Memilih rentang tanggal untuk tampilan laporan penggunaan & Baru & UN-04, UG-03 & FU-03 \\ \hline
+%   F-05 & \textit{Usage Summary} & Menampilkan ringkasan singkat tentang laporan penggunaan \textit{smartphone} dan aplikasi & Baru & UN-04, UG-03 & FU-03 \\ \hline
+%   F-06 & Rekomendasi perbaikan perilaku & Memberikan rekomendasi berdasarkan perilaku dari pengguna tentang aksi yang dapat dilakukan untuk memperbaiki kebiasaan digital pengguna & Baru & UN-03, UG-03 & - \\ \hline
+%   F-07 & \textit{Dashboard Widget} & Menampilkan laporan penggunaan \textit{smartphone} dan aplikasi untuk hari yang sedang berlangsung & Modifikasi & UN-02, UG-03 & FD-03, FD-04 \\ \hline
+%   F-08 & \textit{App Timer} & Membatasi waktu penggunaan aplikasi harian & Sudah ada & UG-02 & FD-05 \\ \hline
+%   F-09 & \textit{App Timer Widget}  & Menampilkan daftar sisa waktu penggunaan aplikasi yang dipasang App Timer & Baru & UN-02, UG-02 & FU-06 \\ \hline
+%   F-10 & Daftar aplikasi & Menampilkan seluruh aplikasi yang terdapat di \textit{smartphone} untuk diberikan aksi lanjutan sesuai konteks fitur & Sudah ada & UN-01 & FD-04 \\ \hline
+%   F-11 & \textit{Search bar} & Mencari aplikasi yang terdapat pada daftar & Baru & UN-01 & - \\ \hline
+%   F-12 & \textit{App group} & Mengelompokkan aplikasi-aplikasi berdasarkan kategori yang ditentukan pengguna & Baru & UN-01 & - \\ \hline
+%   F-13 & \textit{Focus Mode} & Memblokir akses aplikasi dan informasi yang diberikan oleh aplikasi  pilihan untuk waktu yang ditentukan atau sehari penuh & Modifikasi & UG-01, UG-02 & FD-08, FD-09 \\ \hline
+%   F-14 & \textit{Take a break} & Menunda pemblokiran dari fitur-fitur untuk waktu yang ditentukan & Modifikasi & UN-06, UG-06 & FD-11 \\ \hline
+%   F-15 & \textit{Turn off for now} & Mematikan pemblokiran dari fitur-fitur untuk sehari penuh & Modifikasi & UN-06, UG-06 & FD-11 \\ \hline
+%   F-16 & \textit{Focus Mode Widget} & Menampilkan jadwal aktivasi Focus Mode dan fungsionalitas aktivasi dari fitur Focus Mode & Baru & UN-02, UG-01 & FU-06 \\ \hline
+%   F-17 & \textit{Bedtime Mode} & Mengubah \textit{smartphone} ke dalam perilaku mode tidur pada jadwal yang ditentukan & Modifikasi & UG-05 & FD-12 \\ \hline
+%   F-18 & \textit{Greyscale screen} & Mengubah warna layar \textit{smartphone} menjadi hitam-putih & Sudah ada & UG-01 & FD-15 \\ \hline
+%   F-19 & \textit{Do Not Disturb} & Mengalihkan pengguna ke layar pengaturan Do Not Disturb bawaan \textit{smartphone} & Sudah ada & UG-01 & - \\ \hline
+%   F-20 & Pengaturan notifikasi & Mengatur notifikasi terkait fitur atau aplikasi & Modifikasi & UG-01 & - \\ \hline
+%   F-21 & Daftar Jadwal Aktivasi & Memberikan pengguna kemampuan untuk mengatur 0 atau lebih jadwal aktivasi fitur & Modifikasi & UN-05 & FD-10 \\ \hline
+%   F-22 & \textit{Goal Reminder} & Menentukan target harian dalam bentuk pesan yang dapat ditentukan pengguna untuk menjadi pengingat & Baru & UN-07, UG-04 & FU-13 \\ \hline
+%   F-23 & \textit{Daily Summary Notification} & Memberikan notifikasi berisi ringkasan penggunaan \textit{smartphone} harian dan pembanding dengan data hari kemarin & Baru & UN-03, UN-09, UG-03 & FU-07 \\ \hline
+%   F-24 & \textit{Deskripsi Fitur} & Menjelaskan kegunaan dan tujuan dari sebuah fitur atau halaman fitur & Sudah ada & UN-03, UN-09, UG-03 & FD-16 \\ \hline
+
+% \end{longtable}
+% \end{small}
+% \justifying
+% \FloatBarrier
+
+% $ Kalau perlu fungsionalitas dan landscape
+% \newpage
+% \begin{landscape}
+%   \RaggedLeft
+%   \begin{small}
+% \begin{longtable}[c]{|W{c}{0.06\textwidth}|>{\ccnormspacingcenter}m{0.15\textwidth}|>{\ccnormspacing}m{0.9\textwidth}|>{\ccnormspacingcenter}m{0.12\textwidth}|>{\ccnormspacingcenter}m{0.18\textwidth}|>{\ccnormspacingcenter}m{0.18\textwidth}|}
+%   \caption{Daftar Fitur Prototipe Aplikasi}
+%   \label{tab:daftar_fitur} \\
+%   \hline \rowcolor[HTML]{A3E5F5}
+%   \textbf{ID} & \textbf{Fitur} & \centering\textbf{Penjelasan} & \textbf{Tipe Fitur} & \textbf{Keterkaitan Kebutuhan \& Tujuan} & \textbf{Keterkaitan Fungsionalitas} \\ \hline \endfirsthead
+%   \hline \rowcolor[HTML]{A3E5F5}
+%   \textbf{ID} & \textbf{Fitur} & \centering\textbf{Penjelasan} & \textbf{Tipe Fitur} & \textbf{Keterkaitan Kebutuhan \& Tujuan} & \textbf{Keterkaitan Fungsionalitas} \\ \hline \endhead
+%   \hline \endfoot
+
+%   F-01 & \textit{Usage tracker} & Melacak penggunaan \textit{smartphone} dan aplikasi-aplikasi dari sisi lama penggunaan, jumlah pembukaan, dan notifikasi yang diterima & Sudah ada & UN-04, UG-03 & FD-01, FD-02 \\ \hline
+%   F-02 & \textit{Pie chart} & Menampilkan laporan data penggunaan \textit{smartphone} dan aplikasi-aplikasi untuk hari yang sedang berlangsung & Sudah ada & UN-04, UG-03 & FD-03 \\ \hline
+%   F-03 & \textit{Bar chart} & Menampilkan ringkasan laporan data penggunaan \textit{smartphone} dan aplikasi-aplikasi & Modifikasi & UN-04, UG-03 & FD-03 \\ \hline
+%   F-04 & \textit{Date range selector} & Memilih rentang tanggal untuk tampilan laporan penggunaan & Baru & UN-04, UG-03 & FU-03 \\ \hline
+%   F-05 & \textit{Usage Summary} & Menampilkan ringkasan singkat tentang laporan penggunaan \textit{smartphone} dan aplikasi & Baru & UN-04, UG-03 & FU-03 \\ \hline
+%   F-06 & Rekomendasi perbaikan perilaku & Memberikan rekomendasi berdasarkan perilaku dari pengguna tentang aksi yang dapat dilakukan untuk memperbaiki kebiasaan digital pengguna & Baru & UN-03, UG-03 & - \\ \hline
+%   F-07 & \textit{Dashboard Widget} & Menampilkan laporan penggunaan \textit{smartphone} dan aplikasi untuk hari yang sedang berlangsung & Modifikasi & UN-02, UG-03 & FD-03, FD-04 \\ \hline
+%   F-08 & \textit{App Timer} & Membatasi waktu penggunaan aplikasi harian & Sudah ada & UG-02 & FD-05 \\ \hline
+%   F-09 & \textit{App Timer Widget}  & Menampilkan daftar sisa waktu penggunaan aplikasi yang dipasang App Timer & Baru & UN-02, UG-02 & FU-06 \\ \hline
+%   F-10 & Daftar aplikasi & Menampilkan seluruh aplikasi yang terdapat di \textit{smartphone} untuk diberikan aksi lanjutan sesuai konteks fitur & Sudah ada & UN-01 & FD-04 \\ \hline
+%   F-11 & \textit{Search bar} & Mencari aplikasi yang terdapat pada daftar & Baru & UN-01 & - \\ \hline
+%   F-12 & \textit{App group} & Mengelompokkan aplikasi-aplikasi berdasarkan kategori yang ditentukan pengguna & Baru & UN-01 & - \\ \hline
+%   F-13 & \textit{Focus Mode} & Memblokir akses aplikasi dan informasi yang diberikan oleh aplikasi  pilihan untuk waktu yang ditentukan atau sehari penuh & Modifikasi & UG-01, UG-02 & FD-08, FD-09 \\ \hline
+%   F-14 & \textit{Take a break} & Menunda pemblokiran dari fitur-fitur untuk waktu yang ditentukan & Modifikasi & UN-06, UG-06 & FD-11 \\ \hline
+%   F-15 & \textit{Turn off for now} & Mematikan pemblokiran dari fitur-fitur untuk sehari penuh & Modifikasi & UN-06, UG-06 & FD-11 \\ \hline
+%   F-16 & \textit{Focus Mode Widget} & Menampilkan jadwal aktivasi Focus Mode dan fungsionalitas aktivasi dari fitur Focus Mode & Baru & UN-02, UG-01 & FU-06 \\ \hline
+%   F-17 & \textit{Bedtime Mode} & Mengubah \textit{smartphone} ke dalam perilaku mode tidur pada jadwal yang ditentukan & Modifikasi & UG-05 & FD-12 \\ \hline
+%   F-18 & \textit{Greyscale screen} & Mengubah warna layar \textit{smartphone} menjadi hitam-putih & Sudah ada & UG-01 & FD-15 \\ \hline
+%   F-19 & \textit{Do Not Disturb} & Mengalihkan pengguna ke layar pengaturan Do Not Disturb bawaan \textit{smartphone} & Sudah ada & UG-01 & - \\ \hline
+%   F-20 & Pengaturan notifikasi & Mengatur notifikasi terkait fitur atau aplikasi & Modifikasi & UG-01 & - \\ \hline
+%   F-21 & Daftar Jadwal Aktivasi & Memberikan pengguna kemampuan untuk mengatur 0 atau lebih jadwal aktivasi fitur & Modifikasi & UN-05 & FD-10 \\ \hline
+%   F-22 & \textit{Goal Reminder} & Menentukan target harian dalam bentuk pesan yang dapat ditentukan pengguna untuk menjadi pengingat & Baru & UN-07, UG-04 & FU-13 \\ \hline
+%   F-23 & \textit{Daily Summary Notification} & Memberikan notifikasi berisi ringkasan penggunaan \textit{smartphone} harian dan pembanding dengan data hari kemarin & Baru & UN-03, UN-09, UG-03 & FU-07 \\ \hline
+%   F-24 & \textit{Deskripsi Fitur} & Menjelaskan kegunaan dan tujuan dari sebuah fitur atau halaman fitur & Sudah ada & UN-03, UN-09, UG-03 & FD-16 \\ \hline
 
 
-% \subsubsection{Pemetaan \textit{Usability} dan \textit{User Experience Goals}}
+% \end{longtable}
+% \end{small}
+% \justifying
+% \FloatBarrier
 
-
-
-% Proses perancangan solusi mengacu kepada metode \textit{User-Centered Design} sesuai dengan standar ISO 9241-210, di mana pada tahap perancangan desain interaksi untuk memenuhi kebutuhan pengguna akan disertai dengan prototipe aplikasi. Gambar \ref{fig:diagram_alur_kerja} menjelaskan tentang alur kerja penelitian yang dilakukan.
-
-% \begin{figure}[h]
-%   \centering
-%   \includegraphics[width=0.8\textwidth]{chapter-3-alur-penelitian.png}
-%   \caption{Alur Kerja Penelitian}
-%   \label{fig:diagram_alur_kerja}
-% \end{figure}
-
-% \subsection{Perancangan Proses Desain}
-% Ruang lingkup yang ditentukan pada penelitian ini adalah sebagai berikut
-
-% \begin{enumerate}
-%   \item Lingkup Pengguna
-%   \subitem Target pengguna dari penelitian ini adalah masyarakat Indonesia yang pernah menggunakan atau memiliki ketertarikan terhadap aplikasi pencegah distraksi. Rentang usia dari target pengguna tidak dibatasi, namun difokuskan kepada golongan \textit{millenials} dengan rentang usia 18-30 tahun.
-%   \item Lingkup Pengembangan
-%   \subitem Desain interaksi aplikasi pencegah distraksi yang dibuat memiliki bentuk \textit{mobile interface} dengan mewujudkan sebuah prototipe aplikasi dalam \textit{platform Android}. Aplikasi Digital Wellbeing milik Google ditetapkan menjadi garis dasar pengembangan prototipe aplikasi tersebut.
-% \end{enumerate}
-
-
-% \subsection{Identifikasi Konteks Penggunaan}
-
-% Pada tahap ini dilakukan analisis hasil riset penggunaanalisis terhadap hasil riset yang
-
-
-% \subsection{Identifikasi Kebutuhan Pengguna}
-
-
-% \subsection{Perancangan Desain}
-
-
-% \subsection{Evaluasi Solusi Masalah}
-
-
-
-% % Ketiga solusi yang telah diuraikan pada subbab \ref{sec:analisis_solusi} akan diimplementasikan dalam prototipe aplikasi, beserta fitur-fitur lain pada Digital Wellbeing yang akan mendukung solusi tersebut. Prototipe aplikasi ini akan diimpementasikan pada \textit{platform} Android. Secara garis besar, proses perancangan prototipe aplikasi akan menggunakan pendekatan \textit{user-centered design} (UCD).
-
-% Seperti yang telah disebutkan pada subbab \ref{sec:metodologi}, metodologi yang digunakan dalam pengerjaan Tugas Akhir ini akan menggunakan pendekatan UCD. Dengan maksud mengikuti prosesnya, maka langkah selanjutnya yang akan dilakukan adalah mengumpulkan data. Pengumpulan data akan dilakukan dengan menyebarkan form secara online serta melakukan wawancara dengan responden yang bersedia untuk bekerja sama lebih lanjut. Proses ini akan dilaksanakan pada periode pengerjaan Tugas Akhir 2. Pengumpulan data ini bertujuan untuk melakukan validasi terhadap permasalahan yang sudah dianalisis, dan juga tidak menutup kemungkinan untuk menemukan permasalahan desain interaksi lain dari masukan pengguna.
-
-% Setelah melakukan pengumpulan data, akan dilakukan analisis terhadap masukan yang didapat untuk mejadi kebutuhan perangkat lunak. Hasil analisis juga akan memvalidasi analisis masalah dan solusi yang didapat dari observasi penulis pada subbab \ref{sec:analisis_masalah} dan \ref{sec:analisis_solusi}.
-
-% Kebutuhan perangkat lunak yang telah disusun akan diimplementasi dalam bentuk prototipe \textit{low-fidelity} terlebih dahulu. Setelah dilakukan evaluasi, maka implementasi akan dilanjutkan dalam bentuk prototipe \textit{high-fidelity}. Setelah menjalani evaluasi, maka perancangan prototipe aplikasi akan dikerjakan. Prototipe aplikasi diharapkan akan menghasilkan data dengan kualitas yang lebih tinggi pada saat evaluasi dibandingkan saat menggunakan prototipe \textit{low-fidelity} atau \textit{high-fidelity}. Hasil evaluasi juga akan menentukan apakah aplikasi akan menjalani proses iterasi atau diimplementasi lebih lanjut.
-
-% \blindtext
+% \end{landscape}
