@@ -1,4 +1,95 @@
-\chapter{Analisis \textit{Web Scraping} Ulasan Pengguna Aplikasi Digital Wellbeing}
-\label{chpt:web_scraping}
+\chapter{Daftar Pertanyaan Wawancara}
+\label{chpt:daftar_pertanyaan_wawancara}
 
-google-play-scraper versi 1.0.3 (\url{https://pypi.org/project/google-play-scraper/}).
+\newcommand{\apcsubrow}[1]{\rowcolor[HTML]{DCF3FC} \multicolumn{2}{|l|}{\textbf{#1}}}
+\newcommand{\apcsubsubrow}[1]{\rowcolor[HTML]{E8E8E8} \multicolumn{2}{|l|}{\textbf{#1}}}
+
+\RaggedLeft
+% \label{tab:daftar_pertanyaan_wawancara}
+\begin{footnotesize}
+\begin{longtable}[c]{|p{0.04\textwidth}|>{\baselineskip=15pt}m{0.85\textwidth}|}
+  \hline \rowcolor[HTML]{A3E5F5} \multicolumn{1}{|c|}{\textbf{No.}} & \multicolumn{1}{|c|}{\textbf{Pertanyaan}} \\ \hline \endfirsthead
+  \hline \rowcolor[HTML]{A3E5F5} \multicolumn{1}{|c|}{\textbf{No.}} & \multicolumn{1}{|c|}{\textbf{Pertanyaan}} \\ \hline \endhead
+
+  \hline \endfoot
+  
+  \apcsubrow{A. Perilaku Responden} \\ \hline
+  
+  \apcsubsubrow{Identitas Responden} \\ \hline
+  1. & Jenis Kelamin Responden \\ \hline
+  2. & Usia Responden \\ \hline
+  3. & Pekerjaan Responden \\ \hline
+  
+  \apcsubsubrow{Perilaku Penggunaan \textit{Smartphone} Responden} \\ \hline
+  4. & Apa tujuan responden dalam menggunakan \textit{smartphone}? (Diurutkan berdasarkan prioritas)  \\ \hline
+  5. & Bentuk distraksi apa saja yang dialami terkait dengan smartphone?  \\ \hline
+  6. & Seberapa sering responden menggunakan \textit{smartphone} dalam sehari? (Dalam hitungan jam)  \\ \hline
+  7. & Dalam skala 1 sampai 5, dengan 1 sangat jarang dan 5 sangat sering, berapa Anda menilai jumlah penggunaan harian \textit{smartphone} Anda?  \\ \hline
+  8. & Dalam skala 1 sampai 5, dengan 1 sangat sedikit dan 5 sangat banyak, berapa Anda menilai jumlah notifikasi yang diterima dari \textit{smartphone} Anda yang merupakan distraksi?  \\ \hline
+  
+  \apcsubsubrow{Perilaku Responden Terkait Aplikasi Pencegah Distraksi} \\ \hline
+  9. & Apa nama aplikasi pencegah distraksi yang pernah Anda gunakan?  \\ \hline
+  10. & Apa jenis fitur aplikasi pencegah distraksi yang ingin Anda gunakan?  \\ \hline
+  11. & Masalah apa yang Anda temukan dari aplikasi pencegah distraksi yang pernah digunakan?  \\ \hline
+  12. & Fitur atau kemampuan lain apa yang Anda inginkan dari sebuah aplikasi pencegah distraksi?  \\ \hline
+  
+  \apcsubsubrow{Perilaku Responden Terkait Aplikasi Digital Wellbeing} \\ \hline
+  13. & Apa tujuan Anda dalam menggunakan aplikasi Digital Wellbeing?  \\ \hline
+  14. & Masalah apa yang Anda temukan selama menggunakan aplikasi Digital Wellbeing?  \\ \hline
+  15. & Fitur atau kemampuan lain apa yang Anda ingikan dari aplikasi Digital Wellbeing?  \\ \hline
+  
+  % ================================================
+  
+  \apcsubrow{B. Validasi Ulasan Aplikasi Digital Wellbeing} \\ \hline
+  
+  \apcsubsubrow{Validasi masalah kurangnya fitur widget pada Homescreen} \\ \hline
+  16. & Bagaimana pendapat Anda tentang \textit{widget} yang menyediakan fungsionalitas dari fitur App Timer? \\ \hline
+  17. & Bagaimana pendapat Anda tentang \textit{widget} yang menyediakan fungsionalitas dari fitur Focus Mode? \\ \hline
+  18. & Bagaimana pendapat Anda tentang \textit{widget} yang menyediakan fungsionalitas dari fitur Bedtime Mode? \\ \hline
+  
+  \apcsubsubrow{Validasi masalah pada fitur laporan data penggunaan aplikasi} \\ \hline
+  19. & Bagaimana pendapat Anda tentang pengembangan kemampuan dari grafik laporan pemakaian \textit{smartphone} atau aplikasi? \\ \hline
+  
+  \apcsubsubrow{Validasi masalah pada fitur Focus Mode} \\ \hline
+  20. & Apakah Anda merasa fungsionalitas fitur Focus Mode pada \textit{notification bar} perlu dikembangkan dari segi keketatan? \\ \hline
+  21. & Bagaimana pendapat Anda tentang fungsionalitas umum dari fitur Focus Mode dari segi keketatan? \\ \hline
+  
+  \apcsubsubrow{Validasi masalah untuk kemampuan penjadwalan pada fitur-fitur} \\ \hline
+  22. & Bagaimana pendapat Anda tentang kemampuan untuk membuat jadwal lebih banyak untuk fitur App Timer? \\ \hline
+  23. & Bagaimana pendapat Anda tentang kemampuan untuk membuat jadwal lebih banyak untuk fitur Focus Mode? \\ \hline
+  24. & Bagaimana pendapat Anda tentang kemampuan untuk membuat jadwal App Timer yang berlangsung selama 1 minggu melainkan 1 hari? \\ \hline
+  
+  \apcsubsubrow{Validasi masalah kurangnya fitur pengaturan tingkat keketatan} \\ \hline
+  25. & Bagaimana pendapat Anda tentang pengaturan untuk mengubah tingkat keketatan dari fitur-fitur dalam aplikasi? \\ \hline
+  26. & Bagaimana pendapat Anda tentang kemampuan untuk mengunci pengaturan terhadap fitur-fitur? \\ \hline
+  27. & Bagaimana pendapat Anda tentang mempersulit kemampuan untuk mengubah pengaturan terhadap fitur App Timer? \\ \hline
+  
+  
+  \apcsubsubrow{Validasi masalah kurangnya fitur penundaan pada App Timer} \\ \hline
+  28. & Bagaimana pendapat Anda tentang kemampuan \textit{reminder notification} terhadap sisa batas waktu dari aplikasi yang diatur oleh App Timer? \\ \hline
+  29. & Bagaimana pendapat Anda tentang kemampuan untuk mengunci pengaturan terhadap fitur-fitur? \\ \hline
+  30. & Bagaimana pendapat Anda tentang fitur indikator lama penggunaan aplikasi yang diatur dalam App Timer pada \textit{notification bar}? \\ \hline
+  
+  \apcsubsubrow{Validasi masalah pada fitur Bedtime Mode} \\ \hline
+  31. & Bagaimana pendapat Anda tentang kemampuan untuk membatasi akses untuk aplikasi yang dipilih pengguna untuk mendukung fitur Bedtime Mode? \\ \hline
+  32. & Bagaimana pendapat Anda tentang kemampuan untuk melarang perubahan jadwal jika fitur Bedtime Mode sedang aktif? \\ \hline
+  33. & Bagaimana pendapat Anda tentang kemampuan untuk membatasi penundaan aktivasi fitur Bedtime Mode? \\ \hline
+  
+  \apcsubsubrow{Validasi masalah kurangnya penjelasan dan susunan kata} \\ \hline
+  34. & Bagaimana pendapat Anda tentang kejelasan dalam deskripsi fitur-fitur aplikasi? \\ \hline
+  35. & Bagaimana pendapat Anda tentang kemampuan untuk menambah pesan dalam \textit{reminder} yang diberikan oleh fitur-fitur? \\ \hline
+  
+  \apcsubsubrow{Validasi masalah kurangnya fitur pengelompokkan aplikasi} \\ \hline
+  36. & Bagaimana pendapat Anda tentang kemampuan mengelompokkan aplikasi-aplikasi oleh pengguna untuk mempermudah pengaturan pada fitur Focus Mode atau App Timer? \\ \hline 
+  
+  \apcsubsubrow{Validasi masalah kurangnya fitur pengaturan jam akhir hari} \\ \hline
+  37. & Bagaimana pendapat Anda tentang kemampuan untuk mengubah jam akhir dari sebuah hari? (Contoh: Mengubah akhir hari dari jam 12 malam menjadi jam 1 malam) \\ \hline
+  
+  \apcsubsubrow{Validasi masalah kurangnya kemampuan \textit{whitelisting}} \\ \hline
+  38. & Bagaimana pendapat Anda tentang kemampuan untuk memilih aplikasi pada fitur Focus Mode dengan metode \textit{whitelisting}? \\ \hline
+ 
+\end{longtable}
+\end{footnotesize}
+\justifying
+
+\FloatBarrier

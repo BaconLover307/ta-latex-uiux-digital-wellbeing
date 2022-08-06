@@ -1,203 +1,117 @@
-\begin{landscape}
-  
-\chapter{Data Hasil Wawancara}
-\label{chpt:hasil_wawancara}
+\chapter{Skenario Pengujian Prototipe \textit{Low-Fidelity}}
+\label{chpt:skenario_lofi}
 
-% Vars
-\newlength{\colresp}
-\setlength{\colresp}{0.26\textwidth}
+Setelah setiap pengerjaan skenario, partisipan akan diberikan pertanyaan mengenai skenario dan tugas yang telah mereka kerjakan. Pertanyaan ini berguna untuk mengevaluasi alur prototipe, informasi yang terdapat pada prototipe, serta mencari saran atau kritik dari partisipan. Pertanyaan-pertanyaannya adalah sebagai berikut
 
-\newlength{\colbag}
-\setlength{\colbag}{0.20\textwidth}
-
-% Functions
-\newcommand{\apdhead}[1]{\cellcolor[HTML]{A3E5F5}\textbf{#1}}
-\newcommand{\apdheadcell}[1]{\multicolumn{1}{c|}{\apdhead{#1}}}
-
-\newcommand{\borderblue}{\arrayrulecolor[HTML]{A3E5F5}}
-\newcommand{\borderblack}{\arrayrulecolor{black}}
-
-\newcommand{\apdbag}[2]{\multirow{#1}{\colbag}{\linespread{1}\selectfont #2}}
-\newcommand{\apdline}{\hhline{|-|~|*5{-}|}}
-
-\newcommand{\apdnum}[1]{\colorbox{white}{\raisebox{7pt}{\begin{minipage}[t]{\colresp}\linespread{0.8}\selectfont \begin{enumerate}[parsep=0pt, leftmargin=*] #1 \end{enumerate} \end{minipage}}}}
-\newcommand{\apditem}[1]{\colorbox{white}{\raisebox{7pt}{\begin{minipage}[t]{\colresp}\linespread{0.8}\selectfont \begin{itemize}[parsep=0pt, leftmargin=*] #1 \end{itemize} \end{minipage}}}}
-
+\begin{enumerate}
+  \item Apa tanggapan Anda mengenai alur tampilan untuk menyelesaikan task tersebut?
+  \item Apakah informasi pada tampilan cukup untuk membantu menyelesaikan task tersebut?
+  \item Apakah ada masukan / saran mengenai tampilan dari halaman yang dilalui?
+\end{enumerate}
 
 \RaggedLeft
-\begin{footnotesize}
-\begin{longtable}[c]{|m{0.04\textwidth}|>{\baselineskip=8pt}m{\colbag}|>{\baselineskip=8pt}p{\colresp}|>{\baselineskip=8pt}p{\colresp}|>{\baselineskip=8pt}p{\colresp}|>{\baselineskip=8pt}p{\colresp}|>{\baselineskip=8pt}p{\colresp}|}
+\begin{small}
+\begin{longtable}[c]{|>{\ccnormspacing}m{0.19\textwidth}|>{\ccnormspacing}p{0.73\textwidth}|}
   
   \hline
+  \rowcolor[HTML]{A3E5F5} \multicolumn{2}{|l|}{\textbf{Skenario Pengujian 1}} \\ \hline
+  Kaitan Skenario Pengguna & SP-02 \\ \hline
+  Tujuan & Mengukur pemahaman pengguna dalam menganalisis data penggunaan \textit{smartphone} \\ \hline
+  Skenario & Pengguna ingin melihat data penggunaan \textit{smartphone} harian secara keseluruhan. \\ \hline
+  Task & Lihat data penggunaan \textit{smartphone} \\ \hline
+  Pra kondisi & Pengguna berada di Halaman Main Menu \\ \hline
+
+  \rowcolor[HTML]{A3E5F5} \multicolumn{2}{|l|}{\textbf{Skenario Pengujian 2}} \\ \hline
+  Kaitan Skenario Pengguna & SP-03 \\ \hline
+  Tujuan & Mengukur pemahaman pengguna dalam membuat sebuah App Group \\ \hline
+  Skenario & Pengguna ingin mengelompokkan aplikasi-aplikasi ke dalam sebuah grup. \\ \hline
+  Task & Kelompokan aplikasi-aplikasi ke dalam sebuah kategori \\ \hline
+  Pra kondisi & Pengguna berada di Halaman Dashboard \\ \hline
+
+  \rowcolor[HTML]{A3E5F5} \multicolumn{2}{|l|}{\textbf{Skenario Pengujian 3}} \\ \hline
+  Kaitan Skenario Pengguna & SP-02 \\ \hline
+  Tujuan & Mengukur pemahaman pengguna dalam menganalisis data penggunaan satu buah aplikasi \\ \hline
+  Skenario & Pengguna sudah melihat data penggunaan smartphone. Pengguna ingin melihat data penggunaan untuk hanya sebuah aplikasi. \\ \hline
+  Task & Lihat data penggunaan dari sebuah aplikasi \\ \hline
+  Pra kondisi & Pengguna berada di Halaman Dashboard \\ \hline
+
+  \rowcolor[HTML]{A3E5F5} \multicolumn{2}{|l|}{\textbf{Skenario Pengujian 4}} \\ \hline
+  Kaitan Skenario Pengguna & SP-02 \\ \hline
+  Tujuan & Mengukur pemahaman pengguna dalam menganalisis data penggunaan App Group \\ \hline
+  Skenario & Pengguna ingin melihat data penggunaan App Group yang sudah dibuat. \\ \hline
+  Task & Lihat data penggunaan dari kategori aplikasi yang sudah dibuat \\ \hline
+  Pra kondisi & Pengguna berada di Halaman Dashboard \\ \hline
+
+  \rowcolor[HTML]{A3E5F5} \multicolumn{2}{|l|}{\textbf{Skenario Pengujian 5}} \\ \hline
+  Kaitan Skenario Pengguna & SP-03 \\ \hline
+  Tujuan & Mengukur pemahaman pengguna dalam memasang App Timer pada sebuah aplikasi \\ \hline
+  Skenario & Pengguna ingin membatasi waktu penggunaan sebuah aplikasi. \\ \hline
+  Task & Batasi waktu penggunaan dari sebuah aplikasi \\ \hline
+  Pra kondisi & Pengguna berada di Halaman Main Menu \\ \hline
+
+  \rowcolor[HTML]{A3E5F5} \multicolumn{2}{|l|}{\textbf{Skenario Pengujian 6}} \\ \hline
+  Kaitan Skenario Pengguna & SP-05 \\ \hline
+  Tujuan & Mengukur pemahaman pengguna dalam menunda aktivasi App Timer \\ \hline
+  Skenario & Pengguna butuh waktu tambahan untuk menggunakan aplikasi yang batas waktunya telah habis. \\ \hline
+  Task & Tunda pemblokiran untuk aplikasi yang batas waktu penggunaannya sudah habis \\ \hline
+  Pra kondisi & Pengguna berada di Halaman Main Menu \\ \hline
+
+  \rowcolor[HTML]{A3E5F5} \multicolumn{2}{|l|}{\textbf{Skenario Pengujian 7}} \\ \hline
+  Kaitan Skenario Pengguna & SP-04 \\ \hline
+  Tujuan & Mengukur pemahaman pengguna dalam menambah jadwal Focus Mode \\ \hline
+  Skenario & Pengguna ingin fokus pada pekerjaannya di jam kerja. Pengguna ingin memblokir beberapa aplikasi di jam kerjanya. \\ \hline
+  Task & Buat jadwal pemblokiran aplikasi-aplikasi mendistraksi sesuai dengan jam kerja \\ \hline
+  Pra kondisi & Pengguna berada di Halaman Main Menu \\ \hline
+
+  \rowcolor[HTML]{A3E5F5} \multicolumn{2}{|l|}{\textbf{Skenario Pengujian 8}} \\ \hline
+  Kaitan Skenario Pengguna & SP-05 \\ \hline
+  Tujuan & Mengukur pemahaman pengguna dalam menunda aktivasi Fokus Mode \\ \hline
+  Skenario & Pengguna ingin beristirahat dari kerjanya sejenak. Pengguna ingin menggunakan aplikasi yang diblokir secara sementara. \\ \hline
+  Task & Tunda pemblokiran aplikasi yang sudah dipasang sebelumnya \\ \hline
+  Pra kondisi & Pengguna berada di Halaman Main Menu \\ \hline
   
-  \apdhead{} & \apdhead{} & \multicolumn{5}{c|}{\apdhead{Jawaban}} \\ \hhline{|>{\borderblue}->{\borderblack}|>{\borderblue}->{\borderblack}|*5{-}|}
-  \rowcolor[HTML]{A3E5F5} \multicolumn{1}{|c|}{\multirow{-2}{*}{\apdhead{No.}}} & \multicolumn{1}{c|}{\multirow{-2}{*}{\apdhead{Topik}}} & \apdheadcell{Narasumber A} & \apdheadcell{Narasumber B} & \apdheadcell{Narasumber C} & \apdheadcell{Narasumber D} & \apdheadcell{Narasumber E} \\ \hline
-  \endfirsthead
+  \rowcolor[HTML]{A3E5F5} \multicolumn{2}{|l|}{\textbf{Skenario Pengujian 9}} \\ \hline
+  Kaitan Skenario Pengguna & SP-01 \\ \hline
+  Tujuan & Mengukur pemahaman pengguna dalam menentukan Daily Goal \\ \hline
+  Skenario & Pengguna memiliki sebuah target yang harus dipenuhi hari ini. Pengguna ingin mengingatkan diri terhadap capaian tersebut. \\ \hline
+  Task & Pasang pengingat untuk capaian yang harus dipenuhi hari ini \\ \hline
+  Pra kondisi & Pengguna berada di Halaman Main Menu \\ \hline
   
-  \hline
-  \apdhead{} & \apdhead{} & \multicolumn{5}{c|}{\apdhead{Jawaban}} \\ \hhline{|>{\borderblue}->{\borderblack}|>{\borderblue}->{\borderblack}|*5{-}|}  
-  \rowcolor[HTML]{A3E5F5} \multicolumn{1}{|c|}{\multirow{-2}{*}{\apdhead{No.}}} & \multicolumn{1}{c|}{\multirow{-2}{*}{\apdhead{Topik}}} & \apdheadcell{Narasumber A} & \apdheadcell{Narasumber B} & \apdheadcell{Narasumber C} & \apdheadcell{Narasumber D} & \apdheadcell{Narasumber E} \\ \hline
-  \endhead
-  \hline \endfoot
+  \rowcolor[HTML]{A3E5F5} \multicolumn{2}{|l|}{\textbf{Skenario Pengujian 10}} \\ \hline
+  Kaitan Skenario Pengguna & SP-01 \\ \hline
+  Tujuan & Mengukur pemahaman pengguna dalam memanfaatkan Smartphone Usage Evaluation \\ \hline
+  Skenario & Pengguna ingin diberikan evaluasi harian tentang penggunaan \textit{smartphone}-nya pada hari tersebut. \\ \hline
+  Task & Pasang pengingat di akhir hari untuk memberikan evaluasi penggunaan \textit{smartphone} dan goal yang telah ditentukan \\ \hline
+  Pra kondisi & Pengguna berada di Halaman Daily Goal \\ \hline
   
-  1. &  & Perempuan & Laki-laki & Laki-laki & Perempuan & Laki-laki \\ \apdline
-  2. & \apdbag{-1}{Identitas Responden} & 21 tahun & 23 tahun & 29 tahun & 22 tahun & 28 tahun \\ \apdline
-  3. &  & Mahasiswi & Wirausaha, pemasaran properti & Wirusaha, koki & Mahasiswi & Pegawai swasta, desain produk \\ \hline
-  4. &  & \apdnum{\item Komunikasi lewat aplikasi \textit{messenger} \item \textit{Browsing} internet \item Hiburan}
-        & \apdnum{\item Komunikasi lewat aplikasi \textit{messenger} \item Belajar lewat media \item Bekerja \item Hiburan}
-        & \apdnum{\item Pekerjaan, untuk mencari ide dan resep \item Komunikasi lewat aplikasi \textit{messenger} \item Media sosial \item Mengambil foto \item Bermain game}
-        & \apdnum{\item Komunikasi lewat aplikasi \textit{messenger} \item Kuliah \item Hiburan \item Menggunakan jasa makan online / \textit{e-commerce}}
-        & \apdnum{\item Komunikasi untuk pekerjaan lewat aplikasi \textit{messenger} \item Hiburan lewat media sosial \item Mencari informasi di media sosial}
-    \\ \apdline
-  5. & \apdbag{-1}{Perilaku Penggunaan \textit{Smartphone} Responden} & \apditem{\item Keinginan membuka aplikasi}
-        & \apditem{\item Keinginan untuk menggunakan aplikasi \item Notifikasi dari pesan client yang masuk}
-        & \apditem{\item Keinginan untuk menggunakan aplikasi \item Notifikasi berupa indikator suara dan visual}
-        & \apditem{\item Keinginan untuk menggunakan aplikasi\item Kurang fokus sehingga bermain di \textit{smartphone}}
-        & \apditem{\item Keinginan diri sendiri untuk mencari informasi dari media sosial \item Notifikasi dari aplikasi \textit{messenger} \item Keberadaan \textit{smartphone} di sekitar diri sendiri}
-    \\ \apdline
-  6. &  & 8-12 jam & 7-8 jam & 5-7 jam & 3-7 jam & 3-6 jam \\ \apdline
-  7. &  & skala 5 & skala 4 & skala 3 & skala 2 & skala 4 \\ \apdline
-  8. &  & skala 1 & skala 2 & skala 4 & skala 1 & skala 3 \\ \hline
+  \rowcolor[HTML]{A3E5F5} \multicolumn{2}{|l|}{\textbf{Skenario Pengujian 11}} \\ \hline
+  Kaitan Skenario Pengguna & SP-06 \\ \hline
+  Tujuan & Mengukur pemahaman pengguna dalam mengatur jadwal Bedtime Mode \\ \hline
+  Skenario & Pengguna ingin memperbaiki jam tidurnya. Pengguna ingin mengurangi penggunaan \textit{smartphone} di saat jam tidur. \\ \hline
+  Task & Aturlah sebuah jadwal agar \textit{smartphone} dapat masuk ke mode tidur di saat jam tidur. \\ \hline
+  Pra kondisi & Pengguna berada di Halaman Main Menu \\ \hline
 
-  9. &  & \apditem{\item Aplikasi fokus belajar \item Digital Wellbeing \item App blocker} & \apditem{\item Digital Wellbeing \item Daywise \item Task Organizer} & \apditem{\item Digital Wellbeing} & \apditem{\item Forest \item Digital Wellbeing} & \apditem{\item Digital Wellbeing} \\ \apdline
-  10. &  & \apditem{\item Task Reminder \item Bedtime Helper} & \apditem{\item Task Reminder} & \apditem{\item Task Reminder \item Bedtime Helper} & \apditem{\item App Timer} & \apditem{\item Task Reminder \item App Blocker \item Usage Tracker \item Focus Timer} \\ \apdline
-  11. &  & \apditem{\item Kurang bisa membangkitkan komitment \item Kurang strict} & \apditem{\item Kurang terintegrasi dengan ekosistem aplikasi \item Kurang memberikan saran untuk memperbaiki kebiasaan} & \apditem{\item Belum menemukan masalah yang cukup signifikan} & \apditem{\item Beberapa informasi penting tidak terdeteksi ketika menggunakan aplikasi pencegah distraksi \item Tidak bisa menambah waktu ketika timer aplikasi habis} & \apditem{\item Kurang tegas dalam mengingatkan penggunaan yang terlalu banyak \item Kurang banyak pengingat sebelum batas waktu aplikasi habis} \\ \apdline
-  12. & \apdbag{-4}{Perilaku Responden Terkait Aplikasi Pencegah Distraksi} & \apditem{\item Kemampuan menambahkan goals} & \apditem{\item Visual yang menarik agar pengguna tertarik untuk memakai} & \apditem{\item Notifikasi untuk jam tidur \item Notifikasi jika terlalu lama menggunakan aplikasi yang mendistraksi} & \apditem{\item Ingin timer yang dapat diatur sendiri untuk memblokir akses aplikasi} & \apditem{\item Menggunakan widget untuk melihat sisa waktu penggunaan aplikasi \item Fitur pengingat dalam bentuk notifikasi atau widget \item App blocker / focus timer yang lebih mendetail, seperti memblokir akun tertentu dari aplikasi \textit{messenger}} \\ \hline
+  \rowcolor[HTML]{A3E5F5} \multicolumn{2}{|l|}{\textbf{Skenario Pengujian 12}} \\ \hline
+  Kaitan Skenario Pengguna & SP-02 \\ \hline
+  Tujuan & Mengukur pemahaman pengguna tentang widget Dashboard \\ \hline
+  Skenario & Pengguna ingin melihat pengunaan \textit{smartphone}-nya hari ini tanpa masuk ke aplikasi Digital Wellbeing \\ \hline
+  Task & Lihat data penggunaan \textit{smartphone} hari ini dari Homescreen \\ \hline
+  Pra kondisi & Pengguna berada di Homescreen \textit{smartphone} \\ \hline
 
-  13. &  & \apditem{\item Memakai App Timer untuk memblokir aplikasi} & \apditem{\item Memakai Bedtime Mode untuk mengingatkan jam tidur} & \apditem{\item Mengingatkan terhadap penggunaan \textit{smartphone} yang tinggi \item Lebih fokus dengan pekerjaan dengan memblokir aplikasi \item Membantu menjaga kualitas tidur} & \apditem{\item Menggunakan App Timer untuk membatasi waktu menggunakan aplikasi} & \apditem{\item App Timer untuk mengatur agar tidak menggunakan aplikasi terlalu lama \item Focus Mode untuk mengurangi distraksi di saat bekerja \item Dashboard untuk melihat aktivitas dan evaluasi penggunaan \textit{smartphone}} \\ \apdline
-  14. & \apdbag{-1}{Perilaku Responden Terkait Aplikasi Digital Wellbeing} & \apditem{\item Kurang ketat dalam membatasi akses aplikasi} & \apditem{\item Tampilan terlalu kaku, kurang user friendly dan mengajak \item Kurang fitur untuk mengelompokkan aplikasi \item Kurang mengerti fi Dashboard} & \apditem{\item Belum menemukan masalah yang cukup signifikan} & \apditem{\item Jika App Timer habis, tidak dapat menambah waktu sebentar tanpa menghapus timer} & \apditem{\item Notifikasi terlalu mepet untuk App Timer \item Focus Mode bisa disalahgunakan} \\ \apdline
-  15. & & \apditem{\item Kemampuan menambahkan pesan / tugas harian \item Fitur Search saat memilih aplikasi untuk dipasang App Timer / Focus Mode} & \apditem{\item Integrasi dengan aplikasi lain milik Google \item Fitur untuk menambah pesan saat ingin menggunakan fitur / membuat jadwal \item Tampilan yang lebih menarik \item Fitur Search saat memilih aplikasi untuk dipasang App Timer / Focus Mode} & \apditem{\item Memberikan notifikasi periodik untuk aplikasi yang dibatasi oleh App Timer \item Memberikan notifikasi tentang berapa lama telah menggunakan Focus Mode \item Fitur Search saat memilih aplikasi untuk dipasang App Timer / Focus Mode} & \apditem{\item Ingin kemampuan untuk menunda App Timer / Focus Mode dengan waktu yang ditentukan sendiri \item Fitur Search saat memilih aplikasi untuk dipasang App Timer / Focus Mode} & \apditem{\item Kemampuan menambah tugas yang perlu dikerjakan untuk diingatkan \item Kemampuan melihat batas waktu App Timer dengan progress bar \item Bisa memblokir kontak tertentu di aplikasi \textit{messenger} \item Fitur Search saat memilih aplikasi untuk dipasang App Timer / Focus Mode} \\ \hline
-
-  16. &  & Tidak & Ya, untuk mengetahui batas timer" dan membatasi penggunaan app & Ya, untuk melihat batas waktu aplikasi yang dibatasi & Ya, untuk melihat batas waktu aplikasi yang dibatasi & Ya, untuk mengingatkan batas waktu aplikasi yang dibatasi, dalam bentuk progress bar \\ \apdline
-  17. & \apdbag{-2}{Validasi masalah kurangnya fitur widget pada Homescreen} & Tidak & Ya, karena peletakan di notifikasi menghalangi notif lain & Tidak & Tidak & Ya, untuk memberi tahu berapa kali kesempatan untuk mengambil break. Berguna untuk orang yang kerja tanpa jadwal tetap \\ \apdline
-  18. &  & Ya, untuk melihat jadwal & Hanya jadi shortcut & Tidak & Tidak & Tidak \\ \hline
-
-  19. & \apdbag{-1}{Validasi masalah pada fitur laporan data penggunaan aplikasi} & \apditem{\item Data penggunaan tertinggi dan terendah \item Data rata-rata penggunaan mingguan \item Data penggunaan \texttt{>1} bulan \item Tampilan data mingguan} & \apditem{\item Data rata-rata penggunaan mingguan \item Garis besar aktivitas \texttt{>1} bulan (hanya ringkasan data) \item Tampilan data mingguan} & \apditem{\item Data rata-rata pengunaan mingguan \item Data penggunaan \texttt{>1} bulan \item Tampilan data mingguan} & \apditem{\item Data rata-rata penggunaan mingguan \item Data penggunaan \texttt{>1} bulan \item Indikator pembanding penggunaan dengan hari-hari sebelumnya} & \apditem{\item Data rata-rata penggunaan mingguan, bisa menyontoh grafik pasar saham \item Kemampuan untuk menentukan periode waktu yang ditampilkan pada grafik \item Data penggunaan \texttt{>1} bulan} \\ \hline
-
-  20. &  & Dipersulit untuk mematikan & Tombol break dihilangkan & Hanya bisa dimatikan / istirahat lewat halaman utama & Ya, diatur pengguna dengan tingkat keketatan & Ya, diberi kemampuan untuk menunjukan sisa waktu yang dapat diambil untuk istirahat \\ \apdline
-  21. & \apdbag{-2}{Validasi masalah pada fitur Focus Mode} & Dipersulit untuk mematikan saat aktif & Dipersulit untuk mematikan saat aktif & Cukup & Perlu dibatasi jumlah istirahat yang bisa diambil, perlu dipersulit untuk mematikan, hanya jika bisa diatur oleh pengguna & Ya, perlu dipersulit tapi ada pengaturan yang bisa diatur secara sadar \\ \hline
-
-  22. &  & Tidak & Ya & Ya & Ya & Ya \\ \apdline
-  23. &  & Ya & Ya & Ya, bisa diberi judul & Ya & Ya \\ \apdline
-  24. & \apdbag{-3}{Validasi masalah untuk kemampuan penjadwalan pada fitur-fitur} & Ya & Ya & Tidak & Tidak & Tidak \\ \hline
-
-  25. &  & Kunci dengan random string & Kunci dengan random string dan password & Kunci dengan password, random string, atau tugas sulit lainnya, tapi hanya untuk App Timer & Kunci dengan password, random string & Kunci dengan password, timer, random string, atau quiz \\ \apdline
-  26. &  & Narasumber & Narasumber & Narasumber & Narasumber & Narasumber \\ \apdline
-  27. & \apdbag{-3}{Validasi masalah kurangnya fitur pengaturan tingkat keketatan} & Ya, dilarang ngubah timer jika habis & Ya, ada opsi untuk dipersulit & Ya, perlu dipersulit & Cukup & Ya, dilarang untuk mengubah pengaturan jika batas waktu telah habis, untuk mengambil istirahat perlu melakukan task yang sulit \\ \hline
-
-  28. &  & Tidak & Perlu lebih banyak, bisa memilih sendiri & Ya, bisa diingatkan secara periodik & Tidak & Ya, lebih sering diingatkan \\ \apdline
-  29. & \apdbag{-1}{Validasi masalah kurangnya fitur penundaan pada App Timer} & Tidak & Hanya terbatas, kalau bisa buka aplikasi hanya sekali saja lalu langsung ditutup & Tidak & Ya, perlu menunda dengan waktu yang dipilih sendiri & Ya, bisa menunda App Timer dengan terbatas atau dengan konsekuensi melakukan sebuah task yang sulit \\ \apdline
-  30. &  & Ya & Ya & Ya & Ya & Tidak \\ \hline
-
-  31. &  & Ya, dalam paketan & Boleh & Ya, diatur sendiri & Ya & Tidak \\ \apdline
-  32. &  & Ya & Ya & Tidak & Ya & Tidak \\ \apdline
-  33. & \apdbag{-3}{Validasi masalah pada fitur Bedtime Mode} & Ya & Tidak & Ya, perlu dibatasi & Ya & Tidak \\ \hline
-
-  34. &  & Cukup & Kurang jelas di Dashboard, perlu saran untuk memperbaiki wellbeing & Cukup & Cukup & Cukup \\ \apdline
-  35. & \apdbag{-2}{Validasi masalah kurangnya penjelasan dan susunan kata} & Ya, ingin menambah goals ke Focus Mode, notif, Dashbaord, App Timer, supaya ingat kenapa memakai fitur tersebut & Ya & Ya & Tidak & Ya, untuk mengingatkan mengapa menggunakan fitur \\ \hline
-
-  36. & Validasi masalah kurangnya fitur pengelompokkan aplikasi & Tidak & Ya & Ya & Tidak & Ya, kategori diberi nama sendiri \\ \hline
-
-  37. & Validasi masalah kurangnya fitur pengaturan jam akhir hari & Ya & Ya & Ya & Ya & Ya \\ \hline
-
-  38. & Validasi masalah kurangnya kemampuan whitelisting & Tidak & Ya & Tidak & Ya, cukup menarik & Ya, tertarik dan lebih memilih whitelisting daripada blacklisting \\ \hline
+  \rowcolor[HTML]{A3E5F5} \multicolumn{2}{|l|}{\textbf{Skenario Pengujian 13}} \\ \hline
+  Kaitan Skenario Pengguna & SP-02 \\ \hline
+  Tujuan & Mengukur pemahaman pengguna tentang widget App Timer \\ \hline
+  Skenario & Pengguna ingin melihat sisa waktu pengunaan aplikasi yang dibatasi App Timer tanpa masuk ke aplikasi Digital Wellbeing \\ \hline
+  Task & Lihat data sisa waktu penggunaan aplikasi dari Homescreen \\ \hline
+  Pra kondisi & Pengguna berada di Homescreen \textit{smartphone} \\ \hline
   
-  
+  \rowcolor[HTML]{A3E5F5} \multicolumn{2}{|l|}{\textbf{Skenario Pengujian 14}} \\ \hline
+  Kaitan Skenario Pengguna & SP-02 \\ \hline
+  Tujuan & Mengukur pemahaman pengguna tentang widget Focus Mode \\ \hline
+  Skenario & Pengguna ingin membatasi akses ke aplikasi yang mendistraksi tanpa masuk ke aplikasi Digital Wellbeing \\ \hline
+  Task & Batasi akses ke aplikasi yang mendistraski dari Homescreen \\ \hline
+  Pra kondisi & Pengguna berada di Homescreen \textit{smartphone} \\ \hline
 
 \end{longtable}
-\end{footnotesize}
-\justifying
+\end{small}
 
-\newpage
-
-\RaggedLeft
-\begin{footnotesize}
-\begin{longtable}[c]{|m{0.04\textwidth}|>{\baselineskip=8pt}m{\colbag}|>{\baselineskip=8pt}p{\colresp}|>{\baselineskip=8pt}p{\colresp}|>{\baselineskip=8pt}p{\colresp}|>{\baselineskip=8pt}p{\colresp}|>{\baselineskip=8pt}p{\colresp}|}
-  
-  \hline
-  
-  \apdhead{} & \apdhead{} & \multicolumn{5}{c|}{\apdhead{Jawaban}} \\ \hhline{|>{\borderblue}->{\borderblack}|>{\borderblue}->{\borderblack}|*5{-}|}
-  \rowcolor[HTML]{A3E5F5} \multicolumn{1}{|c|}{\multirow{-2}{*}{\apdhead{No.}}} & \multicolumn{1}{c|}{\multirow{-2}{*}{\apdhead{Topik}}} & \apdheadcell{Narasumber F} & \apdheadcell{Narasumber G} & \apdheadcell{Narasumber H} & \apdheadcell{Narasumber I} & \apdheadcell{Narasumber J} \\ \hline
-  \endfirsthead
-  
-  \hline
-  \apdhead{} & \apdhead{} & \multicolumn{5}{c|}{\apdhead{Jawaban}} \\ \hhline{|>{\borderblue}->{\borderblack}|>{\borderblue}->{\borderblack}|*5{-}|}  
-  \rowcolor[HTML]{A3E5F5} \multicolumn{1}{|c|}{\multirow{-2}{*}{\apdhead{No.}}} & \multicolumn{1}{c|}{\multirow{-2}{*}{\apdhead{Topik}}} & \apdheadcell{Narasumber F} & \apdheadcell{Narasumber G} & \apdheadcell{Narasumber H} & \apdheadcell{Narasumber I} & \apdheadcell{Narasumber J} \\ \hline
-  \endhead
-  \hline \endfoot
-  
-  1. &  & Perempuan & Perempuan & Perempuan & Laki-laki & Laki-laki \\ \apdline
-  2. & \apdbag{-1}{Identitas Responden} & 29 tahun & 22 tahun & 22 tahun & 22 tahun & 22 tahun \\ \apdline
-  3. &  & Finance accounting, kerja kantoran & Mahasiswi & Mahasiswi & Mahasiswa & Mahasiswa \\ \hline
-  4. &  & \apdnum{\item Komunikasi lewat aplikasi \textit{messenger} \item Pekerjaan \item Hiburan dengan bermain game, media sosial, menonton film}
-        & \apdnum{\item Komunikasi lewat aplikasi \textit{messenger} \item Bersosialisasi lewat media sosial \item Hiburan dengan menonton YouTube, bermain game ringan, dan mendengarkan lagu \item Menggunakan jasa e-commerce}
-        & \apdnum{\item Komunikasi lewat aplikasi \textit{messenger} \item Hiburan dengan menonton film, bermain game, bermain media sosial \item Utilitas}
-        & \apdnum{\item Komunikasi lewat aplikasi \textit{messenger} \item Hiburan dengan menonton YouTube, bermain media sosial \item Sarana informasi \item Bermain game \item Utilitas}
-        & \apdnum{\item Komunikasi lewat aplikasi \textit{messenger} \item Utilitas \item Bermain media sosial \item Hiburan dengan menonton Youtube atau film}
-    \\ \apdline
-  5. & \apdbag{-1}{Perilaku Penggunaan \textit{Smartphone} Responden} & \apditem{\item Keinginan untuk mengontak orang lain \item Keinginan untuk bermain game}
-        & \apditem{\item Lupa akan tujuan utama saat menggunakan aplikasi \item Keinginan untuk menggunakan aplikasi di luar tujuan}
-        & \apditem{\item Keinginan diri untuk menggunakan aplikasi}
-        & \apditem{\item Menjadi distraksi ketika merasa bosan \item Menerima distraski ketika sedang menunggu informasi / hal lain \item Distraksi dari notifikasi aplikasi}
-        & \apditem{\item Keinginan diri untuk menggunakan media sosial atau bermain game \item Notifikasi dari aplikasi \textit{e-commerce} \item Notifikasi dari media sosial \item Keberadaan \textit{smartphone} di sekitar diri sendiri}
-    \\ \apdline
-  6. &  & 5-8 jam & 5-11 jam & 5-7 jam & 4-5 jam & 2-6 jam \\ \apdline
-  7. &  & skala 5 & skala 5 & skala 4 & skala 3 & skala 4 \\ \apdline
-  8. &  & skala 3 & skala 4 & skala 3 & skala 1 & skala 3 \\ \hline
-
-  \pagebreak
-
-  9. &  & \apdnum{\item Digital Wellbeing \item App Timer} & \apdnum{\item Forest \item Digital Wellbeing} & \apdnum{\item Digital Wellbeing \item App Timer} & \apdnum{\item Aplikasi Game Booster untuk mencegah distraksi saat sedang bermain} & \apdnum{\item Digital Wellbeing \item Forest \item ActionDash \item Minimalist Device} \\ \apdline
-  10. &  & \apdnum{\item Bedtime Helper \item Usage Tracker \item App Timer} & \apdnum{\item Task Reminder \item Focus Timer \item Usage Tracker \item Bedtime Helper} & \apdnum{\item Usage Tracker \item Task Reminder \item App Timer} & \apdnum{\item App Timer \item Task Reminder} & \apdnum{\item App Timer \item Focus Timer \item Task Reminder \item Bedtime Helper \item Usage Tracker} \\ \apdline
-  11. & \apdbag{-1}{Perilaku Responden Terkait Aplikasi Pencegah Distraksi} & \apdnum{\item Sulit untuk mengakses aplikasi yang sudah habis batas waktu pemakaiannya jika ingin menggunakan di akhir hari } & \apdnum{\item Tidak bisa mengatasi distraksi yang berasal dari luar smartphone } & \apdnum{\item Tidak ada saran atau rekomendasi durasi saat menggunakan App Timer \item Harus mengatur ulang timer setiap hari jika batas waktu habis} & \apdnum{\item Aplikasi pencegah distraksi terasa terlalu ketat dengan mencegah semua notifikasi yang akan diterima} & \apdnum{\item Aplikasi kurang ketat dalam membatasi akses \item Aplikasi kurang memberikan tolok ukur penggunaan yang sehat \item Aplikasi kurang sistem reward yang memuaskan" } \\ \apdline
-  12. &  & \apdnum{\item Aplikasi lebih gencar dalam memperkenalkan fitur-fiturnya kepada pengguna} & \apdnum{\item Fitur pengingat tugas yang harus dikerjakan \item Sistem penghargaan yang bersifat visual} & \apdnum{\item Sistem penjadwalan \item Notifikasi untuk memberi informasi lama penggunaan aplikasi \item Deskripsi yang lengkap untuk menjelaskan fitur-fitur aplikasi} & \apdnum{\item - Fitur untuk memilih notifikasi / aplikasi yang tidak diblokir} & \apdnum{\item Fitur pengunci terhadap pengaturan pembatasan akses \item Fitur pengingat terhadap lama penggunaan aplikasi} \\ \apdline
-
-  \pagebreak
-
-  13. &  & \apdnum{\item Menggunakan App Timer untuk membatasi akses ke aplikasi \item Menggunakan Bedtime Mode memperbaiki jadwal tidur} & \apdnum{\item Meningkatkan kesadaran diri tentang seberapa banyak menggunakan aplikasi di smartphone \item Mengurangi penggunaan smartphone / aplikasi yang berlebihan \item Memperbaiki kebiasaan digital} & \apdnum{\item Menyadarkan diri untuk fokus terhadap pekerjaan \item Menyadarkan diri akan jam tidur \item Melihat informasi lama penggunaan smartphone / aplikasi pada Usage Tracker} & \apdnum{\item Melihat laporan data penggunaan smartphone dari Dashboard untuk membatasi penggunaan smartphone dari diri sendiri \item Menggunakan App Timer untuk membatasi akses ke aplikasi} & \apdnum{\item Focus Mode untuk membatasi akses ke aplikasi distraksi di saat bekerja \item App Timer untuk membatasi lama akses ke aplikasi media sosial \item Bedtime Mode untuk mengingatkan jam tidur" } \\ \apdline
-  14. & \apdbag{-1}{Perilaku Responden Terkait Aplikasi Digital Wellbeing} & \apdnum{\item Pada App Timer, tidak bisa menunda batas waktu untuk menyelesaikan keperluan tak terduga tanpa menghapus timer } & \apdnum{\item Kurang adanya penghargaan ketika berhasil memperbaiki kebiasaan digital } & \apdnum{\item Kebingungan dari cara kerja fitur-fitur tertentu } & \apdnum{\item Kurang ketat dalam membatasi akses \item Kurangnya sugesti / rekomendasi untuk memberikan tolok ukur antara penggunaan smartphone yang sehat atau tidak sehat} & \apdnum{\item Kurang ketat dalam membatasi akses dan mencegah pengubahan pengaturan \item Kurang ada tolok ukur penggunaan smartphone yang sehat} \\ \apdline
-  15. &  & \apdnum{\item Fitur Search saat memilih aplikasi untuk dipasang App Timer / Focus Mode } & \apdnum{\item Fitur yang memberikan sense of reward jika berhasil memperbaiki kebiasaan \item Fitur untuk mencatat target yang ingin dicapai dan pengingat target tersebut} & \apdnum{\item Akses yang lebih mudah ke dalam aplikasi \item Fitur Search saat memilih aplikasi untuk dipasang App Timer / Focus Mode} & \apdnum{\item Sistem rekomendasi tentang tolok ukur pemakaian smartphone yang sehat } & \apdnum{\item Pengingat yang lebih sering untuk App Timer \item Focus Mode yang lebih ketat \item Fitur Search saat memilih aplikasi untuk dipasang App Timer / Focus Mode} \\ \hline
-  
-  \pagebreak
-
-  16. &  & Tidak & Ya, untuk melihat sisa batas waktu aplikasi yang dibatasi & Ya, untuk melihat sisa batas waktu aplikasi yang dibatasi & Ya, agar lebih mudah diakses dan melihat sisa batas waktu aplikasi yang dibatasi & Ya, untuk melihat sisa batas waktu aplikasi yang dibatasi \\ \apdline
-  17. & \apdbag{-2}{Validasi masalah kurangnya fitur widget pada Homescreen} & Ya, lebih memilih pengaturan dalam bentuk widget daripada notification & Ya, untuk memberi tahu sisa waktu Focus Mode & Tidak & Ya, agar lebih mudah diakses dan memilih aplikasi yang ingin dibatasi & Tidak \\ \apdline
-  18. &  & Tidak & Tidak & Tidak & Tidak & Tidak \\ \hline
-  19. & \apdbag{-1}{Validasi masalah pada fitur laporan data penggunaan aplikasi} & \apdnum{\item Tampilan data dalam periode mingguan \item Grafik yang lebih menarik dengan warna yang berbeda untuk menunjukkan aplikasi yang paling banyak dipakai hari di hari tersebut} & \apdnum{\item Tampilan data dalam periode mingguan dan bulanan \item Indikator target lama penggunaan aplikasi / smartphone } & \apdnum{\item Data rata-rata penggunaan mingguan \item Data penggunaan \texttt{>1} bulan \item Indikator aplikasi yang paling banyak digunakan pada grafik \item Tampilan data dalam periode yang bisa diatur} & \apdnum{\item Rekomendasi tolok ukur penggunaan smartphone yang sehat pada grafik \item Variasi tampilan / bentuk grafik} & \apdnum{\item Data rata-rata penggunaan mingguan \item Data penggunaan \texttt{>1} bulan \item Rekomendasi tolok ukur penggunaan smartphone yang sehat pada grafik \item Tampilan data dalam periode yang bisa diatur } \\ \hline
-  20. &  & Ya, tombol "Turn off for now" dipindah posisinya & Ya, dipersulit untuk dimatikan & Ya, dipersulit untuk dimatikan atau istirahat & Tidak & Ya, dipersulit untuk dimatikan atau istirahat \\ \apdline
-  21. & \apdbag{-2}{Validasi masalah pada fitur Focus Mode} & Tidak & Ya, dipersulit untuk dimatikan & Ya, perlu ada opsi untuk dipersulit untuk dimatikan & Tidak & Ya, perlu ada opsi untuk dipersulit untuk dimatikan \\ \hline
-
-  22. &  & Ya & Ya & Ya & Ya & Tidak \\ \apdline
-  23. & \apdbag{-2}{Validasi masalah untuk kemampuan penjadwalan pada fitur-fitur} & Ya & Ya & Ya & Ya & Ya \\ \apdline
-  24. &  & Ya & Tidak & Tidak & Ya & Tidak \\ \hline
-
-
-  25. &  & Tidak & Ya, namun tetap ingin fitur-fitur fleksible untuk diatur & Kunci dengan password, random string, atau quiz & Kunci dengan password atau random string & Kunci dengan password, random string, atau timer \\ \apdline
-  26. &  & Ya, menarik jika ada & Ya & Ya, perlu ada pengaturan yang sulit untuk diubah jika tingkat ketat tinggi & Tidak setuju, karena jika aplikasi dibuat lebih ketat, maka kesehatan penggunaan smartphone lebih sulit untuk diperbaiki, karena harus lebih dominan dari kesadaran diri sendiri & Ya, perlu ada opsi untuk membuat fitur-fitur menjadi lebih ketat \\ \apdline
-  27. & \apdbag{-6}{Validasi masalah kurangnya fitur pengaturan tingkat keketatan} & Ya, dilarang untuk dimatikan jika waktu untuk habis di hari tersebut & Ya, perlu dipersulit, namun tetap perlu pengaturan untuk tetap fleksibel & Tidak & Tidak & Ya, dilarang untuk diubah jika batas waktu telah tercapai \\ \hline
-
-  28. &  & Ya, lebih sering diingatkan & Ya, lebih sering diingatkan & Ya, perlu pengingat yang dapat diatur sendiri & Ya, lebih sering diingatkan & Ya, lebih sering diingatkan \\ \apdline
-  29. & \apdbag{-2}{Validasi masalah kurangnya fitur penundaan pada App Timer} & Tidak & Ya & Ya, butuh penundaan yang terbatas & Ya, dapat diatur aplikasi mana yang bisa ditunda & Ya, butuh penundaan yang terbatas \\ \apdline
-  30. &  & Tidak & Ya & Ya & Ya & Ya \\ \hline
-
-  31. &  & Tidak & Ya & Tidak & Ya & Ya \\ \apdline
-  32. &  & Tidak & Tidak & Perlu dipersulit & Ya & Ya \\ \apdline
-  33. & \apdbag{-3}{Validasi masalah pada fitur Bedtime Mode} & Ya, tidak perlu ada opsi untuk menunda & Ya & Ya & Ya & Ya \\ \hline
-  
-  34. &  & Cukup, perlu ditambah tombol untuk menampilkan informasi yang lebih banyak bagi fitur yang lebih kompleks & \apditem{ \item Kurang penjelasan tentang penggunaan dan tujuan fitur Dashboard \item Kurang penjelasan / sugesti pada App Timer yang dapat memberikan saran penggunaan} & Cukup & \apditem{ \item Kurang mudah dimengerti \item Tata letak fitur dari aplikasi perlu diperbaiki} & Cukup \\ \apdline
-  35. & \apdbag{-5}{Validasi masalah kurangnya penjelasan dan susunan kata} & Tidak & Ya & Ya, pengingat harus bisa diatur agar terasa lebih pribadi & Ya, pengingat harus bisa diatur agar terasa lebih pribadi & Perlu \\ \hline
-
-  36. & Validasi masalah kurangnya fitur pengelompokkan aplikasi & Tidak & Ya & Ya & Ya & Tidak \\ \hline
-  
-  37. & Validasi masalah kurangnya fitur pengaturan jam akhir hari & Tidak & Tidak & Ya & Ya & Ya \\ \hline
-  
-  38. & Validasi masalah kurangnya kemampuan whitelisting & Tidak & Ya, tapi lebih memilih blacklisting & Ya, lebih memilih whitelisting & Ya, lebih memilih whitelisting & Tidak \\ \hline
-  
-  
-
-\end{longtable}
-\end{footnotesize}
-\justifying
-
-\FloatBarrier
-\end{landscape}

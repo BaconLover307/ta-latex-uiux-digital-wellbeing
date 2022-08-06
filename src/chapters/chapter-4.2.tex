@@ -1,11 +1,13 @@
 \section{Pengujian Prototipe \textit{Low-Fidelity}}
-Rancangan prototipe \textit{Low-Fidelity} perlu diuji untuk memastikan bahwa fungsionalitas inti yang telah direalisasikan pada prototipe dapat dipahami pengguna dengan benar, serta memastikan bahwa alur navigasi prototipe sesuai dengan Diagram Navigasi pada Gambar \ref{fig:diagram_navigasi} yang telah dibuat. Pengujian pada tahap ini belum melibatkan \textit{usability goals} dan \textit{user experience goals} karena terbatasnya elemen-elemen visual dan interaksi yang mendukung dalam mencapai tujuan-tujuan tersebut. Pengujian ini akan dilakukan kepada lima orang partisipan yang termasuk ke dalam persona primer. Hal ini sesuai dengan perkataan dari \textcite{nielsenusabilityproblems} yang menyebutkan bahwa pengujian dengan 5 orang sudah cukup untuk menemukan rata-rata 85\% masalah dari desain, dalam hal ini dari prototipe \textit{low-fidelity}.
+Rancangan prototipe \textit{Low-Fidelity} perlu diuji untuk memastikan bahwa fungsionalitas inti yang telah direalisasikan pada prototipe dapat dipahami pengguna dengan benar, serta memastikan bahwa alur navigasi prototipe sesuai dengan Diagram Navigasi pada Gambar \ref{fig:diagram_navigasi} yang telah dibuat. Pengujian prototipe \textit{low-fidelity} dilakukan untuk mencapai 2 tujuan, yaitu untuk memastikan navigasi dari prototipe sesuai dengan navigasi yang diharapkan oleh desainer menurut Diagram Navigasi pada Gambar \ref{fig:diagram_navigasi}, serta memastikan bahwa informasi yang tertera di prototipe dapat cukup membantu pengguna dalam memenuhi tujuannya. Pengujian ini akan dilakukan kepada lima orang partisipan yang termasuk ke dalam persona primer. Hal ini sesuai dengan perkataan dari \textcite{nielsenusabilityproblems} yang menyebutkan bahwa pengujian dengan 5 orang sudah cukup untuk menemukan rata-rata 85\% masalah dari desain, dalam hal ini dari prototipe \textit{low-fidelity}.
+
 
 % Pengujian ini akan dilakukan kepada 5 orang pengguna, yang terdiri dari 3 orang yang termasuk ke dalam Persona 2 (Maya) dan 2 orang yang termasuk ke dalam Persona 3 (Nathan). Hal ini sesuai 
+% Pengujian belum melibatkan \textit{usability goals} dan \textit{user experience goals} karena terbatasnya elemen-elemen visual dan interaksi yang mendukung dalam mencapai tujuan-tujuan tersebut.
 
 Dalam melakukan pengujian, diperlukan skenario-skenario pengujian berisi \textit{task} yang perlu dilakukan partisipan, serta pertanyaan singkat mengenai pengalaman partisipan dalam mengerjakan \textit{task} tersebut. Skenario pengujian dibuat berdasarkan skenario pengguna yang telah dibahas pada bagian \ref{subsubsec:skenario_pengguna}. Skenario pengujian beserta pemetaannya dengan skenario pengguna dapat ditemukan pada Lampiran \ref{chpt:skenario_lofi}, sedangkan hasil lengkap pengujian dapat ditemukan pada Lampiran \ref{chpt:hasil_test_lofi}.
 
-Dari melakukan pengujian, ditemukan beberapa temuan penting mengenai prototipe \textit{low-fidelity} sehingga perlu evaluasi sebelum lanjut merancan prototipe \textit{high-fidelity}. Temuan-temuan penting dapat dilihat pada Tabel \ref{tab:daftar_temuan_lofi}.
+Dari melakukan pengujian, ditemukan beberapa temuan penting mengenai prototipe \textit{low-fidelity} sehingga perlu dilakukan evaluasi sebelum lanjut ke tahap perancangan prototipe \textit{high-fidelity}. Temuan-temuan penting dari setiap partisipan dapat dilihat pada Tabel \ref{tab:daftar_temuan_lofi}.
 
 \newcommand{\cditem}[1]{\colorbox{white}{\raisebox{7pt}{\begin{minipage}[t]{0.8\textwidth}\linespread{1}\selectfont \begin{itemize}[parsep=0pt, leftmargin=*] #1 \end{itemize} \end{minipage}}}}
 
@@ -22,31 +24,38 @@ Dari melakukan pengujian, ditemukan beberapa temuan penting mengenai prototipe \
 
   1 & \cditem{
     \item Partisipan merasa alur navigasi cukup mudah untuk diikuti dalam mencapai \textit{task-task} yang dikerjakan
-    \item Partisipan merasa perlu penjelasan lebih tentang kemampuan yang aktif saat Bedtime Mode
-    \item Partisipan merasa perlu penjelasan lebih tentang Daily Summary Notification
-    \item Partisipan merasa perlu penjelasan lebih tentang fitur pengingat untuk Daily Goal
+    \item Partisipan merasa widget-widget sangat membantu memudahkan aktivasi fitur-fitur atau melihat data
+    \item Partisipan merasa perlu penjelasan lebih tentang kemampuan yang dapat aktif saat Bedtime Mode
+    \item Partisipan merasa perlu ada tombol konfirmasi untuk halaman pengaturan App Timer
+    \item Partisipan merasa perlu ada suatu \textit{feedback} ketika berhasil menunda App Timer
   } \\ \hline
-
+    
   2 & \cditem{
     \item Partisipan mengerti untuk mengerjakan seluruh \textit{task} yang diberikan saat pengujian 
     \item Partisipan merasa penjelasan pada halaman-halaman pengenalan fitur terlalu kecil dan terlalu panjang
-    \item Partisipan merasa perlu ada bagian rekomendasi pada Halaman Ringkasan Penggunaan Aplikasi
-    \item Partisipan ingin dapat melihat tampilan kalender untuk memilih data penggunaan \textit{smartphone} atau aplikasi
   } \\ \hline
-  
+      
   3 & \cditem{
-    \item Test 
-    \item Test
+    \item Partisipan merasa navigasi ke halaman penambahan App Group sulit dibedakan dengan navigasi ke halaman penggunaan App Group
+    \item Partisipan merasa desain dari radio button membuat sulit untuk membedakan antara pilihan yang dipilih dan tidak
+    \item Partisipan merasa fitur "Turn off for now" sebaiknya diganti nama menjadi "Turn off for today"
+    \item Partisipan merasa navigasi untuk ke halaman penambahan jadwal Focus Mode sebaiknya dipindah agar mudah diakses jika jadwalnya sudah banyak 
   } \\ \hline
   
   4 & \cditem{
-    \item Test 
-    \item Test
+    \item Partisipan merasa widget sangat membantu dan cukup mewakili fungsionalitas utama dari fitur-fiturnya
+    \item Partisipan merasa pengaturan untuk pengingat App Timer sedikit sulit untuk dipelajari 
+    \item Partisipan merasa perlu ada tombol konfirmasi untuk mengatur App Timer
+    \item Partisipan merasa ingin dapat menunda App Timer dari notifikasi pengingat
   } \\ \hline
   
   5 & \cditem{
-    \item Test 
-    \item Test
+    \item Partisipan merasa sangat terbantu dengan adanya widget untuk fitur-fitur
+    \item Partisipan merasa untuk halaman pengaturan App Timer memerlukan pemilihan App Group yang serupa dengan halaman Dashboard
+    \item Partisipan merasa ingin dapat memilih aplikasi yang mendistraksi di luar halaman pengaturan jadwal Focus Mode agar bisa diblokir tanpa jadwal
+    \item Partisipan merasa perlu ada opsi untuk mengambil istirahat dengan waktu yang ditentukan sendiri
+    \item Partisipan merasa kegunaan pengingat untuk Daily Goal sulit dimengerti dan perlu penjelasan tambahan
+    \item Partisipan merasa perlu ada penjelasan singkat tentang mode aktivasi While Charging untuk Bedtime Mode 
   } \\ \hline
 
 \end{longtable}
@@ -54,7 +63,7 @@ Dari melakukan pengujian, ditemukan beberapa temuan penting mengenai prototipe \
 \justifying
 \FloatBarrier
 
-Berdasarkan temuan-temuan yang telah disebutkan di atas, maka disusun beberapa rencana perbaikan terhadap prototipe \textit{low-fidelity}. Rencana perbaikan ini direalisasikan bersamaan dengan perancangan prototipe \textit{high-fidelity} yang dilakukan pada tahap berikutnya. Keseluruhan rancangan perbaikan dapat dilihat pada Tabel \ref{tab:daftar_perbaikan_lofi}.
+Berdasarkan temuan-temuan yang telah disebutkan di atas, maka disusun beberapa rencana perbaikan terhadap prototipe \textit{low-fidelity}. Rencana perbaikan ini direalisasikan bersamaan dengan perancangan prototipe \textit{high-fidelity} yang dilakukan pada tahap berikutnya. Pada Tabel \ref{tab:daftar_perbaikan_lofi} dapat ditemukan daftar masalah yang disimpulkan dari temuan-temuan penting, beserta rencana perbaikan yang berkaitan.
 
 \RaggedLeft
 \begin{small}
@@ -62,19 +71,23 @@ Berdasarkan temuan-temuan yang telah disebutkan di atas, maka disusun beberapa r
   \caption{Daftar Rencana Perbaikan Prototipe \textit{Low-Fidelity}}
   \label{tab:daftar_perbaikan_lofi} \\
   \hline \rowcolor[HTML]{A3E5F5}
-  \textbf{No} & \multicolumn{1}{|c|}{\textbf{Masalah / Saran}} & \multicolumn{1}{|c|}{\textbf{Rencana Perbaikan}} \\ \hline \endfirsthead
+  \textbf{No} & \multicolumn{1}{|c|}{\textbf{Kesimpulan Masalah dari Temuan}} & \multicolumn{1}{|c|}{\textbf{Rencana Perbaikan}} \\ \hline \endfirsthead
   \hline \rowcolor[HTML]{A3E5F5}
-  \textbf{No} & \multicolumn{1}{|c|}{\textbf{Masalah / Saran}} & \multicolumn{1}{|c|}{\textbf{Rencana Perbaikan}}\\ \hline \endhead
+  \textbf{No} & \multicolumn{1}{|c|}{\textbf{Kesimpulan Masalah dari Temuan}} & \multicolumn{1}{|c|}{\textbf{Rencana Perbaikan}}\\ \hline \endhead
   \hline \endfoot
 
-  1 & Kurang jelasnya deskripsi untuk fitur-fitur pada Halaman Daily Goal & Menambahkan penjelasan untuk fitur Daily Goal, Daily Summary Notification, dan notifikasi pengingat untuk Daily Goal \\ \hline
-  2 & Kurangnya penjelasan untuk kemampuan yang dapat aktif saat Bedtime Mode & Menambahkan deskripsi singkat untuk pengaturan kemampuan yang dapat aktif saat Bedtime Mode \\ \hline
-  3 & Masalah & Rencana \\ \hline
-  4 & Masalah & Rencana \\ \hline
-  5 & Masalah & Rencana \\ \hline
-  6 & Masalah & Rencana \\ \hline
-  7 & Masalah & Rencana \\ \hline
-  8 & Masalah & Rencana \\ \hline
+  1 & Kurang jelasnya deskripsi untuk fitur-fitur pada Halaman Daily Goal & Menambahkan penjelasan untuk fitur Smartphone Usage Evaluation dan notifikasi pengingat untuk Daily Goal \\ \hline
+  2 & Kurangnya penjelasan untuk fitur-fitur di halaman Bedtime Mode & Menambahkan deskripsi singkat untuk pengaturan kemampuan yang dapat aktif saat Bedtime Mode dan mode aktivasi While Charging \\ \hline
+  3 & Kurangnya elemen konfirmasi pada pengaturan fitur App Timer & Menambahkan aksi untuk melakukan konfirmasi untuk pengaturan App Timer \\ \hline
+  4 & Kurangnya elemen umpan balik ketika berhasil menunda App Timer & Menambahkan pesan umpan balik saat menunda App Timer \\ \hline
+  5 & Penjelasan yang sulit dibaca pada halaman-halaman pengenalan fitur & Mengembangkan penjelasan pada halaman-halaman pengenalan dengan memperbesar tulisan dan menambah ilustrasi \\ \hline
+  6 & Kurang jelasnya fitur penundaan fitur hanya untuk hari tersebut & Mengubah sususnan kata "Turn off for now" menjadi "Turn off for today" \\ \hline
+  7 & Terdapat elemen-elemen navigasi yang berpotensi untuk sulit diraih & Memindahkan elemen navigasi ke posisi yang lebih mudah terlihat \\ \hline
+  8 & Sulitnya membedakan opsi yang terpilih untuk pilihan yang menggunakan radio button & Mengubah desain radio button menjadi lebih mudah dipahami \\ \hline
+  9 & Kurangnya elemen umpan balik ketika berhasil membuat jadwal Bedtime Mode & Menambahkan pesan umpan balik saat mengatur jadwal Bedtime Mode \\ \hline
+  10 & Diperlukannya alur lebih mudah dalam menunda batas waktu App Timer & Menambahkan aksi menunda batas waktu App Timer lewat notifikasi \\ \hline
+  11 & Kurang jelasnya kemampuan untuk memilih App Group pada halaman App Timer & Menambahkan bagian khusus pemilihan App Group untuk halaman App Timer \\ \hline
+  12 & Kurangnya kemampuan memilih aplikasi mendistraksi umum di luar jadwal & Menambahkan daftar pemilihan aplikasi mendistraksi pada halaman Focus Mode \\ \hline
   
 \end{longtable}
 \end{small}

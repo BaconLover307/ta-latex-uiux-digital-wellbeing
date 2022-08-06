@@ -1,4 +1,6 @@
 \section{Pengembangan Prototipe \textit{Low-Fidelity}}
+\label{sec:lofi}
+
 Prototipe \textit{Low-Fidelity} adalah sebuah cara yang efektif untuk merealisasi rancangan solusi dari sebuah desain beserta dengan konsep-konsep desain menjadi sebuah artefak yang dapat dilakukan interaksi oleh pengguna produknya. \parencite{adobe2017prototype} Tujuan dari pembuatan prototipe \textit{low-fidelity} adalah untuk merealisasikan fungsionalitas inti dari produk sehingga tersampaikan kepada pengguna, sebelum mengikutsertakan elemen-elemen visual lainnya. 
 
 Sebelum membuat prototipe, perlu ditentukan terlebih dahulu halaman-halaman yang akan memuat fitur-fitur yang telah disebutkan pada Tabel \ref{tab:daftar_fitur}. Daftar halaman beserta fitur yang dimuat dapat dilihat pada Tabel \ref{tab:daftar_halaman}.
@@ -52,7 +54,7 @@ Setelah menentukan pemetaan, perlu dibentuk navigasi yang akan menghubungkan hal
 
 \newpage
 
-Selain halaman, adapun beberapa widget yang akan diimplementasi sebagai bagian dari kebutuhan pengguna untuk mengakses data penggunaan \textit{smartphone} lewat Homescreen (UN-02). Widget adalah sebuah tampilan kecil dari aplikasi yang dapat diletakkan di Homescreen, berisi data atau fungsionalitas paling penting dari sebuah aplikasi. \parencite{widgetsandroid}. Daftar widget yang akan diimplementasi serta pemetaannya terhadap fitur-fitur yang dimuat dapat dilihat pada Tabel \ref{tab:daftar_widget}.
+Selain halaman, adapun beberapa widget yang akan diimplementasi sebagai bagian dari kebutuhan pengguna untuk mengakses data penggunaan \textit{smartphone} lewat Homescreen (UN-02). Widget adalah sebuah tampilan kecil dari aplikasi yang dapat diletakkan di Homescreen, berisi data atau fungsionalitas paling penting dari sebuah aplikasi. \parencite{widgetsandroid}. Widget tidak dapat diakses langsung dari aplikasi, melainkan perlu ditambahkan ke dalam Homescreen dari \textit{smartphone}, hal ini menyebabkan widget tidak termasuk ke dalam Diagram Navigasi. Daftar widget yang akan diimplementasi serta pemetaannya terhadap fitur-fitur yang dimuat dapat dilihat pada Tabel \ref{tab:daftar_widget}.
 
 \RaggedLeft
 \begin{small}
@@ -74,7 +76,7 @@ Selain halaman, adapun beberapa widget yang akan diimplementasi sebagai bagian d
 \justifying
 \FloatBarrier
 
-Tampilan dari halaman serta widget yang telah disebutkan perlu memuat informasi dan elemen interaksi yang cukup bagi pengguna untuk mencapai tujuannya saat menggunakan prototipe \textit{low-fidelity}. Tabel \ref{tab:daftar_tampilan} memuat implementasi prototipe \textit{low-fidelity} dari rancangan solusi aplikasi Digital Wellbeing. Pada tabel tersebut dimuat juga pemetaan beberapa prinsip desain yang telah disebutkan pada Tabel \ref{tab:prinsip_desain} terhadap prototipe \textit{low-fidelity}, serta penjelasan singkat tentang tampilan.
+Tampilan dari halaman serta widget yang telah disebutkan perlu memuat informasi dan elemen interaksi yang cukup bagi pengguna untuk mencapai tujuannya saat menggunakan prototipe \textit{low-fidelity}. Tabel \ref{tab:daftar_lofi_halaman} memuat implementasi tampilan halaman prototipe \textit{low-fidelity}, sedangkan Tabel \ref{tab:daftar_lofi_widget} memuat implementasi tampilan untuk widget. Pada kedua tabel tersebut dimuat juga pemetaan beberapa prinsip desain yang telah disebutkan pada Tabel \ref{tab:prinsip_desain} terhadap prototipe \textit{low-fidelity}, serta penjelasan singkat tentang tampilan.
 
 \newpage
 
@@ -87,13 +89,13 @@ Tampilan dari halaman serta widget yang telah disebutkan perlu memuat informasi 
 
 \RaggedLeft
 \begin{footnotesize}
-\begin{longtable}[c]{|>{\ccnormspacingcenter}p{0.06\textwidth}|>{\ccnormspacing}p{0.37\textwidth}|>{\ccnormspacingcenter}p{0.1\textwidth}|>{\ccnormspacingcenter}p{\lofiwidth}|}
-  \caption{Daftar Tampilan Prototipe \textit{Low-Fidelity}}
-  \label{tab:daftar_tampilan} \\
+\begin{longtable}[c]{|>{\ccnormspacingcenter}p{0.1\textwidth}|>{\ccnormspacing}p{0.37\textwidth}|>{\ccnormspacingcenter}p{0.1\textwidth}|>{\ccnormspacingcenter}p{\lofiwidth}|}
+  \caption{Daftar Tampilan Halaman Prototipe \textit{Low-Fidelity}}
+  \label{tab:daftar_lofi_halaman} \\
   \hline \rowcolor[HTML]{A3E5F5}
-  \centering\textbf{ID} & \centering\textbf{Penjelasan} & \centering\textbf{Prinsip Desain} & \textbf{Prototipe \textit{Low-Fidelity}} \\ \hline \endfirsthead
+  \centering\textbf{ID Halaman} & \centering\textbf{Penjelasan Halaman} & \centering\textbf{Prinsip Desain} & \textbf{Prototipe \textit{Low-Fidelity}} \\ \hline \endfirsthead
   \hline \rowcolor[HTML]{A3E5F5}
-  \centering\textbf{ID} & \centering\textbf{Penjelasan} & \centering\textbf{Prinsip Desain} & \textbf{Prototipe \textit{Low-Fidelity}} \\ \hline \endhead
+  \centering\textbf{ID Halaman} & \centering\textbf{Penjelasan Halaman} & \centering\textbf{Prinsip Desain} & \textbf{Prototipe \textit{Low-Fidelity}} \\ \hline \endhead
   \hline \endfoot
 
   H-01 & Halaman ini adalah tampilan utama dari aplikasi Digital Wellbeing yang memuat navigasi utama ke fitur-fitur seperti Dashboard, App Timer, Daily Goal, Focus Mode, dan Bedtime Mode. Navigasi menuju Dashboard diletakkan di paling atas beserta \textit{pie graph} yang menunjukkan aktivitas \textit{smartphone} pengguna di hari tersebut. Di bagian bawah juga terdapat navigasi menuju pengaturan notifikasi dan mode "Do Not Disturb" bawaan \textit{smartphone} & DP-01, DP-02, DP-04, DP-05, DP-08, DP-09 & \lofi{lofi/h-01} \\ \hline
@@ -104,7 +106,7 @@ Tampilan dari halaman serta widget yang telah disebutkan perlu memuat informasi 
 
   H-03 & Halaman ini berisi daftar App Timer yang telah dipasang oleh pengguna, waktu yang telah dilampaui selama menggunakan aplikasi tersebut, serta sisa waktu sebelum aplikasi ditutup aksesnya. Pengguna bisa mengubah pengaturan App Timer yang telah dipasang, atau menambah aplikasi yang ingin dipasangkan App Timer dengan mencarinya dari daftar aplikasi yang terletak di bawah. Di halaman ini pengguna juga bisa mengatur perilaku pemberian peringatan terhadap sisa waktu aplikasi-aplikasi. & DP-02, DP-03, DP-05, DP-08, DP-09 & \lofi{lofi/h-03} \\ \hline
   
-  H-04 & Di halaman ini, pengguna dapat menentukan Daily Goal atau tujuan harian yang ingin ditempuh dan dibantu diingatkan oleh aplikasi Digital Wellbeing. Pengguna dapat mengatur perilaku pengiriman peringatannya. Pengguna juga dapat menyalakan fitur Daily Summary di mana aplikasi akan mengirimkan sebuah notifikasi berisi jumlah waktu penggunaan \textit{smartphone} pada hari tersebut serta peringatan untuk mengevaluasi Daily Goal yang telah ditentukan. & DP-03, DP-05, DP-06, DP-08, DP-09 & \lofi{lofi/h-04} \\ \hline
+  H-04 & Di halaman ini, pengguna dapat menentukan Daily Goal atau tujuan harian yang ingin ditempuh dan dibantu diingatkan oleh aplikasi Digital Wellbeing. Pengguna dapat mengatur perilaku pengiriman peringatannya. Pengguna juga dapat menyalakan fitur Smartphone Usage Evaluation di mana aplikasi akan mengirimkan sebuah notifikasi berisi jumlah waktu penggunaan \textit{smartphone} pada hari tersebut serta peringatan untuk mengevaluasi Daily Goal yang telah ditentukan. & DP-03, DP-05, DP-06, DP-08, DP-09 & \lofi{lofi/h-04} \\ \hline
   
   H-05 & Halaman ini memuat status dari keberjalanan Focus Mode serta aksi-aksi yang dapat dilakukan untuk menunda, mematikan, atau mengaktivasinya. Selain itu, terdapat juga daftar jadwal Focus Mode yang ditentukan pengguna, atau pilihan untuk menambahkannya. Jadwal Focus Mode akan menavigasikan pengguna ke halaman pengaturan jadwal tersebut.  & DP-03, DP-05, DP-06, DP-08, DP-09 & \lofi{lofi/h-05} \\ \hline
   
@@ -130,7 +132,24 @@ Tampilan dari halaman serta widget yang telah disebutkan perlu memuat informasi 
   H-15 & Halaman ini memuat ilustrasi tujuan dari Focus Mode dan penjelasan tentang fitur-fitur yang terdapat pada Focus Mode. Halaman ini bertujuan agar pengguna memiliki gambaran umum tentang apa yang dapat dicapai dari menggunakan Focus Mode & DP-05, DP-09 & \lofi{lofi/h-15} \\ \hline
   
   H-16 & Halaman ini memuat ilustrasi tujuan dari Bedtime Mode dan penjelasan tentang fitur-fitur yang terdapat pada Bedtime Mode. Halaman ini bertujuan agar pengguna memiliki gambaran umum tentang apa yang dapat dicapai dari menggunakan Bedtime Mode & DP-05, DP-09 & \lofi{lofi/h-16} \\ \hline
-  
+
+
+\end{longtable}
+\end{footnotesize}
+\justifying
+\FloatBarrier
+
+\RaggedLeft
+\begin{footnotesize}
+\begin{longtable}[c]{|>{\ccnormspacingcenter}p{0.08\textwidth}|>{\ccnormspacing}p{0.37\textwidth}|>{\ccnormspacingcenter}p{0.1\textwidth}|>{\ccnormspacingcenter}p{\lofiwidth}|}
+  \caption{Daftar Tampilan Widget Prototipe \textit{Low-Fidelity}}
+  \label{tab:daftar_lofi_widget} \\
+  \hline \rowcolor[HTML]{A3E5F5}
+  \centering\textbf{ID Widget} & \centering\textbf{Penjelasan Widget} & \centering\textbf{Prinsip Desain} & \textbf{Prototipe \textit{Low-Fidelity}} \\ \hline \endfirsthead
+  \hline \rowcolor[HTML]{A3E5F5}
+  \centering\textbf{ID Widget} & \centering\textbf{Penjelasan Widget} & \centering\textbf{Prinsip Desain} & \textbf{Prototipe \textit{Low-Fidelity}} \\ \hline \endhead
+  \hline \endfoot
+
   W-01 & Widget ini memuat data penggunaan \textit{smartphone}, serta 3 aplikasi dengan penggunaan tertinggi pada hari tersebut. Pengguna dapat melakukan navigasi langsung ke halaman Dashboard melalui widget ini. & DP-02, DP-05, DP-09 & \lofiwidget{0.2\textwidth}{lofi/w-01} \\ \hline
 
   W-02 & Widget ini memuat daftar aplikasi yang telah dipasang App Timer, serta sisa waktu untuk menggunakan aplikasi sebelum aksesnya ditutup. Pengguna dapat melakukan navigasi langsung ke halaman App Timer, atau menambah App Timer untuk aplikasi lain melalui widget ini. & DP-02, DP-05, DP-09 & \lofiwidget{0.25\textwidth}{lofi/w-02} \\ \hline
