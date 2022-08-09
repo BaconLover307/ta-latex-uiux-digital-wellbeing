@@ -1,0 +1,127 @@
+\chapter{Rancangan \textit{Usability Testing} Prototipe \textit{High-Fidelity}}
+\label{chpt:testing_hifi}
+
+% Vars
+\newlength{\coln}
+\setlength{\coln}{0.02\textwidth}
+
+% Functions
+\newcommand{\apghead}[1]{\cellcolor[HTML]{A3E5F5}\textbf{#1}}
+\newcommand{\apgheadcell}[1]{\multicolumn{1}{c|}{\apghead{#1}}}
+
+\newcommand{\borderblue}{\arrayrulecolor[HTML]{A3E5F5}}
+\newcommand{\borderblack}{\arrayrulecolor{black}}
+
+
+\large \section{Aktivitas Pengujian}
+\normalsize
+Skenario dan \textit{task} pengujian mengacu pada Lampiran \ref{chpt:skenario_hifi1}
+
+\large \section{\textit{Post-task Questions}}
+\normalsize
+
+Setiap menyelesaikan sebuah task, partisian diminta untuk memberikan kesan terhadap \textit{task} yang dilakukan. Selain itu, dikumpulkan data-data berikut
+
+\subsection{\textit{Single Ease Question} (SEQ)}
+
+Setiap menyelesaikan sebuah \textit{task}, diberikan sebuah pertanyaan dengan \textit{likert scale} dari 1 sampai dengan 7, di mana 1 menunjukkan \textit{task} sangat sulit dan 7 menunjukkan \textit{task} sangat mudah. Tujuan pertanyaan ini adalah untuk mengukur tingkat kemudahan fitur untuk dipelajari dan digunakan pengguna. (\textit{learnability}). Selain itu, dicatat apakah berhasil dalam menyelesaikan \textit{task}-nya atau tidak. Pertanyaan yang ditanyakan adalah:
+
+\begin{itemize}
+  \item Bagaimana tingkat kemudahan yang Anda rasakan dalam melakukan task ini?
+\end{itemize}
+
+
+\subsection{Pengukuran waktu pengerjaan task}
+Untuk setiap \textit{task}, dilakukan pengukuran waktu pengerjaan dari partisipan. Hal ini dilakukan untuk mengukur \textit{efficiency} dari fitur-fitur prototipe aplikasi. 
+
+
+\large \section{\textit{Post-test questions}}
+\normalsize
+
+
+\subsection{\textit{System Usability Scale} (SUS)}
+\label{subsec:sus}
+Beri tanda centang pada nilai 1 sampai dengan 5. Nilai 1 menunjukkan Anda sangat tidak setuju dengan pernyataan, sedangkan nilai 5 menunjukkan Anda sangat setuju. Tujuan dari pertanyaan ini adalah untuk menguji \textit{usability} dari aplikasi.
+
+\RaggedLeft
+\begin{footnotesize}
+\begin{longtable}[c]{|m{0.04\textwidth}|>{\baselineskip=8pt}m{0.57\textwidth}|>{\baselineskip=8pt}p{\coln}|>{\baselineskip=8pt}p{\coln}|>{\baselineskip=8pt}p{\coln}|>{\baselineskip=8pt}p{\coln}|>{\baselineskip=8pt}p{\coln}|}
+  
+  \hline
+  
+  \apghead{} & \apghead{} & \multicolumn{5}{c|}{\apghead{Nilai}} \\ \hhline{|>{\borderblue}->{\borderblack}|>{\borderblue}->{\borderblack}|*5{-}|}
+  \rowcolor[HTML]{A3E5F5} \multicolumn{1}{|c|}{\multirow{-2}{*}{\apghead{No.}}} & \multicolumn{1}{c|}{\multirow{-2}{*}{\apghead{Pertanyaan}}} & \apgheadcell{1} & \apgheadcell{2} & \apgheadcell{3} & \apgheadcell{4} & \apgheadcell{5} \\ \hline
+  \endfirsthead
+  
+  \hline
+  \apghead{} & \apghead{} & \multicolumn{5}{c|}{\apghead{Nilai}} \\ \hhline{|>{\borderblue}->{\borderblack}|>{\borderblue}->{\borderblack}|*5{-}|}  
+  \rowcolor[HTML]{A3E5F5} \multicolumn{1}{|c|}{\multirow{-2}{*}{\apghead{No.}}} & \multicolumn{1}{c|}{\multirow{-2}{*}{\apghead{Pertanyaan}}} & \apgheadcell{1} & \apgheadcell{2} & \apgheadcell{3} & \apgheadcell{4} & \apgheadcell{5} \\ \hline
+  \endhead
+  \hline \endfoot
+  
+  1. &  Saya rasa saya akan sering menggunakan aplikasi ini &  &  &  &  &  \\ \hline
+  2. &  Saya rasa aplikasi ini terlalu rumit, padahal bisa lebih disederhanakan &  &  &  &  &  \\ \hline
+  3. &  Saya rasa aplikasi mudah untuk digunakan  &  &  &  &  &  \\ \hline
+  4. &  Saya rasa saya membutuhkan bantuan dari orang teknis untuk dapat menggunakan aplikasi ini  &  &  &  &  &  \\ \hline
+  5. &  Saya menemukan bahwa terdapat berbagai macam fungsi yang terintegrasi dengan baik dalam aplikasi ini  &  &  &  &  &  \\ \hline
+  6. &  Saya rasa terdapat banyak hal yang tidak konsisten pada aplikasi ini  &  &  &  &  &  \\ \hline
+  7. &  Saya rasa mayoritas pengguna akan belajar menggunakan aplikasi ini dengan cepat  &  &  &  &  &  \\ \hline
+  8. &  Saya menemukan bahwa aplikasi ini sangat tidak praktis &  &  &  &  &  \\ \hline
+  9. &  Saya sangat percaya diri dalam menggunakan aplikasi ini  &  &  &  &  &  \\ \hline
+  10. &  Saya harus belajar banyak hal terlebih dahulu sebelum saya dapat menggunakan aplikasi ini  &  &  &  &  &  \\ \hline
+
+
+\end{longtable}
+\end{footnotesize}
+\justifying
+
+\subsection{\textit{Intrinsic Motivation Inventory} (IMI)}
+\label{subsec:imi}
+Beri tanda centang pada nilai 1 sampai dengan 7. Nilai 1 menunjukkan Anda sangat tidak setuju dengan pernyataan, sedangkan nilai 7 menunjukkan Anda sangat setuju. Tujuan dari pertanyaan ini adalah untuk menguji aspek \textit{user experience} dari aplikasi, yaitu \textit{helpful} dan \textit{motivating}.
+ 
+
+\RaggedLeft
+\begin{footnotesize}
+\begin{longtable}[c]{|m{0.04\textwidth}|>{\baselineskip=8pt}m{0.45\textwidth}|>{\baselineskip=8pt}p{\coln}|>{\baselineskip=8pt}p{\coln}|>{\baselineskip=8pt}p{\coln}|>{\baselineskip=8pt}p{\coln}|>{\baselineskip=8pt}p{\coln}|>{\baselineskip=8pt}p{\coln}|>{\baselineskip=8pt}p{\coln}|}
+  
+  \hline
+  
+  \apghead{} & \apghead{} & \multicolumn{7}{c|}{\apghead{Nilai}} \\ \hhline{|>{\borderblue}->{\borderblack}|>{\borderblue}->{\borderblack}|*7{-}|}
+  \rowcolor[HTML]{A3E5F5} \multicolumn{1}{|c|}{\multirow{-2}{*}{\apghead{No.}}} & \multicolumn{1}{c|}{\multirow{-2}{*}{\apghead{Pertanyaan}}} & \apgheadcell{1} & \apgheadcell{2} & \apgheadcell{3} & \apgheadcell{4} & \apgheadcell{5} & \apgheadcell{6} & \apgheadcell{7} \\ \hline
+  \endfirsthead
+  
+  \hline
+  \apghead{} & \apghead{} & \multicolumn{7}{c|}{\apghead{Nilai}} \\ \hhline{|>{\borderblue}->{\borderblack}|>{\borderblue}->{\borderblack}|*7{-}|}  
+  \rowcolor[HTML]{A3E5F5} \multicolumn{1}{|c|}{\multirow{-2}{*}{\apghead{No.}}} & \multicolumn{1}{c|}{\multirow{-2}{*}{\apghead{Pertanyaan}}} & \apgheadcell{1} & \apgheadcell{2} & \apgheadcell{3} & \apgheadcell{4} & \apgheadcell{5} & \apgheadcell{6} & \apgheadcell{7} \\ \hline
+  \endhead
+  \hline \endfoot
+  
+  \rowcolor[HTML]{DCF3FC} \multicolumn{9}{|l|}{\textbf{\textit{Value / Usefulness}}} \\ \hline
+  1. & Saya merasa kegiatan ini berharga bagi saya &  &  &  &  &  &  &  \\ \hline
+  2. & Saya pikir dengan melakukan kegiatan ini berguna untuk membantu saya mencegah distraksi dari smartphone  &  &  &  &  &  &  &  \\ \hline
+  3. & Saya rasa aplikasi ini penting untuk digunakan karena dapat membantu saya untuk mencegah distraksi dari smartphone  &  &  &  &  &  &  &  \\ \hline
+  4. & Saya bersedia melakukan kegiatan ini lagi karena memberikan nilai bagi saya    &  &  &  &  &  &  &  \\ \hline
+  5. & Saya pikir dengan melakukan kegiatan ini dapat membantu saya mencegah distraksi dari smartphone  &  &  &  &  &  &  &  \\ \hline
+  6. & Saya percaya dengan melakukan kegiatan ini dapat bermanfaat bagi saya    &  &  &  &  &  &  &  \\ \hline
+  7. & Saya pikir ini adalah kegiatan yang penting    &  &  &  &  &  &  &  \\ \hline
+  
+  \rowcolor[HTML]{DCF3FC} \multicolumn{9}{|l|}{\textbf{\textit{Interest / Enjoyment}}} \\ \hline
+  1. & Saya sangat menikmati mengatur pencegahan distraksi pada aplikasi ini &  &  &  &  &  &  &  \\ \hline
+  2. & Kegiatan ini menyenangkan untuk dilakukan &  &  &  &  &  &  &  \\ \hline
+  3. & Saya pikir ini adalah kegiatan yang membosankan &  &  &  &  &  &  &  \\ \hline
+  4. & Kegiatan ini tidak menarik perhatian saya &  &  &  &  &  &  &  \\ \hline
+  5. & Saya dapat mendeskripsikan kegiatan ini sebagai sangat menarik  &  &  &  &  &  &  &  \\ \hline
+  6. & Saya rasa kegiatan ini cukup menyenangkan &  &  &  &  &  &  &  \\ \hline
+  7. & Ketika saya melakukan kegiatan ini, saya memikirkan betapa saya menikmatinya &  &  &  &  &  &  &  \\ \hline
+  
+  \rowcolor[HTML]{DCF3FC} \multicolumn{9}{|l|}{\textbf{\textit{Pressure / Tension}}} \\ \hline
+  1. & Saya tidak merasa gugup sama sekali selama melakukan kegiatan ini &  &  &  &  &  &  &  \\ \hline
+  2. & Saya merasa sangat tegang selama melakukan kegiatan ini &  &  &  &  &  &  &  \\ \hline
+  3. & Saya merasa santai selama melakukan kegiatan ini &  &  &  &  &  &  &  \\ \hline
+  4. & Saya merasa cemas selama melakukan kegiatan ini &  &  &  &  &  &  &  \\ \hline
+  5. & Saya merasa tertekan selama melakukan kegiatan ini &  &  &  &  &  &  &  \\ \hline
+
+
+\end{longtable}
+\end{footnotesize}
+\justifying

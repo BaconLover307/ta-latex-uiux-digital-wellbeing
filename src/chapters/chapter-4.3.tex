@@ -1,5 +1,5 @@
 
-\section{Pengembangan Prototipe \textit{High-Fidelity} Iterasi 1}
+\section{Pengembangan Prototipe \textit{High-Fidelity} Iterasi Pertama}
 \label{sec:hifi_1}
 
 Prototipe \textit{high-fidelity} adalah implementasi dari solusi desain yang dibuat sedekat mungkin dengan produk aslinya. Prototipe \textit{high-fidelity} memiliki fungsionalitas, elemen visual, dan interaksi yang lebih lengkap daripada prototipe \textit{low-fidelity}. \parencite{PreeceRogersSharp15} Prototipe yang dirancang mengembangkan seluruh tampilan pada Tabel \ref{tab:daftar_lofi_halaman} dan Tabel \ref{tab:daftar_lofi_widget} di bagian \ref{sec:lofi} pengembangan prototipe \textit{low-fidelity}, serta menerapkan lebih banyak prinsip desain sesuai yang telah disebutkan pada bagian \ref{tab:prinsip_desain}. Tujuan dari perancangan prototipe \textit{high-fidelity} ini adalah untuk mencapai \textit{usability goals} dan \textit{user experience goals} yang telah diharapkan dari analisis pada bagian \ref{subsec:analisis_goals}. Sebelum membuat prototipe, perlu ditentukan batasan implementasi, aspek antarmuka pengguna, serta komponen desain.
@@ -12,7 +12,7 @@ Secara umum, aspek-aspek antarmuka yang digunakan pada prototipe \textit{high-fi
 
 \subsubsection{Warna}
 \label{subsubsec:aspek_warna}
-Warna yang digunakan dalam prototipe terbagi menjadi 3 kategori, yaitu warna primer, warna sekunder, dan warna aksen. Warna primer aplikasi menggunakan warna hijau, dengan alasan karena warna ini merupakan warna primer pada aplikasi Digital Wellbeing pada awalnya. Warna sekunder aplikasi adalah variasi atau gradasi warna monokrom hitam-putih. Selain itu, ada juga warna aksen yaitu warna kuning dan warna biru, yang juga sudah terdapat pada aplikasi Digital Wellbeing pada awalnya. Palet warna yang digunakan di aplikasi dapat dilihat pada Gambar \ref{img:pallete}.
+Warna yang digunakan dalam prototipe terbagi menjadi 3 kategori, yaitu warna primer, warna sekunder, dan warna aksen. Warna primer aplikasi menggunakan warna hijau, dengan alasan karena warna ini merupakan warna primer pada aplikasi Digital Wellbeing pada awalnya. Warna sekunder aplikasi adalah variasi atau gradasi hitam-putih. Selain itu, ada juga warna aksen yang terdiri dari warna kuning dan warna biru, yang juga sudah terdapat pada aplikasi Digital Wellbeing pada awalnya. Palet warna yang digunakan di aplikasi dapat dilihat pada Gambar \ref{img:pallete}.
 
 
 \begin{figure}[h]
@@ -138,7 +138,7 @@ Pengembangan prototipe \textit{high-fidelity} ini memiliki beberapa batasan agar
 
 \subsection{Implementasi Prototipe \textit{High-Fidelity}}
 
-Berdasarkan rencana perbaikan pada Tabel \ref{tab:daftar_perbaikan_lofi}, analisis aspek antarmuka, dan batasan pengembangan, maka tampilan-tampilan prototipe \textit{low-fidelity} pada Tabel \ref{tab:daftar_lofi_halaman} dan Tabel \ref{tab:daftar_lofi_widget} akan dikembangkan dan diimplementasi menjadi prototipe \textit{high-fidelity}. Tabel \ref{tab:daftar_hifi_halaman} memuat implementasi tampilan halaman prototipe \textit{high-fidelity}, sedangkan Tabel \ref{tab:daftar_hifi_widget} memuat implementasi tampilan untuk widget. Pada kedua tabel tersebut dimuat juga pemetaan prinsip desain tambahan terhadap prototipe \textit{high-fidelity}, serta penjelasan singkat tentang tampilan dan perubahannya dari tampilan prototipe \textit{low-fidelity}.
+Berdasarkan rencana perbaikan pada Tabel \ref{tab:daftar_perbaikan_lofi}, analisis aspek antarmuka, dan batasan pengembangan, maka tampilan-tampilan prototipe \textit{low-fidelity} pada Tabel \ref{tab:daftar_lofi_halaman} dan Tabel \ref{tab:daftar_lofi_widget} akan dikembangkan dan diimplementasi menjadi prototipe \textit{high-fidelity}. Tabel \ref{tab:daftar_hifi_halaman} memuat implementasi tampilan halaman prototipe \textit{high-fidelity}, sedangkan Tabel \ref{tab:daftar_hifi_widget} memuat implementasi tampilan untuk widget. Pada kedua tabel tersebut dimuat juga pemetaan prinsip desain tambahan terhadap prototipe \textit{high-fidelity}, serta penjelasan singkat tentang tampilan prototipe \textit{high-fidelity} dan perubahannya dari tampilan prototipe \textit{low-fidelity}.
 
 
 \newlength{\hifiwidth}
@@ -197,13 +197,13 @@ Berdasarkan rencana perbaikan pada Tabel \ref{tab:daftar_perbaikan_lofi}, analis
 
 \RaggedLeft
 \begin{footnotesize}
-\begin{longtable}[c]{|>{\ccnormspacingcenter}p{0.08\textwidth}|>{\ccnormspacing}p{0.37\textwidth}|>{\ccnormspacingcenter}p{0.1\textwidth}|>{\ccnormspacingcenter}p{\lofiwidth}|}
+\begin{longtable}[c]{|>{\ccnormspacingcenter}p{0.12\textwidth}|>{\ccnormspacing}p{0.33\textwidth}|>{\ccnormspacingcenter}p{0.12\textwidth}|>{\ccnormspacingcenter}p{\lofiwidth}|}
   \caption{Daftar Tampilan Widget Prototipe \textit{High-Fidelity}}
   \label{tab:daftar_hifi_widget} \\
   \hline \rowcolor[HTML]{A3E5F5}
-  \centering\textbf{ID Widget} & \centering\textbf{Penjelasan Widget} & \centering\textbf{Prinsip Desain} & \textbf{Prototipe \textit{Low-Fidelity}} \\ \hline \endfirsthead
+  \centering\textbf{ID Widget} & \centering\textbf{Penjelasan Widget} & \centering\textbf{Prinsip Desain Tambahan} & \textbf{Prototipe \textit{Low-Fidelity}} \\ \hline \endfirsthead
   \hline \rowcolor[HTML]{A3E5F5}
-  \centering\textbf{ID Widget} & \centering\textbf{Penjelasan Widget} & \centering\textbf{Prinsip Desain} & \textbf{Prototipe \textit{Low-Fidelity}} \\ \hline \endhead
+  \centering\textbf{ID Widget} & \centering\textbf{Penjelasan Widget} & \centering\textbf{Prinsip Desain Tambahan} & \textbf{Prototipe \textit{Low-Fidelity}} \\ \hline \endhead
   \hline \endfoot
   
   \textbf{W-01} Widget Dashboard & Widget ini memuat data penggunaan \textit{smartphone}, serta 3 aplikasi dengan penggunaan tertinggi pada hari tersebut. Desain widget pada prototipe \textit{high-fidelity} dibuat menjadi lebih \textit{user-friendly} agar widget dapat lebih berbaur dengan tampilan pada Homescreen.  & - & \hifiwidget{0.2\textwidth}{hifi/w-01} \\ \hline
