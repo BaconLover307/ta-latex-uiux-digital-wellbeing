@@ -13,7 +13,7 @@ Dari melakukan pengujian, ditemukan beberapa temuan penting mengenai prototipe \
 \newcommand{\cditem}[1]{\colorbox{white}{\raisebox{7pt}{\begin{minipage}[t]{0.8\textwidth}\linespread{1}\selectfont \begin{itemize}[parsep=0pt, leftmargin=*] #1 \end{itemize} \end{minipage}}}}
 
 \RaggedLeft
-\begin{small}
+\begin{footnotesize}
 \begin{longtable}[c]{|W{c}{0.12\textwidth}|>{\ccnormspacingcenter}m{0.8\textwidth}|}
   \caption{Daftar Temuan Penting Pengujian Prototipe \textit{Low-Fidelity}}
   \label{tab:daftar_temuan_lofi} \\
@@ -60,38 +60,38 @@ Dari melakukan pengujian, ditemukan beberapa temuan penting mengenai prototipe \
   } \\ \hline
 
 \end{longtable}
-\end{small}
+\end{footnotesize}
 \justifying
 \FloatBarrier
 
 Berdasarkan temuan-temuan yang telah disebutkan di atas, maka disusun beberapa rencana perbaikan terhadap prototipe \textit{low-fidelity}. Rencana perbaikan ini direalisasikan bersamaan dengan perancangan prototipe \textit{high-fidelity} yang dilakukan pada tahap berikutnya. Pada Tabel \ref{tab:daftar_perbaikan_lofi} dapat ditemukan daftar masalah yang disimpulkan dari temuan-temuan penting, beserta rencana perbaikan yang berkaitan.
 
 \RaggedLeft
-\begin{small}
-\begin{longtable}[c]{|W{c}{0.05\textwidth}|>{\ccnormspacing}m{0.43\textwidth}|>{\ccnormspacing}m{0.43\textwidth}|}
+\begin{footnotesize}
+\begin{longtable}[c]{|W{c}{0.06\textwidth}|>{\ccnormspacing}m{0.32\textwidth}|>{\ccnormspacing}m{0.35\textwidth}|>{\ccnormspacingcenter}m{0.14\textwidth}|}
   \caption{Daftar Rencana Perbaikan Prototipe \textit{Low-Fidelity}}
   \label{tab:daftar_perbaikan_lofi} \\
   \hline \rowcolor[HTML]{A3E5F5}
-  \textbf{No} & \multicolumn{1}{|c|}{\textbf{Kesimpulan Masalah dari Temuan}} & \multicolumn{1}{|c|}{\textbf{Rencana Perbaikan}} \\ \hline \endfirsthead
+  \textbf{ID} & \centering\textbf{Kesimpulan Masalah dari Temuan} & \centering\textbf{Rencana Perbaikan} & \textbf{Keterkaitan} \\ \hline \endfirsthead
   \hline \rowcolor[HTML]{A3E5F5}
-  \textbf{No} & \multicolumn{1}{|c|}{\textbf{Kesimpulan Masalah dari Temuan}} & \multicolumn{1}{|c|}{\textbf{Rencana Perbaikan}}\\ \hline \endhead
+  \textbf{ID} & \centering\textbf{Kesimpulan Masalah dari Temuan} & \centering\textbf{Rencana Perbaikan} & \textbf{Keterkaitan} \\ \hline \endhead
   \hline \endfoot
 
-  1 & Kurang jelasnya deskripsi untuk fitur-fitur pada Halaman Daily Goal & Menambahkan penjelasan untuk fitur Smartphone Usage Evaluation dan notifikasi pengingat untuk Daily Goal \\ \hline
-  2 & Kurangnya penjelasan untuk fitur-fitur di halaman Bedtime Mode & Menambahkan deskripsi singkat untuk pengaturan kemampuan yang dapat aktif saat Bedtime Mode dan mode aktivasi While Charging \\ \hline
-  3 & Kurangnya elemen konfirmasi pada pengaturan fitur App Timer & Menambahkan aksi untuk melakukan konfirmasi untuk pengaturan App Timer \\ \hline
-  4 & Kurangnya elemen umpan balik ketika berhasil menunda App Timer & Menambahkan pesan umpan balik saat menunda App Timer \\ \hline
-  5 & Penjelasan yang sulit dibaca pada halaman-halaman pengenalan fitur & Mengembangkan penjelasan pada halaman-halaman pengenalan dengan memperbesar tulisan dan menambah ilustrasi \\ \hline
-  6 & Kurang jelasnya fitur penundaan fitur hanya untuk hari tersebut & Mengubah sususnan kata "Turn off for now" menjadi "Turn off for today" \\ \hline
-  7 & Terdapat elemen-elemen navigasi yang berpotensi untuk sulit diraih & Memindahkan elemen navigasi ke posisi yang lebih mudah terlihat \\ \hline
-  8 & Sulitnya membedakan opsi yang terpilih untuk pilihan yang menggunakan radio button & Mengubah desain radio button menjadi lebih mudah dipahami \\ \hline
-  9 & Kurangnya elemen umpan balik ketika berhasil membuat jadwal Bedtime Mode & Menambahkan pesan umpan balik saat mengatur jadwal Bedtime Mode \\ \hline
-  10 & Diperlukannya alur lebih mudah dalam menunda batas waktu App Timer & Menambahkan aksi menunda batas waktu App Timer lewat notifikasi \\ \hline
-  11 & Kurang jelasnya kemampuan untuk memilih App Group pada halaman App Timer & Menambahkan bagian khusus pemilihan App Group untuk halaman App Timer \\ \hline
-  12 & Kurangnya kemampuan memilih aplikasi mendistraksi umum di luar jadwal & Menambahkan daftar pemilihan aplikasi mendistraksi pada halaman Focus Mode \\ \hline
+  PL-01 & Kurang jelasnya deskripsi untuk fitur-fitur pada Halaman Daily Goal & Menambahkan penjelasan untuk fitur Smartphone Usage Evaluation dan notifikasi pengingat untuk Daily Goal & G-04 \\ \hline
+  PL-02 & Kurangnya penjelasan untuk fitur-fitur di halaman Bedtime Mode & Menambahkan deskripsi singkat untuk pengaturan kemampuan yang dapat aktif saat Bedtime Mode dan mode aktivasi While Charging & G-04 \\ \hline
+  PL-03 & Kurangnya elemen konfirmasi pada pengaturan fitur App Timer & Menambahkan aksi untuk melakukan konfirmasi untuk pengaturan App Timer & DP-06 \\ \hline
+  PL-04 & Kurangnya elemen umpan balik ketika berhasil menunda App Timer & Menambahkan pesan umpan balik saat menunda App Timer & DP-06 \\ \hline
+  PL-05 & Penjelasan yang sulit dibaca pada halaman-halaman pengenalan fitur & Mengembangkan penjelasan pada halaman-halaman pengenalan dengan memperbesar tulisan dan menambah ilustrasi & G-04 \\ \hline
+  PL-06 & Kurang jelasnya fitur penundaan fitur hanya untuk hari tersebut & Mengubah sususnan kata "Turn off for now" menjadi "Turn off for today" & G-02 \\ \hline
+  PL-07 & Terdapat elemen-elemen navigasi yang berpotensi untuk sulit diraih & Memindahkan elemen navigasi ke posisi yang lebih mudah terlihat & G-01 \\ \hline
+  PL-08 & Sulitnya membedakan opsi yang terpilih untuk pilihan yang menggunakan radio button & Mengubah desain radio button menjadi lebih mudah dipahami & DP-09 \\ \hline
+  PL-09 & Kurangnya elemen umpan balik ketika berhasil membuat jadwal Bedtime Mode & Menambahkan pesan umpan balik saat mengatur jadwal Bedtime Mode & DP-06 \\ \hline
+  PL-10 & Diperlukannya alur lebih mudah dalam menunda batas waktu App Timer & Menambahkan aksi menunda batas waktu App Timer lewat notifikasi & G-01 \\ \hline
+  PL-11 & Kurang jelasnya kemampuan untuk memilih App Group pada halaman App Timer & Menambahkan bagian khusus pemilihan App Group untuk halaman App Timer & DP-09 \\ \hline
+  PL-12 & Kurangnya kemampuan memilih aplikasi mendistraksi umum di luar jadwal & Menambahkan daftar pemilihan aplikasi mendistraksi pada halaman Focus Mode & G-01, G-03 \\ \hline
   
 \end{longtable}
-\end{small}
+\end{footnotesize}
 \justifying
 \FloatBarrier
 
