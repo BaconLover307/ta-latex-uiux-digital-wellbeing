@@ -10,7 +10,7 @@ Dalam melakukan pengujian, diperlukan skenario-skenario pengujian berisi \textit
 
 Dari melakukan pengujian, ditemukan beberapa temuan penting mengenai prototipe \textit{low-fidelity} sehingga perlu dilakukan evaluasi sebelum lanjut ke tahap perancangan prototipe \textit{high-fidelity}. Temuan-temuan penting dari setiap partisipan dapat dilihat pada Tabel \ref{tab:daftar_temuan_lofi}.
 
-\newcommand{\cditem}[1]{\colorbox{white}{\raisebox{7pt}{\begin{minipage}[t]{0.8\textwidth}\linespread{1}\selectfont \begin{itemize}[parsep=0pt, leftmargin=*] #1 \end{itemize} \end{minipage}}}}
+\newcommand{\cditem}[1]{\colorbox{white}{\raisebox{7pt}{\begin{minipage}[t]{0.8\textwidth}\linespread{1}\selectfont \begin{enumerate}[parsep=0pt, leftmargin=*] #1 \end{enumerate} \end{minipage}}}}
 
 \RaggedLeft
 \begin{footnotesize}
@@ -24,6 +24,13 @@ Dari melakukan pengujian, ditemukan beberapa temuan penting mengenai prototipe \
   \hline \endfoot
 
   1 & \cditem{
+    \item Partisipan merasa navigasi ke halaman penambahan App Group sulit dibedakan dengan navigasi ke halaman penggunaan App Group
+    \item Partisipan merasa desain dari radio button membuat sulit untuk membedakan antara pilihan yang dipilih dan tidak
+    \item Partisipan merasa fitur "Turn off for now" sebaiknya diganti nama menjadi "Turn off for today"
+    \item Partisipan merasa navigasi untuk ke halaman penambahan jadwal Focus Mode sebaiknya dipindah agar mudah diakses jika jadwalnya sudah banyak 
+  } \\ \hline
+
+  2 & \cditem{
     \item Partisipan merasa alur navigasi cukup mudah untuk diikuti dalam mencapai \textit{task-task} yang dikerjakan
     \item Partisipan merasa widget-widget sangat membantu memudahkan aktivasi fitur-fitur atau melihat data
     \item Partisipan merasa perlu penjelasan lebih tentang kemampuan yang dapat aktif saat Bedtime Mode
@@ -31,23 +38,15 @@ Dari melakukan pengujian, ditemukan beberapa temuan penting mengenai prototipe \
     \item Partisipan merasa perlu ada suatu \textit{feedback} ketika berhasil menunda App Timer
   } \\ \hline
     
-  2 & \cditem{
+  3 & \cditem{
     \item Partisipan mengerti untuk mengerjakan seluruh \textit{task} yang diberikan saat pengujian 
     \item Partisipan merasa penjelasan pada halaman-halaman pengenalan fitur terlalu kecil dan terlalu panjang
-  } \\ \hline
-      
-  3 & \cditem{
-    \item Partisipan merasa navigasi ke halaman penambahan App Group sulit dibedakan dengan navigasi ke halaman penggunaan App Group
-    \item Partisipan merasa desain dari radio button membuat sulit untuk membedakan antara pilihan yang dipilih dan tidak
-    \item Partisipan merasa fitur "Turn off for now" sebaiknya diganti nama menjadi "Turn off for today"
-    \item Partisipan merasa navigasi untuk ke halaman penambahan jadwal Focus Mode sebaiknya dipindah agar mudah diakses jika jadwalnya sudah banyak 
-  } \\ \hline
+  } \\ \hline   
   
   4 & \cditem{
     \item Partisipan merasa widget sangat membantu dan cukup mewakili fungsionalitas utama dari fitur-fiturnya
     \item Partisipan merasa pengaturan untuk pengingat App Timer sedikit sulit untuk dipelajari 
     \item Partisipan merasa perlu ada tombol konfirmasi untuk mengatur App Timer
-    \item Partisipan merasa ingin dapat menunda App Timer dari notifikasi pengingat
   } \\ \hline
   
   5 & \cditem{
@@ -68,27 +67,26 @@ Berdasarkan temuan-temuan yang telah disebutkan di atas, maka disusun beberapa r
 
 \RaggedLeft
 \begin{footnotesize}
-\begin{longtable}[c]{|W{c}{0.06\textwidth}|>{\ccnormspacing}m{0.32\textwidth}|>{\ccnormspacing}m{0.35\textwidth}|>{\ccnormspacingcenter}m{0.14\textwidth}|}
+\begin{longtable}[c]{|W{c}{0.06\textwidth}|>{\ccnormspacing}m{0.31\textwidth}|>{\ccnormspacing}m{0.31\textwidth}|>{\ccnormspacingcenter}m{0.07\textwidth}|>{\ccnormspacingcenter}m{0.09\textwidth}|}
   \caption{Daftar Rencana Perbaikan Prototipe \textit{Low-Fidelity}}
   \label{tab:daftar_perbaikan_lofi} \\
   \hline \rowcolor[HTML]{A3E5F5}
-  \textbf{ID} & \centering\textbf{Kesimpulan Masalah dari Temuan} & \centering\textbf{Rencana Perbaikan} & \textbf{Keterkaitan} \\ \hline \endfirsthead
+  \textbf{ID} & \centering\textbf{Kesimpulan Masalah dari Temuan} & \centering\textbf{Rencana Perbaikan} & \textbf{\textit{Goals}}  & \textbf{Prinsip Desain} \\ \hline \endfirsthead
   \hline \rowcolor[HTML]{A3E5F5}
-  \textbf{ID} & \centering\textbf{Kesimpulan Masalah dari Temuan} & \centering\textbf{Rencana Perbaikan} & \textbf{Keterkaitan} \\ \hline \endhead
+  \textbf{ID} & \centering\textbf{Kesimpulan Masalah dari Temuan} & \centering\textbf{Rencana Perbaikan} & \textbf{\textit{Goals}}  & \textbf{Prinsip Desain} \\ \hline \endhead
   \hline \endfoot
 
-  PL-01 & Kurang jelasnya deskripsi untuk fitur-fitur pada Halaman Daily Goal & Menambahkan penjelasan untuk fitur Smartphone Usage Evaluation dan notifikasi pengingat untuk Daily Goal & G-04 \\ \hline
-  PL-02 & Kurangnya penjelasan untuk fitur-fitur di halaman Bedtime Mode & Menambahkan deskripsi singkat untuk pengaturan kemampuan yang dapat aktif saat Bedtime Mode dan mode aktivasi While Charging & G-04 \\ \hline
-  PL-03 & Kurangnya elemen konfirmasi pada pengaturan fitur App Timer & Menambahkan aksi untuk melakukan konfirmasi untuk pengaturan App Timer & DP-06 \\ \hline
-  PL-04 & Kurangnya elemen umpan balik ketika berhasil menunda App Timer & Menambahkan pesan umpan balik saat menunda App Timer & DP-06 \\ \hline
-  PL-05 & Penjelasan yang sulit dibaca pada halaman-halaman pengenalan fitur & Mengembangkan penjelasan pada halaman-halaman pengenalan dengan memperbesar tulisan dan menambah ilustrasi & G-04 \\ \hline
-  PL-06 & Kurang jelasnya fitur penundaan fitur hanya untuk hari tersebut & Mengubah sususnan kata "Turn off for now" menjadi "Turn off for today" & G-02 \\ \hline
-  PL-07 & Terdapat elemen-elemen navigasi yang berpotensi untuk sulit diraih & Memindahkan elemen navigasi ke posisi yang lebih mudah terlihat & G-01 \\ \hline
-  PL-08 & Sulitnya membedakan opsi yang terpilih untuk pilihan yang menggunakan radio button & Mengubah desain radio button menjadi lebih mudah dipahami & DP-09 \\ \hline
-  PL-09 & Kurangnya elemen umpan balik ketika berhasil membuat jadwal Bedtime Mode & Menambahkan pesan umpan balik saat mengatur jadwal Bedtime Mode & DP-06 \\ \hline
-  PL-10 & Diperlukannya alur lebih mudah dalam menunda batas waktu App Timer & Menambahkan aksi menunda batas waktu App Timer lewat notifikasi & G-01 \\ \hline
-  PL-11 & Kurang jelasnya kemampuan untuk memilih App Group pada halaman App Timer & Menambahkan bagian khusus pemilihan App Group untuk halaman App Timer & DP-09 \\ \hline
-  PL-12 & Kurangnya kemampuan memilih aplikasi mendistraksi umum di luar jadwal & Menambahkan daftar pemilihan aplikasi mendistraksi pada halaman Focus Mode & G-01, G-03 \\ \hline
+  PL-01 & Kurang jelasnya deskripsi untuk fitur-fitur pada Halaman Daily Goal & Menambahkan penjelasan untuk fitur Smartphone Usage Evaluation dan notifikasi pengingat untuk Daily Goal & G-04 & - \\ \hline
+  PL-02 & Kurangnya penjelasan untuk fitur-fitur di halaman Bedtime Mode & Menambahkan deskripsi singkat untuk pengaturan kemampuan yang dapat aktif saat Bedtime Mode dan mode aktivasi While Charging & G-04 & - \\ \hline
+  PL-03 & Kurangnya elemen konfirmasi pada pengaturan fitur App Timer & Menambahkan aksi untuk melakukan konfirmasi untuk pengaturan App Timer & - & DP-06 \\ \hline
+  PL-04 & Kurangnya elemen umpan balik ketika berhasil menunda App Timer & Menambahkan pesan umpan balik saat menunda App Timer & DP-06 & - \\ \hline
+  PL-05 & Penjelasan yang sulit dibaca pada halaman-halaman pengenalan fitur & Mengembangkan penjelasan pada halaman-halaman pengenalan dengan memperbesar tulisan dan menambah ilustrasi & G-04 & - \\ \hline
+  PL-06 & Kurang jelasnya fitur penundaan fitur hanya untuk hari tersebut & Mengubah sususnan kata "Turn off for now" menjadi "Turn off for today" & G-02 & - \\ \hline
+  PL-07 & Terdapat elemen-elemen navigasi yang berpotensi untuk sulit diraih & Memindahkan elemen navigasi ke posisi yang lebih mudah terlihat & G-01 & - \\ \hline
+  PL-08 & Sulitnya membedakan opsi yang terpilih untuk pilihan yang menggunakan radio button & Mengubah desain radio button menjadi lebih mudah dipahami & - & DP-09 \\ \hline
+  PL-09 & Kurangnya elemen umpan balik ketika berhasil membuat jadwal Bedtime Mode & Menambahkan pesan umpan balik saat mengatur jadwal Bedtime Mode & - & DP-06 \\ \hline
+  PL-10 & Kurang jelasnya kemampuan untuk memilih App Group pada halaman App Timer & Menambahkan bagian khusus pemilihan App Group untuk halaman App Timer & - & DP-09 \\ \hline
+  PL-11 & Kurangnya kemampuan memilih aplikasi mendistraksi umum di luar jadwal & Menambahkan daftar pemilihan aplikasi mendistraksi pada halaman Focus Mode & G-01, G-03 & - \\ \hline
   
 \end{longtable}
 \end{footnotesize}
