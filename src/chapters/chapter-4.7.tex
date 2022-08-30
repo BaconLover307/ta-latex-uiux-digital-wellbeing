@@ -7,7 +7,7 @@ Berdasarkan hasil pengujian prototipe \textit{high-fidelity} iterasi kedua, dapa
 \setlength{\finalwidth}{0.325\textwidth}
 
 \newlength{\finaldescwidth}
-\setlength{\finaldescwidth}{0.33\textwidth}
+\setlength{\finaldescwidth}{0.42\textwidth}
 
 \newcommand{\finaldesc}[1]{\desc{\finaldescwidth}{#1}}
 
@@ -16,20 +16,103 @@ Berdasarkan hasil pengujian prototipe \textit{high-fidelity} iterasi kedua, dapa
 
 \RaggedLeft
 \begin{footnotesize}
-\begin{longtable}[c]{|>{\ccnormspacingcenter}p{0.12\textwidth}|>{\ccnormspacing}p{\finaldescwidth}|>{\ccnormspacingcenter}p{0.12\textwidth}|>{\ccnormspacingcenter}p{\finalwidth}|}
+\begin{longtable}[c]{|>{\ccnormspacingcenter}p{0.12\textwidth}|>{\ccnormspacing}p{\finaldescwidth}|>{\ccnormspacingcenter}p{\finalwidth}|}
   \caption{Daftar Tampilan Halaman Prototipe \textit{High-Fidelity}}
   \label{tab:daftar_final_halaman} \\
   \hline \rowcolor[HTML]{A3E5F5}
-  \centering\textbf{Halaman} & \centering\textbf{Penjelasan Halaman} & \centering\textbf{\textit{Goals}} & \textbf{Prototipe \textit{High-Fidelity}} \\ \hline \endfirsthead
+  \centering\textbf{Halaman} & \centering\textbf{Penjelasan Halaman} & \textbf{Prototipe \textit{High-Fidelity}} \\ \hline \endfirsthead
   \hline \rowcolor[HTML]{A3E5F5}
-  \centering\textbf{Halaman} & \centering\textbf{Penjelasan Halaman} & \centering\textbf{\textit{Goals}} & \textbf{Prototipe \textit{High-Fidelity}} \\ \hline \endhead
+  \centering\textbf{Halaman} & \centering\textbf{Penjelasan Halaman} & \textbf{Prototipe \textit{High-Fidelity}} \\ \hline \endhead
   \hline \endfoot
 
   \textbf{H-01} Halaman Main Menu & 
     \finaldesc{
-      Halaman ini adalah tampilan utama dari aplikasi Digital Wellbeing yang memuat navigasi utama ke fitur-fitur lainnya. Pada prototipe \textit{high-fidelity} terdapat perubahan pada bentuk menu navigasi menjadi lebih bundar agar lebih \textit{user-friendly}. Adapun implementasi ilustrasi untuk menu Focus Mode dan Bedtime Mode, dan ikon-ikon pada menu lainnya, menggantikan \textit{placeholder} pada tampilan \textit{low-fidelity}.
-    } & G-02, G-04 & \final{hifi/h-01} \\ \hline
+      Halaman ini adalah tampilan utama dari aplikasi Digital Wellbeing yang memuat navigasi utama ke fitur-fitur lainnya. Navigasi menuju Dashboard diletakkan di paling atas beserta \textit{pie graph} yang menunjukkan aktivitas \textit{smartphone} pengguna di hari tersebut. Di bagian bawah juga terdapat navigasi menuju pengaturan notifikasi dan mode "Do Not Disturb" bawaan \textit{smartphone}
+    } & \final{final/h-01} \\ \hline
   
+    \textbf{H-02} Halaman Dashboard &
+    \finaldesc{
+      Halaman ini memuat seluruh data penggunaan \textit{smartphone}. Pada bagian paling atas, terdapat rekomendasi dari Digital Wellbeing tentang langkah-langkah yang dapat dilakukan pengguna untuk memperbaiki kebiasaan digitalnya, atau penanda jika kebiasaannya sudah cukup sehat. Data penggunaan \textit{smartphone} yang ditampilkan dapat dipilih oleh menu, baik waktu penggunaan aplikasi, jumlah notifikasi, atau jumlah pembukaan aplikasi. Periode durasi data juga dapat dipilih dengan menu, baik secara per jam, harian, atau mingguan. \newline
+      Selain itu terdapat daftar seluruh aplikasi pada \textit{smartphone} beserta data penggunaannya masing-masing, dan App Timer untuk aplikasi jika telah dipasang. Pengguna dapat melihat data lebih detail. Pengguna juga dapat melihat data penggunaan dari kelompok aplikasi yang telah dibuat, atau membuatnya jika belum ada, terlihat tepat di atas daftar. Jika pengguna ingin mencari aplikasi spesifik, maka \textit{searchbar} bisa dimanfaatkan untuk mengetikkan nama aplikasi.
+    } & \hifi{final/h-02} \\ \hline
+  
+  \textbf{H-03} Halaman App Timer & 
+    \finaldesc{
+      Halaman ini berisi daftar App Timer yang telah dipasang oleh pengguna, waktu yang telah dilampaui selama menggunakan aplikasi tersebut, serta sisa waktu sebelum aplikasi ditutup aksesnya. Pengguna bisa mengubah pengaturan App Timer yang telah dipasang, atau menambah aplikasi atau App Group yang ingin dipasangkan App Timer dengan mencarinya dari daftar aplikasi yang terletak di bawah. Di halaman ini pengguna juga bisa mengatur perilaku pemberian peringatan terhadap sisa waktu aplikasi-aplikasi.
+    } & \hifi{final/h-03} \\ \hline
+  
+  \textbf{H-04} Halaman Daily Goal & 
+    \finaldesc{
+      Di halaman ini, pengguna dapat menentukan Daily Goal atau tujuan harian yang ingin ditempuh dan dibantu diingatkan oleh aplikasi Digital Wellbeing. Pengguna dapat mengatur perilaku pengiriman peringatannya.
+    } & \hifi{final/h-04} \\ \hline
+  
+  \textbf{H-05} Halaman Focus Mode & 
+    \finaldesc{
+      Halaman ini memuat status dari keberjalanan Focus Mode serta aksi-aksi yang dapat dilakukan untuk menunda, mematikan, atau mengaktivasinya. Selain itu, terdapat juga daftar jadwal Focus Mode yang ditentukan pengguna, atau pilihan untuk menambahkannya. Jadwal Focus Mode akan menavigasikan pengguna ke halaman pengaturan jadwal tersebut. \newline
+      Pada desain final, halaman ini mengalami perbaikan dengan menambahkan tombol aktivasi untuk jadwal-jadwal Focus Mode yang telah dibuat.
+     } & \hifi{final/h-05} \\ \hline
+  
+  \textbf{H-06} Halaman Bedtime Mode &  
+    \finaldesc{
+      Pada halaman ini, pengguna dapat mengatur jadwal aktivasi Bedtime Mode menurut mode perilaku aktivasi yang dipilihnya. Pengguna juga dapat mengatur kemampuan apa saja yang akan aktif jika Bedtime Mode berlangsung.
+    } & \hifi{final/h-06-schedule} \\ \hline
+  
+  \textbf{H-07} Halaman Ringkasan Penggunaan Aplikasi & 
+    \finaldesc{
+      Halaman ini memuat data penggunaan sebuah aplikasi. Jenis data-data yang ditampilkan mirip seperti yang dapat ditemukan pada halaman Dashboard, namun hanya untuk satu buah aplikasi yang dipilih saja. Pemilihan periode waktu serta navigasi waktu data juga dapat dilakukan. Sebagai tambahan, terdapat navigasi ke halaman pengaturan App Timer untuk aplikasinya, serta navigasi menuju halaman pengaturan notifikasi aplikasi bawaan \textit{smartphone}.
+    } & \hifi{final/h-07} \\ \hline
+  
+  \textbf{H-08} Halaman Ringkasan Penggunaan App Group & 
+    \finaldesc{
+      Halaman ini memuat data penggunaan dari App Group atau kelompok aplikasi yang ditentukan oleh pengguna. Jenis data-data yang ditampilkan mirip seperti yang dapat ditemukan pada halaman Dashboard, namun hanya untuk gabungan dari beberapa aplikasi yang ditentukan. Pemilihan periode waktu serta navigasi waktu data juga dapat dilakukan. Di bagian bawah, terdapat daftar aplikasi yang termasuk ke dalam App Group, yang dapat dinavigasi ke halaman data penggunaan aplikasinya masing-masing. \newline
+      Sebagai tambahan, terdapat juga navigasi ke halaman App Timer untuk App Group tersebut, di mana dapat diatur App Timer untuk keseluruhan aplikasi secara kolektif. Terdapat juga navigasi ke halaman pengaturan App Group jika pengguna ingin melakukan perubahan.
+    } & \hifi{final/h-08} \\ \hline
+  
+  \textbf{H-09} Halaman Pengaturan App Group & 
+    \finaldesc{
+      Pada halaman ini dapat dilakukan pengaturan terhadap App Group yang dibuat oleh pengguna. Pengaturan App Group termasuk nama App Group serta aplikasi-aplikasi yang dipilih. Pengguna dapat memanfaatkan \textit{searchbar} jika ingin mencari aplikasi yang spesifik.
+    } & \hifi{final/h-09} \\ \hline
+  
+  \textbf{H-10} Halaman Pengaturan Jadwal App Timer & 
+    \finaldesc{
+      Pada halaman ini dapat dilakukan pengaturan terhadap App Timer aplikasi yang dibuat oleh pengguna. Pengguna dapat mengatur App Timer agar memiliki batas waktu yang sama setiap hari, atau batas waktu yang berbeda-beda per harinya sesuai kebutuhan pengguna. Pengguna juga dapat menghapus App Timer lewat halaman ini. Di bagian atas juga terdapat visualisasi waktu penggunaan aplikasi dan sisa batas waktunya untuk hari tersebut.
+    } & \hifi{final/h-10-custom} \hifi{final/h-10-off} \\ \hline
+  
+  \textbf{H-11} Halaman Pengaturan Jadwal Focus Mode & 
+    \finaldesc{
+      Pada halaman ini, pengguna dapat mengatur hari dan waktu aktivasi dari jadwal Focus Mode yang dibuat pengguna. Pengguna juga dapat mengatur nama dari jadwal, dan aplikasi apa saja yang akan diblokir aksesnya selama jadwal Focus Mode berlangsung. Jika pengguna ingin mencari aplikasi spesifik, maka \textit{searchbar} dapat dimanfaatkan dengan mengetikkan nama aplikasinya.
+    } & \hifi{final/h-11} \\ \hline
+  
+  \textbf{H-12} Halaman Pengenalan Dashboard & 
+    \finaldesc{
+      Halaman ini memuat ilustrasi tujuan dari Dashboard dan penjelasan tentang fitur-fitur yang terdapat pada Dashboard.
+    } & \hifi{final/h-12} \\ \hline
+  
+  \textbf{H-13} Halaman Pengenalan App Timer & 
+    \finaldesc{
+      Halaman ini memuat ilustrasi tujuan dari App Timer dan penjelasan tentang fitur-fitur yang terdapat pada App Timer.
+    } & \hifi{final/h-13} \\ \hline
+  
+  \textbf{H-14} Halaman Pengenalan Goal Reminder & 
+    \finaldesc{
+      Halaman ini memuat ilustrasi tujuan dari Goal Reminder dan penjelasan tentang fitur-fitur yang terdapat pada Goal Reminder.
+    } & \hifi{final/h-14} \\ \hline
+  
+  \textbf{H-15} Halaman Pengenalan Focus Mode & 
+    \finaldesc{
+      Halaman ini memuat ilustrasi tujuan dari Focus Mode dan penjelasan tentang fitur-fitur yang terdapat pada Focus Mode.
+    } & \hifi{final/h-15} \\ \hline
+  
+  \textbf{H-16} Halaman Pengenalan Bedtime Mode & 
+    \finaldesc{
+      Halaman ini memuat ilustrasi tujuan dari Bedtime Mode dan penjelasan tentang fitur-fitur yang terdapat pada Bedtime Mode.
+    } & \hifi{final/h-16} \\ \hline
+  
+  Halaman Daily Usage Evaluation & 
+    \finaldesc{
+      Halaman ini memuat fitur Smartphone Usage Evaluation, ilustrasi notifikasi yang akan dikirim kepada pengguna jika diaktivasi, serta jadwal pengiriman notifikasi tersebut. Pada desain final, tampilan contoh notifikasi mengalami perbaikan sesuai dengan rencana perbaikan untuk temuan penting (PH-08) mengenai contoh notifikasi fitur pada prototipe \textit{high-fidelity} iterasi kedua.
+    } & \hifi{final/h-17} \\ \hline
+
   \end{longtable}
 \end{footnotesize}
 \justifying
@@ -37,19 +120,29 @@ Berdasarkan hasil pengujian prototipe \textit{high-fidelity} iterasi kedua, dapa
 
 \RaggedLeft
 \begin{footnotesize}
-\begin{longtable}[c]{|>{\ccnormspacingcenter}p{0.12\textwidth}|>{\ccnormspacing}p{\finaldescwidth}|>{\ccnormspacingcenter}p{0.12\textwidth}|>{\ccnormspacingcenter}p{\finalwidth}|}
+\begin{longtable}[c]{|>{\ccnormspacingcenter}p{0.12\textwidth}|>{\ccnormspacing}p{\finaldescwidth}|>{\ccnormspacingcenter}p{\finalwidth}|}
   \caption{Daftar Tampilan Widget Desain Final Solusi}
   \label{tab:daftar_final_widget} \\
   \hline \rowcolor[HTML]{A3E5F5}
-  \centering\textbf{Widget} & \centering\textbf{Penjelasan Widget} & \centering\textbf{\textit{Goals}} & \textbf{Prototipe \textit{High-Fidelity}} \\ \hline \endfirsthead
+  \centering\textbf{Widget} & \centering\textbf{Penjelasan Widget} & \textbf{Prototipe \textit{High-Fidelity}} \\ \hline \endfirsthead
   \hline \rowcolor[HTML]{A3E5F5}
-  \centering\textbf{Widget} & \centering\textbf{Penjelasan Widget} & \centering\textbf{\textit{Goals}} & \textbf{Prototipe \textit{High-Fidelity}} \\ \hline \endhead
+  \centering\textbf{Widget} & \centering\textbf{Penjelasan Widget} & \textbf{Prototipe \textit{High-Fidelity}} \\ \hline \endhead
   \hline \endfoot
 
-  \textbf{H-01} Halaman Main Menu & 
+  \textbf{W-01} Widget Dashboard & 
     \finaldesc{
-      Halaman ini adalah tampilan utama dari aplikasi Digital Wellbeing yang memuat navigasi utama ke fitur-fitur lainnya. Pada prototipe \textit{high-fidelity} terdapat perubahan pada bentuk menu navigasi menjadi lebih bundar agar lebih \textit{user-friendly}. Adapun implementasi ilustrasi untuk menu Focus Mode dan Bedtime Mode, dan ikon-ikon pada menu lainnya, menggantikan \textit{placeholder} pada tampilan \textit{low-fidelity}.
-    } & G-02, G-04 & \final{hifi/h-01} \\ \hline
+      Widget ini memuat data penggunaan \textit{smartphone}, serta 3 aplikasi dengan penggunaan tertinggi pada hari tersebut. Pengguna dapat melakukan navigasi langsung ke halaman Dashboard melalui widget ini.
+    } & \hifiwidget{0.2\textwidth}{final/w-01} \\ \hline
+
+  \textbf{W-02} Widget App Timer & 
+    \finaldesc{
+      Widget ini memuat daftar aplikasi yang telah dipasang App Timer, serta sisa waktu untuk menggunakan aplikasi sebelum aksesnya ditutup. Pengguna dapat melakukan navigasi langsung ke halaman App Timer.
+    } & \hifiwidget{0.325\textwidth}{final/w-02} \\ \hline
+  
+  \textbf{W-03} Widget Focus Mode & 
+    \finaldesc{
+      Widget ini menampilkan status keberlangsungan dari Focus Mode. Pengguna dapat mengaktivasi Focus Mode langsung dari widget jika sedang tidak aktif, serta mengambil istirahat dan mematikan Focus Mode jika sedang aktif. Pengguna juga dapat melakukan navigasi langsung ke halaman Focus Mode langsung dari widget.
+    } & \hifiwidget{0.325\textwidth}{final/w-03} \\ \hline
   
   \end{longtable}
 \end{footnotesize}

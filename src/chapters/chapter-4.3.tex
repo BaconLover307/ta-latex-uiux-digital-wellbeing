@@ -162,10 +162,10 @@ Berdasarkan rencana perbaikan pada Tabel \ref{tab:daftar_perbaikan_lofi}, analis
 
 
 \newlength{\hifiwidth}
-\setlength{\hifiwidth}{0.325\textwidth}
+\setlength{\hifiwidth}{0.315\textwidth}
 
 \newlength{\hifidescwidth}
-\setlength{\hifidescwidth}{0.33\textwidth}
+\setlength{\hifidescwidth}{0.315\textwidth}
 
 \newcommand{\hifidesc}[1]{\desc{\hifidescwidth}{#1}}
 
@@ -273,29 +273,29 @@ Berdasarkan rencana perbaikan pada Tabel \ref{tab:daftar_perbaikan_lofi}, analis
 
 \RaggedLeft
 \begin{footnotesize}
-\begin{longtable}[c]{|>{\ccnormspacingcenter}p{0.12\textwidth}|>{\ccnormspacing}p{0.33\textwidth}|>{\ccnormspacingcenter}p{0.12\textwidth}|>{\ccnormspacingcenter}p{\lofiwidth}|}
+\begin{longtable}[c]{|>{\ccnormspacingcenter}p{0.12\textwidth}|>{\ccnormspacing}p{\hifidescwidth}|>{\ccnormspacingcenter}p{0.12\textwidth}|>{\ccnormspacingcenter}p{\lofiwidth}|}
   \caption{Daftar Tampilan Widget Prototipe \textit{High-Fidelity}}
   \label{tab:daftar_hifi_widget} \\
   \hline \rowcolor[HTML]{A3E5F5}
-  \centering\textbf{ID Widget} & \centering\textbf{Penjelasan Widget} & \centering\textbf{Prinsip Desain Tambahan} & \textbf{Prototipe \textit{Low-Fidelity}} \\ \hline \endfirsthead
+  \centering\textbf{ID Widget} & \centering\textbf{Penjelasan Widget} & \centering\textbf{Goals} & \textbf{Prototipe \textit{Low-Fidelity}} \\ \hline \endfirsthead
   \hline \rowcolor[HTML]{A3E5F5}
-  \centering\textbf{ID Widget} & \centering\textbf{Penjelasan Widget} & \centering\textbf{Prinsip Desain Tambahan} & \textbf{Prototipe \textit{Low-Fidelity}} \\ \hline \endhead
+  \centering\textbf{ID Widget} & \centering\textbf{Penjelasan Widget} & \centering\textbf{Goals} & \textbf{Prototipe \textit{Low-Fidelity}} \\ \hline \endhead
   \hline \endfoot
   
   \textbf{W-01} Widget Dashboard & 
     \hifidesc{
       Widget ini memuat data penggunaan \textit{smartphone}, serta 3 aplikasi dengan penggunaan tertinggi pada hari tersebut. Desain widget pada prototipe \textit{high-fidelity} dibuat menjadi lebih \textit{user-friendly} agar widget dapat lebih berbaur dengan tampilan pada Homescreen.
-    } & - & \hifiwidget{0.2\textwidth}{hifi/w-01} \\ \hline
+    } & G-01, G-03, G-04 & \hifiwidget{0.2\textwidth}{hifi/w-01} \\ \hline
 
   \textbf{W-02} Widget App Timer & 
     \hifidesc{
       Widget ini memuat daftar aplikasi yang telah dipasang App Timer, serta sisa waktu untuk menggunakan aplikasi sebelum aksesnya ditutup. Desain widget pada prototipe \textit{high-fidelity} dibuat menjadi lebih \textit{user-friendly} agar widget dapat lebih berbaur dengan tampilan pada Homescreen.
-    } & - & \hifiwidget{0.325\textwidth}{hifi/w-02} \\ \hline
+    } & G-01, G-03, G-04 & \hifiwidget{0.325\textwidth}{hifi/w-02} \\ \hline
   
   \textbf{W-03} Widget Focus Mode & 
     \hifidesc{
       Widget ini menampilkan status keberlangsungan dari Focus Mode. Desain widget pada prototipe \textit{high-fidelity} dibuat menjadi lebih \textit{user-friendly} agar widget dapat lebih berbaur dengan tampilan pada Homescreen. Ada juga penambahan interaksi pada widget agar pengguna dapat memanfaatkan lebih banyak fungsionalitas dari Focus Mode.
-    } & - & \hifiwidget{0.325\textwidth}{hifi/w-03} \\ \hline
+    } & G-01, G-03, G-04 & \hifiwidget{0.325\textwidth}{hifi/w-03} \\ \hline
 
 \end{longtable}
 \end{footnotesize}
