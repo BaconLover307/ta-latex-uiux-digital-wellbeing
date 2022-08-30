@@ -14,7 +14,6 @@ Secara umum, aspek-aspek antarmuka yang digunakan pada prototipe \textit{high-fi
 \label{subsubsec:aspek_warna}
 Warna yang digunakan dalam prototipe terbagi menjadi 3 kategori, yaitu warna primer, warna sekunder, dan warna aksen. Warna primer aplikasi menggunakan warna hijau, dengan alasan karena warna ini merupakan warna primer pada aplikasi Digital Wellbeing pada awalnya. Warna sekunder aplikasi adalah variasi atau gradasi hitam-putih. Selain itu, ada juga warna aksen yang terdiri dari warna kuning dan warna biru, yang juga sudah terdapat pada aplikasi Digital Wellbeing pada awalnya. Palet warna yang digunakan di aplikasi dapat dilihat pada Gambar \ref{img:pallete}.
 
-
 \begin{figure}[h]
   \centering
   \includegraphics[width=0.7\textwidth]{chapter-4-color.png}
@@ -136,7 +135,7 @@ Pengembangan prototipe \textit{high-fidelity} ini memiliki beberapa batasan agar
   \item Homescreen pada prototipe tidak mengacu pada tampilan \textit{smartphone} merk tertentu dengan alasan fokus pada tujuan untuk menguji komponen-komponen prototipe yang tidak dapat diakses dari dalam aplikasi.
 \end{enumerate}
 
-\subsection{Implementasi Prototipe \textit{High-Fidelity}}
+\subsection{Implementasi Prototipe \textit{High-Fidelity} Iterasi Pertama}
 \label{subsec:hifi_1_implementasi}
 
 % Berdasarkan rencana perbaikan pada Tabel \ref{tab:daftar_perbaikan_lofi}, analisis aspek antarmuka, dan batasan pengembangan, maka tampilan-tampilan prototipe \textit{low-fidelity} pada Tabel \ref{tab:daftar_lofi_halaman} dan Tabel \ref{tab:daftar_lofi_widget} akan dikembangkan dan diimplementasi menjadi prototipe \textit{high-fidelity}. Berikut adalah hasil implementasi prototipe \textit{high-fidelity} iterasi pertama.
@@ -159,7 +158,7 @@ Pengembangan prototipe \textit{high-fidelity} ini memiliki beberapa batasan agar
 
 % Tabel \ref{tab:daftar_hifi_halaman} memuat implementasi tampilan halaman prototipe \textit{high-fidelity}, sedangkan Tabel \ref{tab:daftar_hifi_widget} memuat implementasi tampilan untuk widget. Pada kedua tabel tersebut dimuat juga pemetaan prinsip desain tambahan terhadap prototipe \textit{high-fidelity}, serta penjelasan singkat tentang tampilan prototipe \textit{high-fidelity} dan perubahannya dari tampilan prototipe \textit{low-fidelity}.
 
-Berdasarkan rencana perbaikan pada Tabel \ref{tab:daftar_perbaikan_lofi}, analisis aspek antarmuka, dan batasan pengembangan, maka tampilan-tampilan prototipe \textit{low-fidelity} pada Tabel \ref{tab:daftar_lofi_halaman} dan Tabel \ref{tab:daftar_lofi_widget} akan dikembangkan dan diimplementasi menjadi prototipe \textit{high-fidelity}. Tabel \ref{tab:daftar_hifi_halaman} memuat implementasi tampilan halaman prototipe \textit{high-fidelity}, sedangkan Tabel \ref{tab:daftar_hifi_widget} memuat implementasi tampilan untuk widget. Pada kedua tabel tersebut dimuat juga pemetaan prinsip desain tambahan terhadap prototipe \textit{high-fidelity}, serta penjelasan singkat tentang tampilan prototipe \textit{high-fidelity} dan perubahannya dari tampilan prototipe \textit{low-fidelity}.
+Berdasarkan rencana perbaikan pada Tabel \ref{tab:daftar_perbaikan_lofi}, analisis aspek antarmuka, dan batasan pengembangan, maka tampilan-tampilan prototipe \textit{low-fidelity} pada Tabel \ref{tab:daftar_lofi_halaman} dan Tabel \ref{tab:daftar_lofi_widget} akan dikembangkan dan diimplementasi menjadi prototipe \textit{high-fidelity}. Tabel \ref{tab:daftar_hifi_halaman} memuat implementasi tampilan halaman prototipe \textit{high-fidelity}, sedangkan Tabel \ref{tab:daftar_hifi_widget} memuat implementasi tampilan untuk widget. Pada kedua tabel tersebut dimuat juga pemetaan \textit{usability goals} dan \textit{user experience goals} yang ingin dicapai dari halaman prototipe \textit{high-fidelity}, serta penjelasan singkat tentang tampilan prototipe \textit{high-fidelity} dan perubahannya dari tampilan prototipe \textit{low-fidelity}.
 
 
 \newlength{\hifiwidth}
@@ -187,84 +186,85 @@ Berdasarkan rencana perbaikan pada Tabel \ref{tab:daftar_perbaikan_lofi}, analis
   \textbf{H-01} Halaman Main Menu & 
     \hifidesc{
       Halaman ini adalah tampilan utama dari aplikasi Digital Wellbeing yang memuat navigasi utama ke fitur-fitur lainnya. Pada prototipe \textit{high-fidelity} terdapat perubahan pada bentuk menu navigasi menjadi lebih bundar agar lebih \textit{user-friendly}. Adapun implementasi ilustrasi untuk menu Focus Mode dan Bedtime Mode, dan ikon-ikon pada menu lainnya, menggantikan \textit{placeholder} pada tampilan \textit{low-fidelity}.
-    } & \textit{Motivating} & \hifi{hifi/h-01} \\ \hline
+    } & G-02, G-04 & \hifi{hifi/h-01} \\ \hline
   
   \textbf{H-02} Halaman Dashboard &
     \hifidesc{
       Halaman ini memuat seluruh data penggunaan \textit{smartphone}. Pada prototipe \textit{high-fidelity} terdapat penambahan warna untuk \textit{bar chart} agar memperjelas data yang sedang dipilih. \newline 
       Adapun pengubahan desain dari tombol penambahan App Group untuk memberikan perbedaan yang jelas dengan tombol navigasi ke halaman data penggunaan App Group
     }
-  & - & \hifi{hifi/h-02} \\ \hline
+  & G-01, G-02, G-03, G-04 & \hifi{hifi/h-02} \\ \hline
   
   \textbf{H-03} Halaman App Timer & 
     \hifidesc{
       Halaman ini berisi daftar App Timer yang telah dipasang oleh pengguna, dan daftar aplikasi lain. Pada prototipe \textit{high-fidelity}, menu konfigurasi pengingat App Timer disembunyikan di dalam komponen \textit{dropdown} untuk mengurangi kompleksitas visual. Selain itu, ada juga penambahan bagian yang memuat daftar App Group yang sudah dibuat, memindahkan lokasi App Group dari dalam daftar aplikasi.
-    } & - & \hifi{hifi/h-03} \\ \hline
+    } & G-01, G-03 & \hifi{hifi/h-03} \\ \hline
   
   \textbf{H-04} Halaman Daily Goal & 
     \hifidesc{
       Di halaman ini, pengguna dapat menentukan Daily Goal atau tujuan harian yang ingin ditempuh dan dibantu diingatkan oleh aplikasi Digital Wellbeing. Pada prototipe \textit{high-fidelity} terdapat penambahan penjelasan untuk fitur-fitur pengingat Daily Goal agar lebih mudah untuk dimengerti. Adapun penambahan ikon untuk fitur Daily Goal agar tampilan tidak terasa kaku
-    } & - & \hifi{hifi/h-04} \\ \hline
+    } & G-04 & \hifi{hifi/h-04} \\ \hline
   
   \textbf{H-05} Halaman Focus Mode & 
     \hifidesc{
       Halaman ini memuat status dari keberjalanan Focus Mode serta aksi-aksi yang dapat dilakukan untuk menunda, mematikan, atau mengaktivasinya. Pada prototipe \textit{high-fidelity} terdapat penambahan daftar aplikasi untuk memilih aplikasi yang dinilai mendistraksi, daftar ini dapat dimanfaatkan jika pengguna ingin menyalakan fitur Focus Mode tanpa mengikuti jadwal. Adapun pemindahan lokasi navigasi ke halaman penambahan jadwal Focus Mode agar lebih mudah diakses jika terdapat banyak jadwal Focus Mode.
-     } & - & \hifi{hifi/h-05} \\ \hline
+     } & G-01, G-03 & \hifi{hifi/h-05} \\ \hline
   
   \textbf{H-06} Halaman Bedtime Mode &  
     \hifidesc{
       Pada halaman ini, pengguna dapat mengatur jadwal aktivasi Bedtime Mode menurut mode perilaku aktivasi yang dipilihnya. Pada prototipe \textit{high-fidelity} terdapat penambahan penjelasan singkat tentang mode aktivasi While Charging, sesuai dengan rencana perbaikan terhadap masalah yang dilaporkan. Adapun penambahan warna aksen terhadap pengaturan jadwal, warna aksen ini sudah menjadi bagian dari aplikasi Digital Wellbeing pada awalnya. Selain itu, menu konfigurasi kemampuan yang aktif saat Bedtime Mode disembunyikan di dalam komponen \textit{dropdown} untuk mengurangi kompleksitas visual.
-    } & - & \hifi{hifi/h-06-schedule} \\ \hline
+    } & G-03 & \hifi{hifi/h-06-schedule} \\ \hline
   
   \textbf{H-07} Halaman Ringkasan Penggunaan Aplikasi & 
     \hifidesc{
       Halaman ini memuat data penggunaan sebuah aplikasi. Pada prototipe \textit{high-fidelity}, terdapat penambahan ikon pada navigasi App Timer dan pengaturan notifikasi agar tampilan lebih mudah dikenali.
-    } & - & \hifi{hifi/h-07} \\ \hline
+    } & G-03 & \hifi{hifi/h-07} \\ \hline
   
   \textbf{H-08} Halaman Ringkasan Penggunaan App Group & 
     \hifidesc{
       Halaman ini memuat data penggunaan dari App Group atau kelompok aplikasi yang ditentukan oleh pengguna. Pada prototipe \textit{high-fidelity}, terdapat penambahan ikon pada navigasi App Timer dan pengaturan App Group agar tampilan lebih mudah dikenali.
-    } & - & \hifi{hifi/h-08} \\ \hline
+    } & G-01, G-03 & \hifi{hifi/h-08} \\ \hline
   
   \textbf{H-09} Halaman Pengaturan App Group & 
     \hifidesc{
       Pada halaman ini dapat dilakukan pengaturan terhadap App Group yang dibuat oleh pengguna. Pada prototipe \textit{high-fidelity}, tidak ada perubahan yang cukup signifikan selain pengaplikasian warna.
-    } & - & \hifi{hifi/h-09} \\ \hline
+    } & G-01, G-03 & \hifi{hifi/h-09} \\ \hline
   
   \textbf{H-10} Halaman Pengaturan Jadwal App Timer & 
     \hifidesc{
-      Pada halaman ini dapat dilakukan pengaturan terhadap App Timer aplikasi yang dibuat oleh pengguna. Pada prototipe \textit{high-fidelity} terdapat perubahan tampilan untuk pengaturan App Timer, dengan memberikan elemen untuk mengkonfirmasi pengaturan sesuai dengan rancangan perbaikan dari prototipe \textit{low-fidelity}. Adapun jika belum ada opsi mode aktivasi App Timer, maka tombol konfirmasi pengaturan akan dinonaktifkan.
-    } & DP-07 & \hifi{hifi/h-10-daily} \hifi{hifi/h-10-off} \\ \hline
+      Pada halaman ini dapat dilakukan pengaturan terhadap App Timer aplikasi yang dibuat oleh pengguna. Pada prototipe \textit{high-fidelity} terdapat perubahan tampilan untuk pengaturan App Timer, dengan memberikan elemen untuk mengkonfirmasi pengaturan sesuai dengan rancangan perbaikan dari prototipe \textit{low-fidelity}. \newline
+      Adapun tambahan jika belum ada opsi mode aktivasi App Timer, maka tombol konfirmasi pengaturan akan dinonaktifkan, mengikuti prinsip desain \textit{Constraint} (DP-07).
+    } & G-01, G-03 & \hifi{hifi/h-10-daily} \hifi{hifi/h-10-off} \\ \hline
   
   \textbf{H-11} Halaman Pengaturan Jadwal Focus Mode & 
     \hifidesc{
       Pada halaman ini, pengguna dapat mengatur hari dan waktu aktivasi dari jadwal Focus Mode yang dibuat pengguna. Pada prototipe \textit{high-fidelity} terdapat penambahan bagian yang memuat daftar App Group yang sudah dibuat, memindahkan lokasi App Group dari dalam daftar aplikasi, agar pengguna lebih mudah dalam memilih sekelompok aplikasi sekaligus.
-    } & - & \hifi{hifi/h-11} \\ \hline
+    } & G-01, G-03 & \hifi{hifi/h-11} \\ \hline
   
   \textbf{H-12} Halaman Pengenalan Dashboard & 
     \hifidesc{
       Halaman ini memuat ilustrasi tujuan dari Dashboard dan penjelasan tentang fitur-fitur yang terdapat pada Dashboard. Pada prototipe \textit{high-fidelity} dilakukan perubahan ukuran \textit{font} dari deskripsi agar lebih mudah dibaca. Adapun penambahan ilustrasi agar fitur-fitur yang dijelaskan lebih mudah untuk dipelajari.
-    } & - & \hifi{hifi/h-12} \\ \hline
+    } & G-02 & \hifi{hifi/h-12} \\ \hline
   
   \textbf{H-13} Halaman Pengenalan App Timer & 
     \hifidesc{
       Halaman ini memuat ilustrasi tujuan dari App Timer dan penjelasan tentang fitur-fitur yang terdapat pada App Timer. Pada prototipe \textit{high-fidelity} dilakukan perubahan ukuran \textit{font} dari deskripsi agar lebih mudah dibaca. Adapun penambahan ilustrasi agar fitur-fitur yang dijelaskan lebih mudah untuk dipelajari.
-    } & - & \hifi{hifi/h-13} \\ \hline
+    } & G-02 & \hifi{hifi/h-13} \\ \hline
   
   \textbf{H-14} Halaman Pengenalan Goal Reminder & 
     \hifidesc{
       Halaman ini memuat ilustrasi tujuan dari Goal Reminder dan penjelasan tentang fitur-fitur yang terdapat pada Goal Reminder. Pada prototipe \textit{high-fidelity} dilakukan perubahan ukuran \textit{font} dari deskripsi agar lebih mudah dibaca. Adapun penambahan ilustrasi agar fitur-fitur yang dijelaskan lebih mudah untuk dipelajari.
-    } & - & \hifi{hifi/h-14} \\ \hline
+    } & G-02 & \hifi{hifi/h-14} \\ \hline
   
   \textbf{H-15} Halaman Pengenalan Focus Mode & 
     \hifidesc{
       Halaman ini memuat ilustrasi tujuan dari Focus Mode dan penjelasan tentang fitur-fitur yang terdapat pada Focus Mode. Pada prototipe \textit{high-fidelity} dilakukan perubahan ukuran \textit{font} dari deskripsi agar lebih mudah dibaca. Adapun penambahan ilustrasi agar fitur-fitur yang dijelaskan lebih mudah untuk dipelajari.
-    } & - & \hifi{hifi/h-15} \\ \hline
+    } & G-02 & \hifi{hifi/h-15} \\ \hline
   
   \textbf{H-16} Halaman Pengenalan Bedtime Mode & 
     \hifidesc{
       Halaman ini memuat ilustrasi tujuan dari Bedtime Mode dan penjelasan tentang fitur-fitur yang terdapat pada Bedtime Mode. Pada prototipe \textit{high-fidelity} dilakukan perubahan ukuran \textit{font} dari deskripsi agar lebih mudah dibaca. Adapun penambahan ilustrasi agar fitur-fitur yang dijelaskan lebih mudah untuk dipelajari.
-    } & - & \hifi{hifi/h-16} \\ \hline
+    } & G-02 & \hifi{hifi/h-16} \\ \hline
 
 \end{longtable}
 \end{footnotesize}
