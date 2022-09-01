@@ -12,7 +12,7 @@ Pertama-tama ditentukan terlebih dahulu beberapa spesifikasi dari perangkat yang
   \item Sistem Operasi: minimal Android 9 Pie
 \end{enumerate}
 
-Selain perangkat, diperlukan beberapa kakas dalam mengimplementasi aplikasi. Kakas pengembangan yang dapat digunakan Android Studio berbasis bahasa pemrograman Java dengan versi kakas yang mampu mengembangkan aplikasi Android versi 9. Kakas ini dapat disebut sebagai kakas paling tepat untuk mengembangkan aplikasi karena Android Studio adalah kakas buatan Google sendiri yang dianjurkan dalam mengembangkan aplikasi Android \textit{native}. Kakas ini dapat mengatur bagian \textit{front-end} maupun \textit{back-end} dari aplikasi. Adapun database yang dapat digunakan adalah SQLite, yang merupakan implementasi database bawaan dari Android.
+Selain perangkat, diperlukan beberapa kakas dalam mengimplementasi aplikasi. Kakas pengembangan yang dapat digunakan Android Studio berbasis bahasa pemrograman Java dengan versi kakas yang mampu mengembangkan aplikasi Android versi 9. Kakas ini dapat disebut sebagai kakas paling tepat untuk mengembangkan aplikasi karena Android Studio adalah kakas buatan Google sendiri yang dianjurkan dalam mengembangkan aplikasi Android \textit{native}. Kakas ini dapat mengatur bagian \textit{front-end} maupun \textit{back-end} dari aplikasi. Adapun \textit{database} yang dapat digunakan adalah SQLite, yang merupakan implementasi \textit{database} bawaan dari Android.
 
 Pembuktian kelayakan implementasi aplikasi dilakukan dengan menjelaskan kelayakan implementasi dari fitur-fitur yang tertera pada Tabel \ref{tab:daftar_fitur}. Terdapat beberapa fitur dari prototipe yang tidak perlu dijelaskan kembali kelayakan implementasinya karena fitur-fitur tersebut sudah terbukti dapat diimplementasi pada aplikasi Digital Wellbeing milik Google dan tidak mengalami modifikasi. Fitur-fitur yang dimaksud adalah sebagai berikut
 
@@ -30,43 +30,45 @@ Pembuktian kelayakan implementasi aplikasi dilakukan dengan menjelaskan kelayaka
 Selain daftar di atas, berikut adalah penjelasan tentang kelayakan implementasi dari fitur-fitur prototipe desain interaksi solusi
 
 \begin{enumerate}
-  \item \textbf{F-05} Searchbar
-  \subitem
+  \item F-09 Search bar
+  \subitem Fitur search bar adalah fitur yang cukup umum dan sering ditemukan di manapun sebuah aplikasi memiliki sebuah daftar, untuk mempermudah pencarian \textit{item} di daftar tersebut. Pada prototipe ini, search bar dipakai pengguna dengan mengetikkan query berisi nama atau bagian dari nama aplikasi yang ingin dicari ke dalam daftar, kemudian daftar tersebut akan langsung disaring dan menghasilkan sejumlah aplikasi yang cocok dengan query tersebut. Penyaringan ini dapat dilakukan di sisi \textit{frontend} maupun \textit{backend}, dan tergantung pada algoritma \textit{searching} yang diimplementasi program. Fitur ini cukup sederhana untuk diimplementasi, namun memberikan dampak yang cukup besar untuk meningkatkan efisiensi pencarian aplikasi. 
     
-  \item \textbf{F-0} App Group
-  \subitem
+  \item F-10 App Group
+  \subitem Pada fitur ini, pengguna dapat mengelompokkan beberapa aplikasi ke dalam sebuah App Group untuk mempermudah pengaturan App Timer atau Focus Mode, dan juga mempermudah pengguna jika ingin menganalisis hanya beberapa aplikasi saja. Untuk mengimplementasi, diperlukan modifikasi pada model \textit{database} pada sisi \textit{backend} untuk menambah jenis objek baru yang dapat menampung informasi dari aplikasi-aplikasi yang dikelompokkan dan nama App Groupnya. Objek App Group juga perlu memiliki ketiga atribut dari penggunaan aplikasi, yaitu \textit{screentime}, \textit{unlocks}, dan \textit{notifications received}, yang merupakan data gabungan dari seluruh aplikasi yang dikelompokkan. Hal ini berguna untuk menampilkan data penggunaannya pada halaman Ringkasan Penggunaan App Group.
+
+  App Group juga perlu memiliki sifat yang serupa dengan sebuah aplikasi terkait dengan fitur App Timer dan Focus Mode. Pembatasan yang diberikan kepada sebuah App Group berlaku untuk semua aplikasi yang termasuk dalam App Group tersebut. Sebagai contoh, jika sebuah App Group berisi aplikasi A, B, C, diberi App Timer selama 3 jam, dan jika hanya aplikasi A yang dipakai selama 3 jam, maka aplikasi B dan C tidak dapat digunakan lagi selama App Timer berlaku. Hal ini dapat dicapai dengan menggabungkan waktu \textit{screentime} dari seluruh aplikasi menjadi \textit{screentime} dari App Group, dan memberikan pemblokiran kepada seluruh aplikasi jika \textit{screentime} App Group sudah mencapai batasnya. Di sisi lain jika fitur Focus Mode memblokir penggunaan sebuah App Group, maka seluruh aplikasi yang termasuk ke dalam App Group akan terblokir juga.   
     
-  \item \textbf{F-0} Daftar Jadwal Aktivasi
-  \subitem
+  \item F-18 Daftar Jadwal Aktivasi
+  \subitem Pada aplikasi Digital Wellbeing milik Google, jumlah jadwal aktivasi pada fitur Focus Mode dan App Timer yang dapat dibuat hanyalah satu jadwal. Meningkatkan kemampuan penjadwalan dengan menambah jumlah jadwal yang bisa dipasang dapat memberikan fleksibilitas bagi pengguna yang memiliki jadwal kerja yang tidak serupa setiap harinya. Perlu dilakukan modifikasi kepada \textit{database} untuk menambah daftar yang berisi jadwal aktivasi dari fitur-fitur. Selain itu, implementasi jadwal tambahan  serupa dengan implementasi pada aplikasi Digital Wellbeing milik Google.
     
-  \item \textbf{F-0} Daily Goal
-  \subitem
+  \item F-19 Daily Goal
+  \subitem Daily Goal adalah sebuah capaian harian yang dapat dipasang pengguna untuk ditambahkan kepada pesan pengingat. Perlu ditambah sebuah objek baru di \textit{backend} untuk menyimpan capaian yang dipasang pengguna. Selain itu, setiap notifikasi pesan pengingat perlu memeriksa apakah ada capaian yang dipasang, jika iya maka capaian tersebut perlu ditambahkan ke dalam notifikasi yang dikirim. Adapun Daily Goal dapat dihapus dari database ketika hari berganti, atau ketika pengguna telah selesai mengevaluasinya, untuk bisa diperbarui setiap harinya.   
     
-  \item \textbf{F-0} fitur
-  \subitem
+  \item F-04 Date range selector
+  \subitem Date range selector adalah sebuah komponen pemilihan jangka waktu untuk data yang ditampilkan pada Bar Graph. Pada prototipe aplikasi, terdapat jangka waktu tambahan selain \textit{range hourly} (per jam) dan \textit{daily}, yaitu \textit{weekly} (mingguan). Untuk menambah \textit{range} baru, maka perlu ditambah agregat baru untuk menampilkan data penggunaan secara mingguan, di mana data yang ditampilkan pada kolom Bar Graph adalah data penggunaan aplikasi atau \textit{smartphone} per minggunya. 
     
-  \item \textbf{F-0} fitur
-  \subitem
+  \item F-05 Usage Summary
+  \subitem Usage summary pada prototipe adalah ringkasan data penggunaan \textit{smartphone} atau aplikasi berupa waktu total penggunaan dan waktu rata-rata penggunaan pada jangka waktu tertentu. Kedua ringkasan data ini dapat dihasilkan dari mengagregasi data waktu penggunaan aplikasi atau \textit{smartphone} yang didapat dari \textit{library} Android.
     
-  \item \textbf{F-0} fitur
-  \subitem
+  \item F-06 Rekomendasi aksi
+  \subitem Fitur ini dapat memberikan rekomendasi kepada pengguna tentang aksi yang dapat dilakukan berdasarkan data penggunaan aplikasi atau \textit{smartphone} pengguna. Rekomendasi yang diberikan dapat berasal dari hasil analisis data penggunaan yang tersedia dari \textit{library} Android di sisi \textit{backend}. Konsep rekomendasi dapat dicontoh dari sebuah aplikasi bernama minimalist phone, di mana aplikasi dapat memberikan rekomendasi aplikasi yang dapat diblokir berdasarkan waktu penggunaan aplikasinya. Aplikasi dengan durasi pemakaian yang mendominasi waktu penggunaan \textit{smartphone} harian dapat direkomendasikan untuk diblokir dengan tujuan mengurangi \textit{screentime} aplikasi tersebut.
     
-  \item \textbf{F-0} fitur
-  \subitem
+  \item F-07 App Timer
+  \subitem Fitur App Timer perlu disesuaikan untuk dapat melengkapi fitur Daftar Jadwal Aktivasi. App Timer pada aplikasi Digital Wellbeing hanya dapat diatur untuk memiliki waktu yang sama setiap harinya. Pada prototipe, App Timer memiliki kemampuan lebih untuk dapat diatur per harinya secara satu per satu. Hal ini memerlukan modifikasi pada sisi \textit{backend} dan \textit{database} untuk aktivasi App Timer, dari yang sebelumnya hanya memiliki satu jadwal, menjadi tujuh jadwal untuk mengakomodasi pengaturan per hari. 
     
-  \item \textbf{F-0} fitur
-  \subitem
+  \item F-11 Focus Mode
+  \subitem Fitur Focus Mode perlu disesuaikan untuk dapat melengkapi fitur Daftar Jadwal Aktivasi. Focus Mode pada aplikasi Digital Wellbeing hanya dapat diatur untuk memiliki satu buah jadwal untuk satu minggu, dengan memilih hari dan waktu aktivasinya. Pada prototipe, pengguna dapat memasang lebih dari satu jadwal Focus Mode. Hal ini memerlukan modifikasi pada sisi \textit{backend} serta \textit{database} untuk aktivasi Focus Mode, dengan menambah jadwal yang bisa dipasang dalam satu minggu. Fitur penjadwalan Focus Mode lebih dari satu buah jadwal ini telah diimplementasi dalam aplikasi Digital Wellbeing milik Samsung. 
     
-  \item \textbf{F-0} fitur
-  \subitem
+  \item F-12 Take a break
+  \subitem Fitur Take a break tidak mengalami perubahan yang cukup signifikan, selain penghapusan fitur dari notifikasi Focus Mode. Untuk mengimplementasinya, cukup menghapus \textit{action button} untuk Take a break dari notifikasi Focus Mode.
     
-  \item \textbf{F-0} fitur
-  \subitem
+  \item F-13 Turn off for now
+  \subitem Fitur Turn off for now pada prototipe hanya mengalami perubahan susunan kata, menjadi "Turn off for today" untuk memberikan konteks yang lebih jelas kepada pengguna. Selain itu, fitur ini tidak mengalami perubahan secara fungsional.
     
-  \item \textbf{F-0} fitur
-  \subitem
+  \item F-17 Pengaturan notifikasi
+  \subitem Aplikasi Digital Wellbeing telah mengimplementasi pengiriman notifikasi berisi pesan pengingat dari fitur-fiturnya. Modifikasi pada pengaturan notifikasi memungkinkan pengguna untuk mengatur waktu atau kondisi pengiriman notifikasi. Fitur ini dapat dicapai dengan mengimplementasi NotificationService yang sesuai dengan pengaturan notifikasi tersebut, di mana fitur dapat menerima masukan pengguna untuk waktu atau kondisi pengiriman notifikasi.
     
-  \item \textbf{F-0} fitur
-  \subitem
+  \item F-20 Smartphone Usage Evaluation
+  \subitem Pada fitur Smartphone Usage Evaluation, pengguna dapat memilih untuk diberikan evaluasi tentang penggunaan \textit{smartphone} di hari tersebut, dan evaluasi Daily Goal jika pengguna telah memasangnya. Di waktu yang ditentukan, pengguna akan diberikan sebuah notifikasi berisi jumlah waktu penggunaan \textit{smartphone}-nya, dan perbandingan dengan waktu penggunaan dengan hari kemarin. Jika pengguna telah memasang sebuah Daily Goal, maka notifikasi memiliki \textit{action button} yang akan menavigasi pengguna ke halaman Daily Goal untuk melakukan \textit{self-evaluation}. Untuk mengirimkan notifikasi, perlu dibuat \textit{scheduling} notifikasi baru dengan jadwal yang menyesuaikan pengaturan pengguna. Terdapat aplikasi lain yang menerapkan fitur ini yaitu ActionDash.
     
 \end{enumerate}
