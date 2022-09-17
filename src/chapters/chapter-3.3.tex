@@ -39,40 +39,36 @@ Sebelum fitur-fitur diimplementasi ke dalam prototipe aplikasi, perlu ditentukan
 \subsection{Analisis \textit{Usability Goals} dan \textit{User Experience Goals}}
 \label{subsec:analisis_goals}
 
-Sebagai salah satu rumusan masalah utama dari pengerjaan tugas akhir ini, perlu dilakukan analisis tentang \textit{usability goals} dan \textit{user experience goals} yang diperlukan dari aplikasi. \textit{Usability goals} bertujuan untuk mengoptimalisasi interaksi pengguna dengan prototipe aplikasi yang dibuat, maka dari itu penting untuk mengedepankan seluruh \textit{usability goals} yang telah disebutkan pada subbab \ref{subsec:goals}. Dalam konteks aplikasi pencegah distraksi, berikut adalah penjelasan tentang penerapan \textit{usability goals} dalam desain interaksi aplikasi yang akan dirancang
-
-\begin{enumerate}
-  \item Efektif untuk digunakan (\textit{Effectiveness})
-  \subitem Aplikasi diharapkan dapat membantu penggunanya mencegah distraksi dengan cara yang sesuai kebutuhannya.
-  
-  \item Efisien untuk digunakan (\textit{Efficiency})
-  \subitem Aplikasi diharapkan dapat membantu penggunanya menentukan pengaturan untuk mencegah distraksi dengan cepat, menyediakan langkah-langkah yang tepat dan tidak membuang waktu penggunanya.
-    
-  \item Aman untuk digunakan (\textit{Safety})
-  \subitem Aplikasi diharapkan dapat digunakan dengan aman agar pengguna dapat mencapai tujuannya dengan melakukan kesalahan yang minimal, dan menyadari dengan penuh ketika sedang melakukan aktivitas yang kritis.
-    
-  \item Memiliki utilitas yang baik (\textit{Utility})
-  \subitem Aplikasi diharapkan dapat menyediakan fungsionalitas yang tepat dan lengkap untuk membantu penggunanya dalam mencegah distraksi.
-    
-  \item Mudah untuk dipelajari (\textit{Learnability})
-  \subitem Aplikasi diharapkan dapat dipelajari dengan mudah agar pengguna tidak kesulitan atau keliru dalam menggunakannya. 
-    
-  \item Mudah untuk mengingat penggunaan (\textit{Memorability})
-  \subitem Cara penggunaan aplikasi diharapkan mudah untuk diingat agar pengguna dapat sewaktu-waktu kembali ke aplikasi dan tidak mengalami kesulitan dalam menggunakannya.  
-    
-\end{enumerate}
-
-Akan tetapi, terdapat beberapa \textit{usability goals} yang perlu diprioritaskan dalam perancangan solusi untuk menyesuaikan dengan kebutuhan interaksi pengguna yang telah dianalisis. Berikut adalah penjelasan tentang \textit{usability goals} yang diprioritaskan berdasarkan hasil analisis terhadap kebutuhan dan tujuan pengguna
+Sebagai salah satu rumusan masalah utama dari pengerjaan tugas akhir ini, perlu dilakukan analisis tentang \textit{usability goals} dan \textit{user experience goals} yang diperlukan dari aplikasi. \textit{Usability goals} bertujuan untuk mengoptimalisasi interaksi pengguna dengan prototipe aplikasi yang dibuat, maka dari itu penting untuk mengedepankan seluruh \textit{usability goals} yang telah disebutkan pada subbab \ref{subsec:goals}. Dari keenam \textit{usability goals} tersebut, diprioritaskan dua buah \textit{usability goals}  dalam perancangan solusi untuk menyesuaikan dengan kebutuhan interaksi pengguna yang telah dianalisis. Berikut adalah penjelasan tentang \textit{usability goals} yang diprioritaskan berdasarkan hasil analisis terhadap kebutuhan dan tujuan pengguna
 
 \begin{enumerate}
   \item \textit{Efficiency}
   \subitem Kebutuhan pengguna terhadap pengaturan fitur yang lebih efisien (UN-01) serta \textit{widget} untuk membantu mempermudah pengaturan (UN-02) cukup menunjukkan bahwa \textit{usability goal} ini tepat untuk mengarahkan desain solusi. Dengan memberikan tambahan atau modifikasi fitur yang tepat, diharapkan aplikasi menjadi lebih efisien untuk digunakan. 
-  %  \textit{Usability goal} ini juga dipilih karena pengguna merasa kurangnya fitur-fitur dari aplikasi Digital Wellbeing (MP-04) yang dapat membantu pengguna mencapai tujuannya tanpa melakukan \textit{workaround} terhadap limitasi.
 
   \item \textit{Learnability}
-  \subitem Adanya kebutuhan pengguna terhadap tampilan yang lebih menarik (UN-08) menunjukkan bahwa fitur-fitur pada aplikasi Digital Wellbeing pada awalnya cukup sulit untuk dimengerti kegunaannya. Dengan memberikan tampilan yang menarik dengan deskripsi yang jelas, diharapkan pengguna dapat mengerti fungsinya langsung ketika melihat fiturnya.
+  \subitem Adanya kebutuhan pengguna terhadap tampilan aplikasi dan fitur yang lebih mudah untuk dipelajari (UN-08) cukup menunjukkan bahwa fitur-fitur pada aplikasi Digital Wellbeing pada awalnya cukup sulit untuk dimengerti kegunaannya.
   
 \end{enumerate}
+
+Alasan lain kedua \textit{usability goals} tersebut menjadi prioritas melainkan keempat \textit{usability goals} lain dapat dilihat dari Tabel \ref{tab:daftar_masalah}, di mana masalah-masalah pengguna yang dikaitkan dengan kebutuhan-kebutuhan pengguna pada Tabel \ref{tab:daftar_kebutuhan} memiliki hubungan dengan kedua \textit{usability goals Efficiency} dan \textit{Learnability}.
+
+% Walaupun seluruh \textit{usability goals} penting untuk dipertimbangkan dalam desain interaksi aplikasi, berikut adalah penjelasan tentang mengapa \textit{usability goals} yang lain tidak menjadi prioritas
+
+% \begin{enumerate}
+%   \item Efektif untuk digunakan (\textit{Effectiveness})
+%   \subitem Perancangan prototipe dengan mengedepankan \textit{learnability} diharapkan dapat membantu penggunanya mengerti cara menggunakan fitur-fitur, sehingga dapat mencegah distraksi dengan cara yang sesuai kebutuhannya.
+  
+%   \item Aman untuk digunakan (\textit{Safety})
+%   \subitem Perancangan prototipe tetap akan mempertimbangkan \textit{usability goal safety}, namun tidak menjadi prioritas yang tinggi. Hal ini disebabkan karena sudah terdapat fitur-fitur yang dapat membatalkan pengguna dari kegiatan yang kritis, seperti fitur penundaan atau pembatalan pada pemblokiran akses terhadap aplikasi..
+    
+%   \item Memiliki utilitas yang baik (\textit{Utility})
+%   \subitem Menurut analisis pengguna, sering disebutkan bahwa aplikasi Digital Wellbeing kekurangan fitur-fitur dan desain interaksi yang membuatnya efisien untuk digunakan. Dengan mengedepankan efisiensi terlebih dahulu, diharapkan bahwa desain interaksi serta fitur yang dirancang juga akan memberikan utilitas yang baik untuk prototipe.
+    
+%   \item Mudah untuk mengingat penggunaan (\textit{Memorability})
+%   \subitem Memprioritaskan \textit{Usability Goal Learnability} dan \textit{Efficienct} berarti desain fitur-fitur dan aplikasi akan mudah untuk dipelajari dan cepat untuk digunakan. Dengan langkah-langkah pengguna yang mudah dipelajari, maka diharapkan langkah-langkah tersebut juga mudah untuk diingat jika pengguna ingin kembali memakainya.  
+    
+% \end{enumerate}
+
 
 Di sisi lain, \textit{user experience goals} berguna untuk mengarahkan desain agar mampu memberikan pengguna pengalaman yang diinginkan. Walaupun terdapat cukup banyak \textit{user experience goals} pada penjelasan subbab \ref{subsec:goals}, penting untuk memilih \textit{goals} yang tepat untuk sebuah aplikasi pencegah distraksi. Berikut adalah penjelasan tentang \textit{user experience goals} yang ditargetkan berdasarkan analisis pengguna
 
@@ -161,8 +157,8 @@ Dari menganalisis kebutuhan dan tujuan pengguna, maka dapat ditentukan fitur-fit
   F-17 & Pengaturan notifikasi & Mengatur notifikasi terkait fitur atau aplikasi & Modifikasi & UG-01 & FD-09 \\ \hline
   F-18 & Daftar Jadwal Aktivasi & Memberikan pengguna kemampuan untuk mengatur 0 atau lebih jadwal aktivasi fitur & Modifikasi & UN-05 & FD-10 \\ \hline
   F-19 & Daily Goal & Menentukan \textit{goal} harian dalam bentuk pesan yang dapat ditentukan pengguna untuk menjadi pengingat & Baru & UN-07, UG-04 & FU-13 \\ \hline
-  F-20 & Smartphone Usage Evaluation & Memberikan notifikasi berisi evaluasi penggunaan \textit{smartphone} harian dan evaluasi untuk Daily Goal & Baru & UN-03, UN-09, UG-03 & FU-07 \\ \hline
-  F-21 & Deskripsi Fitur & Menjelaskan kegunaan dan tujuan dari sebuah fitur atau halaman fitur & Sudah ada & UN-03, UN-09, UG-03 & FD-16 \\ \hline
+  F-20 & Smartphone Usage Evaluation & Memberikan notifikasi berisi evaluasi penggunaan \textit{smartphone} harian dan evaluasi untuk Daily Goal & Baru & UN-03, UG-03 & FU-07 \\ \hline
+  F-21 & Deskripsi Fitur & Menjelaskan kegunaan dan tujuan dari sebuah fitur atau halaman fitur & Sudah ada & UN-03, UG-03 & FD-16 \\ \hline
 
 \end{longtable}
 \end{footnotesize}
