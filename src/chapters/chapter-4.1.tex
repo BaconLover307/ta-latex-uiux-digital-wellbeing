@@ -8,7 +8,7 @@ Prototipe \textit{Low-Fidelity} adalah sebuah cara yang efektif untuk merealisas
 \subsection{Perancangan Navigasi Prototipe}
 \label{subsec:lofi_navigasi}
 Perlu dibentuk rancangan navigasi yang akan menghubungkan halaman-halaman yang telah ditentukan pada Tabel \ref{tab:daftar_halaman}. Pada Gambar \ref{fig:diagram_navigasi} dapat ditemukan Diagram Navigasi yang menggambarkan hubungan interaksi antarhalaman dari prototipe. Hal ini akan menjadi salah satu dari acuan pengujian prototipe \textit{low-fidelity}.
-Perlu diingat bahwa widget akan diimplementasikan dalam prototipe, namun widget tidak dapat diakses langsung dari aplikasi melainkan perlu ditambahkan ke dalam Homescreen dari \textit{smartphone}, sehingga widget tidak termasuk ke dalam Diagram Navigasi.  
+Perlu diingat bahwa \textit{widget} akan diimplementasikan dalam prototipe, namun \textit{widget} tidak dapat diakses langsung dari aplikasi melainkan perlu ditambahkan ke dalam Homescreen dari \textit{smartphone}, sehingga \textit{widget} tidak termasuk ke dalam Diagram Navigasi.  
 
 \newpage
 
@@ -26,7 +26,7 @@ Perlu diingat bahwa widget akan diimplementasikan dalam prototipe, namun widget 
 
 \subsection{Implementasi Prototipe \textit{Low-Fidelity}}
 \label{subsec:lofi_implementasi}
-Tampilan dari halaman serta widget yang telah ditentukan perlu memuat informasi dan elemen interaksi yang cukup bagi pengguna untuk mencapai tujuannya saat menggunakan prototipe \textit{low-fidelity}. Tabel \ref{tab:daftar_lofi_halaman} memuat implementasi tampilan halaman prototipe \textit{low-fidelity}, sedangkan Tabel \ref{tab:daftar_lofi_widget} memuat implementasi tampilan untuk widget. Pada kedua tabel tersebut dimuat juga pemetaan beberapa prinsip desain yang telah disebutkan pada Tabel \ref{tab:prinsip_desain} terhadap prototipe \textit{low-fidelity}, serta penjelasan singkat tentang tampilan.
+Tampilan dari halaman serta \textit{widget} yang telah ditentukan perlu memuat informasi dan elemen interaksi yang cukup bagi pengguna untuk mencapai tujuannya saat menggunakan prototipe \textit{low-fidelity}. Tabel \ref{tab:daftar_lofi_halaman} memuat implementasi tampilan halaman prototipe \textit{low-fidelity}, sedangkan Tabel \ref{tab:daftar_lofi_widget} memuat implementasi tampilan untuk \textit{widget}. Pada kedua tabel tersebut dimuat juga pemetaan beberapa prinsip desain yang telah disebutkan pada Tabel \ref{tab:prinsip_desain} terhadap prototipe \textit{low-fidelity}, serta penjelasan singkat tentang tampilan.
 
 \newpage
 
@@ -36,7 +36,7 @@ Tampilan dari halaman serta widget yang telah ditentukan perlu memuat informasi 
 
 
 \newlength{\lofidescwidth}
-\setlength{\lofidescwidth}{0.34\textwidth}
+\setlength{\lofidescwidth}{0.33\textwidth}
 
 \newcommand{\desc}[2]{\begin{minipage}[t]{#1}\linespread{1.0}\selectfont{#2}\end{minipage}}
 \newcommand{\lofidesc}[1]{\desc{\lofidescwidth}{#1}}
@@ -46,7 +46,7 @@ Tampilan dari halaman serta widget yang telah ditentukan perlu memuat informasi 
 
 \RaggedLeft
 \begin{footnotesize}
-\begin{longtable}[c]{|>{\ccnormspacingcenter}p{0.11\textwidth}|>{\ccnormspacing}p{\lofidescwidth}|>{\ccnormspacingcenter}p{0.1\textwidth}|>{\ccnormspacingcenter}p{\lofiwidth}|}
+\begin{longtable}[c]{|>{\ccnormspacingcenter}p{0.12\textwidth}|>{\ccnormspacing}p{\lofidescwidth}|>{\ccnormspacingcenter}p{0.1\textwidth}|>{\ccnormspacingcenter}p{\lofiwidth}|}
   \caption{Daftar Tampilan Halaman Prototipe \textit{Low-Fidelity}}
   \label{tab:daftar_lofi_halaman} \\
   \hline \rowcolor[HTML]{A3E5F5}
@@ -88,7 +88,7 @@ Tampilan dari halaman serta widget yang telah ditentukan perlu memuat informasi 
   
   \textbf{H-07} Halaman Ringkasan Penggunaan Aplikasi & 
     \lofidesc{
-      Halaman ini memuat data penggunaan sebuah aplikasi. Jenis data-data yang ditampilkan mirip seperti yang dapat ditemukan pada halaman Dashboard, namun hanya untuk satu buah aplikasi yang dipilih saja. Pemilihan periode waktu serta navigasi waktu data juga dapat dilakukan. Sebagai tambahan, terdapat navigasi ke halaman pengaturan App Timer untuk aplikasinya, serta navigasi menuju halaman pengaturan notifikasi aplikasi bawaan \textit{smartphone}. Tampilan data penggunaan aplikasi sengaja dibuat serupa dengan tampilan pengguna \textit{smartphone} agar pengguna dapat dengan mudah menggunakannya tanpa perlu mempelajari ulang.
+      Halaman ini memuat data penggunaan sebuah aplikasi. Jenis data-data yang ditampilkan mirip seperti yang dapat ditemukan pada halaman Dashboard, namun hanya untuk satu buah aplikasi yang dipilih saja. Pemilihan periode waktu serta navigasi waktu data juga dapat dilakukan. Sebagai tambahan, terdapat navigasi ke halaman pengaturan App Timer untuk aplikasinya, serta navigasi menuju halaman pengaturan notifikasi aplikasi bawaan \textit{smartphone}. Tampilan data penggunaan aplikasi sengaja dibuat serupa dengan tampilan penggunaan \textit{smartphone} agar pengguna dapat dengan mudah menggunakannya tanpa perlu mempelajari ulang.
     } & DP-05, DP-08, DP-09 & \lofi{lofi/h-07} \\ \hline
   
   \textbf{H-08} Halaman Ringkasan Penggunaan App Group & 
@@ -146,28 +146,28 @@ Tampilan dari halaman serta widget yang telah ditentukan perlu memuat informasi 
 
 \RaggedLeft
 \begin{footnotesize}
-\begin{longtable}[c]{|>{\ccnormspacingcenter}p{0.1\textwidth}|>{\ccnormspacing}p{\lofidescwidth}|>{\ccnormspacingcenter}p{0.11\textwidth}|>{\ccnormspacingcenter}p{\lofiwidth}|}
-  \caption{Daftar Tampilan Widget Prototipe \textit{Low-Fidelity}}
+\begin{longtable}[c]{|>{\ccnormspacingcenter}p{0.11\textwidth}|>{\ccnormspacing}p{\lofidescwidth}|>{\ccnormspacingcenter}p{0.1\textwidth}|>{\ccnormspacingcenter}p{\lofiwidth}|}
+  \caption{Daftar Tampilan \textit{Widget} Prototipe \textit{Low-Fidelity}}
   \label{tab:daftar_lofi_widget} \\
   \hline \rowcolor[HTML]{A3E5F5}
-  \centering\textbf{Widget} & \centering\textbf{Penjelasan Widget} & \centering\textbf{Prinsip Desain} & \textbf{Prototipe \textit{Low-Fidelity}} \\ \hline \endfirsthead
+  \centering\textbf{Widget} & \centering\textbf{Penjelasan \textit{Widget}} & \centering\textbf{Prinsip Desain} & \textbf{Prototipe \textit{Low-Fidelity}} \\ \hline \endfirsthead
   \hline \rowcolor[HTML]{A3E5F5}
-  \centering\textbf{Widget} & \centering\textbf{Penjelasan Widget} & \centering\textbf{Prinsip Desain} & \textbf{Prototipe \textit{Low-Fidelity}} \\ \hline \endhead
+  \centering\textbf{Widget} & \centering\textbf{Penjelasan \textit{Widget}} & \centering\textbf{Prinsip Desain} & \textbf{Prototipe \textit{Low-Fidelity}} \\ \hline \endhead
   \hline \endfoot
 
-  \textbf{W-01} Widget Dashboard & 
+  \textbf{W-01} \textit{Widget} Dashboard & 
     \lofidesc{
-      Widget ini memuat data penggunaan \textit{smartphone}, serta 3 aplikasi dengan penggunaan tertinggi pada hari tersebut. Pengguna dapat melakukan navigasi langsung ke halaman Dashboard melalui widget ini.
+      \textit{Widget} ini memuat data penggunaan \textit{smartphone}, serta 3 aplikasi dengan penggunaan tertinggi pada hari tersebut. Pengguna dapat melakukan navigasi langsung ke halaman Dashboard melalui \textit{widget} ini.
     } & DP-02, DP-05, DP-09 & \lofiwidget{0.2\textwidth}{lofi/w-01} \\ \hline
 
-  \textbf{W-02} Widget App Timer & 
+  \textbf{W-02} \textit{Widget} App Timer & 
     \lofidesc{
-      Widget ini memuat daftar aplikasi yang telah dipasang App Timer, serta sisa waktu untuk menggunakan aplikasi sebelum aksesnya ditutup. Pengguna dapat melakukan navigasi langsung ke halaman App Timer, atau menambah App Timer untuk aplikasi lain melalui widget ini.
+      \textit{Widget} ini memuat daftar aplikasi yang telah dipasang App Timer, serta sisa waktu untuk menggunakan aplikasi sebelum aksesnya ditutup. Pengguna dapat melakukan navigasi langsung ke halaman App Timer, atau menambah App Timer untuk aplikasi lain melalui \textit{widget} ini.
     } & DP-02, DP-05, DP-09 & \lofiwidget{0.3\textwidth}{lofi/w-02} \\ \hline
  
-  \textbf{W-03} Widget Focus Mode & 
+  \textbf{W-03} \textit{Widget} Focus Mode & 
     \lofidesc{
-      Widget ini menampilkan status keberlangsungan dari Focus Mode. Pengguna dapat mengaktivasi Focus Mode langsung dari widget jika sedang tidak aktif, serta mengambil istirahat dan mematikan Focus Mode jika sedang aktif. Pengguna juga dapat melakukan navigasi langsung ke halaman Focus Mode langsung dari widget.
+      \textit{Widget} ini menampilkan status keberlangsungan dari Focus Mode. Pengguna dapat mengaktivasi Focus Mode langsung dari \textit{widget} jika sedang tidak aktif, serta mengambil istirahat dan mematikan Focus Mode jika sedang aktif. Pengguna juga dapat melakukan navigasi langsung ke halaman Focus Mode langsung dari \textit{widget}.
     } & DP-03, DP-04, DP-05, DP-09 & \lofiwidget{0.3\textwidth}{lofi/w-03} \\ \hline
 
 \end{longtable}

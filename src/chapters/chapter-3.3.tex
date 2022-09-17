@@ -1,9 +1,9 @@
 \section{Penentuan Kebutuhan Perangkat Lunak}
 
-Setelah mengidentifikasi konteks penggunaan dari aplikasi Digital Wellbeing, maka tahap selanjutnya adalah menentukan kebutuhan dari perangkat lunak. Pada tahap ini akan dilakukan analisis prinsip desain, analisis \textit{usability goals} dan \textit{user experience goals}, analisis tipe interaksi dari desain, analisis fitur-fitur yang dibutuhkan, analisis halaman dan widget, serta analisis user flow. Kebutuhan-kebutuhan ini digunakan untuk membangun prototipe aplikasi solusi.
+Setelah mengidentifikasi konteks penggunaan dari aplikasi Digital Wellbeing, maka tahap selanjutnya adalah menentukan kebutuhan dari perangkat lunak. Pada tahap ini akan dilakukan analisis prinsip desain, analisis \textit{usability goals} dan \textit{user experience goals}, analisis tipe interaksi dari desain, analisis fitur-fitur yang dibutuhkan, analisis halaman dan \textit{widget}, serta analisis \textit{user flow}. Kebutuhan-kebutuhan ini digunakan untuk membangun prototipe aplikasi solusi.
 
 \subsection{Analisis Prinsip Desain}
-Sebelum fitur-fitur diimplementasi ke dalam prototipe aplikasi, perlu ditentukan dahulu prinsip desain yang akan diprioritaskan oleh setiap fitur. Prinsip desain yang digunakan merujuk pada studi literatur bagian \ref{subsec:prinsip_desain_dw} tentang prinsip desain khusus untuk domain Digital Wellbeing, serta di bagian \ref{subsec:prinsip_interaksi} tentang prinsip desain interaksi pada umumnya menurut \textcite{PreeceRogersSharp15}. Pemaparan tentang penggunaan prinsip desain dapat dilihat pada Tabel \ref{tab:prinsip_desain}. Prinsip-prinsip desain yang disebutkan akan dipetakan pada fitur-fitur pada tahap perancangan prototipe perangkat lunak.
+Sebelum fitur-fitur diimplementasi ke dalam prototipe aplikasi, perlu ditentukan dahulu prinsip desain yang akan diprioritaskan oleh fitur-fitur. Prinsip desain yang digunakan merujuk pada studi literatur bagian \ref{subsec:prinsip_desain_dw} tentang prinsip desain khusus untuk domain Digital Wellbeing, serta bagian \ref{subsec:prinsip_interaksi} tentang prinsip desain interaksi pada umumnya menurut \textcite{PreeceRogersSharp15}. Pemaparan tentang penggunaan prinsip desain dapat dilihat pada Tabel \ref{tab:prinsip_desain}. Prinsip-prinsip desain yang disebutkan akan dipetakan pada fitur-fitur pada tahap perancangan prototipe perangkat lunak.
 
 \RaggedLeft
 \begin{footnotesize}
@@ -26,7 +26,7 @@ Sebelum fitur-fitur diimplementasi ke dalam prototipe aplikasi, perlu ditentukan
   DP-05 & \textit{Visibility} & Membuat pembagian lokasi antarfitur yang jelas \\ \hline
   DP-06 & \textit{Feedback} & Memberikan umpan balik yang sesuai saat pengguna melakukan aksi \\ \hline
   DP-07 & \textit{Constraints} & Menonaktifkan tombol dari fitur yang tidak dapat diinteraksi tanpa menghapusnya \\ \hline
-  DP-08 & \textit{Consistency} & Konsistensi antara tampilan fitur pada halaman aplikasi dan widget \\ \hline
+  DP-08 & \textit{Consistency} & Konsistensi antara tampilan fitur pada halaman aplikasi dan \textit{widget} \\ \hline
   DP-09 & \textit{Affordance} & Desain yang jelas untuk elemen-elemen yang dapat diinteraksi \\ \hline
 
 \end{longtable}
@@ -66,7 +66,7 @@ Akan tetapi, terdapat beberapa \textit{usability goals} yang perlu diprioritaska
 
 \begin{enumerate}
   \item \textit{Efficiency}
-  \subitem Kebutuhan pengguna terhadap pengaturan fitur yang lebih efisien (UN-01) serta widget untuk membantu mempermudah pengaturan (UN-02) cukup menunjukkan bahwa \textit{usability goal} ini tepat untuk mengarahkan desain solusi. Dengan memberikan tambahan atau modifikasi fitur yang tepat, diharapkan aplikasi menjadi lebih efisien untuk digunakan. 
+  \subitem Kebutuhan pengguna terhadap pengaturan fitur yang lebih efisien (UN-01) serta \textit{widget} untuk membantu mempermudah pengaturan (UN-02) cukup menunjukkan bahwa \textit{usability goal} ini tepat untuk mengarahkan desain solusi. Dengan memberikan tambahan atau modifikasi fitur yang tepat, diharapkan aplikasi menjadi lebih efisien untuk digunakan. 
   %  \textit{Usability goal} ini juga dipilih karena pengguna merasa kurangnya fitur-fitur dari aplikasi Digital Wellbeing (MP-04) yang dapat membantu pengguna mencapai tujuannya tanpa melakukan \textit{workaround} terhadap limitasi.
 
   \item \textit{Learnability}
@@ -78,7 +78,7 @@ Di sisi lain, \textit{user experience goals} berguna untuk mengarahkan desain ag
 
 \begin{enumerate}
   \item \textit{Helpful}
-  \subitem \textit{User experience goal} ini dipilih dengan mempertimbangkan tujuan pengguna untuk memperbaiki kebiasaan digitalnya. Dengan adanya sistem rekomendasi, diharapkan desain solusi juga dapat membantu pengguna dalam menganalisis kebiasaan penggunaan \textit{smartphone} (UG-03). Selain itu, \textit{user experience goal} ini berhubungan erat dengan \textit{usability goal} \textit{efficiency}, dengan maksud pengguna diharapkan akan merasa terbantu untuk dalam mencapai tujuannya dengan desain interaksi yang efisien.
+  \subitem \textit{User experience goal} ini dipilih dengan mempertimbangkan tujuan pengguna untuk memperbaiki kebiasaan digitalnya. Dengan adanya sistem rekomendasi, diharapkan desain solusi juga dapat membantu pengguna dalam menganalisis kebiasaan penggunaan \textit{smartphone} (UG-03). Selain itu, \textit{user experience goal} ini berhubungan erat dengan \textit{usability goal} \textit{efficiency}, dengan maksud pengguna diharapkan akan merasa terbantu dalam mencapai tujuannya dengan desain interaksi yang efisien.
 
   \item \textit{Motivating}
   \subitem Kebutuhan pengguna akan kemampuan personalisasi pesan pengingat (UN-07) menunjukkan bahwa pengguna perlu diberikan motivasi oleh diri sendiri, dengan bantuan aplikasi. Selain itu, fitur \textit{Dashboard} yang sudah ada pada aplikasi Digital Wellbeing juga didesain dengan mengacu pada prinsip desain \textit{Awareness}, yang ditujukan untuk memotivasi pengguna untuk menganalisis kebiasaan digitalnya.
@@ -127,7 +127,7 @@ Tipe interaksi lain tidak akan dipertimbangkan ke dalam solusi desain. Tipe inte
 \subsection{Analisis Fitur}
 \label{subsec:analisis_fitur}
 
-Dari menganalisis kebutuhan dan tujuan pengguna, maka dapat ditentukan fitur-fitur yang diperlukan dari aplikasi solusi desain. Sebagian besar fitur dari aplikasi awal Digital Wellbeing akan dipertahankan dalam perancangan solusi, namun akan dilakukan modifikasi sesuai dengan kebutuhan pengguna. Pada Tabel \ref{tab:daftar_fitur} dapat ditemukan fitur-fitur yang akan diimplementasi. Kolom Tipe Fitur menandakan fitur yang sudah diimplementasi sebelumnya, fitur yang akan dimodifikasi, atau fitur yang baru diimplementasi. 
+Dari menganalisis kebutuhan dan tujuan pengguna, maka dapat ditentukan fitur-fitur yang diperlukan dari aplikasi solusi desain. Sebagian besar fitur dari aplikasi awal Digital Wellbeing akan dipertahankan dalam perancangan solusi, namun akan dilakukan modifikasi sesuai dengan kebutuhan pengguna. Pada Tabel \ref{tab:daftar_fitur} dapat ditemukan fitur-fitur yang akan diimplementasi. Kolom Tipe Fitur menandakan fitur yang sudah diimplementasi sebelumnya, fitur yang akan dimodifikasi, atau fitur yang baru dirancang. 
 % Perlu disebutkan bahwa fitur-fitur yang ditentukan bersifat atomik, dengan maksud sudah menjadi komponen abstraksi paling kecil dalam konteks menyusun desain interaksi.
 
 \RaggedLeft
@@ -156,9 +156,9 @@ Dari menganalisis kebutuhan dan tujuan pengguna, maka dapat ditentukan fitur-fit
   F-12 & Take a break & Menunda pemblokiran dari fitur-fitur untuk waktu yang ditentukan & Modifikasi & UN-06, UG-06 & FD-11 \\ \hline
   F-13 & Turn off for now & Mematikan pemblokiran dari fitur-fitur untuk sehari penuh & Modifikasi & UN-06, UG-06 & FD-11 \\ \hline
   F-14 & Bedtime Mode & Mengubah \textit{smartphone} ke dalam perilaku mode tidur pada jadwal yang ditentukan & Sudah ada & UG-05 & FD-12 \\ \hline
-  F-15 & Greyscale screen & Mengubah warna layar \textit{smartphone} menjadi hitam-putih & Sudah ada & UG-01 & FD-15 \\ \hline
+  F-15 & Greyscale screen & Mengubah warna layar \textit{smartphone} menjadi berskala abu-abu & Sudah ada & UG-01 & FD-15 \\ \hline
   F-16 & Do Not Disturb & Mengalihkan pengguna ke layar pengaturan Do Not Disturb bawaan \textit{smartphone} & Sudah ada & UG-01 & - \\ \hline
-  F-17 & Pengaturan notifikasi & Mengatur notifikasi terkait fitur atau aplikasi & Modifikasi & UG-01 & - \\ \hline
+  F-17 & Pengaturan notifikasi & Mengatur notifikasi terkait fitur atau aplikasi & Modifikasi & UG-01 & FD-09 \\ \hline
   F-18 & Daftar Jadwal Aktivasi & Memberikan pengguna kemampuan untuk mengatur 0 atau lebih jadwal aktivasi fitur & Modifikasi & UN-05 & FD-10 \\ \hline
   F-19 & Daily Goal & Menentukan \textit{goal} harian dalam bentuk pesan yang dapat ditentukan pengguna untuk menjadi pengingat & Baru & UN-07, UG-04 & FU-13 \\ \hline
   F-20 & Smartphone Usage Evaluation & Memberikan notifikasi berisi evaluasi penggunaan \textit{smartphone} harian dan evaluasi untuk Daily Goal & Baru & UN-03, UN-09, UG-03 & FU-07 \\ \hline
@@ -225,14 +225,14 @@ Fitur yang telah ditentukan pada Tabel \ref{tab:daftar_fitur} perlu dimuat ke da
 \newpage
 % * =======================================================================
 
-\subsection{Analisis Widget}
+\subsection{Analisis \textit{Widget}}
 \label{subsec:analisis_widget}
-Selain halaman, adapun beberapa widget yang perlu dirancang untuk membantu pengguna untuk mengakses data penggunaan \textit{smartphone} dengan cepat lewat Homescreen (UN-02). Dengan itu, widget memberikan keunggulan cukup besar dalam mencapai \textit{usability goal Efficiency} (G-01) dan \textit{user experience goal Helpful} (G-03). Widget adalah sebuah tampilan kecil dari aplikasi yang dapat diletakkan di Homescreen, berisi data atau fungsionalitas paling penting dari sebuah aplikasi. \parencite{widgetsandroid}. Daftar widget yang akan diimplementasi serta pemetaannya terhadap fitur-fitur yang dimuat dapat dilihat pada Tabel \ref{tab:daftar_widget}.
+Selain halaman, adapun beberapa \textit{widget} yang perlu dirancang untuk membantu pengguna untuk mengakses data penggunaan \textit{smartphone} dengan cepat lewat Homescreen (UN-02). Dengan itu, \textit{widget} memberikan keunggulan cukup besar dalam mencapai \textit{usability goal Efficiency} (G-01) dan \textit{user experience goal Helpful} (G-03). \textit{Widget} adalah sebuah tampilan kecil dari aplikasi yang dapat diletakkan di Homescreen, berisi data atau fungsionalitas paling penting dari sebuah aplikasi. \parencite{widgetsandroid}. Daftar \textit{widget} yang akan diimplementasi serta pemetaannya terhadap fitur-fitur yang dimuat dapat dilihat pada Tabel \ref{tab:daftar_widget}.
 
 \RaggedLeft
 \begin{footnotesize}
 \begin{longtable}[c]{|W{c}{0.06\textwidth}|>{\ccnormspacing}m{0.3\textwidth}|>{\ccnormspacing}m{0.2\textwidth}|}
-  \caption{Daftar Widget}
+  \caption{Daftar \textit{Widget}}
   \label{tab:daftar_widget} \\
   \hline \rowcolor[HTML]{A3E5F5}
   \textbf{ID} & \textbf{Widget} & \textbf{Fitur} \\ \hline \endfirsthead
@@ -240,16 +240,16 @@ Selain halaman, adapun beberapa widget yang perlu dirancang untuk membantu pengg
   \textbf{ID} & \textbf{Widget} & \textbf{Fitur} \\ \hline \endhead
   \hline \endfoot
 
-  W-01 & Widget Dashboard & F-01, F-02 \\ \hline
-  W-02 & Widget App Timer & F-03 \\ \hline
-  W-03 & Widget Focus Mode & F-11, F-12, F-13 \\ \hline
+  W-01 & \textit{Widget} Dashboard & F-01, F-02 \\ \hline
+  W-02 & \textit{Widget} App Timer & F-03 \\ \hline
+  W-03 & \textit{Widget} Focus Mode & F-11, F-12, F-13 \\ \hline
 
 \end{longtable}
 \end{footnotesize}
 \justifying
 \FloatBarrier
 
-Sebagai catatan, widget Dashboard adalah widget yang sudah ada dalam aplikasi Digital Wellbeing pada awalnya, sedangkan widget App Timer dan widget Focus Mode adalah widget baru yang dirancang sesuai dengan kebutuhan pengguna.
+Sebagai catatan, \textit{widget} Dashboard adalah \textit{widget} yang sudah ada dalam aplikasi Digital Wellbeing pada awalnya, sedangkan \textit{widget} App Timer dan \textit{widget} Focus Mode adalah \textit{widget} baru yang dirancang sesuai dengan kebutuhan pengguna.
 
 % * =======================================================================
 
@@ -269,11 +269,11 @@ Setelah menentukan halaman-halaman pada bagian \ref{subsec:analisis_halaman}, ma
 Pengguna dapat memulai \textit{user flow} dari halaman Main Menu, di mana pengguna akan disambut dengan deretan menu menuju 5 halaman utama. Di sini, \textit{user flow} bercabang ke tiap halaman fitur utama, jika pengguna pertama kali masuk ke halaman tersebut maka akan disambut dengan halaman pengenalan tentang fitur yang berkaitan. Berikut adalah penjelasan singkat tentang setiap cabang utama \textit{user flow}
 
 \begin{enumerate}
-  \item Saat masuk ke halaman Dashboard, pengguna dapat melihat data penggunaan \textit{smartphone}-nya. Kemudian pengguna dapat melihat detail penggunaan per aplikasi, untuk \textit{app group}, atau menambah \textit{app group} baru
+  \item Saat masuk ke halaman Dashboard, pengguna dapat melihat data penggunaan \textit{smartphone}-nya. Kemudian pengguna dapat melihat detail penggunaan per aplikasi, untuk \textit{app group}, atau menambah \textit{app group} baru.
   \item Saat masuk ke halaman \textit{App Timer}, pengguna dapat melihat daftar aplikasi yang telah dipasangi \textit{App Timer} jika ada. Pengguna juga dapat memasang \textit{App Timer} baru untuk aplikasi lain dengan memilihnya dari daftar aplikasi, di mana pengguna akan masuk ke Halaman Pengaturan Jadwal \textit{App Timer}.
   \item Saat masuk ke halaman \textit{Daily Goal}, pengguna dapat mengatur capaian utama apa yang ingin dijadikan target untuk hari tersebut. Pengguna juga dapat mengatur \textit{Daily Smartphone Evaluation} melalui halaman ini.
   \item Saat masuk ke halaman \textit{Focus Mode}, pengguna dapat melihat jadwal \textit{Focus Mode} yang sedang berlangsung, daftar jadwal \textit{Focus Mode} yang sudah dibuat, serta daftar aplikasi yang dinilai mendistraksi. Pengguna juga dapat mengatur aktivasi \textit{Focus Mode}, serta mengubah atau menambah jadwal \textit{Focus Mode} lewat Halaman Pengaturan Jadwal \textit{Focus Mode}, di mana pengguna juga dapat mengatur kembali aplikasi apa saja yang ingin diblokir selama jadwalnya aktif.
-  \item Saat masuk ke halaman \textit{Bedtime Mode}, pengguna langsung dapat mengatur jadwal aktivasi dari \textit{Bedtime Mode}, serta mengatur perilaku dari \textit{Bedtime Mode} sendiri seperti aktivasi \textit{greyscale screen} atau \textit{Do Not Disturb}
+  \item Saat masuk ke halaman \textit{Bedtime Mode}, pengguna langsung dapat mengatur jadwal aktivasi dari \textit{Bedtime Mode}, serta mengatur perilaku dari \textit{Bedtime Mode} sendiri seperti aktivasi \textit{greyscale screen} atau \textit{Do Not Disturb}.
 \end{enumerate}
 
-Selain Halaman Main Menu, \textit{user flow} juga dapat dimulai dari Homescreen \textit{smartphone}. Hal ini disebabkan karena widget adalah bagian dari aplikasi yang hanya dapat diakses dari Homescreen \textit{smartphone}. Widget bertujuan untuk memberikan fungsionalitas atau data dari aplikasi secara lebih cepat dengan tampilan yang lebih sederhana, tanpa memerlukan pengguna untuk mengakses aplikasinya. Maka dari itu, \textit{user flow} untuk widget langsung berakhir di widget tersebut.
+Selain Halaman Main Menu, \textit{user flow} juga dapat dimulai dari Homescreen \textit{smartphone}. Hal ini disebabkan karena \textit{widget} adalah bagian dari aplikasi yang hanya dapat diakses dari Homescreen \textit{smartphone}. \textit{Widget} bertujuan untuk memberikan fungsionalitas atau data dari aplikasi secara lebih cepat dengan tampilan yang lebih sederhana, tanpa memerlukan pengguna untuk mengakses aplikasinya. Maka dari itu, \textit{user flow} untuk \textit{widget} langsung berakhir di \textit{widget} tersebut.
