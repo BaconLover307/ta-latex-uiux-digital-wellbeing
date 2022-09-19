@@ -42,22 +42,22 @@ Sebelum fitur-fitur diimplementasi ke dalam prototipe aplikasi, perlu ditentukan
 Sebagai salah satu rumusan masalah utama dari pengerjaan tugas akhir ini, perlu dilakukan analisis tentang \textit{usability goals} dan \textit{user experience goals} yang diperlukan dari aplikasi. \textit{Usability goals} bertujuan untuk mengoptimalisasi interaksi pengguna dengan prototipe aplikasi yang dibuat, maka dari itu penting untuk mengedepankan seluruh \textit{usability goals} yang telah disebutkan pada subbab \ref{subsec:goals}. Dari keenam \textit{usability goals} tersebut, diprioritaskan dua buah \textit{usability goals}  dalam perancangan solusi untuk menyesuaikan dengan kebutuhan interaksi pengguna yang telah dianalisis. Berikut adalah penjelasan tentang \textit{usability goals} yang diprioritaskan berdasarkan hasil analisis terhadap kebutuhan dan tujuan pengguna
 
 \begin{enumerate}
-  \item \textit{Efficiency}
-  \subitem Kebutuhan pengguna terhadap pengaturan fitur yang lebih efisien (UN-01) serta \textit{widget} untuk membantu mempermudah pengaturan (UN-02) cukup menunjukkan bahwa \textit{usability goal} ini tepat untuk mengarahkan desain solusi. Dengan memberikan tambahan atau modifikasi fitur yang tepat, diharapkan aplikasi menjadi lebih efisien untuk digunakan. 
+  \item \textit{Utility}
+  \subitem Kebutuhan pengguna terhadap pengaturan fitur yang lebih lengkap (UN-01) serta \textit{widget} untuk membantu mempermudah pengaturan (UN-02) cukup menunjukkan bahwa \textit{usability goal utility} tepat untuk mengarahkan desain solusi. Dengan memberikan tambahan atau modifikasi fitur yang tepat, diharapkan pengguna dapat mencapai tujuannya dalam menggunakan aplikasi dengan lebih baik. 
 
   \item \textit{Learnability}
   \subitem Adanya kebutuhan pengguna terhadap tampilan aplikasi dan fitur yang lebih mudah untuk dipelajari (UN-08) cukup menunjukkan bahwa fitur-fitur pada aplikasi Digital Wellbeing pada awalnya cukup sulit untuk dimengerti kegunaannya.
   
 \end{enumerate}
 
-Alasan lain kedua \textit{usability goals} tersebut menjadi prioritas melainkan keempat \textit{usability goals} lain dapat dilihat dari Tabel \ref{tab:daftar_masalah}, di mana masalah-masalah pengguna yang dikaitkan dengan kebutuhan-kebutuhan pengguna pada Tabel \ref{tab:daftar_kebutuhan} memiliki hubungan dengan kedua \textit{usability goals Efficiency} dan \textit{Learnability}.
+Alasan lain kedua \textit{usability goals} tersebut menjadi prioritas melainkan keempat \textit{usability goals} lain dapat dilihat dari Tabel \ref{tab:daftar_masalah}, di mana masalah-masalah pengguna yang dikaitkan dengan kebutuhan-kebutuhan pengguna pada Tabel \ref{tab:daftar_kebutuhan} memiliki hubungan dengan kedua \textit{usability goals Utility} dan \textit{Learnability}.
 
 
 Di sisi lain, \textit{user experience goals} berguna untuk mengarahkan desain agar mampu memberikan pengguna pengalaman yang diinginkan. Walaupun terdapat cukup banyak \textit{user experience goals} pada penjelasan subbab \ref{subsec:goals}, penting untuk memilih \textit{goals} yang tepat untuk aplikasi Google Digital Wellbeing. Berikut adalah penjelasan tentang \textit{user experience goals} yang ditargetkan berdasarkan analisis pengguna
 
 \begin{enumerate}
   \item \textit{Helpful}
-  \subitem \textit{User experience goal} ini dipilih dengan mempertimbangkan tujuan pengguna untuk memperbaiki kebiasaan digitalnya. Dengan adanya sistem rekomendasi, diharapkan desain solusi juga dapat membantu pengguna dalam menganalisis kebiasaan penggunaan \textit{smartphone} (UG-03). Selain itu, \textit{user experience goal} ini berhubungan erat dengan \textit{usability goal} \textit{efficiency}, dengan maksud pengguna diharapkan akan merasa terbantu dalam mencapai tujuannya dengan desain interaksi yang efisien.
+  \subitem \textit{User experience goal} ini dipilih dengan mempertimbangkan tujuan pengguna untuk memperbaiki kebiasaan digitalnya. Dengan adanya sistem rekomendasi, diharapkan desain solusi juga dapat membantu pengguna dalam menganalisis kebiasaan penggunaan \textit{smartphone} (UG-03). Selain itu, \textit{user experience goal} ini berhubungan erat dengan \textit{usability goal} \textit{utility}, dengan maksud pengguna diharapkan akan merasa terbantu dalam mencapai tujuannya dengan utilitas yang lengkap.
 
   \item \textit{Motivating}
   \subitem Kebutuhan pengguna akan kemampuan personalisasi pesan pengingat (UN-07) menunjukkan bahwa pengguna perlu diberikan motivasi oleh diri sendiri, dengan bantuan aplikasi. Selain itu, fitur \textit{Dashboard} yang sudah ada pada aplikasi Digital Wellbeing juga didesain dengan mengacu pada prinsip desain \textit{Awareness}, yang ditujukan untuk memotivasi pengguna untuk menganalisis kebiasaan digitalnya.
@@ -80,7 +80,7 @@ Untuk membantu dalam pemetaan terhadap fitur-fitur pada tahap perencangan protot
   \hline \endfoot
   
   \rowcolor[HTML]{DCF3FC} \multicolumn{3}{|l|}{\textbf{\textit{Usability Goals}}} \\ \hline
-  G-01 & \textit{Efficiency} & UN-01, UN-02 \\ \hline
+  G-01 & \textit{Utility} & UN-01, UN-02 \\ \hline
   G-02 & \textit{Learnability} & UN-08 \\ \hline
   \rowcolor[HTML]{DCF3FC} \multicolumn{3}{|l|}{\textbf{\textit{User Experience Goals}}} \\ \hline
   G-03 & \textit{Helpful} & UG-03, UG-05 \\ \hline
@@ -95,7 +95,7 @@ Untuk membantu dalam pemetaan terhadap fitur-fitur pada tahap perencangan protot
 
 \subsection{Analisis Tipe Interaksi}
 
-Sebelum menentukan elemen-elemen dari desain, perlu ditentukan tipe interaksi yang akan menjadi konsep dari prototipe aplikasi solusi. Tipe interaksi yang dibahas akan mengacu pada studi literatur bagian \ref{subsec:tipe_interaksi}. Menurut observasi pada aplikasi Digital Wellbeing awal, dapat ditentukan bahwa tipe interaksi yang diterapkan adalah \textit{instructing} dengan melihat bagaimana aplikasi membantu penggunanya menyetel pengaturan-pengaturan. Sesuai dengan kebutuhan pengguna yang dianalisis, terutama kebutuhan UN-01 tentang efisiensi dalam pengaturan aplikasi, tipe interaksi ini akan dipertahankan melihat kekuatan tipe interaksi dalam menyediakan kecepatan dan efisiensi dalam berinteraksi.
+Sebelum menentukan elemen-elemen dari desain, perlu ditentukan tipe interaksi yang akan menjadi konsep dari prototipe aplikasi solusi. Tipe interaksi yang dibahas akan mengacu pada studi literatur bagian \ref{subsec:tipe_interaksi}. Menurut observasi pada aplikasi Digital Wellbeing awal, dapat ditentukan bahwa tipe interaksi yang diterapkan adalah \textit{instructing} dengan melihat bagaimana aplikasi membantu penggunanya menyetel pengaturan-pengaturan. Sesuai dengan kebutuhan pengguna yang dianalisis, tipe interaksi ini akan dipertahankan melihat kekuatan tipe interaksi dalam menyediakan kecepatan dan efisiensi dalam berinteraksi dengan utilitas yang lengkap.
 
 Dari menganalisis kebutuhan pengguna, ditemukan bahwa diperlukan tipe interaksi tambahan. Menurut kebutuhan UN-03, pengguna membutuhkan sebuah fitur rekomendasi untuk memberikan informasi tentang kebiasaan digital yang baik. Selain itu, kebutuhan UN-07 menyebutkan bahwa pengguna membutuhkan interaksi yang terasa lebih personal dengan aplikasi. Hal-hal tersebut menunjukkan bahwa solusi desain memerlukan tipe interaksi \textit{responding}, di mana sistem akan menginisiasi interaksi kepada pengguna dan menunggu balasan. Tipe interaksi ini akan difokuskan pada sistem rekomendasi kebiasaan digital yang sehat untuk pengguna, serta pada pesan-pesan pengingat sesuai dengan fitur yang memanfaatkannya. Walaupun interaksi ini diinisiasi oleh sistem, pengguna tetap dapat mengaturnya sesuai dengan kebutuhan, dan penerapannya akan dianalisis lebih lanjut pada tahap evaluasi.
 
@@ -154,11 +154,11 @@ Pada Tabel \ref{tab:daftar_fitur} dapat ditemukan fitur-fitur yang akan diimplem
 Fitur-fitur yang terdaftar memiliki perannya sendiri dalam mencapai \textit{usability goals} maupun \textit{user experience goals} yang telah ditentukan. Berikut adalah beberapa penjelasan tentang fitur-fitur yang diunggulkan untuk mencapai \textit{goals} tersebut
 
 \begin{enumerate}
-  \item Terdapat fitur \textit{Search bar} (F-05) untuk mempermudah mencari aplikasi yang ingin dianalisis atau diblokir, dibandingkan dengan aplikasi Digital Wellbeing awalnya di mana pengguna harus \textit{scrolling} daftar yang panjang untuk mencari aplikasi tertentu. Fitur ini cukup berpengaruh dalam meningkatkan efisiensi (G-01) bagi pengguna dalam mencapai tujuannya.
+  \item Terdapat fitur \textit{Search bar} (F-05) untuk mempermudah mencari aplikasi yang ingin dianalisis atau diblokir, dibandingkan dengan aplikasi Digital Wellbeing awalnya di mana pengguna harus \textit{scrolling} daftar yang panjang untuk mencari aplikasi tertentu. Fitur ini cukup berpengaruh dalam meningkatkan utilitas (G-01) bagi pengguna dalam mencapai tujuannya.
   
-  \item Fitur \textit{App Group} (F-10) dirancang agar pengguna dapat memasang App Timer atau Focus Mode kepada beberapa aplikasi sekaligus, dibandingkan dengan aplikasi Digital Wellbeing awalnya di mana pengguna harus melakukan hal yang sama secara berkali-kali. Dengan memanfaatkan fitur ini, pengguna juga dapat melihat data penggunaan untuk aplikasi-aplikasi yang dikelompokkan, mempermudah pengguna dalam menganalisis kebiasaannya. Fitur \textit{App Group} ini diunggulkan untuk mencapai \textit{usability goal Efficiency} (G-01) dan \textit{user experience goal Helpful} (G-03). 
+  \item Fitur \textit{App Group} (F-10) dirancang agar pengguna dapat memasang App Timer atau Focus Mode kepada beberapa aplikasi sekaligus, dibandingkan dengan aplikasi Digital Wellbeing awalnya di mana pengguna harus melakukan hal yang sama secara berkali-kali. Dengan memanfaatkan fitur ini, pengguna juga dapat melihat data penggunaan untuk aplikasi-aplikasi yang dikelompokkan, mempermudah pengguna dalam menganalisis kebiasaannya. Fitur \textit{App Group} ini diunggulkan untuk mencapai \textit{usability goal Utility} (G-01) dan \textit{user experience goal Helpful} (G-03). 
   
-  \item Fitur Daftar Jadwal Aktivasi (F-18) yang ketika digabungkan dengan fitur App Timer atau Focus Mode dapat mempermudah pengguna untuk mengatur jadwal aktivasi per harinya secara langsung, tanpa melakukan pengubahan setiap hari, meningkatkan efisiensi (G-01) bagi penggunanya dalam memasang pengaturan.  Misalnya, jika pengguna ingin membatasi penggunaan suatu aplikasi sosial media selama 2 jam di hari biasa dan 4 jam di akhir pekan, pengguna dapat langsung mengatur App Timernya cukup sekali, di mana pada aplikasi Digital Wellbeing milik Google pengguna harus menyesuaikan App Timer di hari yang bersangkutan.
+  \item Fitur Daftar Jadwal Aktivasi (F-18) yang ketika digabungkan dengan fitur App Timer atau Focus Mode dapat mempermudah pengguna untuk mengatur jadwal aktivasi per harinya secara langsung, tanpa melakukan pengubahan setiap hari, meningkatkan utilitas (G-01) bagi penggunanya dalam memasang pengaturan.  Misalnya, jika pengguna ingin membatasi penggunaan suatu aplikasi sosial media selama 2 jam di hari biasa dan 4 jam di akhir pekan, pengguna dapat langsung mengatur App Timernya cukup sekali, di mana pada aplikasi Digital Wellbeing milik Google pengguna harus menyesuaikan App Timer di hari yang bersangkutan.
   
   \item Fitur \textit{Daily Goal} (F-19) dirancang untuk memenuhi \textit{user experience goal Motivating} (G-04), di mana pengguna dapat menentukan \textit{goal} yang ingin dicapai di hari tersebut, dan akan diingatkan ketika sesuai dengan kondisi yang diatur pengguna. Contoh kondisinya adalah diingatkan setiap kali pengguna membuka suatu aplikasi. Di akhir hari, pengguna akan dievaluasi secara singkat tentang \textit{goal}, dan diberikan pesan motivasi baik ketika pengguna merasa telah berhasil atau gagal dalam mencapainya.
 \end{enumerate}
@@ -208,7 +208,7 @@ Fitur yang telah ditentukan pada Tabel \ref{tab:daftar_fitur} perlu dimuat ke da
 
 \subsection{Analisis \textit{Widget}}
 \label{subsec:analisis_widget}
-Selain halaman, adapun beberapa \textit{widget} yang perlu dirancang untuk membantu pengguna untuk mengakses data penggunaan \textit{smartphone} dengan cepat lewat Homescreen (UN-02). Dengan itu, \textit{widget} memberikan keunggulan cukup besar dalam mencapai \textit{usability goal Efficiency} (G-01) dan \textit{user experience goal Helpful} (G-03). \textit{Widget} adalah sebuah tampilan kecil dari aplikasi yang dapat diletakkan di Homescreen, berisi data atau fungsionalitas paling penting dari sebuah aplikasi \parencite{widgetsandroid}. Daftar \textit{widget} yang akan diimplementasi serta pemetaannya terhadap fitur-fitur yang dimuat dapat dilihat pada Tabel \ref{tab:daftar_widget}.
+Selain halaman, adapun beberapa \textit{widget} yang perlu dirancang untuk membantu pengguna dalam mengakses data penggunaan \textit{smartphone} lewat Homescreen (UN-02). Dengan itu, \textit{widget} memberikan keunggulan cukup besar dalam mencapai \textit{usability goal Utility} (G-01) dan \textit{user experience goal Helpful} (G-03). \textit{Widget} adalah sebuah tampilan kecil dari aplikasi yang dapat diletakkan di Homescreen, berisi data atau fungsionalitas paling penting dari sebuah aplikasi \parencite{widgetsandroid}. Daftar \textit{widget} yang akan diimplementasi serta pemetaannya terhadap fitur-fitur yang dimuat dapat dilihat pada Tabel \ref{tab:daftar_widget}.
 
 \RaggedLeft
 \begin{footnotesize}
